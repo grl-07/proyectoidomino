@@ -13,8 +13,8 @@ private String apellido;
 
 public Alumno()  //constructor, se inicializan los atributos de la clase. Siempre se llama igual que la clase. No devuelve nada.
 {
-    nombre = "Alberly";
-    apellido = "Martínez";
+    nombre = "Daniel";
+    apellido = "Sierra";
 }
 
 public void funcion()
