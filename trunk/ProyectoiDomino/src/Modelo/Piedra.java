@@ -29,7 +29,8 @@ public class Piedra {
         this.num2 = num2;
     }
 
-    public Piedra(int num1, int num2) {     //constructor
+    //Constructor
+    public Piedra(int num1, int num2) {     
         this.num1 = num1;
         this.num2 = num2;
     }

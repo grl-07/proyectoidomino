@@ -23,7 +23,8 @@ public class ListaPiedras {
         this.laListaPiedras = laListaPiedras;
     }
 
-    public ListaPiedras() {            //constructor
+    //Constructor
+    public ListaPiedras() {            
         laListaPiedras = new HashSet();
     }
 
