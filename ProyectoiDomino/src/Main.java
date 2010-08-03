@@ -17,6 +17,7 @@ public class Main {
         BufferedReader br;
         br = new BufferedReader(new InputStreamReader(System.in));
         int i = 0;
+        int j = 0;
         ListaUsuarios listadoUsuarios;
         listadoUsuarios = new ListaUsuarios();
 
@@ -39,5 +40,26 @@ public class Main {
             }
         }
         listadoUsuarios.mostrarUsuario();
+
+
+        /*LLENAR LA LISTA CON TODAS LAS PIEDRAS DEL JUEGO*/
+        i = 0;
+        j = 0;
+        ListaPiedras laListaPiedras;
+        laListaPiedras = new ListaPiedras();
+
+        for (i = 0; i <= 6; i++) {
+
+            for (j = i; j <= 6; j++) {
+                try {
+                    laListaPiedras.agregarPiedra(new Piedra(i, j));
+                } catch (Exception e) {
+                    /*System.out.println(e);
+                    e.printStackTrace();*/
+                }
+            }
+        }
+        laListaPiedras.imprimirListaPiedras();
+
     }
 }
