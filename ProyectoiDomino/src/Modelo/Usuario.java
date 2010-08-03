@@ -5,18 +5,27 @@ package Modelo;
  * @version 1.0
  * @created 31-Jul-2010 2:44:00 PM
  */
+//import java.util.*;
+import com.toedter.calendar.JCalendar;
 public class Usuario {
 
-	protected String apellido;
-	protected String avatar;
-	protected String clave;
-	protected String nickname;
-	protected String nombre;
-        protected int numPartidasGan;
-        protected int numIngresos;
-        //protected Score puntaje;
-	//protected JCalendar fechaNac;
-        //public Score m_Score;
+    protected String apellido;
+    protected String avatar;
+    protected String clave;
+    protected String nickname;
+    protected String nombre;
+    protected int numPartidasGan;
+    protected int numIngresos;
+    protected int puntaje;
+    protected JCalendar fechaNac;
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
 
     public int getNumIngresos() {
         return numIngresos;
@@ -74,17 +83,17 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-        public Usuario(String nombre,String apellido,String clave,String nickname,String avatar, int numPartidasGan,int numIngresos){
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.avatar = avatar;
-            this.clave = clave;
-            this.nickname = nickname;
-            this.numPartidasGan = numPartidasGan;
-            this.numIngresos = numIngresos;
-	}
-	/*public void finalize() throws Throwable {
+    public Usuario(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int puntaje) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.avatar = avatar;
+        this.clave = clave;
+        this.nickname = nickname;
+        this.numPartidasGan = numPartidasGan;
+        this.numIngresos = numIngresos;
+        this.puntaje = puntaje;
+    }
 
-	}*/
-
+    public void finalize() throws Throwable {
+    }
 }

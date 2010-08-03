@@ -20,10 +20,10 @@ public class ListaUsuarios {
 	}*/
         
 	public boolean agregarUsuario(Usuario elUsuario){
-            return (listadoUsuarios.add(elUsuario));
+            return(listadoUsuarios.add(elUsuario));
 	}
 
-        public void imprimir(){
+        public void mostrarUsuario(){
             int i;
             Usuario registro;
             Object arreglo[];
@@ -40,6 +40,7 @@ public class ListaUsuarios {
                 System.out.println("Avatar: " + registro.getAvatar());
                 System.out.println("Numero de Partidas Ganadas: " + registro.getNumPartidasGan());
                 System.out.println("Numero de Ingresos: " + registro.getNumIngresos());
+                System.out.println("Puntaje: " + registro.getPuntaje());
             }
         }
 
