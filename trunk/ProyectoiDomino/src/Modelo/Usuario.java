@@ -6,7 +6,7 @@ package Modelo;
  * @created 31-Jul-2010 2:44:00 PM
  */
 //import java.util.*;
-import com.toedter.calendar.JCalendar;
+//import com.toedter.calendar.JCalendar;
 public class Usuario {
 
     protected String apellido;
@@ -17,7 +17,7 @@ public class Usuario {
     protected int numPartidasGan;
     protected int numIngresos;
     protected int puntaje;
-    protected JCalendar fechaNac;
+  //  protected JCalendar fechaNac;
 
     public int getPuntaje() {
         return puntaje;
@@ -94,6 +94,6 @@ public class Usuario {
         this.puntaje = puntaje;
     }
 
-    public void finalize() throws Throwable {
-    }
+    /*public void finalize() throws Throwable {
+    }*/
 }

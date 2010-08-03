@@ -20,8 +20,8 @@ public class Score {
     public Score() {
     }
 
-    public void finalize() throws Throwable {
-    }
+  /*  public void finalize() throws Throwable {
+    }*/
 
     public void ajustarPuntaje(Usuario elUsuario) {
         puntaje = elUsuario.getPuntaje();
