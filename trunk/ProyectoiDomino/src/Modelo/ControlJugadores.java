@@ -12,14 +12,14 @@ public class ControlJugadores {
 
     private boolean estado;
     private boolean pass;
-    private ListaPiedras PiedrasEnMano;
+    private ListaPiedras piedrasEnMano;
 
     public ListaPiedras getPiedrasEnMano() {
-        return PiedrasEnMano;
+        return piedrasEnMano;
     }
 
     public void setPiedrasEnMano(ListaPiedras PiedrasEnMano) {
-        this.PiedrasEnMano = PiedrasEnMano;
+        this.piedrasEnMano = PiedrasEnMano;
     }
 
     public boolean isEstado() {
@@ -39,10 +39,13 @@ public class ControlJugadores {
     }
 
     //Constructor
-    public ControlJugadores(boolean estado, boolean pass, ListaPiedras PiedrasEnMano) {
-        this.estado = estado;
+    public ControlJugadores() {
+        pass = false;
+        estado = false;
+        piedrasEnMano = new ListaPiedras();
+        /*this.estado = estado;
         this.pass = pass;
-        this.PiedrasEnMano = PiedrasEnMano;
+        this.PiedrasEnMano = PiedrasEnMano;*/
     }
 
     /*public void finalize() throws Throwable {

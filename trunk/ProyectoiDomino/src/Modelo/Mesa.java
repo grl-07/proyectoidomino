@@ -48,11 +48,9 @@ public class Mesa {
     }
 
     //Constructor
-    public Mesa(ListaPiedras elPozo, int extremo1, int extremo2, ListaPiedras PiedrasMesa) {
-        this.elPozo = elPozo;
-        this.extremo1 = extremo1;
-        this.extremo2 = extremo2;
-        this.PiedrasMesa = PiedrasMesa;
+    public Mesa() {
+        elPozo = new ListaPiedras();
+        PiedrasMesa = new ListaPiedras();
     }
 
     /*public void finalize() throws Throwable {

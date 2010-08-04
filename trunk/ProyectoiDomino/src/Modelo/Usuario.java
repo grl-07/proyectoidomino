@@ -16,8 +16,25 @@ public class Usuario {
     protected String nombre;
     protected int numPartidasGan;
     protected int numIngresos;
+    private int numPartCreadas;
     protected int puntaje;
     protected JCalendar fechaNac;
+
+    public JCalendar getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(JCalendar fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
+    public int getNumPartCreadas() {
+        return numPartCreadas;
+    }
+
+    public void setNumPartCreadas(int numPartCreadas) {
+        this.numPartCreadas = numPartCreadas;
+    }    
 
     public int getPuntaje() {
         return puntaje;
@@ -83,7 +100,7 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public Usuario(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int puntaje) {
+    public Usuario(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.avatar = avatar;
@@ -91,6 +108,7 @@ public class Usuario {
         this.nickname = nickname;
         this.numPartidasGan = numPartidasGan;
         this.numIngresos = numIngresos;
+        this.numPartCreadas = numPartCreadas;
         this.puntaje = puntaje;
     }
 

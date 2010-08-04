@@ -31,9 +31,9 @@ public class Jugador extends Usuario {
     }
 
     //Constructor
-    public Jugador(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int puntaje, ControlJugadores elJugador) {
-        super(nombre, apellido, clave, nickname, avatar, numPartidasGan, numIngresos, puntaje);
-        this.elJugador = elJugador;
+    public Jugador(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {
+        super(nombre, apellido, clave, nickname, avatar, numPartidasGan, numIngresos, numPartCreadas, puntaje);
+        elJugador = new ControlJugadores();
     }
     /*	public void finalize() throws Throwable {
     super.finalize();

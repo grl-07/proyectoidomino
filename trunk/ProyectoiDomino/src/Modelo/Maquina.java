@@ -21,8 +21,8 @@ public class Maquina {
     }
 
     //Constructor
-    public Maquina(ControlJugadores laMaquina) {
-        this.laMaquina = laMaquina;
+    public Maquina() {
+        laMaquina = new ControlJugadores();
     }
 
     /*public void finalize() throws Throwable {
