@@ -30,18 +30,48 @@ public class Repartidor {
     /*public void finalize() throws Throwable {
 
     }*/
-    public int repartir(ListaPiedras lista, int num1, int num2, int cont) {
+    public boolean aprobarPiedra(ListaPiedras piedrasRepartidas, Piedra laPiedra) {
+
+        boolean encontrado = false;
+        Piedra piedraAux = null;
+
+        Iterator iterador = piedrasRepartidas.iterator;
+
+        while (!encontrado && iterador.hasNext()) {
+
+            piedraAux = (Piedra) iterador.next();
+            if (laPiedra.equals(piedraAux)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int repartir(ListaPiedras lista, ListaPiedras piedrasRepartidas, int num1, int num2, int cont) {
         //while (cont<7){
         //fichas para el jugador
             /*num1 = numAleatorios.nextInt(6);
         num2 = numAleatorios.nextInt(6);*/
+        boolean confirm;
+        //Mesa elConfirm;
+        //elConfirm = new Mesa();
+        confirm = false;
+
 
         if (num1 >= num2) {
             Piedra laPiedra = new Piedra(0, 0);
             laPiedra.setNum1(num1);
             laPiedra.setNum2(num2);
-            lista.agregarPiedra(laPiedra);
-            cont++;
+
+
+            confirm = aprobarPiedra(piedrasRepartidas, laPiedra);
+
+            if (confirm) {
+                piedrasRepartidas.agregarPiedra(laPiedra);
+                lista.agregarPiedra(laPiedra);
+                cont++;
+            }
+
         }
         //}
         return cont;
@@ -57,28 +87,45 @@ public class Repartidor {
 
         ListaPiedras Pozo = P.getElPozo();
 
+        ListaPiedras piedrasRepartidas;
+        piedrasRepartidas = new ListaPiedras();
+
         Random numAleatorios = new Random();
 
         int num1;
         int num2;
-        //Piedras del Jugador y la Maquina
-        while (cont < 14) {
+
+
+        //Piedras del Jugador
+        while (cont < 7) {
             num1 = numAleatorios.nextInt(6);
             num2 = numAleatorios.nextInt(6);
-            cont = repartir(PiedrasJ, num1, num2, cont);
-            cont = repartir(PiedrasM, num1, num2, cont);
+            cont = repartir(PiedrasJ, piedrasRepartidas, num1, num2, cont);
         }
+
+        cont = 0;
+        //Piedras de la Máquina
+        while (cont < 7) {
+            num1 = numAleatorios.nextInt(6);
+            num2 = numAleatorios.nextInt(6);
+            cont = repartir(PiedrasM, piedrasRepartidas, num1, num2, cont);
+        }
+
 
         cont = 0;
         //Piedras del Pozo
         while (cont < 14) {
             num1 = numAleatorios.nextInt(6);
             num2 = numAleatorios.nextInt(6);
-            cont = repartir(Pozo, num1, num2, cont);
+            cont = repartir(Pozo, piedrasRepartidas, num1, num2, cont);
         }
-
+        System.out.println("Lista del Jugador");
         PiedrasJ.imprimirListaPiedras();
+
+        System.out.println("Lista de la Maquina");
         PiedrasM.imprimirListaPiedras();
+
+        System.out.println("Lista del Pozo");
         Pozo.imprimirListaPiedras();
     }
 }

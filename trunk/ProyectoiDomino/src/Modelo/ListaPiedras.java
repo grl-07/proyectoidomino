@@ -15,6 +15,10 @@ public class ListaPiedras {
 
     private Set<Piedra> laListaPiedras;
 
+
+    Iterator iterator;
+
+   
     public Set<Piedra> getLaListaPiedras() {
         return laListaPiedras;
     }
