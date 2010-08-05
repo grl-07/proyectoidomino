@@ -64,9 +64,23 @@ public class ControlJugadores {
      * @param laMesa
      * @param laPiedra
      */
-    public boolean ponerPieza(Mesa laMesa, Piedra laPiedra) {
-        return false;
-    }
+/*    public boolean ponerPieza(Mesa laMesa, Piedra laPiedra) {
+
+        ListaPiedras listaMesa;
+        listaMesa = new ListaPiedras();
+
+        boolean confirm;
+        confirm = laMesa.aprobarPiedra(laPiedra);
+
+        if (confirm==true){
+            listaMesa.agregarPiedra(laPiedra);  //PROVICIONAL, IMPLEMENTAR EL AGREGAR AL PRINCIPIO O FINAL DE LA LISTA
+            return true;
+        }
+        else{
+            System.out.println("La piedra que intenta jugar no es válida");
+            return false;
+        }
+    }*/
 
     /**
      *
@@ -75,4 +89,38 @@ public class ControlJugadores {
     public Piedra tomarDelPozo(Mesa laMesa) {
         return null;
     }
+
+
+
+/*    public boolean jugarPiedra(){
+
+
+        
+        Mesa laMesa;
+        laMesa = new Mesa();
+
+           try {
+
+
+                System.out.println("Ingrese num1 de ficha: ");
+            String numero1=br.readLine();
+            int num1 = Integer.parseInt(numero1);
+
+        System.out.println("Ingrese num2 de ficha: ");
+        String numero2=br.readLine();
+        int num2 = Integer.parseInt(numero2);
+
+        ponerPieza(laMesa.getPiedrasMesa(), new Piedra(num1,num2));
+
+
+            } catch (Exception e) {
+            }
+        }
+        listadoUsuarios.mostrarUsuario();
+
+
+
+
+    }*/
+
 }
