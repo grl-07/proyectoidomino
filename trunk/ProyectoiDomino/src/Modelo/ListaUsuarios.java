@@ -4,8 +4,9 @@ package Modelo;
  * @version 1.0
  * @created 01-Aug-2010 5:29:46 PM
  */
-/*import java.io.*/;
+
 import java.util.*;
+import java.io.*;
 
 public class ListaUsuarios {
 
@@ -44,7 +45,53 @@ public class ListaUsuarios {
             }
         }
 
-	
+	public boolean buscarNickname(Object elUsuario) {
+            boolean encontrado = false;
+            Usuario auxiliar = null;
+            Iterator iterador = listadoUsuarios.iterator();
+
+            while (!encontrado && iterador.hasNext()) {
+                auxiliar = (Usuario) iterador.next();
+
+                if (elUsuario.equals(auxiliar)) {
+                    encontrado = true;
+                }
+            }
+
+            if (encontrado) {
+                return true;
+            }
+            return false;
+
+        }
+
+        public boolean modificarUsuario(Usuario elUsuario,String dato,int opcion) {
+            boolean encontrado = false;
+            Usuario auxiliar = null;
+            Iterator iterador = listadoUsuarios.iterator();
+
+            while (!encontrado && iterador.hasNext()) {
+                auxiliar = (Usuario) iterador.next();
+
+                if (elUsuario.equals(auxiliar)) {
+                    if (opcion == 1) {
+                        auxiliar.nombre = dato;
+                    } else if (opcion == 2) {
+                        auxiliar.apellido = dato;
+                    } else if (opcion == 3) {
+                        auxiliar.clave = dato;
+                    } else if (opcion == 4) {
+                        auxiliar.avatar = dato;
+                    }
+                    encontrado = true;
+                }
+            }
+
+            if (encontrado) {
+                return true;
+            }
+            return false;
+        }
 	
 
 }
