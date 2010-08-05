@@ -4,7 +4,7 @@
  */
 package Modelo;
 
-import com.toedter.calendar.JCalendar;
+//import com.toedter.calendar.JCalendar;
 
 /**
  *
@@ -22,13 +22,13 @@ public class Jugador extends Usuario {
         this.elJugador = elJugador;
     }
 
-    public JCalendar getFechaNac() {
+  /*  public JCalendar getFechaNac() {
         return fechaNac;
     }
 
     public void setFechaNac(JCalendar fechaNac) {
         this.fechaNac = fechaNac;
-    }
+    }*/
 
     //Constructor
     public Jugador(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {

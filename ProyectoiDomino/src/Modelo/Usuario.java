@@ -6,7 +6,7 @@ package Modelo;
  * @created 31-Jul-2010 2:44:00 PM
  */
 //import java.util.*;
-import com.toedter.calendar.JCalendar;
+//import com.toedter.calendar.JCalendar;
 public class Usuario {
 
     protected String apellido;
@@ -18,15 +18,15 @@ public class Usuario {
     protected int numIngresos;
     private int numPartCreadas;
     protected int puntaje;
-    protected JCalendar fechaNac;
+   // protected JCalendar fechaNac;
 
-    public JCalendar getFechaNac() {
+ /*   public JCalendar getFechaNac() {
         return fechaNac;
     }
 
     public void setFechaNac(JCalendar fechaNac) {
         this.fechaNac = fechaNac;
-    }
+    }*/
 
     public int getNumPartCreadas() {
         return numPartCreadas;
@@ -110,6 +110,32 @@ public class Usuario {
         this.numIngresos = numIngresos;
         this.numPartCreadas = numPartCreadas;
         this.puntaje = puntaje;
+    }
+
+    public int hashCode()
+    {
+       int hash = 0;
+       hash += (nickname != null ? nickname.hashCode():0);
+
+       return hash;
+    }
+
+    public boolean equals(Object objeto)
+    {
+        Usuario segundoObjeto;
+
+        if (! (objeto instanceof Usuario))
+            return false;
+
+        segundoObjeto = (Usuario) objeto;
+
+        //if (this.nombre.equals(segundoObjeto.nombre) && this.apellido.equals(segundoObjeto.apellido) && this.cargo.equals(segundoObjeto.cargo))
+        if (this.nickname.hashCode() == segundoObjeto.nickname.hashCode())
+        {
+            return true;
+        }
+
+        return false;
     }
 
     /*public void finalize() throws Throwable {
