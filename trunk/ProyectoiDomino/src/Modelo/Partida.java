@@ -2,40 +2,53 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Modelo;
 //import com.toedter.calendar.JCalendar;
+
 /**
  *
  * @author Sheryl
  */
 public class Partida {
+
     private Usuario elUsuario;
-	/*private JCalendar fechaactual;
-	private JCalendar fechaIni;*/
-	private float IDPartida;
+    /*private JCalendar fechaactual;
+    private JCalendar fechaIni;*/
+    private float IDPartida;
 
-	public Partida(){
+    public float getIDPartida() {
+        return IDPartida;
+    }
 
-	}
+    public void setIDPartida(float IDPartida) {
+        this.IDPartida = IDPartida;
+    }
 
-	public void finalize() throws Throwable {
+    public Usuario getElUsuario() {
+        return elUsuario;
+    }
 
-	}
+    public void setElUsuario(Usuario elUsuario) {
+        this.elUsuario = elUsuario;
+    }
 
-	public void cargarPartida(){
+    //Constructor
+    public Partida() {
+    }
 
-	}
+    /*public void finalize() throws Throwable {
 
-	public void crearPartida(){
+    }*/
+    public void cargarPartida() {
+    }
 
-	}
+    public void crearPartida() {
+    }
 
-	public boolean guardarPartida(){
-		return false;
-	}
+    public boolean guardarPartida() {
+        return false;
+    }
 
-	public void salirPartida(){
-
-	}
+    public void salirPartida() {
+    }
 }
