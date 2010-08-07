@@ -24,13 +24,17 @@ public class Main {
         Partida laPartida = new Partida();
 
         //Agregar Usuario
-        listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 5, 9, 0));
-        listadoUsuarios.agregarUsuario(new Usuario("Alberly", "Martinez", "654321", "alberlykida12", "abe28", 0, 6, 5, 0));
-        listadoUsuarios.agregarUsuario(new Usuario("Sheryl", "Ravelo", "135790", "shishi348", "shi8", 0, 8, 1, 0));
 
+        listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 1, 5, 9, 4));
+        listadoUsuarios.agregarUsuario(new Usuario("Alberly", "Martinez", "654321", "alberlykida12", "abe28", 4, 6, 5, 9));
+        listadoUsuarios.agregarUsuario(new Usuario("Sheryl", "Ravelo", "135790", "shishi348", "shi8", 7, 8, 1, 3));
+
+
+        System.out.println("\nLISTADO DE USUARIOS\n");
         listadoUsuarios.mostrarUsuario();
 
         //Modificar Usuario
+        System.out.println("\nMODIFICAR USUARIO\n");
        Usuario elUsuario;
         elUsuario = new Usuario("", "", "", "shishi348", "", 0, 0, 0, 0);
 
@@ -82,42 +86,23 @@ public class Main {
             System.out.println("Usuario incorrecto");
         }
         listadoUsuarios.mostrarUsuario();
-        listadoUsuarios.modificarUsuario(elUsuario, null, i);/*modificarUsuario();*///Fin de Modificar Usuario
+        ///Fin de Modificar Usuario
 
-        //Reporte objeto = new Reporte();
-        //objeto.ordenPartidasGanadas(listadoUsuarios);
-
-        
+        System.out.println("\nCREAR PARTIDA\n");
         laPartida.crearPartida();
 
-        //listadoUsuarios.ordenPartidasGanadas();
-
-
-
-
-        //ESTO NO VA AQUI (CREO) PORQUE YA SE HACE EN CREAR PARTIDA
-        /*LLENAR LA LISTA CON TODAS LAS PIEDRAS DEL JUEGO*/
-    /*    ListaPiedras laListaPiedras;
-        laListaPiedras = new ListaPiedras();
-
-        for (i = 0; i <= 6; i++) {
-
-            for (j = i; j <= 6; j++) {
-                laListaPiedras.agregarPiedra(new Piedra(i, j));
-            }
-
-        }
-
-        Jugador elJugador = new Jugador("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 0, 0, 0);
-        Maquina laMaquina = new Maquina();
-        Mesa laMesa = new Mesa();
-
-        laListaPiedras.elRepartidor(elJugador, laMaquina, laMesa);*/
 
         //REPORTE
         Reporte elReporte = new Reporte();
+        System.out.println("\nREPORTES \n");
         elReporte.ordenarPorIngresos(listadoUsuarios);
-
+        System.out.println("\n");
         elReporte.ordenarPorPartidasCreadas(listadoUsuarios);
+        System.out.println("\n");
+        elReporte.ordenPartidasGanadas(listadoUsuarios);
+        System.out.println("\n");
+        elReporte.usuarioMayorScore(listadoUsuarios);
+
+        
     }
 }
