@@ -16,7 +16,7 @@ public class Usuario {
     protected String nombre;
     protected int numPartidasGan;
     protected int numIngresos;
-    private int numPartCreadas;
+    protected int numPartCreadas;
     protected int puntaje;
    // protected JCalendar fechaNac;
 

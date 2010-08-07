@@ -21,6 +21,7 @@ public class Main {
         int j = 0;
         ListaUsuarios listadoUsuarios;
         listadoUsuarios = new ListaUsuarios();
+        Partida laPartida = new Partida();
 
         //Agregar Usuario
         listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 0, 0, 0));
@@ -30,33 +31,48 @@ public class Main {
         listadoUsuarios.mostrarUsuario();
 
         //Modificar Usuario
-        Usuario elUsuario;
+       Usuario elUsuario;
         elUsuario = new Usuario("", "", "", "shishi348", "", 0, 0, 0, 0);
 
         if (listadoUsuarios.buscarNickname(elUsuario)) {
+
+
             System.out.println("Que desea modificar? \n");
             System.out.println("1: Nombre");
             System.out.println("2: Apellido");
             System.out.println("3: Clave");
             System.out.println("4: Avatar");
+            System.out.println("5: Salir");
             System.out.print("Ingrese Opcion  ");
+
 
             try {
                 String x = br.readLine();
                 int opcion = Integer.parseInt(x);
 
-                if (opcion == 1) {
-                    elUsuario = new Usuario("Jesse", "", "", "shishi348", "", 0, 0, 0, 0);
-                    listadoUsuarios.modificarUsuario(elUsuario, "Jesse", opcion);
-                } else if (opcion == 2) {
-                    elUsuario = new Usuario("", "Marquez", "", "shishi348", "", 0, 0, 0, 0);
-                    listadoUsuarios.modificarUsuario(elUsuario, "Marquez", opcion);
-                } else if (opcion == 3) {
-                    elUsuario = new Usuario("", "", "claveNueva", "shishi348", "", 0, 0, 0, 0);
-                    listadoUsuarios.modificarUsuario(elUsuario, "claveNueva", opcion);
-                } else if (opcion == 4) {
-                    elUsuario = new Usuario("", "", "", "shishi348", "avatarNuevo", 0, 0, 0, 0);
-                    listadoUsuarios.modificarUsuario(elUsuario, "avatarNuevo", opcion);
+                switch(opcion) {
+                    case 1:
+                        elUsuario = new Usuario("Jesse", "", "", "shishi348", "", 0, 0, 0, 0);
+                        listadoUsuarios.modificarUsuario(elUsuario, "Jesse", opcion);
+                        break;
+                    case 2:
+                        elUsuario = new Usuario("", "Marquez", "", "shishi348", "", 0, 0, 0, 0);
+                        listadoUsuarios.modificarUsuario(elUsuario, "Marquez", opcion);
+                        break;
+                    case 3:
+                        elUsuario = new Usuario("", "", "claveNueva", "shishi348", "", 0, 0, 0, 0);
+                        listadoUsuarios.modificarUsuario(elUsuario, "claveNueva", opcion);
+                        break;
+                    case 4:
+                        elUsuario = new Usuario("", "", "", "shishi348", "avatarNuevo", 0, 0, 0, 0);
+                        listadoUsuarios.modificarUsuario(elUsuario, "avatarNuevo", opcion);
+                        break;
+                    case 5:
+                        System.exit(0);
+                        break;
+                    default:
+                        System.out.println("Opcion Incorrecta");
+
                 }
 
             } catch (Exception e) {
@@ -68,9 +84,20 @@ public class Main {
         listadoUsuarios.mostrarUsuario();
         listadoUsuarios.modificarUsuario(elUsuario, null, i);/*modificarUsuario();*///Fin de Modificar Usuario
 
+        //Reporte objeto = new Reporte();
+        //objeto.ordenPartidasGanadas(listadoUsuarios);
 
+        
+        laPartida.crearPartida();
+
+        //listadoUsuarios.ordenPartidasGanadas();
+
+
+
+
+        //ESTO NO VA AQUI (CREO) PORQUE YA SE HACE EN CREAR PARTIDA
         /*LLENAR LA LISTA CON TODAS LAS PIEDRAS DEL JUEGO*/
-        ListaPiedras laListaPiedras;
+    /*    ListaPiedras laListaPiedras;
         laListaPiedras = new ListaPiedras();
 
         for (i = 0; i <= 6; i++) {
@@ -85,7 +112,7 @@ public class Main {
         Maquina laMaquina = new Maquina();
         Mesa laMesa = new Mesa();
 
-        laListaPiedras.elRepartidor(elJugador, laMaquina, laMesa);
+        laListaPiedras.elRepartidor(elJugador, laMaquina, laMesa);*/
 
     }
 }
