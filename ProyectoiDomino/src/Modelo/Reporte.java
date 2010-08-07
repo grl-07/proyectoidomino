@@ -10,12 +10,14 @@ import java.util.*;
  *
  * @author Sheryl
  */
+import java.util.*;
+
 public class Reporte {
 
-    private SortedSet<Usuario> ordenUsuarios;
+    private Set<Usuario> listaOrdenIn;
 
     public Reporte() {
-        ordenUsuarios = new TreeSet();
+        listaOrdenIn = new TreeSet(new ComparadorIngresos());
     }
 
     /*public void finalize() throws Throwable {
@@ -25,15 +27,44 @@ public class Reporte {
      *
      * @param lista
      */
-    public void imprimirReporte(ListaUsuarios lista) {
+    public void imprimirReporte(Set lista) {
+        int i;
+        Usuario registro;
+        Object arreglo[];
+
+        arreglo = lista.toArray();
+
+        for (i = 0; i < arreglo.length; i++) {
+            registro = (Usuario) arreglo[i];
+
+            System.out.println("Nombre: " + registro.getNombre());
+            System.out.println("Apellido: " + registro.getApellido());
+            System.out.println("Clave: " + registro.getClave());
+            System.out.println("Nickname: " + registro.getNickname());
+            System.out.println("Avatar: " + registro.getAvatar());
+            System.out.println("Numero de Partidas Ganadas: " + registro.getNumPartidasGan());
+            System.out.println("Numero de Ingresos: " + registro.getNumIngresos());
+            System.out.println("Puntaje: " + registro.getPuntaje());
+        }
     }
 
     /**
      *
      * @param Lista
      */
-    public ListaUsuarios ordenarPorIngresos(ListaUsuarios Lista) {
-        return null;
+    public void ordenarPorIngresos(ListaUsuarios lista) {
+
+        int i;
+        Usuario registro;
+        Object arreglo[];
+
+        arreglo = lista.getListadoUsuarios().toArray();
+
+        for (i = 0; i < arreglo.length; i++) {
+            registro = (Usuario) arreglo[i];
+            listaOrdenIn.add(registro);
+        }
+        this.imprimirReporte(listaOrdenIn);
     }
 
     /**
@@ -48,29 +79,8 @@ public class Reporte {
      *
      * @param Lista
      */
-    public void ordenPartidasGanadas() {
-        ListaUsuarios objeto = new ListaUsuarios();
-
-
-
-    }
-
-    public int compare(Object primeraPartida, Object segundaPartida) {
-
-
-        Usuario primera = (Usuario) primeraPartida, segunda = (Usuario) segundaPartida;
-
-        //int resultado = primera.getNumPartidasGan().compareTo(segunda.getNumPartidasGan());
-
-        if (primera.getNumPartidasGan() == 0) {
-            return 0;
-        }
-
-        if (segunda.getNumPartidasGan() <= 0) {
-            return -1;
-        }
-
-        return 1;
+    public ListaUsuarios ordenPartidasGanadas(ListaUsuarios Lista) {
+        return null;
     }
 
     /**
@@ -81,3 +91,4 @@ public class Reporte {
         return null;
     }
 }
+

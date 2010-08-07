@@ -10,33 +10,25 @@ import java.io.*;
 
 public class ListaUsuarios {
 
+    private Set<Usuario> listadoUsuarios;
+
     public Set<Usuario> getListadoUsuarios() {
         return listadoUsuarios;
     }
 
-    private Set<Usuario> listadoUsuarios;
-    private SortedSet<Usuario> listaOrdenIn;
-    private SortedSet<Usuario> listaOrdenPartGan;
-    private SortedSet<Usuario> listaOrdenPartCreadas;
+    public void setListadoUsuarios(Set<Usuario> listadoUsuarios) {
+        this.listadoUsuarios = listadoUsuarios;
+    }
 
     public ListaUsuarios() {
         listadoUsuarios = new HashSet();
-        listaOrdenIn = new TreeSet(new ComparadorIngresos());
-        listaOrdenPartGan = new TreeSet(new ComparadorGanadas());
-        listaOrdenPartCreadas = new TreeSet(new ComparadorPartCreadas());
     }
 
     /*public void finalize() throws Throwable {
 
     }*/
     public boolean agregarUsuario(Usuario elUsuario) {
-        boolean flag;
-        flag = listadoUsuarios.add(elUsuario);
-        flag = listaOrdenIn.add(elUsuario);
-        flag = listaOrdenPartGan.add(elUsuario);
-        flag = listaOrdenPartCreadas.add(elUsuario);
-
-        return flag;
+        return (listadoUsuarios.add(elUsuario));
     }
 
     public void mostrarUsuario() {
@@ -44,11 +36,10 @@ public class ListaUsuarios {
         Usuario registro;
         Object arreglo[];
 
-        arreglo = listaOrdenPartGan.toArray();
+        arreglo = listadoUsuarios.toArray();
 
         for (i = 0; i < arreglo.length; i++) {
             registro = (Usuario) arreglo[i];
-            System.out.println("HOLAA");
 
             System.out.println("Nombre: " + registro.getNombre());
             System.out.println("Apellido: " + registro.getApellido());
@@ -60,7 +51,6 @@ public class ListaUsuarios {
             System.out.println("Puntaje: " + registro.getPuntaje());
         }
     }
-
 
     public boolean buscarNickname(Object elUsuario) {
         boolean encontrado = false;
@@ -109,6 +99,4 @@ public class ListaUsuarios {
         }
         return false;
     }
-
-    
 }

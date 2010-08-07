@@ -4,13 +4,14 @@
  */
 
 package Modelo;
-import java.util.Comparator;
 
 /**
  *
- * @author Sheryl
+ * @author Mis hijos
  */
+import java.util.*;
 public class ComparadorIngresos implements Comparator{
+
     public int compare(Object usuario1, Object usuario2){
     Usuario user1 = (Usuario) usuario1;
     Usuario user2 = (Usuario) usuario2;
@@ -27,4 +28,5 @@ public class ComparadorIngresos implements Comparator{
 
     return 1;
     }
+
 }
