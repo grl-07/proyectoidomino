@@ -15,10 +15,14 @@ import java.util.*;
 public class Reporte {
 
     private Set<Usuario> listaOrdenIn;
+    private Set<Usuario> listaOrdenPartGan;
+    private Set<Usuario> listaOrdenMayorScore;
     private Set<Usuario> listaOrdenCreadas;
 
     public Reporte() {
         listaOrdenIn = new TreeSet(new ComparadorIngresos());
+        listaOrdenPartGan = new TreeSet(new ComparadorGanadas());
+        listaOrdenMayorScore = new TreeSet(new ComparadorMayorScore());
         listaOrdenCreadas = new TreeSet(new ComparadorPartCreadas());
     }
 
@@ -49,17 +53,20 @@ public class Reporte {
                     break;
 
                 case 4:
-                    System.out.println("Nombre: " + registro.getNombre());
-                    System.out.println("Apellido: " + registro.getApellido());
-                    System.out.println("Clave: " + registro.getClave());
-                    System.out.println("Nickname: " + registro.getNickname());
-                    System.out.println("Avatar: " + registro.getAvatar());
-                    System.out.println("Numero de Partidas Ganadas: " + registro.getNumPartidasGan());
-                    System.out.println("Numero de Ingresos: " + registro.getNumIngresos());
-                    System.out.println("Puntaje: " + registro.getPuntaje());
-                    break;
+                    if ((i + 1) == arreglo.length) {
+                        System.out.println("Nombre: " + registro.getNombre());
+                        System.out.println("Apellido: " + registro.getApellido());
+                        System.out.println("Clave: " + registro.getClave());
+                        System.out.println("Nickname: " + registro.getNickname());
+                        System.out.println("Avatar: " + registro.getAvatar());
+                        System.out.println("Numero de Partidas Ganadas: " + registro.getNumPartidasGan());
+                        System.out.println("Numero de Ingresos: " + registro.getNumIngresos());
+                        System.out.println("Puntaje: " + registro.getPuntaje());
+                        break;
+                    }
             }
         }
+
     }
 
     /**
@@ -82,7 +89,6 @@ public class Reporte {
     }
 
     public void ordenarPorPartidasCreadas(ListaUsuarios lista) {
-
         int i;
         Usuario registro;
         Object arreglo[];
@@ -94,5 +100,34 @@ public class Reporte {
             listaOrdenCreadas.add(registro);
         }
         this.imprimirReporte(listaOrdenCreadas, 2);
+    }
+
+    public void ordenPartidasGanadas(ListaUsuarios lista) {
+        int i;
+        Usuario registro;
+        Object arreglo[];
+
+        arreglo = lista.getListadoUsuarios().toArray();
+
+        for (i = 0; i < arreglo.length; i++) {
+            registro = (Usuario) arreglo[i];
+            listaOrdenPartGan.add(registro);
+        }
+        this.imprimirReporte(listaOrdenPartGan,3);
+      
+    }
+
+    public void usuarioMayorScore(ListaUsuarios lista) {
+        int i;
+        Usuario registro;
+        Object arreglo[];
+
+        arreglo = lista.getListadoUsuarios().toArray();
+
+        for (i = 0; i < arreglo.length; i++) {
+            registro = (Usuario) arreglo[i];
+            listaOrdenMayorScore.add(registro); 
+        }
+        this.imprimirReporte(listaOrdenMayorScore, 4);
     }
 }
