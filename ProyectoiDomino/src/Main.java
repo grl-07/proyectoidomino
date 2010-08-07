@@ -24,9 +24,9 @@ public class Main {
         Partida laPartida = new Partida();
 
         //Agregar Usuario
-        listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 2, 0, 0));
-        listadoUsuarios.agregarUsuario(new Usuario("Alberly", "Martinez", "654321", "alberlykida12", "abe28", 0, 1, 0, 0));
-        listadoUsuarios.agregarUsuario(new Usuario("Sheryl", "Ravelo", "135790", "shishi348", "shi8", 0, 3, 0, 0));
+        listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 5, 9, 0));
+        listadoUsuarios.agregarUsuario(new Usuario("Alberly", "Martinez", "654321", "alberlykida12", "abe28", 0, 6, 5, 0));
+        listadoUsuarios.agregarUsuario(new Usuario("Sheryl", "Ravelo", "135790", "shishi348", "shi8", 0, 8, 1, 0));
 
         listadoUsuarios.mostrarUsuario();
 
@@ -117,5 +117,7 @@ public class Main {
         //REPORTE
         Reporte elReporte = new Reporte();
         elReporte.ordenarPorIngresos(listadoUsuarios);
+
+        elReporte.ordenarPorPartidasCreadas(listadoUsuarios);
     }
 }
