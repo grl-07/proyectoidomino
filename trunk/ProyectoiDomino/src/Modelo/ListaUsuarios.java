@@ -99,4 +99,28 @@ public class ListaUsuarios {
         }
         return false;
     }
+
+
+
+    public boolean comprobarDatos(String nickname, String password) {
+        int i;
+        Usuario registro;
+        Object arreglo[];
+        boolean confirm = false;
+
+        arreglo = listadoUsuarios.toArray();
+
+        for (i = 0; i < arreglo.length; i++) {
+            registro = (Usuario) arreglo[i];
+
+            if ((registro.nickname.equalsIgnoreCase(nickname)) && (registro.clave.equalsIgnoreCase(password))) {
+                confirm = true;
+            }
+        }
+        return confirm;
+
+    }
+
+
+
 }
