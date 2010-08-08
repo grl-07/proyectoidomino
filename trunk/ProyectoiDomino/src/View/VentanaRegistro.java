@@ -1,25 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * VentanaRegistro.java
- *
- * Created on 08/08/2010, 10:09:47 AM
- */
-
 package View;
+import Logica.Conector;
 
 /**
  *
- * @author Alberly
+ * @author Mis hijos
  */
 public class VentanaRegistro extends javax.swing.JFrame {
 
     /** Creates new form VentanaRegistro */
     public VentanaRegistro() {
         initComponents();
+        inicializarComponentesPropios();
     }
 
     /** This method is called from within the constructor to
@@ -32,31 +23,137 @@ public class VentanaRegistro extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jTxtName = new javax.swing.JTextField();
+        jTxtLastName = new javax.swing.JTextField();
+        jTxtNickname = new javax.swing.JTextField();
+        jTxtAvatar = new javax.swing.JTextField();
+        jBAceptar = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jPasswordFdRegister = new javax.swing.JPasswordField();
+        jPasswordField2 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("=) Registro");
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel1.setText("Name");
+
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel2.setText("Last Name");
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel3.setText("Nickname");
+
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel4.setText("Password");
+
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel5.setText("Confirm Password");
+
+        jLabel6.setText("Avatar");
+
+        jTxtName.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+
+        jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12));
+
+        jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
+
+        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
+
+        jBAceptar.setText("OK");
+        jBAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBAceptarActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Cancel");
+
+        jPasswordFdRegister.setText("jPasswordField1");
+
+        jPasswordField2.setText("jPasswordField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(178, 178, 178)
-                .addComponent(jLabel1)
-                .addContainerGap(167, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel6))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPasswordField2, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jTxtName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                                .addComponent(jTxtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                                .addComponent(jTxtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                                .addComponent(jTxtAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                                .addComponent(jPasswordFdRegister))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(163, 163, 163)
+                        .addComponent(jBAceptar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(150, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(136, 136, 136))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTxtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jTxtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBAceptar)
+                    .addComponent(jButton2))
+                .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
+        // TODO add your handling code here:
+
+        Conector.guardarDatos(jTxtName,jTxtLastName,jTxtNickname,jPasswordFdRegister,jTxtAvatar);
+    }//GEN-LAST:event_jBAceptarActionPerformed
+
+    public void inicializarComponentesPropios(){
+        Conector.inicializarEstructuras();
+    }
     /**
     * @param args the command line arguments
     */
@@ -69,7 +166,20 @@ public class VentanaRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBAceptar;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPasswordField jPasswordFdRegister;
+    private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JTextField jTxtAvatar;
+    private javax.swing.JTextField jTxtLastName;
+    private javax.swing.JTextField jTxtName;
+    private javax.swing.JTextField jTxtNickname;
     // End of variables declaration//GEN-END:variables
 
 }

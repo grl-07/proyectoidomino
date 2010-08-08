@@ -3,8 +3,10 @@
  * and open the template in the editor.
  */
 
-package View;
-import Modelo.*;
+package Logica;
+import datos.*;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
 
 /**
  *
@@ -26,6 +28,17 @@ public class Conector {
         confirm = false;
         confirm = listaDeUsuarios.comprobarDatos(nickname, password);
         return confirm;
+    }
+
+    public static void guardarDatos(JTextField nombre, JTextField apellido, JTextField username, JPasswordField clave , JTextField imagen){
+        String name = nombre.getText();
+        String lastName = apellido.getText();
+        String nickname = username.getText();
+        String password = clave.getText();
+        String avatar = imagen.getText();
+
+        listaDeUsuarios.agregarUsuario(new Usuario(name,lastName,password,nickname, avatar,0,0,0,0));
+        Archivo.guardarDatosArchivo(listaDeUsuarios);
     }
 
 }
