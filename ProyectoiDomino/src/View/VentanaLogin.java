@@ -10,6 +10,7 @@
  */
 
 package View;
+import Logica.Conector;
 import javax.swing.JOptionPane;
 /**
  *
