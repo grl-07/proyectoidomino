@@ -23,7 +23,9 @@ public class Conector {
         return true;
     }
 
-    public static boolean comprobarDatos(String nickname, String password){
+    public static boolean comprobarDatos(JTextField username, JPasswordField clave){
+        String nickname = username.getText();
+        String password = clave.getText();
         boolean confirm;
         confirm = false;
         confirm = listaDeUsuarios.comprobarDatos(nickname, password);
@@ -39,6 +41,13 @@ public class Conector {
 
         listaDeUsuarios.agregarUsuario(new Usuario(name,lastName,password,nickname, avatar,0,0,0,0));
         Archivo.guardarDatosArchivo(listaDeUsuarios);
+    }
+
+    public static boolean comprobarNickname(JTextField username){
+        Usuario elUsuario = new Usuario("","","",username.getText(),"",0,0,0,0);
+        if (listaDeUsuarios.buscarNickname(elUsuario) == false)
+            return false;
+        else return true;
     }
 
 }

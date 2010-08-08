@@ -1,6 +1,6 @@
 package View;
 import Logica.Conector;
-
+import javax.swing.*;
 /**
  *
  * @author Mis hijos
@@ -33,9 +33,9 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jTxtNickname = new javax.swing.JTextField();
         jTxtAvatar = new javax.swing.JTextField();
         jBAceptar = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonCancel = new javax.swing.JButton();
         jPasswordFdRegister = new javax.swing.JPasswordField();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        jPasswordFdConfirm = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,7 +56,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
         jLabel6.setText("Avatar");
 
-        jTxtName.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jTxtName.setFont(new java.awt.Font("Calibri", 0, 12));
 
         jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12));
 
@@ -71,11 +71,16 @@ public class VentanaRegistro extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Cancel");
+        jButtonCancel.setText("Cancel");
+        jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelActionPerformed(evt);
+            }
+        });
 
         jPasswordFdRegister.setText("jPasswordField1");
 
-        jPasswordField2.setText("jPasswordField1");
+        jPasswordFdConfirm.setText("jPasswordField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,7 +99,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                             .addComponent(jLabel6))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPasswordField2, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jTxtName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
                                 .addComponent(jTxtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
@@ -105,7 +110,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                         .addGap(163, 163, 163)
                         .addComponent(jBAceptar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)))
+                        .addComponent(jButtonCancel)))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -130,7 +135,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -138,7 +143,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBAceptar)
-                    .addComponent(jButton2))
+                    .addComponent(jButtonCancel))
                 .addGap(27, 27, 27))
         );
 
@@ -147,9 +152,20 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
+        if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())){            
 
-        Conector.guardarDatos(jTxtName,jTxtLastName,jTxtNickname,jPasswordFdRegister,jTxtAvatar);
+            if (Conector.comprobarNickname(jTxtNickname) == false){
+            Conector.guardarDatos(jTxtName,jTxtLastName,jTxtNickname,jPasswordFdRegister,jTxtAvatar);            
+            this.dispose();
+            }
+            else JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
+        }else JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
     }//GEN-LAST:event_jBAceptarActionPerformed
+
+    private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jButtonCancelActionPerformed
 
     public void inicializarComponentesPropios(){
         Conector.inicializarEstructuras();
@@ -167,15 +183,15 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBAceptar;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonCancel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JPasswordField jPasswordFdConfirm;
     private javax.swing.JPasswordField jPasswordFdRegister;
-    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JTextField jTxtAvatar;
     private javax.swing.JTextField jTxtLastName;
     private javax.swing.JTextField jTxtName;
