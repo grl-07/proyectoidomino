@@ -1,4 +1,8 @@
-import datos.*;
+import datos.Partida;
+import datos.Reporte;
+import datos.Usuario;
+import datos.ListaUsuarios;
+//import datos.*;
 import java.io.*;
 //import com.toedter.calendar.*;
 

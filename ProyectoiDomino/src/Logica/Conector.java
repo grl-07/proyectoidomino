@@ -4,7 +4,10 @@
  */
 
 package Logica;
-import datos.*;
+import datos.Usuario;
+import datos.ListaUsuarios;
+import datos.Archivo;
+import datos.Partida;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 
@@ -49,5 +52,14 @@ public class Conector {
             return false;
         else return true;
     }
+
+    public static void obtenerIDPartida(JTextField numPartida)  {
+        //float numero;
+        Partida laPartida = new Partida();
+        //ListaUsuarios.devolverNumPartida();
+
+        numPartida.setText("129128");// + ListaUsuarios.devolverNumPartida());
+            //apellido.setText(registro.getApellido());
+     }
 
 }

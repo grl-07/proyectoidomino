@@ -1,4 +1,4 @@
-package datos;
+package Modelo;
 
 /**
  * @author Mis hijos
@@ -18,15 +18,6 @@ public class Usuario {
     protected int numIngresos;
     protected int numPartCreadas;
     protected int puntaje;
-    int ID;
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
    // protected JCalendar fechaNac;
 
  /*   public JCalendar getFechaNac() {
@@ -121,16 +112,14 @@ public class Usuario {
         this.puntaje = puntaje;
     }
 
-    public int hashCode()
-    {
+    public int hashCode() {
        int hash = 0;
        hash += (nickname != null ? nickname.hashCode():0);
 
        return hash;
     }
 
-    public boolean equals(Object objeto)
-    {
+    public boolean equals(Object objeto) {
         Usuario segundoObjeto;
 
         if (! (objeto instanceof Usuario))
