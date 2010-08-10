@@ -18,15 +18,6 @@ public class Usuario {
     protected int numIngresos;
     protected int numPartCreadas;
     protected int puntaje;
-    int ID;
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
    // protected JCalendar fechaNac;
 
  /*   public JCalendar getFechaNac() {

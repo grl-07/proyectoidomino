@@ -37,7 +37,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jPasswordFdRegister = new javax.swing.JPasswordField();
         jPasswordFdConfirm = new javax.swing.JPasswordField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel1.setText("Name");
@@ -51,19 +51,21 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel4.setText("Password");
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel5.setText("Confirm Password");
 
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel6.setText("Avatar");
 
-        jTxtName.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtName.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
-        jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
-        jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
-        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
+        jBAceptar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jBAceptar.setText("OK");
         jBAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +73,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
             }
         });
 
+        jButtonCancel.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jButtonCancel.setText("Cancel");
         jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,9 +81,9 @@ public class VentanaRegistro extends javax.swing.JFrame {
             }
         });
 
-        jPasswordFdRegister.setText("jPasswordField1");
+        jPasswordFdRegister.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
-        jPasswordFdConfirm.setText("jPasswordField1");
+        jPasswordFdConfirm.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,7 +143,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBAceptar)
                     .addComponent(jButtonCancel))
