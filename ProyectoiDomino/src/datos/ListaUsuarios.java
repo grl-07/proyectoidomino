@@ -121,13 +121,6 @@ public class ListaUsuarios {
 
     }
 
-    public static float devolverNumPartida() {
-        Partida laPartida = new Partida();
-        float numPartida = laPartida.getIDPartida();
-
-        return numPartida;
-    }
-
 
 
 }
