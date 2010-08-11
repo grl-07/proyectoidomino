@@ -200,18 +200,8 @@
       </Events>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPasswordFdRegister">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Calibri" size="12" style="0"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPasswordFdConfirm">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Calibri" size="12" style="0"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

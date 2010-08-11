@@ -9,7 +9,6 @@
  * Created on 08/08/2010, 10:04:23 AM
  */
 package View;
-//import Logica.Conector;
 import javax.swing.JOptionPane;
 import Logica.*;
 
@@ -140,15 +139,18 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
-        boolean confirm;
-        confirm = false;
-        confirm = Conector.comprobarDatos(txtNickname, txtPassword);
+        String mensaje = ConexionJsockets.solicitudServidor1(txtNickname, txtPassword);
+        if (mensaje.equals("TRUE")) {
+            boolean confirm;
+            confirm = false;
+            confirm = Conector.comprobarDatos(txtNickname, txtPassword);
 
-        if (confirm == true) {
-            new VentanaMenu().setVisible(true);
-            this.dispose();
-        } else {
-            JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
+            if (confirm == true) {
+                new VentanaMenu().setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
+            }
         }
     }//GEN-LAST:event_btnOKActionPerformed
 
