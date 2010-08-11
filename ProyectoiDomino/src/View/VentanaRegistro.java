@@ -1,6 +1,7 @@
 package View;
-import Logica.Conector;
+import Logica.*;
 import javax.swing.*;
+
 /**
  *
  * @author Mis hijos
@@ -10,7 +11,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
     /** Creates new form VentanaRegistro */
     public VentanaRegistro() {
         initComponents();
-        inicializarComponentesPropios();
+        //inicializarComponentesPropios();
     }
 
     /** This method is called from within the constructor to
@@ -155,14 +156,22 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
-        if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())){            
+        
+        if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())) {
 
-            if (Conector.comprobarNickname(jTxtNickname) == false){
-            Conector.guardarDatos(jTxtName,jTxtLastName,jTxtNickname,jPasswordFdRegister,jTxtAvatar);            
-            this.dispose();
+            if (Conector.comprobarNickname(jTxtNickname) == false) {
+                String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
+                if (mensaje.equals("TRUE")) {
+                    Conector.guardarDatos(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
+
+                    this.dispose();
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
             }
-            else JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
-        }else JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
+        }
     }//GEN-LAST:event_jBAceptarActionPerformed
 
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
@@ -170,9 +179,9 @@ public class VentanaRegistro extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
-    public void inicializarComponentesPropios(){
+    /*public void inicializarComponentesPropios(){
         Conector.inicializarEstructuras();
-    }
+    }*/
     /**
     * @param args the command line arguments
     */

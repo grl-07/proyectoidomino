@@ -26,8 +26,19 @@
         <nombre>Sheryl</nombre>
         <apellido>Ravelo</apellido>
         <nickname>shishi348</nickname>
-        <clave>789102</clave>
+        <clave>135790</clave>
         <avatar>shi69</avatar>
+        <numPartGan>0</numPartGan>
+        <numIngresos>0</numIngresos>
+        <numPartCreadas>0</numPartCreadas>
+        <puntaje>0</puntaje>
+    </Usuario>
+    <Usuario>
+        <nombre>Herminia</nombre>
+        <apellido>Marquez</apellido>
+        <nickname>hermi1</nickname>
+        <clave>12345</clave>
+        <avatar>her1</avatar>
         <numPartGan>0</numPartGan>
         <numIngresos>0</numIngresos>
         <numPartCreadas>0</numPartCreadas>

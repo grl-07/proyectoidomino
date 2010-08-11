@@ -16,6 +16,10 @@ public class Conector {
 
     private static ListaUsuarios listaDeUsuarios;
 
+    public static ListaUsuarios getListaDeUsuarios() {
+        return listaDeUsuarios;
+    }
+
     public static boolean inicializarEstructuras() {
         listaDeUsuarios = new ListaUsuarios();
         Archivo.cargarDatosArchivo(listaDeUsuarios);
@@ -51,6 +55,10 @@ public class Conector {
         }
     }
 
+    public static boolean llamarCliente(Usuario elUsuario) {
+       //ClienteTest.main(args, elUsuario);
+       return false;
+   }
 
     public static void solicitarCargaDeDatos() {
         Archivo.cargarPiedrasArchivo(Datos.getListaDePiedras());
@@ -59,5 +67,4 @@ public class Conector {
     public static void solicitarImpresionPiedras() {
         Datos.getListaDePiedras().imprimirListaPiedras();
     }
-    
 }

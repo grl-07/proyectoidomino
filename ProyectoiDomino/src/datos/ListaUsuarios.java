@@ -6,7 +6,6 @@ package datos;
  * @created 01-Aug-2010 5:29:46 PM
  */
 import java.util.*;
-import java.io.*;
 
 public class ListaUsuarios {
 
@@ -122,9 +121,27 @@ public class ListaUsuarios {
             }
         }
         return confirm;
+    }
+
+    public Usuario buscarDatos(Object elUsuario) {
+        boolean encontrado = false;
+        Usuario auxiliar = null;
+        Iterator iterador = listadoUsuarios.iterator();
+
+        while (!encontrado && iterador.hasNext()) {
+            auxiliar = (Usuario) iterador.next();
+
+            if (elUsuario.equals(auxiliar)) {
+                encontrado = true;
+            }
+        }
+
+        if (encontrado) {
+            return auxiliar;
+        }
+        return null;
 
     }
 
-
-
 }
+
