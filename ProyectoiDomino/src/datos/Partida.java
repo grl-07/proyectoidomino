@@ -36,24 +36,27 @@ public class Partida {
     }
 
     //Constructor
-    public Partida() {
-        elUsuario = new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 0, 0, 0, 0);
+    public Partida(Usuario elUsuario) {
+        this.elUsuario = elUsuario;
+
     }
 
-    /*public void finalize() throws Throwable {
-
-    }*/
     public void cargarPartida() {
     }
 
-    public void crearPartida() {
+    public void crearPartida(Usuario elUsuario) {
         int i = 0, j = 0;
 
         ListaPiedras laListaPiedras;
         laListaPiedras = new ListaPiedras();
 
-        System.out.println("Partida creada por " + elUsuario.nombre);
-        Jugador elJugador = new Jugador(elUsuario.nombre, elUsuario.apellido, elUsuario.clave, elUsuario.nickname, elUsuario.avatar, elUsuario.numPartidasGan, elUsuario.numIngresos, elUsuario.numPartidasGan, elUsuario.puntaje);
+        System.out.println("Partida creada por " + elUsuario.getNombre());
+        this.setElUsuario(elUsuario);
+        this.setIDPartida(1);
+
+
+
+        Jugador elJugador = new Jugador(elUsuario.getNombre(), elUsuario.getApellido(), elUsuario.getClave(), elUsuario.getNickname(), elUsuario.getAvatar(), elUsuario.getNumPartidasGan(), elUsuario.getNumIngresos(), elUsuario.getNumPartCreadas(), elUsuario.getPuntaje());
         Maquina laMaquina = new Maquina();
         Mesa laMesa = new Mesa();
 
@@ -66,10 +69,6 @@ public class Partida {
         }
 
         laListaPiedras.elRepartidor(elJugador, laMaquina, laMesa);
-    }
-
-    public boolean guardarPartida() {
-        return false;
     }
 
     public void salirPartida() {

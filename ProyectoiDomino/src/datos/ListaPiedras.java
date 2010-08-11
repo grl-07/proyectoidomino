@@ -22,14 +22,20 @@ public class ListaPiedras {
         this.laListaPiedras = laListaPiedras;
     }
 
-    //Iterator iterator;
+
+      public Iterator getIterator()
+    {
+        return laListaPiedras.iterator();
+    }
+
+
     //Constructor
     public ListaPiedras() {
         laListaPiedras = new ArrayList();
     }
 
-    public void agregarPiedra(Piedra laPiedra) {
-        laListaPiedras.add(laPiedra);
+    public boolean agregarPiedra(Piedra laPiedra) {
+        return laListaPiedras.add(laPiedra);
     }
 
     public boolean eliminarPiedra(ArrayList laLista, Piedra laPiedra) {

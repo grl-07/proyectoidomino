@@ -8,10 +8,11 @@
  *
  * Created on 08/08/2010, 10:04:23 AM
  */
-
 package View;
-import Logica.Conector;
+//import Logica.Conector;
 import javax.swing.JOptionPane;
+import Logica.*;
+
 /**
  *
  * @author Alberly
@@ -74,8 +75,6 @@ public class VentanaLogin extends javax.swing.JFrame {
             }
         });
 
-        txtPassword.setText("jPasswordField1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -129,12 +128,14 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
+
         System.exit(0);
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
         // TODO add your handling code here:
-        new VentanaRegistro().setVisible(true);        
+        new VentanaRegistro().setVisible(true);
+
     }//GEN-LAST:event_btnSignUpActionPerformed
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
@@ -151,24 +152,25 @@ public class VentanaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnOKActionPerformed
 
-     private void inicializarComponentesPropios()
-    {
+    private void inicializarComponentesPropios() {
         Conector.inicializarEstructuras();
+        Datos.inicializarListasDeDatos();
+        Conector.solicitarCargaDeDatos();
+        Conector.solicitarImpresionPiedras();
+
     }
+
     /**
-    * @param args the command line arguments
-    */
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
                 new VentanaLogin().setVisible(true);
             }
         });
     }
-
-
-
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnOK;
@@ -179,5 +181,4 @@ public class VentanaLogin extends javax.swing.JFrame {
     private javax.swing.JTextField txtNickname;
     private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
-
 }
