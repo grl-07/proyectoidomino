@@ -10,18 +10,18 @@ import java.io.*;
 
 public class ListaUsuarios {
 
-    private Set<Usuario> listadoUsuarios;
+    private List<Usuario> listadoUsuarios;
 
-    public Set<Usuario> getListadoUsuarios() {
+    public List<Usuario> getListadoUsuarios() {
         return listadoUsuarios;
     }
 
-    public void setListadoUsuarios(Set<Usuario> listadoUsuarios) {
+    public void setListadoUsuarios(List<Usuario> listadoUsuarios) {
         this.listadoUsuarios = listadoUsuarios;
     }
 
     public ListaUsuarios() {
-        listadoUsuarios = new HashSet();
+        listadoUsuarios = new ArrayList();
     }
 
     /*public void finalize() throws Throwable {
@@ -29,6 +29,10 @@ public class ListaUsuarios {
     }*/
     public boolean agregarUsuario(Usuario elUsuario) {
         return (listadoUsuarios.add(elUsuario));
+    }
+
+    public Iterator getIterator(){
+        return listadoUsuarios.iterator();
     }
 
     public void mostrarUsuario() {

@@ -19,7 +19,7 @@ public class Conector {
     public static boolean inicializarEstructuras()
     {
         listaDeUsuarios = new ListaUsuarios();
-        Archivo.cargarDatosDeArchivo(listaDeUsuarios);
+        Archivo.cargarDatosArchivo(listaDeUsuarios);
         return true;
     }
 
