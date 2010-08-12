@@ -20,7 +20,6 @@ public class PruebaJsockets implements LogicaServidor {
         Usuario elUsuario = new Usuario("","","","","",0,0,0,0);
         elUsuario.setID(Integer.parseInt(subArg[0]));
         int opcion = elUsuario.getID();
-        System.out.println("ID =  " + opcion);
         switch (opcion) {
             case 1:
                 elUsuario.setNickname(subArg[1]);
@@ -60,11 +59,14 @@ public class PruebaJsockets implements LogicaServidor {
         String resultado = "FALSE";
         String cadena;
         String[] subArg;
+        //Usuario registro = null;
+        //System.out.println("NICKNAME = " +elUsuario.getNickname());
+        //registro = ConexionJsockets.obtenerDatosDeUsuario(elUsuario.getNickname());
 
         switch (opcion) { //estas impresiones salen en el servidor
                 case 1:
+                    //resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar();
                     resultado = "TRUE:" + elUsuario.getNickname() + ":" + elUsuario.getClave();
-                    
                     System.out.println("operacion exitosa -->" + resultado);
                     break;
                 case 2:
