@@ -146,7 +146,14 @@ public class VentanaLogin extends javax.swing.JFrame {
             confirm = Conector.comprobarDatos(txtNickname, txtPassword);
 
             if (confirm == true) {
-                new VentanaMenu().setVisible(true);
+                VentanaMenu ventanaMenu;
+                ventanaMenu = new VentanaMenu(this);
+                ventanaMenu.setVisible(true);
+
+                ventanaMenu.setDatosUsuario(Conector.obtenerNombre(txtNickname),Conector.obtenerApellido(txtNickname),txtNickname.getText());
+
+                //ventanaMenu.setDatosUsuario("SHERYL","RAVELO");
+                //new VentanaMenu().setVisible(true);
                 this.dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");

@@ -16,9 +16,9 @@ import ve.edu.ucab.cliente.ClienteSocket;
 public class ConexionJsockets {
     private static ListaUsuarios listaDeUsuarios;
 
-    public static Usuario obtenerDatosDeUsuario(JTextField nickname) {
+    public static Usuario obtenerDatosDeUsuario(String nickname) {
         listaDeUsuarios = Conector.getListaDeUsuarios();
-        Usuario auxiliar = new Usuario("","","",nickname.getText(),"",0,0,0,0);
+        Usuario auxiliar = new Usuario("","","",nickname,"",0,0,0,0);
        return (listaDeUsuarios.buscarDatos(auxiliar));
         
     }
@@ -26,17 +26,19 @@ public class ConexionJsockets {
     public static String solicitudServidor1(JTextField username, JPasswordField clave) {
         ClienteSocket cliente = new ClienteSocket();
         Usuario elUsuario = null;
-        elUsuario = obtenerDatosDeUsuario(username);
         String opcion = "1";
         String nickname = username.getText();
         String password = clave.getText();
+        elUsuario = obtenerDatosDeUsuario(nickname);
         String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
         //System.out.println(resultado);
         String[] subArg = resultado.split(":");
         resultado = subArg[0];
         if (resultado.equals("TRUE")) {
+            //System.out.println("Acceso al sistema -> de " + subArg[1] + " " + subArg[2] + " " + subArg[3]);
             System.out.println("Acceso al sistema -> de " + elUsuario.getNombre() + " " + elUsuario.getApellido());
         }
+        //System.out.println("RESULTADO = " +resultado);
         return resultado;
     }
 
@@ -112,4 +114,5 @@ public class ConexionJsockets {
         System.out.println(resultado);
         return resultado;
     }
+       
 }

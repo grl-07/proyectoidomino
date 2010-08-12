@@ -67,4 +67,24 @@ public class Conector {
     public static void solicitarImpresionPiedras() {
         Datos.getListaDePiedras().imprimirListaPiedras();
     }
+
+    public static String obtenerNombre(JTextField username) {
+        String nickname = username.getText();
+        Usuario registro = new Usuario("","","",nickname,"",0,0,0,0);
+        String nombre = "";
+
+        registro = listaDeUsuarios.buscarDatos(registro);
+        nombre = (registro.getNombre());
+        return nombre;
+    }
+
+    public static String obtenerApellido(JTextField username) {
+        String nickname = username.getText();
+        Usuario registro = new Usuario("","","",nickname,"",0,0,0,0);
+        String apellido = "";
+
+        registro = listaDeUsuarios.buscarDatos(registro);
+        apellido = (registro.getApellido());
+        return apellido;
+    }
 }
