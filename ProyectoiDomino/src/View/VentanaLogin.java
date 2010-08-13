@@ -140,32 +140,25 @@ public class VentanaLogin extends javax.swing.JFrame {
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
         String mensaje = ConexionJsockets.solicitudServidor1(txtNickname, txtPassword);
+        //System.out.println("EL SERVIDOR RESPONDE " + mensaje);
+        String[] subArg = mensaje.split(":");
+        mensaje = subArg[0];
         if (mensaje.equals("TRUE")) {
-            boolean confirm;
-            confirm = false;
-            confirm = Conector.comprobarDatos(txtNickname, txtPassword);
 
-            if (confirm == true) {
-                VentanaMenu ventanaMenu;
-                ventanaMenu = new VentanaMenu(this);
-                ventanaMenu.setVisible(true);
+            VentanaMenu ventanaMenu;
+            ventanaMenu = new VentanaMenu(this);
+            ventanaMenu.setVisible(true);
 
-                ventanaMenu.setDatosUsuario(Conector.obtenerNombre(txtNickname),Conector.obtenerApellido(txtNickname),txtNickname.getText());
+            ventanaMenu.setDatosUsuario(subArg[1], subArg[2], subArg[3]);
+            this.dispose();
 
-                //ventanaMenu.setDatosUsuario("SHERYL","RAVELO");
-                //new VentanaMenu().setVisible(true);
-                this.dispose();
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
-            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
         }
     }//GEN-LAST:event_btnOKActionPerformed
 
     private void inicializarComponentesPropios() {
-        Conector.inicializarEstructuras();
-        Datos.inicializarListasDeDatos();
-        Conector.solicitarCargaDeDatos();
-        Conector.solicitarImpresionPiedras();
+        
 
     }
 

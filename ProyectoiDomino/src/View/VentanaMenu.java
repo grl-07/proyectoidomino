@@ -37,34 +37,33 @@ public class VentanaMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jBCrearPartida = new javax.swing.JButton();
         jBCargarPartida = new javax.swing.JButton();
         jBModificar = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLBienvenida = new javax.swing.JLabel();
         jTextNombre = new javax.swing.JTextField();
         jTextApellido = new javax.swing.JTextField();
         jLNombre = new javax.swing.JLabel();
         jLApellido = new javax.swing.JLabel();
+        jTexIcono = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Bienvenida iDomino");
 
-        jBCrearPartida.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jBCrearPartida.setFont(new java.awt.Font("Calibri", 0, 12));
         jBCrearPartida.setText("New Game");
         jBCrearPartida.setName("jBCrearPartida"); // NOI18N
 
-        jBCargarPartida.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jBCargarPartida.setFont(new java.awt.Font("Calibri", 0, 12));
         jBCargarPartida.setText("Load Game");
 
-        jBModificar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jBModificar.setFont(new java.awt.Font("Calibri", 0, 12));
         jBModificar.setText("Modify Info");
 
-        jLBienvenida.setFont(new java.awt.Font("Corbel", 0, 24)); // NOI18N
+        jLBienvenida.setFont(new java.awt.Font("Corbel", 0, 24));
 
         jTextNombre.setEditable(false);
-        jTextNombre.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        jTextNombre.setFont(new java.awt.Font("Calibri", 1, 12));
         jTextNombre.setBorder(null);
         jTextNombre.setSelectionColor(new java.awt.Color(51, 51, 255));
         jTextNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +73,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         });
 
         jTextApellido.setEditable(false);
-        jTextApellido.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
+        jTextApellido.setFont(new java.awt.Font("Calibri", 1, 12));
         jTextApellido.setBorder(null);
         jTextApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,11 +81,19 @@ public class VentanaMenu extends javax.swing.JFrame {
             }
         });
 
-        jLNombre.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLNombre.setFont(new java.awt.Font("Calibri", 0, 12));
         jLNombre.setText("Nombre:");
 
-        jLApellido.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLApellido.setFont(new java.awt.Font("Calibri", 0, 12));
         jLApellido.setText("Apellido:");
+
+        jTexIcono.setEditable(false);
+        jTexIcono.setBorder(null);
+        jTexIcono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTexIconoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,35 +113,27 @@ public class VentanaMenu extends javax.swing.JFrame {
                                 .addComponent(jLNombre)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(103, 103, 103)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(243, 243, 243)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(103, 103, 103)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(2, 2, 2)
-                                            .addComponent(jBCargarPartida))
-                                        .addComponent(jBModificar))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBCrearPartida)))))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jBCargarPartida)
+                                .addComponent(jBModificar))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jBCrearPartida))))
+                    .addComponent(jTexIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(55, 55, 55)
                 .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jTexIcono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLNombre)
                             .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -142,9 +141,7 @@ public class VentanaMenu extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLApellido)
                             .addComponent(jTextApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(75, 75, 75)
-                        .addComponent(jLabel1)
-                        .addContainerGap())
+                        .addGap(75, 75, 75))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addComponent(jBCrearPartida)
@@ -153,8 +150,8 @@ public class VentanaMenu extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(60, 60, 60)
                                 .addComponent(jBModificar))
-                            .addComponent(jBCargarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())))
+                            .addComponent(jBCargarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
 
         pack();
@@ -168,12 +165,17 @@ public class VentanaMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextApellidoActionPerformed
 
-    public void setDatosUsuario(String nombre,String apellido,String nickname)
+    private void jTexIconoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTexIconoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTexIconoActionPerformed
+
+    public void setDatosUsuario(String nombre,String apellido,String avatar)
     {
         jTextNombre.setText(nombre);
         jTextApellido.setText(apellido);
+        jTexIcono.setText(avatar);
 
-        jLBienvenida.setText(" Bienvenido " + "\"" +nickname + "\"" + " a iDomino");
+        jLBienvenida.setText(" Bienvenido " + nombre + " " + apellido + " a iDomino");
 
     }
     /**
@@ -194,8 +196,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLApellido;
     private javax.swing.JLabel jLBienvenida;
     private javax.swing.JLabel jLNombre;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField jTexIcono;
     private javax.swing.JTextField jTextApellido;
     private javax.swing.JTextField jTextNombre;
     // End of variables declaration//GEN-END:variables

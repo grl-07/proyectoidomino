@@ -156,19 +156,15 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
-        
-        if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())) {
+       if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())) {
+           String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
 
-            if (Conector.comprobarNickname(jTxtNickname) == false) {
-                String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
-                if (mensaje.equals("TRUE")) {
-                    Conector.guardarDatos(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
-
-                    this.dispose();
-                }
+           if (mensaje.equals("TRUE")) {
+               System.out.println(mensaje);
+               this.dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
-            }
+           }
         } else {
             JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
         }

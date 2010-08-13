@@ -29,10 +29,10 @@ public class PruebaJsockets implements LogicaServidor {
                 elUsuario.setNickname(subArg[1]);
                 break;
             case 3:
-                elUsuario.setNickname(subArg[1]);
-                elUsuario.setClave(subArg[2]);
-                elUsuario.setNombre(subArg[3]);
-                elUsuario.setApellido(subArg[4]);
+                elUsuario.setNombre(subArg[1]);
+                elUsuario.setApellido(subArg[2]);
+                elUsuario.setNickname(subArg[3]);
+                elUsuario.setClave(subArg[4]);
                 elUsuario.setAvatar(subArg[5]);
                 break;
             case 4:
@@ -59,15 +59,18 @@ public class PruebaJsockets implements LogicaServidor {
         String resultado = "FALSE";
         String cadena;
         String[] subArg;
-        //Usuario registro = null;
+        Usuario registro = null;
         //System.out.println("NICKNAME = " +elUsuario.getNickname());
-        //registro = ConexionJsockets.obtenerDatosDeUsuario(elUsuario.getNickname());
+        
 
         switch (opcion) { //estas impresiones salen en el servidor
                 case 1:
-                    //resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar();
-                    resultado = "TRUE:" + elUsuario.getNickname() + ":" + elUsuario.getClave();
-                    System.out.println("operacion exitosa -->" + resultado);
+                    boolean confirm = Conector.comprobarDatos(elUsuario.getNickname(),elUsuario.getClave());
+                    if (confirm == true) {
+                        registro = ConexionJsockets.obtenerDatosDeUsuario(elUsuario.getNickname());
+                        resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar();
+                        System.out.println("EN SERVIDOR Entrar al sistema -->" + resultado);
+                    }
                     break;
                 case 2:
                     cadena = "TRUE:" + elUsuario.getNickname() + ":FechaCreacionPartida";
@@ -76,10 +79,11 @@ public class PruebaJsockets implements LogicaServidor {
                     System.out.println("Crear partida (devuelve las puiezas) -> " + cadena);
                     break;
                 case 3:
-                    cadena = "TRUE";
-                    subArg = cadena.split(":");
-                    resultado = subArg[0];
-                    System.out.println("Registro -> " + cadena);
+                    if (Conector.comprobarNickname(elUsuario.getNickname()) == false) {
+                        Conector.guardarDatos(elUsuario.getNombre(), elUsuario.getApellido(), elUsuario.getNickname(), elUsuario.getClave(), elUsuario.getAvatar());
+                        resultado = "TRUE";
+                        System.out.println("EN SERVIDOR Registro del sistema -> " + resultado);
+                    }
                     break;
                 case 4:
                     cadena = "TRUE:" + elUsuario.getNickname() + ":IDPartida";
