@@ -25,20 +25,17 @@ public class ConexionJsockets {
 
     public static String solicitudServidor1(JTextField username, JPasswordField clave) {
         ClienteSocket cliente = new ClienteSocket();
-        Usuario elUsuario = null;
         String opcion = "1";
         String nickname = username.getText();
         String password = clave.getText();
-        elUsuario = obtenerDatosDeUsuario(nickname);
         String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
-        //System.out.println(resultado);
-        String[] subArg = resultado.split(":");
-        resultado = subArg[0];
+        System.out.println("RESULTADO = " + resultado);
         if (resultado.equals("TRUE")) {
-            //System.out.println("Acceso al sistema -> de " + subArg[1] + " " + subArg[2] + " " + subArg[3]);
-            System.out.println("Acceso al sistema -> de " + elUsuario.getNombre() + " " + elUsuario.getApellido());
+            System.out.println("CLIENTE Entro al sistema ->" + nickname );
         }
-        //System.out.println("RESULTADO = " +resultado);
+        else {
+            System.out.println("FALSE");
+        }
         return resultado;
     }
 
@@ -61,10 +58,11 @@ public class ConexionJsockets {
         String apellido = lastName.getText();
         String avatar = IDavatar.getText();
         String resultado = cliente.ejecutarPeticion(opcion + ":" + nombre + ":" + apellido + ":" + nickname + ":" + password + ":" + avatar, "localhost", 7687);
-        String[] subArg = resultado.split(":");
-        resultado = subArg[0];
+        System.out.println("RESULTADO = " + resultado);
         if (resultado.equals("TRUE")) {
-            System.out.println("Registro en el sistema -> de " + nombre + " " + apellido);
+            System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
+        } else {
+            System.out.println("FALSE");
         }
         return resultado;
     }

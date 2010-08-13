@@ -141,6 +141,7 @@ public class Usuario {
 
         //if (this.nombre.equals(segundoObjeto.nombre) && this.apellido.equals(segundoObjeto.apellido) && this.cargo.equals(segundoObjeto.cargo))
         if (this.nickname.hashCode() == segundoObjeto.nickname.hashCode())
+        //if (this.nickname.equals(segundoObjeto.getNickname()))
         {
             return true;
         }
