@@ -75,13 +75,12 @@ public class PruebaJsockets implements LogicaServidor {
                     }
                     break;
                 case 2:
-                     Datos.crearPartida(elUsuario.getNickname());
-                    resultado = "TRUE:" + elUsuario.getNickname() + ":" + laPartida.getFechaIni();
-                    //subArg = resultado.split(":");
-                    //resultado = subArg[0];
-                    System.out.println("Crear partida (devuelve las puiezas) -> " + resultado);
-                    subArg = resultado.split(":");
-                    resultado = subArg[0];
+                    Partida partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
+                     //Datos.crearPartida(elUsuario.getNickname());
+                    String cadenaPiedras;
+                    cadenaPiedras = partidaNueva.getElJuego().getLaMesa().getElPozo().obtenerPiedras();
+                    System.out.println("cadenaPiedras =  " + cadenaPiedras);
+                    resultado = cadenaPiedras;
                     break;
                 case 3:
                     if (Conector.comprobarNickname(elUsuario.getNickname()) == false) {

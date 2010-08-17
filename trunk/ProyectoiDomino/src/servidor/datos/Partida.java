@@ -74,6 +74,8 @@ public class Partida {
         this.elUsuario = elUsuario;
         this.fechaIni = fechaIni;
         this.fechaactual = fechaactual;
+        this.elJuego = elJuego;
+        this.IDPartida = IDPartida;
     }
 
     public Partida(Usuario elUsuario, int IDPartida, String fechaIni, String fechaactual) {
@@ -116,16 +118,18 @@ public class Partida {
 
         laListaPiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());
 
-        System.out.println("PIEDRAS DEL JUGADOR");
+        /*System.out.println("PIEDRAS DEL JUGADOR");
+
         elJuego.getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
         System.out.println("PIEDRAS DE LA MÁQUINA");
         elJuego.getJugador2().getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
         System.out.println("PIEDRAS EN EL POZO");
-        elJuego.getLaMesa().getElPozo().imprimirListaPiedras();
+        elJuego.getLaMesa().getElPozo().imprimirListaPiedras();*/
 
         Partida laPartida;
         elUsuario = new Usuario("", "", "", nickname, "");
         laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual, elJuego);
+
 
         return (laPartida);
     }

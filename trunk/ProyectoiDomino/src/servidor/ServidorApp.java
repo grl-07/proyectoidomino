@@ -19,7 +19,7 @@ public class ServidorApp {
         Conector.solicitarCargaDeDatos();
         Conector.solicitarImpresionPiedras();
 
-        String[] parametros = {"7687", "servidor.logica.PruebaJsockets"};
+        String[] parametros = {"9999", "servidor.logica.PruebaJsockets"};
         Servidor.main(parametros);
     }
 }

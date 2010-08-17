@@ -74,6 +74,29 @@ public class ListaPiedras {
         }
 
     }
+    
+     public String obtenerPiedras() {
+
+        int i;
+        Object[] arregloPiedras;
+        arregloPiedras = laListaPiedras.toArray();
+        Piedra registro;
+        String cadena;
+        String cadenaAcum = "";
+        String dosPuntos = "";
+        for (i = 0; i < arregloPiedras.length; i++) {
+            registro = (Piedra) arregloPiedras[i];
+            cadena = registro.getNum1() + "-" + registro.getNum2();
+            if (i != 0) {
+                dosPuntos = ":";
+            }
+            cadenaAcum = cadena + dosPuntos + cadenaAcum;
+
+            //System.out.println("CadenaAcum =  " + cadenaAcum);
+        }
+        return cadenaAcum;
+
+    }
 
     /*public boolean aprobarPiedra(Piedra laPiedra) {
 

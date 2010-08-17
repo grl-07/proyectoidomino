@@ -57,6 +57,12 @@ public class ListaPartidas {
         return laListaPartidas.add(laPartida);
     }
 
+   /* public Partida crearPartida(String nickname) {
+        Partida laPartida = new Partida().crearPartida(nickname);
+        laListaPartidas.add(laPartida);
+        return laPartida;
+    }*/
+
     public boolean agregarPartida(Partida laPartida) {
         return laListaPartidas.add(laPartida);
     }
