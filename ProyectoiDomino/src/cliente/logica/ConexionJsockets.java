@@ -19,7 +19,7 @@ public class ConexionJsockets {
         String opcion = "1";
         String nickname = username.getText();
         String password = clave.getText();
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println("RESULTADO = " + resultado);
         String [] subArg = resultado.split(":");
         String respuesta = subArg[0];
@@ -36,8 +36,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String nickname = username.getText();
         String opcion = "2";
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + fechaInicio, "localhost", 7687);
-
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + fechaInicio, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -50,7 +49,7 @@ public class ConexionJsockets {
         String nombre = name.getText();
         String apellido = lastName.getText();
         //String avatar = IDavatar.getText();
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nombre + ":" + apellido + ":" + nickname + ":" + password + ":" + avatar, "localhost", 7687);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nombre + ":" + apellido + ":" + nickname + ":" + password + ":" + avatar, "localhost", 9999);
         System.out.println("RESULTADO = " + resultado);
         if (resultado.equals("TRUE")) {
             System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
@@ -65,7 +64,7 @@ public class ConexionJsockets {
         String nickname = username.getText();
         String password = clave.getText();
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -74,7 +73,7 @@ public class ConexionJsockets {
         String nickname = username.getText();
         String password = clave.getText();
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -83,7 +82,7 @@ public class ConexionJsockets {
         String nickname = username.getText();
         String password = clave.getText();
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -92,7 +91,7 @@ public class ConexionJsockets {
         String nickname = username.getText();
         String password = clave.getText();
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -101,7 +100,7 @@ public class ConexionJsockets {
         String nickname = username.getText();
         String password = clave.getText();
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 7687);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }

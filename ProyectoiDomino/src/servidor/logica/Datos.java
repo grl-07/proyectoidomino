@@ -95,6 +95,15 @@ public class Datos {
     public static boolean crearPartida(String nickname) {
         return listaDePartidas.crearPartida(nickname);
     }
+    public static Partida obtenerPartidaCreada(String nickname) {
+        Partida laPartida;
+        laPartida = new Partida().crearPartida(nickname);
+        return laPartida;
+    }
+
+    /*public static Partida crearPartida(String nickname) {
+        return listaDePartidas.crearPartida(nickname);
+    }*/
 
     /*public static boolean guardarPartida(Partida laPartida){
         return listaDePartidas.agregarPartida(laPartida);

@@ -18,9 +18,9 @@ public class Imagenes extends javax.swing.JFrame {
         this.clave = nombre.getText();
         this.txtavatar = avatar;
         this.ventanaPadre = ventanaPadre;
-    }
+    }*/
 
-    public Imagenes(JTextField nickname, JTextField avatar){
+    /*public Imagenes(JTextField nickname, JTextField avatar){
         initComponents();
         this.username = nickname.getText();
         this.txtavatar = avatar;

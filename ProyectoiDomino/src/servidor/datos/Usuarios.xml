@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Usuarios>
-    <Usuario>
-        <nombre>Emily</nombre>
-        <apellido>Pagua</apellido>
-        <nickname>mily</nickname>
-        <clave>12345</clave>
-        <avatar>Bug</avatar>
-        <numPartGan>0</numPartGan>
-        <numIngresos>0</numIngresos>
-        <numPartCreadas>0</numPartCreadas>
-        <puntaje>0</puntaje>
-    </Usuario>
-</Usuarios>
+<Usuarios><Usuario><nombre>Emily</nombre><apellido>Pagua</apellido><nickname>mily</nickname><clave>12345</clave><avatar>Bug</avatar><numPartGan>0</numPartGan><numIngresos>0</numIngresos><numPartCreadas>0</numPartCreadas><puntaje>0</puntaje></Usuario><Usuario><nombre>Sheryl</nombre><apellido>Ravelo</apellido><nickname>shishi</nickname><clave>135790</clave><avatar>Umbrella</avatar><numPartGan>0</numPartGan><numIngresos>0</numIngresos><numPartCreadas>0</numPartCreadas><puntaje>0</puntaje></Usuario><Usuario><nombre>Daniel</nombre><apellido>Sierra</apellido><nickname>danieluchin</nickname><clave>123</clave><avatar>Butterfly</avatar><numPartGan>0</numPartGan><numIngresos>0</numIngresos><numPartCreadas>0</numPartCreadas><puntaje>0</puntaje></Usuario></Usuarios>

@@ -46,14 +46,14 @@ public class VentanaMenu extends javax.swing.JFrame {
         jTextApellido = new javax.swing.JTextField();
         jLNombre = new javax.swing.JLabel();
         jLApellido = new javax.swing.JLabel();
-        jTexIcono = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jTextNickname = new javax.swing.JTextField();
+        jLavatar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Bienvenida iDomino");
+        setTitle("Welcome to iDomino");
 
-        jBCrearPartida.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jBCrearPartida.setFont(new java.awt.Font("Calibri", 0, 12));
         jBCrearPartida.setText("New Game");
         jBCrearPartida.setName("jBCrearPartida"); // NOI18N
         jBCrearPartida.addActionListener(new java.awt.event.ActionListener() {
@@ -90,23 +90,16 @@ public class VentanaMenu extends javax.swing.JFrame {
         });
 
         jLNombre.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLNombre.setText("Nombre:");
+        jLNombre.setText("Name:");
 
         jLApellido.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLApellido.setText("Apellido:");
+        jLApellido.setText("LastName:");
 
-        jTexIcono.setEditable(false);
-        jTexIcono.setBorder(null);
-        jTexIcono.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTexIconoActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel1.setText("Nickname:");
 
         jTextNickname.setEditable(false);
+        jTextNickname.setFont(new java.awt.Font("Calibri", 1, 12));
         jTextNickname.setBorder(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -115,51 +108,59 @@ public class VentanaMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLApellido)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jTextApellido))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLNombre)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTexIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(249, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(42, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLavatar, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLApellido)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextApellido))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLNombre)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jBCargarPartida)
-                                .addComponent(jBModificar))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jBCrearPartida)))
-                        .addGap(55, 55, 55))))
+                            .addComponent(jBCrearPartida)
+                            .addComponent(jBCargarPartida)
+                            .addComponent(jBModificar))
+                        .addGap(91, 91, 91))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(43, 43, 43)
                 .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addComponent(jTexIcono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLavatar, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                        .addGap(30, 30, 30))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBCrearPartida)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBCargarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                            .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLNombre)
                             .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -168,14 +169,9 @@ public class VentanaMenu extends javax.swing.JFrame {
                             .addComponent(jLApellido)
                             .addComponent(jTextApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBCrearPartida)
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addComponent(jBModificar))
-                            .addComponent(jBCargarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(11, 11, 11))
+                        .addGap(18, 18, 18)
+                        .addComponent(jBModificar)))
+                .addGap(76, 76, 76))
         );
 
         pack();
@@ -189,10 +185,6 @@ public class VentanaMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextApellidoActionPerformed
 
-    private void jTexIconoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTexIconoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTexIconoActionPerformed
-
     private void jBCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearPartidaActionPerformed
         // TODO add your handling code here:
         String mensaje = ConexionJsockets.solicitudServidor2(jTextNickname, "fechaInicio");
@@ -203,9 +195,22 @@ public class VentanaMenu extends javax.swing.JFrame {
         jTextNickname.setText(nickname);
         jTextNombre.setText(nombre);
         jTextApellido.setText(apellido);
-        jTexIcono.setText(avatar);
+        //jTexIcono.setText(avatar);
+        if (avatar.equalsIgnoreCase("Dog")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg")));
+        } else if (avatar.equalsIgnoreCase("Umbrella")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png")));
+        } else if (avatar.equalsIgnoreCase("Turtle")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.png")));
+        } else if (avatar.equalsIgnoreCase("Butterfly")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png")));
+        } else if (avatar.equalsIgnoreCase("Bug")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.png")));
+        } else if (avatar.equalsIgnoreCase("Domino")) {
+            jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
+        }
 
-        jLBienvenida.setText(" Bienvenido " + nickname+ " a iDomino");
+        jLBienvenida.setText(" Welcome " + nickname+ " to iDomino");
 
     }
     /**
@@ -227,7 +232,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLBienvenida;
     private javax.swing.JLabel jLNombre;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTexIcono;
+    private javax.swing.JLabel jLavatar;
     private javax.swing.JTextField jTextApellido;
     private javax.swing.JTextField jTextNickname;
     private javax.swing.JTextField jTextNombre;
