@@ -6,7 +6,6 @@ package servidor.datos;
 
 //import java.util.*;
 //import com.toedter.calendar.JCalendar;
-
 /**
  *
  * @author Sheryl
@@ -56,7 +55,6 @@ public class Partida {
 
     //Constructor
     public Partida() {
-
     }
 
     public Partida(Usuario elUsuario) {
@@ -96,9 +94,9 @@ public class Partida {
         this.setFechaactual(fechaactual);
 
         this.elJuego = new Juego(0, null, null, null);
-        elJuego.setJugador1(new Jugador("", "", "", nickname, "", 0,0,0,0));
+        elJuego.setJugador1(new Jugador("", "", "", nickname, "", 0, 0, 0, 0));
         elJuego.setJugador2(new Maquina());
-        elJuego.setLaMesa(new Mesa());
+        elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1, new ListaPiedras()));
 
         for (i = 0; i <= 6; i++) {
 
@@ -110,10 +108,16 @@ public class Partida {
 
         laListaPiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());
 
+        System.out.println("PIEDRAS DEL JUGADOR");
+        elJuego.getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
+        System.out.println("PIEDRAS DE LA MÁQUINA");
+        elJuego.getJugador2().getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
+        System.out.println("PIEDRAS EN EL POZO");
+        elJuego.getLaMesa().getElPozo().imprimirListaPiedras();
+
         Partida laPartida;
-        //laPartida = new Partida(elUsuario, elJuego, 1);
-        laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual);
-        //System.out.println("se creo");
+        elUsuario = new Usuario("", "", "", nickname, "");
+        laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual, elJuego);
 
         return (laPartida);
     }
@@ -121,4 +125,3 @@ public class Partida {
     public void salirPartida() {
     }
 }
-
