@@ -178,42 +178,42 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen10.jpg"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen10.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen8.png"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen8.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen9.jpg"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen9.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen6.png"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen6.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen13.png"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen13.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/presentacion/resources/Imagen12.jpg"/>
+          <Image iconType="3" name="/cliente/presentacion/resources/Imagen12.jpg"/>
         </Property>
       </Properties>
     </Component>
