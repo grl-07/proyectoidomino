@@ -116,7 +116,7 @@ public class ListaPiedras {
             PiedrasJ.agregarPiedra(laPiedra);
             cont++;
         }
-
+        J.getElJugador().setPiedrasEnMano(PiedrasJ);
 
         //Piedras de la Máquina
         while (cont < 14) {
@@ -124,7 +124,7 @@ public class ListaPiedras {
             PiedrasM.agregarPiedra(laPiedra);
             cont++;
         }
-
+        M.getLaMaquina().setPiedrasEnMano(PiedrasM);
 
         //Piedras del Pozo
         while (cont < 28) {
@@ -132,12 +132,13 @@ public class ListaPiedras {
             Pozo.agregarPiedra(laPiedra);
             cont++;
         }
+        P.setElPozo(Pozo);
 
-        System.out.println("PIEDRAS DEL JUGADOR");
+        /*System.out.println("PIEDRAS DEL JUGADOR");
         PiedrasJ.imprimirListaPiedras();
         System.out.println("PIEDRAS DE LA MÁQUINA");
         PiedrasM.imprimirListaPiedras();
         System.out.println("PIEDRAS EN EL POZO");
-        Pozo.imprimirListaPiedras();
+        Pozo.imprimirListaPiedras();*/
     }
 }

@@ -93,6 +93,7 @@ public class Main {
         System.out.println("\nCREAR PARTIDA\n");
         listadoPartidas.crearPartida("danieluchin");
         listadoPartidas.crearPartida("alberlykida");
+        System.out.println("\nLISTA PARTIDAS CREADAS\n");
         listadoPartidas.imprimirPartidas();
 
 

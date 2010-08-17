@@ -105,6 +105,7 @@ public class ListaPartidas {
 
             for (i = 0; i < arreglo.length; i++) {
                 auxiliarPartida = (Partida) arreglo[i];
+
                 System.out.println("Username: " + auxiliarPartida.getElUsuario().getNickname());
                 System.out.println("IDPartida: " + auxiliarPartida.getIDPartida());
             }
