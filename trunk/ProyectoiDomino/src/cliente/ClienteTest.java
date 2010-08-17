@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package cliente;
-import View.VentanaLogin;
+import cliente.presentacion.VentanaLogin;
 
 /**
  *
