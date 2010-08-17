@@ -81,7 +81,7 @@ public class Partida {
     public void cargarPartida() {
     }
 
-    public void/*Partida*/ crearPartida(String nickname) {
+    public Partida crearPartida(String nickname) {
         int i = 0, j = 0;
 
         ListaPiedras laListaPiedras;
@@ -113,9 +113,9 @@ public class Partida {
         Partida laPartida;
         //laPartida = new Partida(elUsuario, elJuego, 1);
         laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual);
-        System.out.println("se creo");
+        //System.out.println("se creo");
 
-        //return (laPartida);
+        return (laPartida);
     }
 
     public void salirPartida() {

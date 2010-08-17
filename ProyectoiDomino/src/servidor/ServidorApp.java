@@ -13,7 +13,7 @@ public class ServidorApp {
 
     public static void main(String[] args) {
 
-        Conector.inicializarEstructuras();
+        //Conector.inicializarEstructuras();
         Datos.inicializarListasDeDatos();
         Conector.solicitarCargaDeDatos();
         Conector.solicitarImpresionPiedras();

@@ -24,6 +24,7 @@ public class ListaPartidas {
     }
 
     public ListaPartidas() {
+        laListaPartidas = new ArrayList();
     }
 
     public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
@@ -45,6 +46,11 @@ public class ListaPartidas {
             agregarPartida(laPartidaAGuardar);
         }
         return true;
+    }
+
+    public boolean crearPartida(String nickname) {
+        Partida laPartida = new Partida().crearPartida(nickname);
+        return laListaPartidas.add(laPartida);
     }
 
     public boolean agregarPartida(Partida laPartida) {
@@ -89,19 +95,20 @@ public class ListaPartidas {
     }
 
     public void imprimirPartidas() {
-        int i;
-        Partida auxiliarPartida;
-        Object arreglo[];
 
-        arreglo = laListaPartidas.toArray();
+        if (laListaPartidas != null) {
+            int i;
+            Partida auxiliarPartida;
+            Object arreglo[];
 
-        for (i = 0; i < arreglo.length; i++) {
-            auxiliarPartida = (Partida) arreglo[i];
-            System.out.println("Username: " + auxiliarPartida.getElUsuario().getNickname());
-            System.out.println("IDPartida: " + auxiliarPartida.getIDPartida());
-        }
+            arreglo = laListaPartidas.toArray();
+
+            for (i = 0; i < arreglo.length; i++) {
+                auxiliarPartida = (Partida) arreglo[i];
+                System.out.println("Username: " + auxiliarPartida.getElUsuario().getNickname());
+                System.out.println("IDPartida: " + auxiliarPartida.getIDPartida());
+            }
+        } else System.out.println("La Lista esta vacia");
+
     }
-
-
-
 }

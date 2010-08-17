@@ -33,15 +33,4 @@
         <numPartCreadas>0</numPartCreadas>
         <puntaje>0</puntaje>
     </Usuario>
-    <Usuario>
-        <nombre>Emily</nombre>
-        <apellido>Pagua</apellido>
-        <nickname>mily</nickname>
-        <clave>123</clave>
-        <avatar>mily1</avatar>
-        <numPartGan>0</numPartGan>
-        <numIngresos>0</numIngresos>
-        <numPartCreadas>0</numPartCreadas>
-        <puntaje>0</puntaje>
-    </Usuario>
 </Usuarios>
