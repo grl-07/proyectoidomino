@@ -22,6 +22,7 @@ public class Main {
         int j = 0;
         ListaUsuarios listadoUsuarios;
         listadoUsuarios = new ListaUsuarios();
+        ListaPartidas listadoPartidas = new ListaPartidas();
         Partida laPartida = new Partida(null);
 
         //Agregar Usuario
@@ -90,7 +91,9 @@ public class Main {
         ///Fin de Modificar Usuario
 
         System.out.println("\nCREAR PARTIDA\n");
-        //laPartida.crearPartida(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 1, 5, 9, 4));
+        listadoPartidas.crearPartida("danieluchin");
+        listadoPartidas.crearPartida("alberlykida");
+        listadoPartidas.imprimirPartidas();
 
 
         //REPORTE

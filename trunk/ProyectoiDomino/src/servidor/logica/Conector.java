@@ -19,12 +19,6 @@ public class Conector {
         return listaDeUsuarios;
     }
 
-    public static boolean inicializarEstructuras() {
-        listaDeUsuarios = new ListaUsuarios();
-        Archivo.cargarDatosArchivo(listaDeUsuarios);
-        return true;
-    }
-
     public static boolean comprobarDatos(String nickname, String password) {
         boolean confirm;
         confirm = false;

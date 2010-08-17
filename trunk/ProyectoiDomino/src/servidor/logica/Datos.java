@@ -1,11 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package servidor.logica;
-import servidor.datos.Partida;
-import servidor.datos.ListaPiedras;
-import servidor.datos.Piedra;
+import servidor.datos.*;
+import javax.swing.*;
 /**
  *
  * @author Alberly
@@ -13,17 +8,39 @@ import servidor.datos.Piedra;
 public class Datos {
 
     private static ListaPiedras listaDePiedras = null;
+    private static ListaPartidas listaDePartidas = null;
+    private static ListaUsuarios listaDeUsuarios = null;
 
     private Datos() {
     }
 
     public static boolean inicializarListasDeDatos() {
+        boolean confirm = false;
+        if (listaDeUsuarios == null) {
+            listaDeUsuarios = new ListaUsuarios();
+            confirm = true;
+        }
         if (listaDePiedras == null) {
             listaDePiedras = new ListaPiedras();
-            return true;
+            confirm = true;
+        } else {
+            confirm = false;
         }
+        if (listaDePartidas == null) {
+            listaDePartidas = new ListaPartidas();
+            confirm = true;
+        } else {
+            confirm = false;
+        }
+        return confirm;
+    }
 
-        return false;
+    public static ListaUsuarios getListaDeUsuarios() {
+        return listaDeUsuarios;
+    }
+
+    public static ListaPartidas getListaDePartidas() {
+        return listaDePartidas;
     }
 
     public static ListaPiedras getListaDePiedras() {
@@ -34,13 +51,51 @@ public class Datos {
         return (listaDePiedras.agregarPiedra(new Piedra(num1, num2)));
     }
 
+    /*public static boolean agregarPartida(String nickname) {
+        //Adaptar a JSockets
+        Usuario usuarioAuxiliar = new Usuario("", "", "", nickname, "");
+        Usuario elUsuario = listaDeUsuarios.buscarDatos(usuarioAuxiliar);
+        return listaDePartidas.agregarPartidaCreada(elUsuario);
+    }*/
+
+    /*public static void imprimirPartida() {
+        listaDePartidas.imprimirPartidas();
+    }*/
+
+    public static boolean agregarUsuario(Usuario elUsuario) {
+        return listaDeUsuarios.agregarUsuario(elUsuario);
+
+    }
+
     public static void imprimirListaPiedras() {
         listaDePiedras.imprimirListaPiedras();
     }
 
-    public static void crearPartida(String nickname) {
-        new Partida().crearPartida(nickname);
+    public static String asignarIconoUsuario(String nombre, String apellido, String username, String clave, JTextField avatar, JRadioButton perro, JRadioButton sombrilla) {
+        Usuario registro, elUsuario;
+
+        elUsuario = new Usuario(nombre, apellido, clave, username, "");
+
+        /*if (registro != null)
+        {*/
+        if (perro.isSelected()) {
+            elUsuario.setAvatar("perro");
+            sombrilla.setSelected(false);
+        }
+        if (sombrilla.isSelected()) {
+            elUsuario.setAvatar("sombrilla");
+            perro.setSelected(false);
+        }
+        avatar.setText(elUsuario.getAvatar());
+        return elUsuario.getAvatar();
+        //}
     }
 
+    public static boolean crearPartida(String nickname) {
+        return listaDePartidas.crearPartida(nickname);
+    }
 
+    /*public static boolean guardarPartida(Partida laPartida){
+        return listaDePartidas.agregarPartida(laPartida);
+    }*/
 }
