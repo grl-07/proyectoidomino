@@ -27,6 +27,10 @@ public class ListaPartidas {
         laListaPartidas = new ArrayList();
     }
 
+    public Iterator getIterator(){
+        return laListaPartidas.iterator();
+    }
+
     public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
         //buscar nickname en la lista de partidas guardadas
 
