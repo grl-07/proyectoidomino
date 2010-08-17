@@ -2,8 +2,8 @@
 package servidor;
 
 import ve.edu.ucab.server.logica.Servidor;
-import Logica.Conector;
-import Logica.Datos;
+import servidor.logica.Conector;
+import servidor.logica.Datos;
 
 /**
  *
@@ -18,7 +18,7 @@ public class ServidorApp {
         Conector.solicitarCargaDeDatos();
         Conector.solicitarImpresionPiedras();
 
-        String[] parametros = {"7687", "Logica.PruebaJsockets"};
+        String[] parametros = {"7687", "servidor.logica.PruebaJsockets"};
         Servidor.main(parametros);
     }
 }
