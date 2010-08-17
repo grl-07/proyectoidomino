@@ -1,4 +1,5 @@
 package cliente.presentacion;
+
 import cliente.logica.ConexionJsockets;
 import javax.swing.*;
 
@@ -65,7 +66,8 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
         jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
 
-        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtAvatar.setEditable(false);
+        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
 
         jBAceptar.setFont(new java.awt.Font("Calibri", 0, 12));
         jBAceptar.setText("OK");
@@ -83,6 +85,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jButton1.setText("...");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,23 +109,21 @@ public class VentanaRegistro extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel6))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTxtName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                                    .addComponent(jTxtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                                    .addComponent(jTxtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                                    .addComponent(jTxtAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                                    .addComponent(jPasswordFdRegister))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPasswordFdConfirm)
+                            .addComponent(jTxtName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(jTxtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(jTxtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(jTxtAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(jPasswordFdRegister))
+                        .addGap(6, 6, 6)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(163, 163, 163)
                         .addComponent(jBAceptar)
                         .addGap(18, 18, 18)
                         .addComponent(jButtonCancel)))
-                .addContainerGap(24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,7 +153,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                     .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBAceptar)
                     .addComponent(jButtonCancel))
@@ -164,21 +165,31 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
-       if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())) {
-           Imagenes icono = new Imagenes(this);
-           String avatar = icono.setAvatar();
-           System.out.println("avatar = " + avatar);
-           //jTxtAvatar.setText(avatar);
-           String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, avatar);
-
-           if (mensaje.equals("TRUE")) {
-               System.out.println(mensaje);
-               this.dispose();
-            } else {
-                JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
-           }
+        if (jTxtName.getText().equalsIgnoreCase("")
+                || jTxtLastName.getText().equalsIgnoreCase("")
+                || jTxtNickname.getText().equalsIgnoreCase("")
+                || jPasswordFdRegister.getText().equalsIgnoreCase("")
+                || jPasswordFdConfirm.getText().equalsIgnoreCase("")
+                || jTxtAvatar.getText().equalsIgnoreCase("")) {
+            JOptionPane.showMessageDialog(null, "All fields must be written in.");
         } else {
-            JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
+
+            if (jPasswordFdRegister.getText().equalsIgnoreCase(jPasswordFdConfirm.getText())) {
+                Imagenes icono = new Imagenes(this);
+                String avatar = icono.setAvatar();
+                System.out.println("avatar = " + avatar);
+                //jTxtAvatar.setText(avatar);
+                String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, avatar);
+
+                if (mensaje.equals("TRUE")) {
+                    System.out.println(mensaje);
+                    this.dispose();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
+            }
         }
     }//GEN-LAST:event_jBAceptarActionPerformed
 
@@ -191,25 +202,25 @@ public class VentanaRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
         //System.out.println("cargaa");
         Imagenes ventanaImagenes;
-        ventanaImagenes = new Imagenes(this,jTxtAvatar);//, jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
+        ventanaImagenes = new Imagenes(this, jTxtAvatar);//, jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
         ventanaImagenes.setVisible(true);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /*public void inicializarComponentesPropios(){
-        Conector.inicializarEstructuras();
+    Conector.inicializarEstructuras();
     }*/
     /**
-    * @param args the command line arguments
-    */
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
                 new VentanaRegistro().setVisible(true);
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBAceptar;
     private javax.swing.JButton jButton1;
@@ -227,5 +238,4 @@ public class VentanaRegistro extends javax.swing.JFrame {
     private javax.swing.JTextField jTxtName;
     private javax.swing.JTextField jTxtNickname;
     // End of variables declaration//GEN-END:variables
-
 }
