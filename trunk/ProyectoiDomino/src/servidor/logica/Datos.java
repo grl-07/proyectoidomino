@@ -17,6 +17,7 @@ public class Datos {
     public static boolean inicializarListasDeDatos() {
         boolean confirm = false;
         if (listaDeUsuarios == null) {
+            System.out.println("Entro");
             listaDeUsuarios = new ListaUsuarios();
             confirm = true;
         }

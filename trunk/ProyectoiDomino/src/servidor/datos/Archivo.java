@@ -1,19 +1,26 @@
 package servidor.datos;
+
 import java.io.*;
 import org.jdom.*;
 import org.jdom.input.*;
 import org.jdom.output.*;
 import java.util.*;
+
 /**
  *
  * @author Alberly
  */
 public class Archivo {
- private static String direccionUsuarios = "src/servidor/datos/Usuarios.xml";
- private static String nombreArchivo = "src/servidor/datos/Piedras.xml";
-      //private static String nombreArchivo2 = "src/datos/Piedras2.xml";
 
-    public static void guardarDatosArchivo(ListaUsuarios listaUsuarios) {
+    private static String direccionUsuarios = "src/servidor/datos/Usuarios.xml";
+    private static String nombreArchivo = "src/servidor/datos/Piedras.xml";
+    private static String direccionPartidas = "src/servidor/datos/Partidas.xml";
+    /*private static List<Element> piedrasJugador = null;
+    private static List<Element> piedrasMaquina = null;
+    private static List<Element> piedrasPozo = null;
+    private static List<Element> piedrasMesa = null;*/
+
+    public static void guardarDatosArchivoUsuario(ListaUsuarios listaUsuarios) {
         Usuario nodoAuxiliar;
 
         Element root = new Element("Usuarios");
@@ -83,7 +90,7 @@ public class Archivo {
         }
     }
 
-    public static void cargarDatosArchivo(ListaUsuarios listaUsuarios) {
+    public static void cargarDatosArchivoUsuario(ListaUsuarios listaUsuarios) {
         try {
             SAXBuilder builder = new SAXBuilder();
 
@@ -125,43 +132,30 @@ public class Archivo {
         }
     }
 
-
-////////////////////////////////ABE///////////////////////////
-
-
-    public static void cargarPiedrasArchivo(ListaPiedras listaDePiedras)
-    {
-        try
-        {
+    public static void cargarPiedrasArchivo(ListaPiedras listaDePiedras) {
+        try {
             SAXBuilder builder = new SAXBuilder();
 
-            /* Se crea un documento nuevo con el nombre del archivo */
+
             Document doc = builder.build(nombreArchivo);
 
-            /* Se obtiene la raíz del archivo (la etiqueta inicial) */
-            Element raiz = doc.getRootElement(); //comienzo del archivo. Usuario.
 
-            /* Se puede obtener el atributo de la raíz (de la etiqueta) */
+            Element raiz = doc.getRootElement();
+
+
             System.out.println(raiz.getAttributeValue("tipo"));
 
-            /* Se obtienen todos los hijos cuya etiqueta esa "usuario"  */
-            /* y se asignan esos hijos a un List                        */
-            List listaPiedras = raiz.getChildren("piedra"); //cada usuario.
+
+            List listaPiedras = raiz.getChildren("piedra");
 
             System.out.println("Formada por:" + listaPiedras.size() + " piedras");
             System.out.println("------------------");
 
-            /* Se genera un iterador para recorrer el List que se generó */
             Iterator i = listaPiedras.iterator();
 
-            /* Se recorre el List */
-            while (i.hasNext())
-            {
-                /* Se obtiene cada uno y se asigna a un objeto de tipo Element */
+            while (i.hasNext()) {
                 Element e = (Element) i.next();
 
-                /* Se obtiene el nombre, apellido y cargo de cada una de las etiquetas  */
-                /* hijas de usuario, es decir, nombre, apellido y cargo                 */
                 Element num1 = e.getChild("num1");
                 Element num2 = e.getChild("num2");
 
@@ -171,90 +165,346 @@ public class Archivo {
                 Piedra laPiedra = new Piedra(numeroUno, numeroDos);
                 listaDePiedras.agregarPiedra(laPiedra);
 
-
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    public static boolean cargarPartidasArchivo(ListaPartidas listaDePartidas) {
+        try {
+
+            SAXBuilder builder = new SAXBuilder();
+
+            Document doc = builder.build(direccionPartidas);
+
+            Element raiz = doc.getRootElement();
+
+            List listaPartidas = raiz.getChildren("Partida");
+
+            System.out.println("Formada por:" + listaPartidas.size() + " partidas");
+            System.out.println("------------------");
+
+            Iterator i = listaPartidas.iterator();
+
+            ListaPiedras listaPiedrasJugador = new ListaPiedras();
+            ListaPiedras listaPiedrasMaquina = new ListaPiedras();
+            ListaPiedras listaPiedrasPozo = new ListaPiedras();
+            ListaPiedras listaPiedrasMesa = new ListaPiedras();
+
+            while (i.hasNext()) {
+
+                Element e = (Element) i.next();
+
+                Element username = e.getChild("nickname");
+                Element fechaInicial = e.getChild("fechaIni");
+                Element fechaact = e.getChild("fechaactual");
+                Element IDPartida = e.getChild("IDPartida");
+                int numeroPartida = Integer.parseInt(IDPartida.getText());
+
+                //PIEDRAS JUGADOR
+
+                Element subRaizJugador = e.getChild("PiedrasJugador");
+                List piedrasJugador = subRaizJugador.getChildren("Piedra");
+                Iterator iteradorJugador = piedrasJugador.iterator();
+
+                while (iteradorJugador.hasNext()) {
+                    Element elemento = (Element) iteradorJugador.next();
+
+                    Element num1 = elemento.getChild("num1");
+                    Element num2 = elemento.getChild("num2");
+
+                    int numero1 = Integer.parseInt(num1.getText());
+                    int numero2 = Integer.parseInt(num2.getText());
+
+                    listaPiedrasJugador.agregarPiedra(new Piedra(numero1, numero2));
+                }
+
+                System.out.println("Se lleno la lista del jugador");
+
+                Usuario elUsuario = new Usuario("", "", "", username.getText(), "");
+
+                //Usuario usuarioAuxiliar = new ListaUsuarios().buscarDatos(elUsuario);
+                //Jugador elJugador = new Jugador(usuarioAuxiliar.getNombre(), usuarioAuxiliar.getApellido(), usuarioAuxiliar.getClave(), username.getText(), usuarioAuxiliar.getAvatar(), 0, 0, 0, 0);
+                Jugador elJugador = new Jugador("", "", "", username.getText(), "", 0, 0, 0, 0);
+                elJugador.getElJugador().setPiedrasEnMano(listaPiedrasJugador);
+                System.out.println("Piedras del Jugador: " + elJugador.getNickname());
+                elJugador.getElJugador().getPiedrasEnMano().imprimirListaPiedras();
+                //FIN PIEDRAS JUGADOR
 
 
-      /*public static void guardarArchivoXML(ListaPiedras listaDePiedras)
-    {
-        Piedra nodoAuxiliar;
+                //PIEDRAS MAQUINA
+                Element subRaizMaquina = e.getChild("PiedrasMaquina");
+                //piedrasMaquina = new ArrayList();
+                List piedrasMaquina = subRaizMaquina.getChildren("Piedra");
+                Iterator iteradorMaquina = piedrasMaquina.iterator();
 
-        Element root = new Element("piedras");
+                while (iteradorMaquina.hasNext()) {
+                    Element elemento = (Element) iteradorMaquina.next();
 
-        root.setAttribute("tipo","lista de piedras");
+                    Element num1 = elemento.getChild("num1");
+                    Element num2 = elemento.getChild("num2");
 
-        Iterator iterador = listaDePiedras.getIterator();
+                    int numero1 = Integer.parseInt(num1.getText());
+                    int numero2 = Integer.parseInt(num2.getText());
 
-        while (iterador.hasNext())
-        {
-
-            Element piedra = new Element ("piedra");
-
-            nodoAuxiliar = (Piedra) iterador.next();
-
-
-            Element num1 = new Element("num1");
-            Element num2 = new Element("num2");
-
-
-
-            int numero1Int = nodoAuxiliar.getNum1();
-            int numero2Int = nodoAuxiliar.getNum2();
-
-            String numero1Str= String.valueOf(numero1Int);
-            String numero2Str= String.valueOf(numero2Int);
-
-            num1.setText(numero1Str);
-            num2.setText(numero2Str);
-
-            piedra.addContent(num1);
-            piedra.addContent(num2);
+                    listaPiedrasMaquina.agregarPiedra(new Piedra(numero1, numero2));
+                }
+                Maquina laMaquina = new Maquina();
+                laMaquina.getLaMaquina().setPiedrasEnMano(listaPiedrasMaquina);
+                System.out.println("Piedras Maquina: ");
+                laMaquina.getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
+                //FIN PIEDRAS MAQUINA
 
 
-            root.addContent(piedra);
+                //PIEDRAS POZO
+                Element subRaizPozo = e.getChild("PiedrasPozo");
+                //piedrasPozo = new ArrayList();
+                List piedrasPozo = subRaizPozo.getChildren("Piedra");
+                Iterator iteradorPozo = piedrasPozo.iterator();
 
+                while (iteradorPozo.hasNext()) {
+                    Element elemento = (Element) iteradorPozo.next();
+
+                    Element num1 = elemento.getChild("num1");
+                    Element num2 = elemento.getChild("num2");
+
+                    int numero1 = Integer.parseInt(num1.getText());
+                    int numero2 = Integer.parseInt(num2.getText());
+
+                    listaPiedrasPozo.agregarPiedra(new Piedra(numero1, numero2));
+                }
+                Mesa laMesa = new Mesa();
+                laMesa.setElPozo(listaPiedrasPozo);
+                System.out.println("Piedras Pozo: ");
+                laMesa.getElPozo().imprimirListaPiedras();
+                //FIN PIEDRAS POZO
+
+
+                //PIEDRAS MESA
+                Element subRaizMesa = e.getChild("PiedrasMesa");
+                //piedrasMesa = new ArrayList();
+                List piedrasMesa = subRaizMesa.getChildren("Piedra");
+                Iterator iteradorMesa = piedrasMesa.iterator();
+
+                while (iteradorMesa.hasNext()) {
+                    Element elemento = (Element) iteradorMesa.next();
+
+                    Element num1 = elemento.getChild("num1");
+                    Element num2 = elemento.getChild("num2");
+
+                    int numero1 = Integer.parseInt(num1.getText());
+                    int numero2 = Integer.parseInt(num2.getText());
+
+                    listaPiedrasMesa.agregarPiedra(new Piedra(numero1, numero2));
+                }
+
+                laMesa.setPiedrasMesa(listaPiedrasMesa);
+                System.out.println("Piedras Mesa: ");
+                laMesa.getPiedrasMesa().imprimirListaPiedras();
+                //FIN PIEDRAS MESA
+
+                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);
+                System.out.println("Creado el Juego por: " + elJuego.getJugador1().getNickname());
+
+                //lo ulimo que se hace.
+                Partida laPartida = new Partida(elUsuario, numeroPartida, fechaInicial.getText(), fechaact.getText(), elJuego);
+                System.out.println("Creada la Partida por: " + laPartida.getElUsuario().getNickname());
+                System.out.println("Creado la Partida en: " + laPartida.getFechaIni());
+                listaDePartidas.agregarPartida(laPartida);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    /*public static boolean guardarPartidasArchivo(ListaPartidas listaDePartidas) {
+        Partida nodoAuxiliar;
+
+        Element root = new Element("Partidas");
+
+        Iterator iterador = listaDePartidas.getIterator();
+
+        while (iterador.hasNext()) {
+            Element partida = new Element("Partida");
+
+            nodoAuxiliar = (Partida) iterador.next();
+
+            Element nickname = new Element("nickname");
+            Element fechaIni = new Element("fechaIni");
+            Element fechaactual = new Element("fechaactual");
+            Element IDPartida = new Element("IDPartida");
+
+            String numeroPartida = Integer.toString(nodoAuxiliar.getIDPartida());
+
+            nickname.setText(nodoAuxiliar.getElUsuario().getNickname());
+            fechaIni.setText(nodoAuxiliar.getFechaIni());
+            fechaactual.setText(nodoAuxiliar.getFechaactual());
+            IDPartida.setText(numeroPartida);
+
+            partida.addContent(nickname);
+            partida.addContent(fechaIni);
+            partida.addContent(fechaactual);
+            partida.addContent(IDPartida);
+
+            root.addContent(partida);
+        }
+
+
+        Document doc = new Document(root);
+
+        try {
+
+            XMLOutputter out = new XMLOutputter();
+
+            FileOutputStream file = new FileOutputStream(direccionPartidas);
+
+            out.output(doc, file);
+
+            file.flush();
+            file.close();
+
+            out.output(doc, System.out);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }*/
+
+    public static void guardarDatosArchivoPartidas(ListaPartidas listaPartidas) {
+        /*Juego elJuego;
+        elJuego = new Juego();*/
+        Partida nodoAuxiliar;
+
+        Element root = new Element("Partidas");
+
+        Iterator iterador = listaPartidas.getIterator();
+
+        while (iterador.hasNext()) {
+            Element partida = new Element("Partida");
+
+            nodoAuxiliar = (Partida) iterador.next();
+
+            Element username = new Element("nickname");
+            Element fechaactual = new Element("fechaactual");
+            Element fechaIni = new Element("fechaIni");
+            Element IDPartida = new Element("IDPartida");
+
+            String IDPartidaInt = Integer.toString(nodoAuxiliar.getIDPartida());
+
+            username.setText(nodoAuxiliar.getElUsuario().getNickname());
+            fechaactual.setText(nodoAuxiliar.getFechaactual());
+            fechaIni.setText(nodoAuxiliar.getFechaIni());
+            IDPartida.setText(IDPartidaInt);
+
+            //PIEDRAS EN MANO DEL JUGADOR
+            Element piedraJugador = new Element("PiedrasJugador");
+
+            Iterator iteradorJugador = nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().getIterator();
+            System.out.println("////AQUI///");
+            //Iterator iteradorJugador = elJugador.getElJugador().getPiedrasEnMano().getIterator();
+            //Iterator iteradorJugador = controlJugadores.getPiedrasEnMano().getIterator();
+
+            while (iteradorJugador.hasNext()) {
+                Element piedra = new Element("Piedra");
+                Piedra nodoAuxiliarPiedra;
+                nodoAuxiliarPiedra = (Piedra) iterador.next();
+
+                Element num1 = new Element("num1");
+                Element num2 = new Element("num2");
+
+                String num1Str = Integer.toString(nodoAuxiliarPiedra.getNum1());
+                String num2Str = Integer.toString(nodoAuxiliarPiedra.getNum2());
+
+                num1.setText(num1Str);
+                num2.setText(num2Str);
+
+                piedra.addContent(num1);
+                piedra.addContent(num2);
+
+                piedraJugador.addContent(piedra);
+            }
+
+
+            //PIEDRAS EN MANO DE LA MÃ�QUINA
+            Element piedraMaquina = new Element("PiedrasMaquina");
+            Iterator iteradorMaquina = nodoAuxiliar.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano().getIterator();
+            //Iterator iteradorMaquina = laMaquina.getLaMaquina().getPiedrasEnMano().getIterator();
+
+            while (iteradorMaquina.hasNext()) {
+                Element piedra = new Element("Piedra");
+                Piedra nodoAuxiliarPiedra;
+                nodoAuxiliarPiedra = (Piedra) iterador.next();
+
+                Element num1 = new Element("num1");
+                Element num2 = new Element("num2");
+
+                String num1Str = Integer.toString(nodoAuxiliarPiedra.getNum1());
+                String num2Str = Integer.toString(nodoAuxiliarPiedra.getNum2());
+
+                num1.setText(num1Str);
+                num2.setText(num2Str);
+
+                piedra.addContent(num1);
+                piedra.addContent(num2);
+
+                piedraMaquina.addContent(piedra);
+            }
+
+
+            //PIEDRAS DEL POZO
+            Element piedraPozo = new Element("PiedrasPozo");
+            Iterator iteradorPozo = nodoAuxiliar.getElJuego().getLaMesa().getElPozo().getIterator();
+            //Iterator iteradorPozo = elPozo.getPiedrasMesa().getIterator();
+
+            while (iteradorPozo.hasNext()) {
+                Element piedra = new Element("Piedra");
+                Piedra nodoAuxiliarPiedra;
+                nodoAuxiliarPiedra = (Piedra) iterador.next();
+
+                Element num1 = new Element("num1");
+                Element num2 = new Element("num2");
+
+                String num1Str = Integer.toString(nodoAuxiliarPiedra.getNum1());
+                String num2Str = Integer.toString(nodoAuxiliarPiedra.getNum2());
+
+                num1.setText(num1Str);
+                num2.setText(num2Str);
+
+                piedra.addContent(num1);
+                piedra.addContent(num2);
+
+                piedraPozo.addContent(piedra);
+            }
+
+
+            partida.addContent(username);
+            partida.addContent(fechaactual);
+            partida.addContent(fechaIni);
+            partida.addContent(IDPartida);
+
+            root.addContent(partida);
 
         }
 
 
         Document doc = new Document(root);
 
-        try
-        {
+        try {
 
             XMLOutputter out = new XMLOutputter();
 
-            FileOutputStream file = new FileOutputStream(nombreArchivo);
+            FileOutputStream file = new FileOutputStream(direccionPartidas);
 
-            out.output(doc,file);
+            out.output(doc, file);
 
             file.flush();
             file.close();
 
-            out.output(doc,System.out);
-        }
-        catch(Exception e)
-        {
+            out.output(doc, System.out);
+        } catch (Exception e) {
             e.printStackTrace();
-
         }
-}*/
-
-
-////////////////////////////////ABE///////////////////////////
-
-
-
-
-
-
-
-
+    }
 }

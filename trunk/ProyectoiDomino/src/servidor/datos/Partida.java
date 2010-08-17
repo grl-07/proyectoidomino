@@ -21,6 +21,14 @@ public class Partida {
     private String fechaactual;
     private Juego elJuego;
 
+    public Juego getElJuego() {
+        return elJuego;
+    }
+
+    public void setElJuego(Juego elJuego) {
+        this.elJuego = elJuego;
+    }
+
     public String getFechaIni() {
         return fechaIni;
     }
@@ -37,7 +45,7 @@ public class Partida {
         this.fechaactual = fechaactual;
     }
 
-    public float getIDPartida() {
+    public int getIDPartida() {
         return IDPartida;
     }
 

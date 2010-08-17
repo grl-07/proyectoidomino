@@ -15,6 +15,7 @@ public class ServidorApp {
 
         //Conector.inicializarEstructuras();
         Datos.inicializarListasDeDatos();
+        Conector.solicitarCargaDatosUsuario();
         Conector.solicitarCargaDeDatos();
         Conector.solicitarImpresionPiedras();
 

@@ -94,7 +94,9 @@ public class Main {
         listadoPartidas.crearPartida("danieluchin");
         listadoPartidas.crearPartida("alberlykida");
         System.out.println("\nLISTA PARTIDAS CREADAS\n");
-        listadoPartidas.imprimirPartidas();
+        //listadoPartidas.imprimirPartidas();
+
+        Archivo.guardarDatosArchivoPartidas(listadoPartidas);
 
 
         //REPORTE
