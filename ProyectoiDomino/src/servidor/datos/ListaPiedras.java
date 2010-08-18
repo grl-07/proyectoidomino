@@ -75,10 +75,11 @@ public class ListaPiedras {
             System.out.println("Derecha: "+registro.getImagenDerecha());
             System.out.println("Abajo: "+registro.getImagenAbajo());
             System.out.println("Izquierda: "+registro.getImagenIzquierda());
+            System.out.println("ID: "+registro.getID());
         }
 
     }
-    
+
      public String obtenerPiedras() {
 
         int i;
@@ -90,7 +91,9 @@ public class ListaPiedras {
         String dosPuntos = "";
         for (i = 0; i < arregloPiedras.length; i++) {
             registro = (Piedra) arregloPiedras[i];
-            cadena = registro.getNum1() + "-" + registro.getNum2();
+            cadena = registro.getID() + "-" + registro.getImagenArriba() + "-" +
+            registro.getImagenAbajo() + "-" + registro.getImagenIzquierda() + "-" +
+            registro.getImagenDerecha() + "-" + registro.getNum1() + "-" + registro.getNum2();
             if (i != 0) {
                 dosPuntos = ":";
             }
@@ -121,7 +124,7 @@ public class ListaPiedras {
     }*/
     public void elRepartidor(Jugador J, Maquina M, Mesa P) {
         int cont;
-        
+
         ControlJugadores elJugador = J.getElJugador();
         ListaPiedras PiedrasJ = elJugador.getPiedrasEnMano();
 

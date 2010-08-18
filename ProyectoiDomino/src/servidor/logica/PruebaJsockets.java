@@ -15,7 +15,7 @@ import servidor.datos.*;
 public class PruebaJsockets implements LogicaServidor {
     //private static ListaUsuarios listaDeUsuarios = new ListaUsuarios();
 
-    public String realizarOperacion(String arg) { //args es la cadena de String a la que se le hara split
+    public String realizarOperacion(String arg) {
         String[] subArg = arg.split(":");
         Usuario elUsuario = new Usuario("","","","","",0,0,0,0);
         Partida laPartida = new Partida();
@@ -62,10 +62,9 @@ public class PruebaJsockets implements LogicaServidor {
         String cadena;
         String[] subArg;
         Usuario registro = null;
-        //System.out.println("NICKNAME = " +elUsuario.getNickname());
 
 
-        switch (opcion) { //estas impresiones salen en el servidor
+        switch (opcion) { 
                 case 1:
                     boolean confirm = Conector.comprobarDatos(elUsuario.getNickname(),elUsuario.getClave());
                     if (confirm == true) {
@@ -79,6 +78,7 @@ public class PruebaJsockets implements LogicaServidor {
                      //Datos.crearPartida(elUsuario.getNickname());
                     String cadenaPiedras;
                     cadenaPiedras = partidaNueva.getElJuego().getLaMesa().getElPozo().obtenerPiedras();
+                    //System.out.println("cadenaPiedras =  " + partidaNueva.getElJuego().getLaMesa().);
                     System.out.println("cadenaPiedras =  " + cadenaPiedras);
                     resultado = cadenaPiedras;
                     break;

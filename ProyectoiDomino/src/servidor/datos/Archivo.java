@@ -156,6 +156,7 @@ public class Archivo {
             while (i.hasNext()) {
                 Element e = (Element) i.next();
 
+                Element ID = e.getChild("ID");
                 Element num1 = e.getChild("num1");
                 Element num2 = e.getChild("num2");
                 Element ImagenArriba = e.getChild("ImagenArriba");
@@ -166,7 +167,7 @@ public class Archivo {
                 int numeroUno = Integer.parseInt(num1.getText());
                 int numeroDos = Integer.parseInt(num2.getText());
 
-                Piedra laPiedra = new Piedra(numeroUno, numeroDos,ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(),ImagenIzquierda.getText());
+                Piedra laPiedra = new Piedra(ID.getText(), numeroUno, numeroDos,ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(),ImagenIzquierda.getText());
 
                 //Piedra laPiedra = new Piedra(numeroUno, numeroDos);
                 listaDePiedras.agregarPiedra(laPiedra);

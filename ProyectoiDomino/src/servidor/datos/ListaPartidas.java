@@ -52,8 +52,8 @@ public class ListaPartidas {
         return true;
     }
 
-    public boolean crearPartida(String nickname) {
-        Partida laPartida = new Partida().crearPartida(nickname);
+    public boolean crearPartida(String nickname, ListaPiedras listaDePiedras) {
+        Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras);
         return laListaPartidas.add(laPartida);
     }
 

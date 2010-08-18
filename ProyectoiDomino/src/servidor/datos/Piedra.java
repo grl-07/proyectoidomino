@@ -10,6 +10,7 @@ package servidor.datos;
  */
 public class Piedra {
 
+    private String ID;
     private int num1;
     private int num2;
     private String ImagenArriba;
@@ -17,6 +18,14 @@ public class Piedra {
     private String ImagenAbajo;
     private String ImagenIzquierda;
     private String ImagenActual;
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 
 
     public int getNum1() {
@@ -85,7 +94,16 @@ public class Piedra {
         //this.ImagenActual = ImagenActual;
     }
 
-
+    public Piedra(String ID, int num1, int num2, String ImagenArriba, String ImagenDerecha, String ImagenAbajo, String ImagenIzquierda) {
+        this.ID = ID;
+        this.num1 = num1;
+        this.num2 = num2;
+        this.ImagenArriba = ImagenArriba;
+        this.ImagenDerecha = ImagenDerecha;
+        this.ImagenAbajo = ImagenAbajo;
+        this.ImagenIzquierda = ImagenIzquierda;
+        this.ImagenActual = ImagenArriba;
+    }
 
     //Constructor
     public Piedra(int num1, int num2) {
