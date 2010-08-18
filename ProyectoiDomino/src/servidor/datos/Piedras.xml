@@ -11,113 +11,225 @@
     <piedra>
         <num1>0</num1>
         <num2>0</num2>
+         <ImagenArriba>0-0Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-0Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-0Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>0-0Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>1</num2>
+         <ImagenArriba>0-1Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-1Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-1Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-1Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>2</num2>
+         <ImagenArriba>0-2Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-2Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-2Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-2Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>3</num2>
+          <ImagenArriba>0-3Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-3Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-3Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-3Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>4</num2>
+         <ImagenArriba>0-4Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-4Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-4Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-4Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>5</num2>
+         <ImagenArriba>0-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-5Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-5Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>0</num1>
         <num2>6</num2>
+         <ImagenArriba>0-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>0-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>0-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>0-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>1</num1>
         <num2>1</num2>
+         <ImagenArriba>1-1Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-1Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-1Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>1-1Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>1</num1>
         <num2>2</num2>
+           <ImagenArriba>1-2Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-2Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-2Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>1-2Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>1</num1>
         <num2>3</num2>
+         <ImagenArriba>1-3Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-3Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-3Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>1-3Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>1</num1>
         <num2>4</num2>
+         <ImagenArriba>1-4Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-4Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-4Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>1-4Indice3.png</ImagenIzquierda>
     </piedra>
-    <piedra>
+   <piedra>
         <num1>1</num1>
         <num2>5</num2>
+        <ImagenArriba>1-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-5Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>1-5Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>1</num1>
         <num2>6</num2>
+        <ImagenArriba>1-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>1-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>1-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>1-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>2</num1>
         <num2>2</num2>
+        <ImagenArriba>2-2Indice0.png</ImagenArriba>
+        <ImagenDerecha>2-2Indice1.png</ImagenDerecha>
+        <ImagenAbajo>2-2Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>2-2Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>2</num1>
         <num2>3</num2>
+        <ImagenArriba>2-3Indice0.png</ImagenArriba>
+        <ImagenDerecha>2-3Indice1.png</ImagenDerecha>
+        <ImagenAbajo>2-3Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>2-3Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>2</num1>
         <num2>4</num2>
+        <ImagenArriba>2-4Indice0.png</ImagenArriba>
+        <ImagenDerecha>2-4Indice1.png</ImagenDerecha>
+        <ImagenAbajo>2-4Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>2-4Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>2</num1>
         <num2>5</num2>
+        <ImagenArriba>2-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>2-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>2-5Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>2-5Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>2</num1>
         <num2>6</num2>
+        <ImagenArriba>2-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>2-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>2-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>2-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>3</num1>
         <num2>3</num2>
+        <ImagenArriba>3-3Indice0.png</ImagenArriba>
+        <ImagenDerecha>3-3Indice1.png</ImagenDerecha>
+        <ImagenAbajo>3-3Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>3-3Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>3</num1>
         <num2>4</num2>
+        <ImagenArriba>3-4Indice0.png</ImagenArriba>
+        <ImagenDerecha>3-4Indice1.png</ImagenDerecha>
+        <ImagenAbajo>3-4Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>3-4Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>3</num1>
         <num2>5</num2>
+        <ImagenArriba>3-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>3-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>3-5Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>3-5Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>3</num1>
         <num2>6</num2>
+        <ImagenArriba>3-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>3-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>3-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>3-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>4</num1>
         <num2>4</num2>
+        <ImagenArriba>4-4Indice0.png</ImagenArriba>
+        <ImagenDerecha>4-4Indice1.png</ImagenDerecha>
+        <ImagenAbajo>4-4Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>4-4Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>4</num1>
         <num2>5</num2>
+        <ImagenArriba>4-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>4-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>4-5Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>4-5Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>4</num1>
         <num2>6</num2>
+        <ImagenArriba>4-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>4-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>4-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>4-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>5</num1>
         <num2>5</num2>
+        <ImagenArriba>5-5Indice0.png</ImagenArriba>
+        <ImagenDerecha>5-5Indice1.png</ImagenDerecha>
+        <ImagenAbajo>5-5Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>5-5Indice1.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>5</num1>
         <num2>6</num2>
+        <ImagenArriba>5-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>5-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>5-6Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>5-6Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <num1>6</num1>
         <num2>6</num2>
+        <ImagenArriba>6-6Indice0.png</ImagenArriba>
+        <ImagenDerecha>6-6Indice1.png</ImagenDerecha>
+        <ImagenAbajo>6-6Indice0.png</ImagenAbajo>
+        <ImagenIzquierda>6-6Indice1.png</ImagenIzquierda>
     </piedra>
 </piedras>

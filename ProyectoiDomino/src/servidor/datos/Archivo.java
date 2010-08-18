@@ -158,11 +158,17 @@ public class Archivo {
 
                 Element num1 = e.getChild("num1");
                 Element num2 = e.getChild("num2");
+                Element ImagenArriba = e.getChild("ImagenArriba");
+                Element ImagenDerecha = e.getChild("ImagenDerecha");
+                Element ImagenAbajo = e.getChild("ImagenAbajo");
+                Element ImagenIzquierda = e.getChild("ImagenIzquierda");
 
                 int numeroUno = Integer.parseInt(num1.getText());
                 int numeroDos = Integer.parseInt(num2.getText());
 
-                Piedra laPiedra = new Piedra(numeroUno, numeroDos);
+                Piedra laPiedra = new Piedra(numeroUno, numeroDos,ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(),ImagenIzquierda.getText());
+
+                //Piedra laPiedra = new Piedra(numeroUno, numeroDos);
                 listaDePiedras.agregarPiedra(laPiedra);
 
             }

@@ -71,6 +71,10 @@ public class ListaPiedras {
         for (i = 0; i < arregloPiedras.length; i++) {
             registro = (Piedra) arregloPiedras[i];
             System.out.println("Piedra " + (i + 1) + ": " + registro.getNum1() + "-" + registro.getNum2());
+            System.out.println("Arriba: "+registro.getImagenArriba());
+            System.out.println("Derecha: "+registro.getImagenDerecha());
+            System.out.println("Abajo: "+registro.getImagenAbajo());
+            System.out.println("Izquierda: "+registro.getImagenIzquierda());
         }
 
     }

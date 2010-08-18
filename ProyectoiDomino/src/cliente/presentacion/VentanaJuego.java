@@ -9,8 +9,9 @@
  * Created on 08-ago-2010, 21:17:21
  */
 
-package presentacion;
+//package presentacion;
 import servidor.logica.Conector;
+import javax.swing.JButton;
 
 /**
  *
@@ -32,24 +33,105 @@ public class VentanaJuego extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLNumPartida = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jButton181 = new javax.swing.JButton();
+        jButton179 = new javax.swing.JButton();
+        jButton180 = new javax.swing.JButton();
+        jButton182 = new javax.swing.JButton();
+        jButton177 = new javax.swing.JButton();
+        jButton176 = new javax.swing.JButton();
+        jButton178 = new javax.swing.JButton();
+        jButton164 = new javax.swing.JButton();
+        jButton165 = new javax.swing.JButton();
+        jButton144 = new javax.swing.JButton();
+        jButton145 = new javax.swing.JButton();
+        jButton153 = new javax.swing.JButton();
+        jButton152 = new javax.swing.JButton();
+        jButton146 = new javax.swing.JButton();
+        jButton166 = new javax.swing.JButton();
+        jButton169 = new javax.swing.JButton();
+        jButton168 = new javax.swing.JButton();
+        jButton163 = new javax.swing.JButton();
+        jButton131 = new javax.swing.JButton();
+        jButton132 = new javax.swing.JButton();
+        jButton133 = new javax.swing.JButton();
+        jButton167 = new javax.swing.JButton();
+        jButton119 = new javax.swing.JButton();
+        jButton137 = new javax.swing.JButton();
+        jButton139 = new javax.swing.JButton();
+        jButton138 = new javax.swing.JButton();
+        jButton140 = new javax.swing.JButton();
+        jButton149 = new javax.swing.JButton();
+        jButton114 = new javax.swing.JButton();
+        jButton148 = new javax.swing.JButton();
+        jButton151 = new javax.swing.JButton();
+        jButton150 = new javax.swing.JButton();
+        jButton122 = new javax.swing.JButton();
+        jButton161 = new javax.swing.JButton();
+        jButton121 = new javax.swing.JButton();
+        jButton162 = new javax.swing.JButton();
+        jButton116 = new javax.swing.JButton();
+        jButton115 = new javax.swing.JButton();
+        jButton118 = new javax.swing.JButton();
+        jButton117 = new javax.swing.JButton();
+        jButton142 = new javax.swing.JButton();
+        jButton111 = new javax.swing.JButton();
+        jButton110 = new javax.swing.JButton();
+        jButton113 = new javax.swing.JButton();
+        jButton112 = new javax.swing.JButton();
+        jButton109 = new javax.swing.JButton();
+        jButton108 = new javax.swing.JButton();
+        jButton136 = new javax.swing.JButton();
+        jButton135 = new javax.swing.JButton();
+        jButton134 = new javax.swing.JButton();
+        jButton143 = new javax.swing.JButton();
+        jButton141 = new javax.swing.JButton();
+        jButton130 = new javax.swing.JButton();
+        jButton81 = new javax.swing.JButton();
+        jButton124 = new javax.swing.JButton();
+        jButton125 = new javax.swing.JButton();
+        jButton156 = new javax.swing.JButton();
+        jButton157 = new javax.swing.JButton();
+        jButton158 = new javax.swing.JButton();
+        jButton159 = new javax.swing.JButton();
+        jButton123 = new javax.swing.JButton();
+        jButton120 = new javax.swing.JButton();
+        jButton91 = new javax.swing.JButton();
+        jButton129 = new javax.swing.JButton();
+        jButton128 = new javax.swing.JButton();
+        jButton127 = new javax.swing.JButton();
+        jButton126 = new javax.swing.JButton();
+        jBPiedra7 = new javax.swing.JButton();
+        jBPiedra3 = new javax.swing.JButton();
+        jBPiedra1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jBPiedra2 = new javax.swing.JButton();
+        jBPiedra4 = new javax.swing.JButton();
+        jBPiedra6 = new javax.swing.JButton();
+        jBPiedra5 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton106 = new javax.swing.JButton();
+        jButton105 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel1.setText("Player");
-        jLabel1.setName("jLJugador"); // NOI18N
-
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel2.setText("Pozo");
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel3.setText("Computadora");
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel4.setText("Game #");
@@ -57,74 +139,1195 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Calibri", 1, 24));
         jLabel5.setText("iDomino");
 
-        jLNumPartida.setEditable(false);
-        jLNumPartida.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLNumPartida.setBorder(null);
-        jLNumPartida.setName("jLNumPartida"); // NOI18N
-        jLNumPartida.addActionListener(new java.awt.event.ActionListener() {
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel3.setText("Computadora");
+
+        jButton164.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jLNumPartidaActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
+
+        jButton165.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton144.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton144jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton145.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton145jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton153.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton152.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton146.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton146jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton166.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton169.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton168.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton163.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton131.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton132.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton133.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton167.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton119.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton119jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton137.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton137jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton139.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton139jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton138.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton138jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton140.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton140jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton149.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton114jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton148.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton151.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton150.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton122.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton122jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton161.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton121.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton121jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton162.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton116.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton116jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton115.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton115jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton118.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton118jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton117.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton117jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton142.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton111jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton110.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton110jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton113jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton112jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton109.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton109jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton108.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton108jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton136.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton135.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton135jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton134.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton134jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton143.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton141.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton141jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton130.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton124.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton124jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton125.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton125jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton156.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton157.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton158.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton159.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton123.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton123jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton120.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton120jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton129.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton128.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton127.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jButton126.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton126jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+
+        jBPiedra7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jBPiedra3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jBPiedra1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Player");
+
+        jBPiedra2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jBPiedra4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jBPiedra6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jBPiedra5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 24));
+        jLabel2.setText("POT");
+
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel6.setText("Game #");
+
+        jButton106.setText("PICK");
+
+        jButton105.setText("Pass");
+
+        jLabel7.setFont(new java.awt.Font("Calibri", 1, 24));
+        jLabel7.setText("iDomino");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(255, 255, 255)
-                .addComponent(jLabel2)
-                .addContainerGap(271, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLNumPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton122, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton120, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton119, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton117, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton118, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton121, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton123, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton126, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton125, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton124, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton108, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton111, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton110, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton81, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton109, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton113, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton114, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton115, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton116, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton132, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton130, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton129, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton127, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton128, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton131, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton133, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton143, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton142, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton136, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton138, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton140, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton135, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton137, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton134, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton141, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton139, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton145, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton146, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton144, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton165, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton163, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton162, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton161, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton164, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton166, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton169, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton168, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton167, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton151, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton149, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton153, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton152, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton156, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton148, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton150, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton158, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton159, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton157, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 377, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addGap(32, 32, 32))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(218, 218, 218)
-                .addComponent(jLabel5)
-                .addContainerGap(247, Short.MAX_VALUE))
+                        .addGap(119, 119, 119)
+                        .addComponent(jButton179, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton181, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton177, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton178, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton176, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton182, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton180, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel3)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(jLabel1)
+                                .addGap(405, 405, 405))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jBPiedra1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra6, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBPiedra7, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton105, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jLabel7))
+                                .addGap(236, 236, 236)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel5))
+                            .addComponent(jLabel6))
+                        .addGap(77, 77, 77))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jLabel2)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel5)
-                        .addGap(283, 283, 283)
-                        .addComponent(jLabel2))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton180, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton182, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton176, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton178, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton177, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton181, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton179, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLNumPartida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(107, 107, 107)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))))
-                .addContainerGap(45, Short.MAX_VALUE))
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton105, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(145, 145, 145)
+                                .addComponent(jLabel5)
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton123, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton121, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton118, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton117, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton119, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton120, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton122, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton126, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton125, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton124, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton116, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton115, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton114, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton113, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton81, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton110, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton111, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton108, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton109, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton139, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton141, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton134, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton137, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton135, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton140, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton138, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton145, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton146, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton144, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton136, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton142, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton143, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton133, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton131, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton127, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton129, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton130, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton132, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton128, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton167, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton168, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton169, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton166, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton164, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton162, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton163, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton165, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton161, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton150, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton148, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton156, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton152, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton153, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton149, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton151, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton158, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton159, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton157, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jBPiedra7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBPiedra1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel1)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLNumPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLNumPartidaActionPerformed
+    private void jButton144jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton144jBPiedraDelTableroActionPerformed
         // TODO add your handling code here:
-        //Conector.obtenerIDPartida(jLNumPartida);
-    }//GEN-LAST:event_jLNumPartidaActionPerformed
 
-    /**
-    * @param args the command line arguments
-    */
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton144jBPiedraDelTableroActionPerformed
+
+    private void jButton145jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton145jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton145jBPiedraDelTableroActionPerformed
+
+    private void jButton146jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton146jBPiedraDelTableroActionPerformed
+
+    private void jButton119jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton119jBPiedraDelTableroActionPerformed
+
+    private void jButton137jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton137jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton137jBPiedraDelTableroActionPerformed
+
+    private void jButton139jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton139jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton139jBPiedraDelTableroActionPerformed
+
+    private void jButton138jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton138jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton138jBPiedraDelTableroActionPerformed
+
+    private void jButton140jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton140jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton140jBPiedraDelTableroActionPerformed
+
+    private void jButton114jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton114jBPiedraDelTableroActionPerformed
+
+    private void jButton122jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton122jBPiedraDelTableroActionPerformed
+
+    private void jButton121jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton121jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton121jBPiedraDelTableroActionPerformed
+
+    private void jButton116jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton116jBPiedraDelTableroActionPerformed
+
+    private void jButton115jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton115jBPiedraDelTableroActionPerformed
+
+    private void jButton118jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton118jBPiedraDelTableroActionPerformed
+
+    private void jButton117jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton117jBPiedraDelTableroActionPerformed
+
+    private void jButton111jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton111jBPiedraDelTableroActionPerformed
+
+    private void jButton110jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton110jBPiedraDelTableroActionPerformed
+
+    private void jButton113jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton113jBPiedraDelTableroActionPerformed
+
+    private void jButton112jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton112jBPiedraDelTableroActionPerformed
+
+    private void jButton109jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton109jBPiedraDelTableroActionPerformed
+
+    private void jButton108jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton108jBPiedraDelTableroActionPerformed
+
+    private void jButton135jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton135jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton135jBPiedraDelTableroActionPerformed
+
+    private void jButton134jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton134jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton134jBPiedraDelTableroActionPerformed
+
+    private void jButton141jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton141jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton141jBPiedraDelTableroActionPerformed
+
+    private void jButton81jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton81jBPiedraDelTableroActionPerformed
+
+    private void jButton124jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton124jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton124jBPiedraDelTableroActionPerformed
+
+    private void jButton125jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton125jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton125jBPiedraDelTableroActionPerformed
+
+    private void jButton123jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton123jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton123jBPiedraDelTableroActionPerformed
+
+    private void jButton120jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton120jBPiedraDelTableroActionPerformed
+
+    private void jButton126jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton126jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+
+
+        JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null) {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+}//GEN-LAST:event_jButton126jBPiedraDelTableroActionPerformed
+
+    private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
+        // TODO add your handling code here:
+            JButton boton = (JButton) evt.getSource();
+
+        botonActualSeleccionado = boton;
+    }//GEN-LAST:event_jBPiedraSeleccionadaActionPerformed
+
+    private void jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraDelTableroActionPerformed
+        // TODO add your handling code here:
+          JButton boton = (JButton) evt.getSource();
+
+        if (botonActualSeleccionado != null)
+        {
+            boton.setIcon(botonActualSeleccionado.getIcon());
+            botonActualSeleccionado.setIcon(null);
+            botonActualSeleccionado.setEnabled(false);
+        }
+    }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
+
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -134,12 +1337,104 @@ public class VentanaJuego extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField jLNumPartida;
+    private javax.swing.JButton jBPiedra1;
+    private javax.swing.JButton jBPiedra2;
+    private javax.swing.JButton jBPiedra3;
+    private javax.swing.JButton jBPiedra4;
+    private javax.swing.JButton jBPiedra5;
+    private javax.swing.JButton jBPiedra6;
+    private javax.swing.JButton jBPiedra7;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton105;
+    private javax.swing.JButton jButton106;
+    private javax.swing.JButton jButton108;
+    private javax.swing.JButton jButton109;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton110;
+    private javax.swing.JButton jButton111;
+    private javax.swing.JButton jButton112;
+    private javax.swing.JButton jButton113;
+    private javax.swing.JButton jButton114;
+    private javax.swing.JButton jButton115;
+    private javax.swing.JButton jButton116;
+    private javax.swing.JButton jButton117;
+    private javax.swing.JButton jButton118;
+    private javax.swing.JButton jButton119;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton120;
+    private javax.swing.JButton jButton121;
+    private javax.swing.JButton jButton122;
+    private javax.swing.JButton jButton123;
+    private javax.swing.JButton jButton124;
+    private javax.swing.JButton jButton125;
+    private javax.swing.JButton jButton126;
+    private javax.swing.JButton jButton127;
+    private javax.swing.JButton jButton128;
+    private javax.swing.JButton jButton129;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton130;
+    private javax.swing.JButton jButton131;
+    private javax.swing.JButton jButton132;
+    private javax.swing.JButton jButton133;
+    private javax.swing.JButton jButton134;
+    private javax.swing.JButton jButton135;
+    private javax.swing.JButton jButton136;
+    private javax.swing.JButton jButton137;
+    private javax.swing.JButton jButton138;
+    private javax.swing.JButton jButton139;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton140;
+    private javax.swing.JButton jButton141;
+    private javax.swing.JButton jButton142;
+    private javax.swing.JButton jButton143;
+    private javax.swing.JButton jButton144;
+    private javax.swing.JButton jButton145;
+    private javax.swing.JButton jButton146;
+    private javax.swing.JButton jButton148;
+    private javax.swing.JButton jButton149;
+    private javax.swing.JButton jButton150;
+    private javax.swing.JButton jButton151;
+    private javax.swing.JButton jButton152;
+    private javax.swing.JButton jButton153;
+    private javax.swing.JButton jButton156;
+    private javax.swing.JButton jButton157;
+    private javax.swing.JButton jButton158;
+    private javax.swing.JButton jButton159;
+    private javax.swing.JButton jButton161;
+    private javax.swing.JButton jButton162;
+    private javax.swing.JButton jButton163;
+    private javax.swing.JButton jButton164;
+    private javax.swing.JButton jButton165;
+    private javax.swing.JButton jButton166;
+    private javax.swing.JButton jButton167;
+    private javax.swing.JButton jButton168;
+    private javax.swing.JButton jButton169;
+    private javax.swing.JButton jButton176;
+    private javax.swing.JButton jButton177;
+    private javax.swing.JButton jButton178;
+    private javax.swing.JButton jButton179;
+    private javax.swing.JButton jButton180;
+    private javax.swing.JButton jButton181;
+    private javax.swing.JButton jButton182;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton81;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButton91;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 
+        JButton botonActualSeleccionado;
 }
