@@ -16,8 +16,6 @@ public class Main {
 
     public static void main(String args[]) {
 
-        System.out.println("HOLA");
-
         BufferedReader br;
         br = new BufferedReader(new InputStreamReader(System.in));
         int i = 0;
@@ -93,8 +91,8 @@ public class Main {
         ///Fin de Modificar Usuario
 
         System.out.println("\nCREAR PARTIDA\n");
-        listadoPartidas.crearPartida("danieluchin");
-        listadoPartidas.crearPartida("alberlykida");
+     //   listadoPartidas.crearPartida("danieluchin");
+    //    listadoPartidas.crearPartida("alberlykida");
         System.out.println("\nLISTA PARTIDAS CREADAS\n");
         //listadoPartidas.imprimirPartidas();
 

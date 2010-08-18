@@ -93,11 +93,11 @@ public class Datos {
     }
 
     public static boolean crearPartida(String nickname) {
-        return listaDePartidas.crearPartida(nickname);
+        return listaDePartidas.crearPartida(nickname, listaDePiedras);
     }
     public static Partida obtenerPartidaCreada(String nickname) {
         Partida laPartida;
-        laPartida = new Partida().crearPartida(nickname);
+        laPartida = new Partida().crearPartida(nickname, listaDePiedras);
         return laPartida;
     }
 

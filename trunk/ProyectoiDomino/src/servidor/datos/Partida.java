@@ -89,11 +89,11 @@ public class Partida {
     public void cargarPartida() {
     }
 
-    public Partida crearPartida(String nickname) {
+    public Partida crearPartida(String nickname, ListaPiedras listaDePiedras) {
         int i = 0, j = 0;
 
-        ListaPiedras laListaPiedras;
-        laListaPiedras = new ListaPiedras();
+        //ListaPiedras laListaPiedras;
+        //laListaPiedras = new ListaPiedras();
 
         System.out.println("Partida creada por " + nickname);
         //this.setElUsuario(elUsuario);
@@ -108,15 +108,17 @@ public class Partida {
         elJuego.setJugador2(new Maquina());
         elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1, new ListaPiedras()));
 
-        for (i = 0; i <= 6; i++) {
+      /*  for (i = 0; i <= 6; i++) {
 
             for (j = i; j <= 6; j++) {
-                laListaPiedras.agregarPiedra(new Piedra(i, j));
+                laListaPiedras.agregarPiedra(new Piedra("",i,j,"","","",""));
             }
 
         }
 
-        laListaPiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());
+        laListaPiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());*/
+        //listaDePiedras.agregarPiedra(new Piedra("",i,j,"","","",""));
+        listaDePiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());
 
         /*System.out.println("PIEDRAS DEL JUGADOR");
 
