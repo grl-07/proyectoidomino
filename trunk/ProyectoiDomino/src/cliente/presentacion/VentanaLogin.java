@@ -145,6 +145,10 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
+        if (txtNickname.getText().equalsIgnoreCase("") || txtPassword.getText().equalsIgnoreCase("")) {
+            JOptionPane.showMessageDialog(null, "All fields must be written in.");
+        } else {
+
         String mensaje = ConexionJsockets.solicitudServidor1(txtNickname, txtPassword);
         //System.out.println("EL SERVIDOR RESPONDE " + mensaje);
         String[] subArg = mensaje.split(":");
@@ -160,6 +164,7 @@ public class VentanaLogin extends javax.swing.JFrame {
 
         } else {
             JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
+        }
         }
     }//GEN-LAST:event_btnOKActionPerformed
 
