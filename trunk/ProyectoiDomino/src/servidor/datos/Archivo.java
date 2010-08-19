@@ -322,61 +322,9 @@ public class Archivo {
         return false;
     }
 
-    /*public static boolean guardarPartidasArchivo(ListaPartidas listaDePartidas) {
-    Partida nodoAuxiliar;
-
-    Element root = new Element("Partidas");
-
-    Iterator iterador = listaDePartidas.getIterator();
-
-    while (iterador.hasNext()) {
-    Element partida = new Element("Partida");
-
-    nodoAuxiliar = (Partida) iterador.next();
-
-    Element nickname = new Element("nickname");
-    Element fechaIni = new Element("fechaIni");
-    Element fechaactual = new Element("fechaactual");
-    Element IDPartida = new Element("IDPartida");
-
-    String numeroPartida = Integer.toString(nodoAuxiliar.getIDPartida());
-
-    nickname.setText(nodoAuxiliar.getElUsuario().getNickname());
-    fechaIni.setText(nodoAuxiliar.getFechaIni());
-    fechaactual.setText(nodoAuxiliar.getFechaactual());
-    IDPartida.setText(numeroPartida);
-
-    partida.addContent(nickname);
-    partida.addContent(fechaIni);
-    partida.addContent(fechaactual);
-    partida.addContent(IDPartida);
-
-    root.addContent(partida);
-    }
-
-
-    Document doc = new Document(root);
-
-    try {
-
-    XMLOutputter out = new XMLOutputter();
-
-    FileOutputStream file = new FileOutputStream(direccionPartidas);
-
-    out.output(doc, file);
-
-    file.flush();
-    file.close();
-
-    out.output(doc, System.out);
-    } catch (Exception e) {
-    e.printStackTrace();
-    }
-    return false;
-    }*/
+     /////////////////////////////nuevo ABE/////////////////////////
     public static void guardarDatosArchivoPartidas(ListaPartidas listaPartidas) {
-        /*Juego elJuego;
-        elJuego = new Juego();*/
+
         Partida nodoAuxiliar;
 
         Element root = new Element("Partidas");
@@ -400,18 +348,26 @@ public class Archivo {
             fechaIni.setText(nodoAuxiliar.getFechaIni());
             IDPartida.setText(IDPartidaInt);
 
+            partida.addContent(username);
+            partida.addContent(fechaactual);
+            partida.addContent(fechaIni);
+            partida.addContent(IDPartida);
+
+
+            Piedra nodoAuxiliarPiedra;
             //PIEDRAS EN MANO DEL JUGADOR
             Element piedraJugador = new Element("PiedrasJugador");
 
+            System.out.println("INICIO LISTA DE PIEDRAS EN MANO JUGADOR");
+            nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
+            System.out.println("FIN LISTA DE PIEDRAS EN MANO JUGADOR");
+
+
             Iterator iteradorJugador = nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().getIterator();
-            System.out.println("////AQUI///");
-            //Iterator iteradorJugador = elJugador.getElJugador().getPiedrasEnMano().getIterator();
-            //Iterator iteradorJugador = controlJugadores.getPiedrasEnMano().getIterator();
 
             while (iteradorJugador.hasNext()) {
                 Element piedra = new Element("Piedra");
-                Piedra nodoAuxiliarPiedra;
-                nodoAuxiliarPiedra = (Piedra) iterador.next();
+                nodoAuxiliarPiedra = (Piedra) iteradorJugador.next();
 
                 Element num1 = new Element("num1");
                 Element num2 = new Element("num2");
@@ -427,17 +383,16 @@ public class Archivo {
 
                 piedraJugador.addContent(piedra);
             }
+            partida.addContent(piedraJugador);
 
 
-            //PIEDRAS EN MANO DE LA MÃ�QUINA
+            //PIEDRAS EN MANO DE LA MÁQUINA
             Element piedraMaquina = new Element("PiedrasMaquina");
             Iterator iteradorMaquina = nodoAuxiliar.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano().getIterator();
-            //Iterator iteradorMaquina = laMaquina.getLaMaquina().getPiedrasEnMano().getIterator();
 
             while (iteradorMaquina.hasNext()) {
                 Element piedra = new Element("Piedra");
-                Piedra nodoAuxiliarPiedra;
-                nodoAuxiliarPiedra = (Piedra) iterador.next();
+                nodoAuxiliarPiedra = (Piedra) iteradorMaquina.next();
 
                 Element num1 = new Element("num1");
                 Element num2 = new Element("num2");
@@ -454,16 +409,15 @@ public class Archivo {
                 piedraMaquina.addContent(piedra);
             }
 
+            partida.addContent(piedraMaquina);
 
             //PIEDRAS DEL POZO
             Element piedraPozo = new Element("PiedrasPozo");
             Iterator iteradorPozo = nodoAuxiliar.getElJuego().getLaMesa().getElPozo().getIterator();
-            //Iterator iteradorPozo = elPozo.getPiedrasMesa().getIterator();
 
             while (iteradorPozo.hasNext()) {
                 Element piedra = new Element("Piedra");
-                Piedra nodoAuxiliarPiedra;
-                nodoAuxiliarPiedra = (Piedra) iterador.next();
+                nodoAuxiliarPiedra = (Piedra) iteradorPozo.next();
 
                 Element num1 = new Element("num1");
                 Element num2 = new Element("num2");
@@ -479,17 +433,36 @@ public class Archivo {
 
                 piedraPozo.addContent(piedra);
             }
+            partida.addContent(piedraPozo);
 
 
-            partida.addContent(username);
-            partida.addContent(fechaactual);
-            partida.addContent(fechaIni);
-            partida.addContent(IDPartida);
+            //PIEDRAS DE MESA
+            Element piedraMesa = new Element("PiedrasMesa");
+            Iterator iteradorMesa = nodoAuxiliar.getElJuego().getLaMesa().getPiedrasMesa().getIterator();
+
+            while (iteradorMesa.hasNext()) {
+                Element piedra = new Element("Piedra");
+                nodoAuxiliarPiedra = (Piedra) iteradorMesa.next();
+
+                Element num1 = new Element("num1");
+                Element num2 = new Element("num2");
+
+                String num1Str = Integer.toString(nodoAuxiliarPiedra.getNum1());
+                String num2Str = Integer.toString(nodoAuxiliarPiedra.getNum2());
+
+                num1.setText(num1Str);
+                num2.setText(num2Str);
+
+                piedra.addContent(num1);
+                piedra.addContent(num2);
+
+                piedraMesa.addContent(piedra);
+            }
+            partida.addContent(piedraMesa);
+
 
             root.addContent(partida);
-
         }
-
 
         Document doc = new Document(root);
 
@@ -509,4 +482,6 @@ public class Archivo {
             e.printStackTrace();
         }
     }
+    /////////////////////////////nuevo ABE/////////////////////////
+   
 }
