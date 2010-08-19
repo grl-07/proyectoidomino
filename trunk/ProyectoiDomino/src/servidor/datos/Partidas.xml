@@ -8,5 +8,317 @@
         Purpose of the document follows.
 -->
 <Partidas>
+    <Partida>
+        <nickname>danieluchin</nickname>
+        <fechaIni>11-08-10</fechaIni>
+        <fechaactual>11-08-10</fechaactual>
+        <IDPartida>1</IDPartida>
+        <PiedrasJugador>
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
 
+            <Piedra>
+                <num1>0</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>4</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>5</num1>
+                <num2>6</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>6</num1>
+                <num2>6</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>5</num2>
+            </Piedra>
+        </PiedrasJugador>
+
+        <PiedrasMaquina>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+        </PiedrasMaquina>
+
+        <PiedrasPozo>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+        </PiedrasPozo>
+
+        <PiedrasMesa>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+        </PiedrasMesa>
+    </Partida>
+
+    <Partida>
+        <nickname>alberlykida12</nickname>
+        <fechaIni>18-08-10</fechaIni>
+        <fechaactual>18-08-10</fechaactual>
+        <IDPartida>1</IDPartida>
+        <PiedrasJugador>
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>4</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>5</num1>
+                <num2>6</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>6</num1>
+                <num2>6</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>5</num2>
+            </Piedra>
+        </PiedrasJugador>
+
+        <PiedrasMaquina>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>0</num1>
+                <num2>0</num2>
+            </Piedra>
+        </PiedrasMaquina>
+
+        <PiedrasPozo>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>1</num1>
+                <num2>1</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>2</num1>
+                <num2>2</num2>
+            </Piedra>
+        </PiedrasPozo>
+
+        <PiedrasMesa>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+
+            <Piedra>
+                <num1>3</num1>
+                <num2>3</num2>
+            </Piedra>
+        </PiedrasMesa>
+    </Partida>
 </Partidas>

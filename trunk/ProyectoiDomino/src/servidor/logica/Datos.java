@@ -72,13 +72,13 @@ public class Datos {
         listaDePiedras.imprimirListaPiedras();
     }
 
-    public static String asignarIconoUsuario(String nombre, String apellido, String username, String clave, JTextField avatar, JRadioButton perro, JRadioButton sombrilla) {
+    /*public static String asignarIconoUsuario(String nombre, String apellido, String username, String clave, JTextField avatar, JRadioButton perro, JRadioButton sombrilla) {
         Usuario registro, elUsuario;
 
         elUsuario = new Usuario(nombre, apellido, clave, username, "");
 
         /*if (registro != null)
-        {*/
+        {
         if (perro.isSelected()) {
             elUsuario.setAvatar("perro");
             sombrilla.setSelected(false);
@@ -90,7 +90,7 @@ public class Datos {
         avatar.setText(elUsuario.getAvatar());
         return elUsuario.getAvatar();
         //}
-    }
+    }*/
 
     public static boolean crearPartida(String nickname) {
         return listaDePartidas.crearPartida(nickname, listaDePiedras);

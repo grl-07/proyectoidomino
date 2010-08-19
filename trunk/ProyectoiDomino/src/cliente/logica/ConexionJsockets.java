@@ -41,7 +41,7 @@ public class ConexionJsockets {
         return resultado;
     }
 
-     public static String solicitudServidor3(JTextField name, JTextField lastName, JTextField username, JPasswordField clave,String avatar) {
+     public static String solicitudServidor3(JTextField name, JTextField lastName, JTextField username, JPasswordField clave,String avatar, String fechaNac) {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "3";
         String nickname = username.getText();
@@ -49,7 +49,7 @@ public class ConexionJsockets {
         String nombre = name.getText();
         String apellido = lastName.getText();
         //String avatar = IDavatar.getText();
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nombre + ":" + apellido + ":" + nickname + ":" + password + ":" + avatar, "localhost", 9999);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password + ":" + nombre + ":" + apellido + ":" + fechaNac + ":" + avatar, "localhost", 9999);
         System.out.println("RESULTADO = " + resultado);
         if (resultado.equals("TRUE")) {
             System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);

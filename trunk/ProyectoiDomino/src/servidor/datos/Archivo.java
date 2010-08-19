@@ -34,6 +34,7 @@ public class Archivo {
 
             Element nombre = new Element("nombre");
             Element apellido = new Element("apellido");
+            Element fechaNac = new Element("fechaNac");
             Element nickname = new Element("nickname");
             Element clave = new Element("clave");
             Element avatar = new Element("avatar");
@@ -49,6 +50,7 @@ public class Archivo {
 
             nombre.setText(nodoAuxiliar.getNombre());
             apellido.setText(nodoAuxiliar.getApellido());
+            fechaNac.setText(nodoAuxiliar.getFechaNac());
             nickname.setText(nodoAuxiliar.getNickname());
             clave.setText(nodoAuxiliar.getClave());
             avatar.setText(nodoAuxiliar.getAvatar());
@@ -59,6 +61,7 @@ public class Archivo {
 
             usuario.addContent(nombre);
             usuario.addContent(apellido);
+            usuario.addContent(fechaNac);
             usuario.addContent(nickname);
             usuario.addContent(clave);
             usuario.addContent(avatar);
@@ -167,7 +170,7 @@ public class Archivo {
                 int numeroUno = Integer.parseInt(num1.getText());
                 int numeroDos = Integer.parseInt(num2.getText());
 
-                Piedra laPiedra = new Piedra(ID.getText(), numeroUno, numeroDos,ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(),ImagenIzquierda.getText());
+                Piedra laPiedra = new Piedra(ID.getText(), numeroUno, numeroDos, ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(), ImagenIzquierda.getText());
 
                 //Piedra laPiedra = new Piedra(numeroUno, numeroDos);
                 listaDePiedras.agregarPiedra(laPiedra);
@@ -227,16 +230,15 @@ public class Archivo {
                     listaPiedrasJugador.agregarPiedra(new Piedra(numero1, numero2));
                 }
 
-                System.out.println("Se lleno la lista del jugador");
 
-                Usuario elUsuario = new Usuario("", "", "", username.getText(), "");
+
+                Usuario elUsuario = new Usuario("", "", "", username.getText(), "", "");
 
                 //Usuario usuarioAuxiliar = new ListaUsuarios().buscarDatos(elUsuario);
                 //Jugador elJugador = new Jugador(usuarioAuxiliar.getNombre(), usuarioAuxiliar.getApellido(), usuarioAuxiliar.getClave(), username.getText(), usuarioAuxiliar.getAvatar(), 0, 0, 0, 0);
-                Jugador elJugador = new Jugador("", "", "", username.getText(), "", 0, 0, 0, 0);
+                Jugador elJugador = new Jugador(username.getText(), "", 0, 0, 0, 0);
                 elJugador.getElJugador().setPiedrasEnMano(listaPiedrasJugador);
-                System.out.println("Piedras del Jugador: " + elJugador.getNickname());
-                elJugador.getElJugador().getPiedrasEnMano().imprimirListaPiedras();
+
                 //FIN PIEDRAS JUGADOR
 
 
@@ -259,8 +261,7 @@ public class Archivo {
                 }
                 Maquina laMaquina = new Maquina();
                 laMaquina.getLaMaquina().setPiedrasEnMano(listaPiedrasMaquina);
-                System.out.println("Piedras Maquina: ");
-                laMaquina.getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
+
                 //FIN PIEDRAS MAQUINA
 
 
@@ -283,8 +284,6 @@ public class Archivo {
                 }
                 Mesa laMesa = new Mesa();
                 laMesa.setElPozo(listaPiedrasPozo);
-                System.out.println("Piedras Pozo: ");
-                laMesa.getElPozo().imprimirListaPiedras();
                 //FIN PIEDRAS POZO
 
 
@@ -307,17 +306,14 @@ public class Archivo {
                 }
 
                 laMesa.setPiedrasMesa(listaPiedrasMesa);
-                System.out.println("Piedras Mesa: ");
-                laMesa.getPiedrasMesa().imprimirListaPiedras();
+
                 //FIN PIEDRAS MESA
 
-                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);
-                System.out.println("Creado el Juego por: " + elJuego.getJugador1().getNickname());
+                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);                
 
                 //lo ulimo que se hace.
                 Partida laPartida = new Partida(elUsuario, numeroPartida, fechaInicial.getText(), fechaact.getText(), elJuego);
-                System.out.println("Creada la Partida por: " + laPartida.getElUsuario().getNickname());
-                System.out.println("Creado la Partida en: " + laPartida.getFechaIni());
+
                 listaDePartidas.agregarPartida(laPartida);
             }
         } catch (Exception e) {
@@ -327,58 +323,57 @@ public class Archivo {
     }
 
     /*public static boolean guardarPartidasArchivo(ListaPartidas listaDePartidas) {
-        Partida nodoAuxiliar;
+    Partida nodoAuxiliar;
 
-        Element root = new Element("Partidas");
+    Element root = new Element("Partidas");
 
-        Iterator iterador = listaDePartidas.getIterator();
+    Iterator iterador = listaDePartidas.getIterator();
 
-        while (iterador.hasNext()) {
-            Element partida = new Element("Partida");
+    while (iterador.hasNext()) {
+    Element partida = new Element("Partida");
 
-            nodoAuxiliar = (Partida) iterador.next();
+    nodoAuxiliar = (Partida) iterador.next();
 
-            Element nickname = new Element("nickname");
-            Element fechaIni = new Element("fechaIni");
-            Element fechaactual = new Element("fechaactual");
-            Element IDPartida = new Element("IDPartida");
+    Element nickname = new Element("nickname");
+    Element fechaIni = new Element("fechaIni");
+    Element fechaactual = new Element("fechaactual");
+    Element IDPartida = new Element("IDPartida");
 
-            String numeroPartida = Integer.toString(nodoAuxiliar.getIDPartida());
+    String numeroPartida = Integer.toString(nodoAuxiliar.getIDPartida());
 
-            nickname.setText(nodoAuxiliar.getElUsuario().getNickname());
-            fechaIni.setText(nodoAuxiliar.getFechaIni());
-            fechaactual.setText(nodoAuxiliar.getFechaactual());
-            IDPartida.setText(numeroPartida);
+    nickname.setText(nodoAuxiliar.getElUsuario().getNickname());
+    fechaIni.setText(nodoAuxiliar.getFechaIni());
+    fechaactual.setText(nodoAuxiliar.getFechaactual());
+    IDPartida.setText(numeroPartida);
 
-            partida.addContent(nickname);
-            partida.addContent(fechaIni);
-            partida.addContent(fechaactual);
-            partida.addContent(IDPartida);
+    partida.addContent(nickname);
+    partida.addContent(fechaIni);
+    partida.addContent(fechaactual);
+    partida.addContent(IDPartida);
 
-            root.addContent(partida);
-        }
+    root.addContent(partida);
+    }
 
 
-        Document doc = new Document(root);
+    Document doc = new Document(root);
 
-        try {
+    try {
 
-            XMLOutputter out = new XMLOutputter();
+    XMLOutputter out = new XMLOutputter();
 
-            FileOutputStream file = new FileOutputStream(direccionPartidas);
+    FileOutputStream file = new FileOutputStream(direccionPartidas);
 
-            out.output(doc, file);
+    out.output(doc, file);
 
-            file.flush();
-            file.close();
+    file.flush();
+    file.close();
 
-            out.output(doc, System.out);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
+    out.output(doc, System.out);
+    } catch (Exception e) {
+    e.printStackTrace();
+    }
+    return false;
     }*/
-
     public static void guardarDatosArchivoPartidas(ListaPartidas listaPartidas) {
         /*Juego elJuego;
         elJuego = new Juego();*/

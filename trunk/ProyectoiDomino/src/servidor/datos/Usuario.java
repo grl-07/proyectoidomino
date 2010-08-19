@@ -14,6 +14,7 @@ public class Usuario {
     protected String clave;
     protected String nickname;
     protected String nombre;
+    protected String fechaNac;
     protected int numPartidasGan;
     protected int numIngresos;
     protected int numPartCreadas;
@@ -28,15 +29,13 @@ public class Usuario {
         this.ID = ID;
     }
 
-   // protected JCalendar fechaNac;
-
- /*   public JCalendar getFechaNac() {
-        return fechaNac;
+    public void setFechaNac(String fechaNac) {
+        this.fechaNac = fechaNac;
     }
 
-    public void setFechaNac(JCalendar fechaNac) {
-        this.fechaNac = fechaNac;
-    }*/
+    public String getFechaNac(){
+        return fechaNac;
+    }
 
     public int getNumPartCreadas() {
         return numPartCreadas;
@@ -123,12 +122,22 @@ public class Usuario {
     }
 
 
-     public Usuario(String nombre, String apellido, String clave, String nickname, String avatar) {
+     public Usuario(String nombre, String apellido, String clave, String nickname, String avatar, String fechaNac) {
         this.apellido = apellido;
         this.avatar = avatar;
         this.clave = clave;
         this.nickname = nickname;
         this.nombre = nombre;
+        this.fechaNac = fechaNac;
+    }
+
+    public Usuario(String avatar, String nickname, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {
+        this.avatar = avatar;
+        this.nickname = nickname;
+        this.numPartidasGan = numPartidasGan;
+        this.numIngresos = numIngresos;
+        this.numPartCreadas = numPartCreadas;
+        this.puntaje = puntaje;
     }
 
     public int hashCode()
