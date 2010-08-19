@@ -470,12 +470,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton144">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton144jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton145">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton145jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton153">
@@ -490,7 +490,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton146">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton146jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton166">
@@ -535,27 +535,27 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton119">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton119jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton137">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton137jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton139">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton139jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton138">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton138jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton140">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton140jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton149">
@@ -565,7 +565,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton114">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton114jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton148">
@@ -585,7 +585,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton122">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton122jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton161">
@@ -595,7 +595,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton121">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton121jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton162">
@@ -605,22 +605,22 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton116">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton116jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton115">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton115jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton118">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton118jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton117">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton117jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton142">
@@ -630,32 +630,32 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton111">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton111jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton110">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton110jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton113">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton113jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton112">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton112jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton109">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton109jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton108">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton108jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton136">
@@ -665,12 +665,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton135">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton135jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton134">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton134jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton143">
@@ -680,7 +680,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton141">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton141jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton130">
@@ -690,17 +690,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton81">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton81jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton124">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton124jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton125">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton125jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton156">
@@ -725,12 +725,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton123">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton123jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton120">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton120jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton91">
@@ -755,7 +755,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton126">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton126jBPiedraDelTableroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra7">

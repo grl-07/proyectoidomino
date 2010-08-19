@@ -8,8 +8,8 @@
  *
  * Created on 08/08/2010, 10:10:02 AM
  */
-
 package cliente.presentacion;
+
 import javax.swing.JFrame;
 import cliente.logica.ConexionJsockets;
 
@@ -18,12 +18,14 @@ import cliente.logica.ConexionJsockets;
  * @author Alberly
  */
 public class VentanaMenu extends javax.swing.JFrame {
+
     javax.swing.JFrame ventanaPadre;
 
     /** Creates new form VentanaMenu */
     public VentanaMenu() {
         initComponents();
     }
+
     public VentanaMenu(JFrame ventanaPadre) {
         initComponents();
         this.ventanaPadre = ventanaPadre;
@@ -188,10 +190,11 @@ public class VentanaMenu extends javax.swing.JFrame {
     private void jBCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearPartidaActionPerformed
         // TODO add your handling code here:
         String mensaje = ConexionJsockets.solicitudServidor2(jTextNickname, "fechaInicio");
+
+        new VentanaJuego(this, jTextNickname.getText(), mensaje).setVisible(true);
     }//GEN-LAST:event_jBCrearPartidaActionPerformed
 
-    public void setDatosUsuario(String nickname, String nombre,String apellido,String avatar)
-    {
+    public void setDatosUsuario(String nickname, String nombre, String apellido, String avatar) {
         jTextNickname.setText(nickname);
         jTextNombre.setText(nombre);
         jTextApellido.setText(apellido);
@@ -210,20 +213,21 @@ public class VentanaMenu extends javax.swing.JFrame {
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
         }
 
-        jLBienvenida.setText(" Welcome " + nickname+ " to iDomino");
+        jLBienvenida.setText(" Welcome " + nickname + " to iDomino");
 
     }
+
     /**
-    * @param args the command line arguments
-    */
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
                 new VentanaMenu().setVisible(true);
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBCargarPartida;
     private javax.swing.JButton jBCrearPartida;
@@ -237,5 +241,4 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JTextField jTextNickname;
     private javax.swing.JTextField jTextNombre;
     // End of variables declaration//GEN-END:variables
-
 }
