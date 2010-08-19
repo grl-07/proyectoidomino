@@ -28,130 +28,130 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton122" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa00" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton120" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa01" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton119" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa02" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton117" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa03" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton118" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa04" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton121" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa05" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton123" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa06" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton126" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa07" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton125" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa08" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton124" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa09" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton108" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa10" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton111" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa11" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton110" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa12" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton81" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa13" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton109" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa14" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton112" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa15" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton113" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa16" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton114" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa17" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton115" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa18" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton116" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa19" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton132" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa30" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton130" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa31" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton129" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa32" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton127" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa33" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton128" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa34" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton131" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa35" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton133" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa36" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton143" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa37" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton142" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa38" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton136" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa39" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton138" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa20" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton140" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa21" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton135" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa22" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton137" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa23" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton134" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa24" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton141" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa25" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton139" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa26" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton145" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa27" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton146" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa28" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton144" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa29" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton165" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa40" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton163" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa41" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton162" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa42" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton91" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa43" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton161" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa44" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton164" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa45" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton166" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa46" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton169" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa47" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton168" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa48" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton167" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa49" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton151" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa50" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton149" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa51" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton153" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa52" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton152" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa53" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton156" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa54" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton148" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa55" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton150" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa56" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton158" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa57" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton159" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa58" min="-2" pref="73" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton157" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBMesa59" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -200,11 +200,15 @@
                               <Component id="jBPiedra7" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jBRotarIzq" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBRotarIzq1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -322,96 +326,104 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton123" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton121" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton118" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton117" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton119" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton120" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton122" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton126" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton125" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton124" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa06" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa05" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa04" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa03" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa02" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa01" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa00" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa07" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa08" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa09" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton116" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton115" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton114" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton113" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton112" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton81" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton110" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton111" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton108" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton109" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa19" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa18" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa17" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa16" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa15" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa13" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa12" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa11" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa10" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa14" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton139" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton141" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton134" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton137" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton135" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton140" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton138" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton145" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton146" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton144" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa26" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa25" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa24" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa23" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa22" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa21" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa20" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa27" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa28" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa29" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton136" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton142" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton143" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton133" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton131" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton127" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton129" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton130" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton132" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton128" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa39" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa38" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa37" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa36" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa35" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa33" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa32" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa31" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa30" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa34" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton167" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton168" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton169" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton166" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton164" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton91" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton162" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton163" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton165" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton161" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa49" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa48" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa47" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa46" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa45" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa43" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa42" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa41" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa40" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa44" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton150" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton148" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton156" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton152" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton153" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton149" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton151" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton158" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton159" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton157" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa56" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa55" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa54" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa53" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa52" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa51" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa50" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa57" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa58" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBMesa59" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jBPiedra7" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra6" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra5" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra4" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra3" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jBPiedra1" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jBPiedra7" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra6" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra5" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra4" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra3" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra1" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jBRotarIzq" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jBRotarIzq1" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="47" max="32767" attributes="0"/>
@@ -458,302 +470,302 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton178">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton164">
+    <Component class="javax.swing.JButton" name="jBMesa45">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton165">
+    <Component class="javax.swing.JButton" name="jBMesa40">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton144">
+    <Component class="javax.swing.JButton" name="jBMesa29">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton145">
+    <Component class="javax.swing.JButton" name="jBMesa27">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton153">
+    <Component class="javax.swing.JButton" name="jBMesa52">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton152">
+    <Component class="javax.swing.JButton" name="jBMesa53">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton146">
+    <Component class="javax.swing.JButton" name="jBMesa28">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton166">
+    <Component class="javax.swing.JButton" name="jBMesa46">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton169">
+    <Component class="javax.swing.JButton" name="jBMesa47">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton168">
+    <Component class="javax.swing.JButton" name="jBMesa48">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton163">
+    <Component class="javax.swing.JButton" name="jBMesa41">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton131">
+    <Component class="javax.swing.JButton" name="jBMesa35">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton132">
+    <Component class="javax.swing.JButton" name="jBMesa30">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton133">
+    <Component class="javax.swing.JButton" name="jBMesa36">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton167">
+    <Component class="javax.swing.JButton" name="jBMesa49">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton119">
+    <Component class="javax.swing.JButton" name="jBMesa02">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton137">
+    <Component class="javax.swing.JButton" name="jBMesa23">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton139">
+    <Component class="javax.swing.JButton" name="jBMesa26">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton138">
+    <Component class="javax.swing.JButton" name="jBMesa20">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton140">
+    <Component class="javax.swing.JButton" name="jBMesa21">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton149">
+    <Component class="javax.swing.JButton" name="jBMesa51">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton114">
+    <Component class="javax.swing.JButton" name="jBMesa17">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton148">
+    <Component class="javax.swing.JButton" name="jBMesa55">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton151">
+    <Component class="javax.swing.JButton" name="jBMesa50">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton150">
+    <Component class="javax.swing.JButton" name="jBMesa56">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton122">
+    <Component class="javax.swing.JButton" name="jBMesa00">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton161">
+    <Component class="javax.swing.JButton" name="jBMesa44">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton121">
+    <Component class="javax.swing.JButton" name="jBMesa05">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton162">
+    <Component class="javax.swing.JButton" name="jBMesa42">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton116">
+    <Component class="javax.swing.JButton" name="jBMesa19">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton115">
+    <Component class="javax.swing.JButton" name="jBMesa18">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton118">
+    <Component class="javax.swing.JButton" name="jBMesa04">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton117">
+    <Component class="javax.swing.JButton" name="jBMesa03">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton142">
+    <Component class="javax.swing.JButton" name="jBMesa38">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton111">
+    <Component class="javax.swing.JButton" name="jBMesa11">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton110">
+    <Component class="javax.swing.JButton" name="jBMesa12">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton113">
+    <Component class="javax.swing.JButton" name="jBMesa16">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton112">
+    <Component class="javax.swing.JButton" name="jBMesa15">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton109">
+    <Component class="javax.swing.JButton" name="jBMesa14">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton108">
+    <Component class="javax.swing.JButton" name="jBMesa10">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton136">
+    <Component class="javax.swing.JButton" name="jBMesa39">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton135">
+    <Component class="javax.swing.JButton" name="jBMesa22">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton134">
+    <Component class="javax.swing.JButton" name="jBMesa24">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton143">
+    <Component class="javax.swing.JButton" name="jBMesa37">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton141">
+    <Component class="javax.swing.JButton" name="jBMesa25">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton130">
+    <Component class="javax.swing.JButton" name="jBMesa31">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton81">
+    <Component class="javax.swing.JButton" name="jBMesa13">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton124">
+    <Component class="javax.swing.JButton" name="jBMesa09">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton125">
+    <Component class="javax.swing.JButton" name="jBMesa08">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton156">
+    <Component class="javax.swing.JButton" name="jBMesa54">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton157">
+    <Component class="javax.swing.JButton" name="jBMesa59">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton158">
+    <Component class="javax.swing.JButton" name="jBMesa57">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton159">
+    <Component class="javax.swing.JButton" name="jBMesa58">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton123">
+    <Component class="javax.swing.JButton" name="jBMesa06">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton120">
+    <Component class="javax.swing.JButton" name="jBMesa01">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton91">
+    <Component class="javax.swing.JButton" name="jBMesa43">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton129">
+    <Component class="javax.swing.JButton" name="jBMesa32">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton128">
+    <Component class="javax.swing.JButton" name="jBMesa34">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton127">
+    <Component class="javax.swing.JButton" name="jBMesa33">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton126">
+    <Component class="javax.swing.JButton" name="jBMesa07">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
@@ -858,6 +870,19 @@
           <Font name="Calibri" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="iDomino"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBRotarIzq">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RotI"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBRotarIzqActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBRotarIzq1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RotD"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -17,6 +17,15 @@ public class Mesa {
     private int extremo2;
     private ListaPiedras PiedrasMesa;
     private Set<Mesa> lasPiedrasMesa;
+    private Piedra matrizPiedrasMesa[][]; //las verdaderas piedras de la mesa.
+
+    public Piedra[][] getMatrizPiedrasMesa() {
+        return matrizPiedrasMesa;
+    }
+
+    public void setMatrizPiedrasMesa(Piedra[][] matrizPiedrasMesa) {
+        this.matrizPiedrasMesa = matrizPiedrasMesa;
+    }
 
     public Set<Mesa> getLasPiedrasMesa() {
         return lasPiedrasMesa;
@@ -64,11 +73,23 @@ public class Mesa {
         PiedrasMesa = new ListaPiedras();
     }
 
-    public Mesa(ListaPiedras elPozo, int extremo1, int extremo2, ListaPiedras PiedrasMesa) {
+    public Mesa(ListaPiedras elPozo, int extremo1, int extremo2, Piedra[][] matriz) {
         this.elPozo = elPozo;
         this.extremo1 = extremo1;
         this.extremo2 = extremo2;
-        this.PiedrasMesa = PiedrasMesa;
+        this.matrizPiedrasMesa = matriz;
+
+        if (this.matrizPiedrasMesa == null) {
+            inicializarMatrizPiedras();
+        }
+    }
+
+    public Mesa(int extremo1, int extremo2) {
+        this.extremo1 = extremo1;
+        this.extremo2 = extremo2;
+        if (this.matrizPiedrasMesa == null) {
+            inicializarMatrizPiedras();
+        }
     }
 
     /*public void finalize() throws Throwable {
@@ -114,4 +135,16 @@ public class Mesa {
     return encontrado;
 
     }*/
+    private void inicializarMatrizPiedras() {
+
+        Piedra laPiedra = new Piedra(7, 7);
+        Piedra matriz[][] = {
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra},
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra},
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra},
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra},
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra},
+            {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra}
+        };
+    }
 }

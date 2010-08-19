@@ -106,27 +106,9 @@ public class Partida {
         this.elJuego = new Juego(0, null, null, null);
         elJuego.setJugador1(new Jugador(nickname, "", 0, 0, 0, 0));
         elJuego.setJugador2(new Maquina());
-        elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1, new ListaPiedras()));
+        elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1,null));
 
-      /*  for (i = 0; i <= 6; i++) {
-
-            for (j = i; j <= 6; j++) {
-                laListaPiedras.agregarPiedra(new Piedra("",i,j,"","","",""));
-            }
-
-        }
-
-        laListaPiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());*/
-        //listaDePiedras.agregarPiedra(new Piedra("",i,j,"","","",""));
         listaDePiedras.elRepartidor(elJuego.getJugador1(), elJuego.getJugador2(), elJuego.getLaMesa());
-
-        /*System.out.println("PIEDRAS DEL JUGADOR");
-
-        elJuego.getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
-        System.out.println("PIEDRAS DE LA MÁQUINA");
-        elJuego.getJugador2().getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
-        System.out.println("PIEDRAS EN EL POZO");
-        elJuego.getLaMesa().getElPozo().imprimirListaPiedras();*/
 
         Partida laPartida;
         elUsuario = new Usuario("", "", "", nickname, "", "");
