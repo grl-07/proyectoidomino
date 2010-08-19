@@ -45,7 +45,7 @@ public class Conector {
        return false;
    }
 
-    public static void solicitarCargaDeDatos() {
+    public static void solicitarCargaDatosPiedras() {
         Archivo.cargarPiedrasArchivo(Datos.getListaDePiedras());
     }
 
@@ -71,5 +71,10 @@ public class Conector {
         Usuario auxiliar = new Usuario("","","",nickname,"",0,0,0,0);
        return (Datos.getListaDeUsuarios().buscarDatos(auxiliar));
 
+    }
+
+
+    public static void solicitarGuardarDatosPartidas(){
+        Archivo.guardarDatosArchivoPartidas(Datos.getListaDePartidas());
     }
 }

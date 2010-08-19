@@ -15,12 +15,12 @@ public class ServidorApp {
 
          Datos.inicializarListasDeDatos();
         Conector.solicitarCargaDatosUsuario();
-        Conector.solicitarCargaDeDatos();
+        Conector.solicitarCargaDatosPiedras();
         //Conector.solicitarImpresionPiedras();
 
         Conector.solicitarCargaDatosPartidas();
         Conector.solicitarImpresionPartidas();
-
+        Conector.solicitarGuardarDatosPartidas();
 
         String[] parametros = {"9999", "servidor.logica.PruebaJsockets"};
         Servidor.main(parametros);
