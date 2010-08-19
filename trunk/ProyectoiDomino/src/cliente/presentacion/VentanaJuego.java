@@ -8,10 +8,9 @@
  *
  * Created on 08-ago-2010, 21:17:21
  */
+package cliente.presentacion;
 
-//package presentacion;
-import servidor.logica.Conector;
-import javax.swing.JButton;
+import javax.swing.*;
 
 /**
  *
@@ -20,8 +19,12 @@ import javax.swing.JButton;
 public class VentanaJuego extends javax.swing.JFrame {
 
     /** Creates new form VentanaJuego */
-    public VentanaJuego() {
+    public VentanaJuego(JFrame ventanaPadre, String nickname, String mensaje) {
         initComponents();
+        this.ventanaPadre = ventanaPadre;
+        this.nickname = nickname;
+        this.mensaje = mensaje;
+        inicializarPiedrasEnMano();
     }
 
     /** This method is called from within the constructor to
@@ -156,13 +159,13 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton144.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton144jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton145.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton145jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -180,7 +183,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton146.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton146jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -234,31 +237,31 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton119.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton119jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton137.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton137jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton139.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton139jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton138.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton138jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton140.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton140jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -270,7 +273,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton114.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton114jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -294,7 +297,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton122.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton122jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -306,7 +309,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton121.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton121jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -318,25 +321,25 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton116.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton116jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton115.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton115jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton118.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton118jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton117.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton117jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -348,37 +351,37 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton111.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton111jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton110.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton110jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton113.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton113jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton112.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton112jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton109.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton109jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton108.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton108jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -390,13 +393,13 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton135.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton135jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton134.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton134jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -408,7 +411,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton141.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton141jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -420,19 +423,19 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton81.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton81jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton124.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton124jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton125.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton125jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -462,13 +465,13 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton123.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton123jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
         jButton120.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton120jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -498,7 +501,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jButton126.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton126jBPiedraDelTableroActionPerformed(evt);
+                jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
@@ -918,424 +921,62 @@ public class VentanaJuego extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton144jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton144jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
+    private void inicializarPiedrasEnMano() {
+        int i, j;
 
+        final JButton arregloBotones[] = {jBPiedra1, jBPiedra2, jBPiedra3, jBPiedra4, jBPiedra5, jBPiedra6, jBPiedra7};
 
-        JButton boton = (JButton) evt.getSource();
+        JButton botonActual;
 
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
+        String[] subArg = mensaje.split(":");
+
+        for (i = 0; i < 7; i++) {
+            botonActual = arregloBotones[i];
+
+            String mensajeActual = subArg[i];            
+
+            botonActual.setIcon(new javax.swing.ImageIcon(getClass().getResource(obtenerImagenPiedra(mensajeActual))));
+
+            botonActual.setEnabled(true);
         }
-}//GEN-LAST:event_jButton144jBPiedraDelTableroActionPerformed
 
-    private void jButton145jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton145jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
+        jBPiedra1.requestFocus();
+    }
 
+    public static String obtenerImagenPiedra(String mensaje) {
+        String img = "";
+        String direccion = "/cliente/presentacion/resources/Piedras/";
 
-        JButton boton = (JButton) evt.getSource();
+        String[] subArg2 = mensaje.split("-");        
 
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton145jBPiedraDelTableroActionPerformed
-
-    private void jButton146jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton146jBPiedraDelTableroActionPerformed
-
-    private void jButton119jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton119jBPiedraDelTableroActionPerformed
-
-    private void jButton137jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton137jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton137jBPiedraDelTableroActionPerformed
-
-    private void jButton139jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton139jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton139jBPiedraDelTableroActionPerformed
-
-    private void jButton138jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton138jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton138jBPiedraDelTableroActionPerformed
-
-    private void jButton140jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton140jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton140jBPiedraDelTableroActionPerformed
-
-    private void jButton114jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton114jBPiedraDelTableroActionPerformed
-
-    private void jButton122jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton122jBPiedraDelTableroActionPerformed
-
-    private void jButton121jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton121jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton121jBPiedraDelTableroActionPerformed
-
-    private void jButton116jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton116jBPiedraDelTableroActionPerformed
-
-    private void jButton115jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton115jBPiedraDelTableroActionPerformed
-
-    private void jButton118jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton118jBPiedraDelTableroActionPerformed
-
-    private void jButton117jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton117jBPiedraDelTableroActionPerformed
-
-    private void jButton111jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton111jBPiedraDelTableroActionPerformed
-
-    private void jButton110jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton110jBPiedraDelTableroActionPerformed
-
-    private void jButton113jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton113jBPiedraDelTableroActionPerformed
-
-    private void jButton112jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton112jBPiedraDelTableroActionPerformed
-
-    private void jButton109jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton109jBPiedraDelTableroActionPerformed
-
-    private void jButton108jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton108jBPiedraDelTableroActionPerformed
-
-    private void jButton135jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton135jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton135jBPiedraDelTableroActionPerformed
-
-    private void jButton134jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton134jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton134jBPiedraDelTableroActionPerformed
-
-    private void jButton141jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton141jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton141jBPiedraDelTableroActionPerformed
-
-    private void jButton81jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton81jBPiedraDelTableroActionPerformed
-
-    private void jButton124jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton124jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton124jBPiedraDelTableroActionPerformed
-
-    private void jButton125jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton125jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton125jBPiedraDelTableroActionPerformed
-
-    private void jButton123jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton123jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton123jBPiedraDelTableroActionPerformed
-
-    private void jButton120jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton120jBPiedraDelTableroActionPerformed
-
-    private void jButton126jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton126jBPiedraDelTableroActionPerformed
-        // TODO add your handling code here:
-
-
-        JButton boton = (JButton) evt.getSource();
-
-        if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
-        }
-}//GEN-LAST:event_jButton126jBPiedraDelTableroActionPerformed
-
+        return img = direccion + subArg2[3];
+    }
     private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
         // TODO add your handling code here:
-            JButton boton = (JButton) evt.getSource();
+        JButton boton = (JButton) evt.getSource();
 
         botonActualSeleccionado = boton;
     }//GEN-LAST:event_jBPiedraSeleccionadaActionPerformed
 
     private void jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraDelTableroActionPerformed
         // TODO add your handling code here:
-          JButton boton = (JButton) evt.getSource();
+        JButton boton = (JButton) evt.getSource();
 
-        if (botonActualSeleccionado != null)
-        {
+        if (botonActualSeleccionado != null) {
             boton.setIcon(botonActualSeleccionado.getIcon());
             botonActualSeleccionado.setIcon(null);
             botonActualSeleccionado.setEnabled(false);
         }
     }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
 
-
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
-                new VentanaJuego().setVisible(true);
+                new VentanaJuego(null, "", "").setVisible(true);
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBPiedra1;
     private javax.swing.JButton jBPiedra2;
@@ -1435,6 +1076,8 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
-
-        JButton botonActualSeleccionado;
+    JButton botonActualSeleccionado;
+    JFrame ventanaPadre;
+    String nickname;
+    String mensaje;
 }

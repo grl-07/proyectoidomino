@@ -22,12 +22,9 @@ public class ListaPiedras {
         this.laListaPiedras = laListaPiedras;
     }
 
-
-      public Iterator getIterator()
-    {
+    public Iterator getIterator() {
         return laListaPiedras.iterator();
     }
-
 
     //Constructor
     public ListaPiedras() {
@@ -71,16 +68,16 @@ public class ListaPiedras {
         for (i = 0; i < arregloPiedras.length; i++) {
             registro = (Piedra) arregloPiedras[i];
             System.out.println("Piedra " + (i + 1) + ": " + registro.getNum1() + "-" + registro.getNum2());
-            System.out.println("Arriba: "+registro.getImagenArriba());
-            System.out.println("Derecha: "+registro.getImagenDerecha());
-            System.out.println("Abajo: "+registro.getImagenAbajo());
-            System.out.println("Izquierda: "+registro.getImagenIzquierda());
-            System.out.println("ID: "+registro.getID());
+            System.out.println("Arriba: " + registro.getImagenArriba());
+            System.out.println("Derecha: " + registro.getImagenDerecha());
+            System.out.println("Abajo: " + registro.getImagenAbajo());
+            System.out.println("Izquierda: " + registro.getImagenIzquierda());
+            System.out.println("ID: " + registro.getID());
         }
 
     }
 
-     public String obtenerPiedras() {
+    public String obtenerPiedras() {
 
         int i;
         Object[] arregloPiedras;
@@ -91,9 +88,10 @@ public class ListaPiedras {
         String dosPuntos = "";
         for (i = 0; i < arregloPiedras.length; i++) {
             registro = (Piedra) arregloPiedras[i];
-            cadena = registro.getID() + "-" + registro.getImagenArriba() + "-" +
-            registro.getImagenAbajo() + "-" + registro.getImagenIzquierda() + "-" +
-            registro.getImagenDerecha() + "-" + registro.getNum1() + "-" + registro.getNum2();
+            cadena = registro.getID() + "-" + registro.getNum1() + "-" + registro.getNum2()
+                    + "-" + registro.getImagenArriba() + "-" + registro.getImagenAbajo()
+                    + "-" + registro.getImagenIzquierda()
+                    + "-" + registro.getImagenDerecha();
             if (i != 0) {
                 dosPuntos = ":";
             }
