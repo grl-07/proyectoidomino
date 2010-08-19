@@ -26,13 +26,13 @@ public class Conector {
         return confirm;
     }
 
-    public static void guardarDatos(String name, String lastName, String nickname, String password, String avatar) {
-        Datos.getListaDeUsuarios().agregarUsuario(new Usuario(name, lastName, password, nickname, avatar, 0, 0, 0, 0));
+    public static void guardarDatos(String name, String lastName, String nickname, String password, String avatar, String fechaNac) {
+        Datos.getListaDeUsuarios().agregarUsuario(new Usuario(name, lastName, password, nickname, avatar, fechaNac));
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
     public static boolean comprobarNickname(String nickname) {
-        Usuario elUsuario = new Usuario("", "", "", nickname, "", 0, 0, 0, 0);
+        Usuario elUsuario = new Usuario("", "", "", nickname, "", "");
         if (Datos.getListaDeUsuarios().buscarNickname(elUsuario) == false) {
             return false;
         } else {
@@ -51,6 +51,14 @@ public class Conector {
 
     public static void solicitarCargaDatosUsuario(){
         Archivo.cargarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+
+    public static void solicitarCargaDatosPartidas(){
+        Archivo.cargarPartidasArchivo(Datos.getListaDePartidas());
+    }
+
+    public static void solicitarImpresionPartidas(){
+        Datos.getListaDePartidas().imprimirPartidas();
     }
 
     public static void solicitarImpresionPiedras() {

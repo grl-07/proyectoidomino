@@ -104,7 +104,7 @@ public class Partida {
         this.setFechaactual(fechaactual);
 
         this.elJuego = new Juego(0, null, null, null);
-        elJuego.setJugador1(new Jugador("", "", "", nickname, "", 0, 0, 0, 0));
+        elJuego.setJugador1(new Jugador(nickname, "", 0, 0, 0, 0));
         elJuego.setJugador2(new Maquina());
         elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1, new ListaPiedras()));
 
@@ -129,7 +129,7 @@ public class Partida {
         elJuego.getLaMesa().getElPozo().imprimirListaPiedras();*/
 
         Partida laPartida;
-        elUsuario = new Usuario("", "", "", nickname, "");
+        elUsuario = new Usuario("", "", "", nickname, "", "");
         laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual, elJuego);
 
 

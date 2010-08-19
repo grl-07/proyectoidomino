@@ -18,6 +18,10 @@ public class ServidorApp {
         Conector.solicitarCargaDeDatos();
         //Conector.solicitarImpresionPiedras();
 
+        Conector.solicitarCargaDatosPartidas();
+        Conector.solicitarImpresionPartidas();
+
+
         String[] parametros = {"9999", "servidor.logica.PruebaJsockets"};
         Servidor.main(parametros);
     }

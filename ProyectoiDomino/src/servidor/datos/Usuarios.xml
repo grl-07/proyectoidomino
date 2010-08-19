@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Usuarios>
     <Usuario>
-        <nombre>Emily</nombre>
-        <apellido>Pagua</apellido>
-        <nickname>mily</nickname>
-        <clave>12345</clave>
-        <avatar>Bug</avatar>
+        <nombre>Daniel</nombre>
+        <apellido>Sierra</apellido>
+        <fechaNac />
+        <nickname>danieluchin</nickname>
+        <clave>123456</clave>
+        <avatar>Domino</avatar>
+        <numPartGan>0</numPartGan>
+        <numIngresos>0</numIngresos>
+        <numPartCreadas>0</numPartCreadas>
+        <puntaje>0</puntaje>
+    </Usuario>
+    <Usuario>
+        <nombre>Alberly</nombre>
+        <apellido>Martinez</apellido>
+        <fechaNac>01/10/1990</fechaNac>
+        <nickname>alberlykida12</nickname>
+        <clave>654321</clave>
+        <avatar>Umbrella</avatar>
         <numPartGan>0</numPartGan>
         <numIngresos>0</numIngresos>
         <numPartCreadas>0</numPartCreadas>
@@ -14,19 +27,33 @@
     <Usuario>
         <nombre>Sheryl</nombre>
         <apellido>Ravelo</apellido>
+        <fechaNac>08/03/1991</fechaNac>
         <nickname>shishi</nickname>
-        <clave>135790</clave>
-        <avatar>Umbrella</avatar>
+        <clave>123</clave>
+        <avatar>Dog</avatar>
         <numPartGan>0</numPartGan>
         <numIngresos>0</numIngresos>
         <numPartCreadas>0</numPartCreadas>
         <puntaje>0</puntaje>
     </Usuario>
     <Usuario>
-        <nombre>Daniel</nombre>
-        <apellido>Sierra</apellido>
-        <nickname>danieluchin</nickname>
-        <clave>123</clave>
+        <nombre>Virginia</nombre>
+        <apellido>Rodriguez</apellido>
+        <fechaNac>24/07/2010</fechaNac>
+        <nickname>ickycita</nickname>
+        <clave>789</clave>
+        <avatar>Turtle</avatar>
+        <numPartGan>0</numPartGan>
+        <numIngresos>0</numIngresos>
+        <numPartCreadas>0</numPartCreadas>
+        <puntaje>0</puntaje>
+    </Usuario>
+    <Usuario>
+        <nombre>Emily</nombre>
+        <apellido>Pagua</apellido>
+        <fechaNac>07/07/1989</fechaNac>
+        <nickname>mily</nickname>
+        <clave>456</clave>
         <avatar>Butterfly</avatar>
         <numPartGan>0</numPartGan>
         <numIngresos>0</numIngresos>
@@ -34,22 +61,12 @@
         <puntaje>0</puntaje>
     </Usuario>
     <Usuario>
-        <nombre>alberlyL</nombre>
-        <apellido>martinezF</apellido>
-        <nickname>abejita</nickname>
-        <clave>12</clave>
-        <avatar>Umbrella</avatar>
-        <numPartGan>0</numPartGan>
-        <numIngresos>0</numIngresos>
-        <numPartCreadas>0</numPartCreadas>
-        <puntaje>0</puntaje>
-    </Usuario>
-    <Usuario>
-        <nombre>Karla</nombre>
-        <apellido>Martinez</apellido>
-        <nickname>karlyta</nickname>
+        <nombre>Marielys</nombre>
+        <apellido>Guillen</apellido>
+        <fechaNac>18/06/2010</fechaNac>
+        <nickname>marielysg</nickname>
         <clave>321</clave>
-        <avatar>Turtle</avatar>
+        <avatar>Bug</avatar>
         <numPartGan>0</numPartGan>
         <numIngresos>0</numIngresos>
         <numPartCreadas>0</numPartCreadas>

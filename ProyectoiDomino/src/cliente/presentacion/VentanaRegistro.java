@@ -1,6 +1,9 @@
 package cliente.presentacion;
 
 import cliente.logica.ConexionJsockets;
+import com.toedter.calendar.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import javax.swing.*;
 
 /**
@@ -38,7 +41,9 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jButtonCancel = new javax.swing.JButton();
         jPasswordFdRegister = new javax.swing.JPasswordField();
         jPasswordFdConfirm = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        jBChooseImg = new javax.swing.JButton();
+        jDCFechaNac = new com.toedter.calendar.JDateChooser();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -67,7 +72,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
 
         jTxtAvatar.setEditable(false);
-        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
 
         jBAceptar.setFont(new java.awt.Font("Calibri", 0, 12));
         jBAceptar.setText("OK");
@@ -85,13 +90,18 @@ public class VentanaRegistro extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jButton1.setText("...");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBChooseImg.setFont(new java.awt.Font("Calibri", 0, 10));
+        jBChooseImg.setText("...");
+        jBChooseImg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBChooseImgActionPerformed(evt);
             }
         });
+
+        jDCFechaNac.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel7.setText("Fecha de Nacimiento");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,64 +110,90 @@ public class VentanaRegistro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel6))
+                        .addGap(99, 99, 99)
+                        .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPasswordFdConfirm)
-                            .addComponent(jTxtName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                            .addComponent(jTxtLastName, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                            .addComponent(jTxtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                            .addComponent(jTxtAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                            .addComponent(jPasswordFdRegister))
-                        .addGap(6, 6, 6)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTxtName, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTxtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(163, 163, 163)
                         .addComponent(jBAceptar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonCancel)))
-                .addContainerGap(23, Short.MAX_VALUE))
+                        .addComponent(jButtonCancel))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBChooseImg, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jDCFechaNac, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel1))
                     .addComponent(jTxtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jTxtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel7))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jDCFechaNac, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
-                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBChooseImg))
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBAceptar)
                     .addComponent(jButtonCancel))
-                .addGap(27, 27, 27))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
@@ -165,12 +201,14 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
+
         if (jTxtName.getText().equalsIgnoreCase("")
                 || jTxtLastName.getText().equalsIgnoreCase("")
                 || jTxtNickname.getText().equalsIgnoreCase("")
                 || jPasswordFdRegister.getText().equalsIgnoreCase("")
                 || jPasswordFdConfirm.getText().equalsIgnoreCase("")
-                || jTxtAvatar.getText().equalsIgnoreCase("")) {
+                || jTxtAvatar.getText().equalsIgnoreCase("")
+                || getFecha(jDCFechaNac).equalsIgnoreCase("")) {
             JOptionPane.showMessageDialog(null, "All fields must be written in.");
         } else {
 
@@ -179,7 +217,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 String avatar = icono.setAvatar();
                 System.out.println("avatar = " + avatar);
                 //jTxtAvatar.setText(avatar);
-                String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, avatar);
+                String mensaje = ConexionJsockets.solicitudServidor3(jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, avatar, getFecha(jDCFechaNac));
 
                 if (mensaje.equals("TRUE")) {
                     System.out.println(mensaje);
@@ -198,15 +236,27 @@ public class VentanaRegistro extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBChooseImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBChooseImgActionPerformed
         // TODO add your handling code here:
         //System.out.println("cargaa");
         Imagenes ventanaImagenes;
         ventanaImagenes = new Imagenes(this, jTxtAvatar);//, jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
         ventanaImagenes.setVisible(true);
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBChooseImgActionPerformed
 
+
+    public static String getFecha(JDateChooser Jdc)
+     {
+        Calendar fechadate;
+        fechadate=Jdc.getCalendar();
+        SimpleDateFormat xlsDate;
+        xlsDate = new SimpleDateFormat("dd/MM/yyyy");
+        String auxiliar = xlsDate.format(fechadate.getTime());
+
+        return auxiliar;
+
+      }
     /*public void inicializarComponentesPropios(){
     Conector.inicializarEstructuras();
     }*/
@@ -223,14 +273,16 @@ public class VentanaRegistro extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBAceptar;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBChooseImg;
     private javax.swing.JButton jButtonCancel;
+    private com.toedter.calendar.JDateChooser jDCFechaNac;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPasswordField jPasswordFdConfirm;
     private javax.swing.JPasswordField jPasswordFdRegister;
     private javax.swing.JTextField jTxtAvatar;
