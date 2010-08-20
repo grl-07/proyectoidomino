@@ -50,103 +50,104 @@ public class VentanaJuego extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel3 = new javax.swing.JLabel();
-        jButton181 = new javax.swing.JButton();
         jButton179 = new javax.swing.JButton();
+        jButton181 = new javax.swing.JButton();
+        jButton177 = new javax.swing.JButton();
+        jButton178 = new javax.swing.JButton();
+        jButton176 = new javax.swing.JButton();
         jButton180 = new javax.swing.JButton();
         jButton182 = new javax.swing.JButton();
-        jButton177 = new javax.swing.JButton();
-        jButton176 = new javax.swing.JButton();
-        jButton178 = new javax.swing.JButton();
-        jBMesa45 = new javax.swing.JButton();
-        jBMesa40 = new javax.swing.JButton();
-        jBMesa29 = new javax.swing.JButton();
-        jBMesa27 = new javax.swing.JButton();
-        jBMesa52 = new javax.swing.JButton();
-        jBMesa53 = new javax.swing.JButton();
-        jBMesa28 = new javax.swing.JButton();
-        jBMesa46 = new javax.swing.JButton();
-        jBMesa47 = new javax.swing.JButton();
-        jBMesa48 = new javax.swing.JButton();
-        jBMesa41 = new javax.swing.JButton();
-        jBMesa35 = new javax.swing.JButton();
-        jBMesa30 = new javax.swing.JButton();
-        jBMesa36 = new javax.swing.JButton();
-        jBMesa49 = new javax.swing.JButton();
-        jBMesa02 = new javax.swing.JButton();
-        jBMesa23 = new javax.swing.JButton();
-        jBMesa26 = new javax.swing.JButton();
-        jBMesa20 = new javax.swing.JButton();
-        jBMesa21 = new javax.swing.JButton();
-        jBMesa51 = new javax.swing.JButton();
-        jBMesa17 = new javax.swing.JButton();
-        jBMesa55 = new javax.swing.JButton();
-        jBMesa50 = new javax.swing.JButton();
-        jBMesa56 = new javax.swing.JButton();
-        jBMesa00 = new javax.swing.JButton();
-        jBMesa44 = new javax.swing.JButton();
-        jBMesa05 = new javax.swing.JButton();
-        jBMesa42 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jBPot1 = new javax.swing.JButton();
+        jBPot2 = new javax.swing.JButton();
+        jBPot3 = new javax.swing.JButton();
+        jBPot4 = new javax.swing.JButton();
+        jScrollBar1 = new javax.swing.JScrollBar();
+        jBPot5 = new javax.swing.JButton();
+        jBPot6 = new javax.swing.JButton();
+        jBPot7 = new javax.swing.JButton();
+        jBPot8 = new javax.swing.JButton();
+        jBPot9 = new javax.swing.JButton();
+        jBMesa09 = new javax.swing.JButton();
         jBMesa19 = new javax.swing.JButton();
-        jBMesa18 = new javax.swing.JButton();
-        jBMesa04 = new javax.swing.JButton();
+        jBMesa29 = new javax.swing.JButton();
+        jBMesa39 = new javax.swing.JButton();
+        jBMesa49 = new javax.swing.JButton();
+        jBMesa48 = new javax.swing.JButton();
+        jBMesa47 = new javax.swing.JButton();
+        jBMesa46 = new javax.swing.JButton();
+        jBMesa45 = new javax.swing.JButton();
+        jBMesa44 = new javax.swing.JButton();
+        jBMesa43 = new javax.swing.JButton();
+        jBMesa42 = new javax.swing.JButton();
+        jBMesa41 = new javax.swing.JButton();
+        jBMesa40 = new javax.swing.JButton();
+        jBMesa30 = new javax.swing.JButton();
+        jBMesa20 = new javax.swing.JButton();
+        jBMesa10 = new javax.swing.JButton();
+        jBMesa00 = new javax.swing.JButton();
+        jBMesa01 = new javax.swing.JButton();
+        jBMesa02 = new javax.swing.JButton();
         jBMesa03 = new javax.swing.JButton();
-        jBMesa38 = new javax.swing.JButton();
-        jBMesa11 = new javax.swing.JButton();
-        jBMesa12 = new javax.swing.JButton();
+        jBMesa04 = new javax.swing.JButton();
+        jBMesa05 = new javax.swing.JButton();
+        jBMesa06 = new javax.swing.JButton();
+        jBMesa07 = new javax.swing.JButton();
+        jBMesa08 = new javax.swing.JButton();
+        jBMesa18 = new javax.swing.JButton();
+        jBMesa17 = new javax.swing.JButton();
         jBMesa16 = new javax.swing.JButton();
         jBMesa15 = new javax.swing.JButton();
         jBMesa14 = new javax.swing.JButton();
-        jBMesa10 = new javax.swing.JButton();
-        jBMesa39 = new javax.swing.JButton();
-        jBMesa22 = new javax.swing.JButton();
-        jBMesa24 = new javax.swing.JButton();
-        jBMesa37 = new javax.swing.JButton();
-        jBMesa25 = new javax.swing.JButton();
-        jBMesa31 = new javax.swing.JButton();
         jBMesa13 = new javax.swing.JButton();
-        jBMesa09 = new javax.swing.JButton();
-        jBMesa08 = new javax.swing.JButton();
+        jBMesa12 = new javax.swing.JButton();
+        jBMesa11 = new javax.swing.JButton();
+        jBMesa21 = new javax.swing.JButton();
+        jBMesa31 = new javax.swing.JButton();
+        jBMesa32 = new javax.swing.JButton();
+        jBMesa22 = new javax.swing.JButton();
+        jBMesa23 = new javax.swing.JButton();
+        jBMesa33 = new javax.swing.JButton();
+        jBMesa34 = new javax.swing.JButton();
+        jBMesa24 = new javax.swing.JButton();
+        jBMesa25 = new javax.swing.JButton();
+        jBMesa26 = new javax.swing.JButton();
+        jBMesa27 = new javax.swing.JButton();
+        jBMesa28 = new javax.swing.JButton();
+        jBMesa38 = new javax.swing.JButton();
+        jBMesa35 = new javax.swing.JButton();
+        jBMesa36 = new javax.swing.JButton();
+        jBMesa37 = new javax.swing.JButton();
+        jBMesa50 = new javax.swing.JButton();
+        jBMesa51 = new javax.swing.JButton();
+        jBMesa52 = new javax.swing.JButton();
+        jBMesa53 = new javax.swing.JButton();
         jBMesa54 = new javax.swing.JButton();
-        jBMesa59 = new javax.swing.JButton();
+        jBMesa55 = new javax.swing.JButton();
+        jBMesa56 = new javax.swing.JButton();
         jBMesa57 = new javax.swing.JButton();
         jBMesa58 = new javax.swing.JButton();
-        jBMesa06 = new javax.swing.JButton();
-        jBMesa01 = new javax.swing.JButton();
-        jBMesa43 = new javax.swing.JButton();
-        jBMesa32 = new javax.swing.JButton();
-        jBMesa34 = new javax.swing.JButton();
-        jBMesa33 = new javax.swing.JButton();
-        jBMesa07 = new javax.swing.JButton();
-        jBPiedra7 = new javax.swing.JButton();
-        jBPiedra3 = new javax.swing.JButton();
-        jBPiedra1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jBPiedra2 = new javax.swing.JButton();
-        jBPiedra4 = new javax.swing.JButton();
-        jBPiedra6 = new javax.swing.JButton();
-        jBPiedra5 = new javax.swing.JButton();
-        jBPot3 = new javax.swing.JButton();
-        jBPot7 = new javax.swing.JButton();
-        jBPot2 = new javax.swing.JButton();
-        jBPot1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jBPot11 = new javax.swing.JButton();
-        jBPot12 = new javax.swing.JButton();
-        jBPot13 = new javax.swing.JButton();
-        jBPot14 = new javax.swing.JButton();
-        jButtonPot = new javax.swing.JButton();
-        jButtonPass = new javax.swing.JButton();
-        jBPot6 = new javax.swing.JButton();
-        jBPot4 = new javax.swing.JButton();
-        jBPot5 = new javax.swing.JButton();
-        jBPot8 = new javax.swing.JButton();
-        jBPot9 = new javax.swing.JButton();
-        jBPot10 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        jBMesa59 = new javax.swing.JButton();
         jBRotarIzq = new javax.swing.JButton();
         jBRotarDer = new javax.swing.JButton();
+        jBPot14 = new javax.swing.JButton();
+        jBPot13 = new javax.swing.JButton();
+        jBPot12 = new javax.swing.JButton();
+        jBPot11 = new javax.swing.JButton();
+        jBPot10 = new javax.swing.JButton();
+        jButtonPot = new javax.swing.JButton();
+        jButtonPass = new javax.swing.JButton();
+        jBPiedra7 = new javax.swing.JButton();
+        jBPiedra6 = new javax.swing.JButton();
+        jBPiedra5 = new javax.swing.JButton();
+        jBPiedra4 = new javax.swing.JButton();
+        jBPiedra3 = new javax.swing.JButton();
+        jBPiedra2 = new javax.swing.JButton();
+        jBPiedra1 = new javax.swing.JButton();
         jBPiedra8 = new javax.swing.JButton();
         jBPiedra9 = new javax.swing.JButton();
         jBPiedra10 = new javax.swing.JButton();
@@ -154,341 +155,90 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra12 = new javax.swing.JButton();
         jBPiedra13 = new javax.swing.JButton();
         jBPiedra14 = new javax.swing.JButton();
-        jScrollBar1 = new javax.swing.JScrollBar();
+        jLabel1 = new javax.swing.JLabel();
+        jLAvatar = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
         jLabel3.setText("Computadora");
+        jLabel3.setBounds(40, 40, 117, 31);
+        jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton179.setBounds(170, 20, 73, 71);
+        jLayeredPane1.add(jButton179, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton181.setBounds(250, 20, 73, 71);
+        jLayeredPane1.add(jButton181, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton177.setBounds(330, 20, 73, 71);
+        jLayeredPane1.add(jButton177, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton178.setBounds(410, 20, 73, 71);
+        jLayeredPane1.add(jButton178, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton176.setBounds(490, 20, 73, 71);
+        jLayeredPane1.add(jButton176, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton180.setBounds(650, 20, 73, 71);
+        jLayeredPane1.add(jButton180, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jButton182.setBounds(570, 20, 73, 71);
+        jLayeredPane1.add(jButton182, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa45.setName("jBMesa45"); // NOI18N
-        jBMesa45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
+        jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel7.setText("iDomino");
+        jLabel7.setBounds(750, 20, 190, 60);
+        jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLabel6.setText("Game #");
+        jLabel6.setBounds(790, 70, 41, 16);
+        jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLabel2.setText("Pot");
+        jLabel2.setBounds(820, 100, 60, 22);
+        jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot1.setName("jBPot1"); // NOI18N
+        jBPot1.setBounds(810, 140, 74, 22);
+        jLayeredPane1.add(jBPot1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot2.setName("jBPot2"); // NOI18N
+        jBPot2.setBounds(810, 170, 74, 22);
+        jLayeredPane1.add(jBPot2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot3.setName("jBPot3"); // NOI18N
+        jBPot3.setBounds(810, 200, 74, 22);
+        jLayeredPane1.add(jBPot3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot4.setName("jBPot4"); // NOI18N
+        jBPot4.setBounds(810, 230, 74, 22);
+        jLayeredPane1.add(jBPot4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
+            public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
+                jScrollBar1AdjustmentValueChanged(evt);
             }
         });
+        jScrollBar1.setBounds(930, 0, 20, 770);
+        jLayeredPane1.add(jScrollBar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa40.setName("jBMesa40"); // NOI18N
-        jBMesa40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
+        jBPot5.setName("jBPot5"); // NOI18N
+        jBPot5.setBounds(810, 260, 74, 22);
+        jLayeredPane1.add(jBPot5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa29.setName("jBMesa29"); // NOI18N
-        jBMesa29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
+        jBPot6.setName("jBPot6"); // NOI18N
+        jBPot6.setBounds(810, 290, 74, 22);
+        jLayeredPane1.add(jBPot6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa27.setName("jBMesa27"); // NOI18N
-        jBMesa27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
+        jBPot7.setName("jBPot7"); // NOI18N
+        jBPot7.setBounds(810, 320, 74, 22);
+        jLayeredPane1.add(jBPot7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa52.setName("jBMesa52"); // NOI18N
-        jBMesa52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
+        jBPot8.setName("jBPot8"); // NOI18N
+        jBPot8.setBounds(810, 350, 74, 22);
+        jLayeredPane1.add(jBPot8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa53.setName("jBMesa53"); // NOI18N
-        jBMesa53.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa28.setName("jBMesa28"); // NOI18N
-        jBMesa28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa46.setName("jBMesa46"); // NOI18N
-        jBMesa46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa47.setName("jBMesa47"); // NOI18N
-        jBMesa47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa48.setName("jBMesa48"); // NOI18N
-        jBMesa48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa41.setName("jBMesa41"); // NOI18N
-        jBMesa41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa35.setName("jBMesa35"); // NOI18N
-        jBMesa35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa30.setName("jBMesa30"); // NOI18N
-        jBMesa30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa36.setName("jBMesa36"); // NOI18N
-        jBMesa36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa49.setName("jBMesa49"); // NOI18N
-        jBMesa49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa02.setName("jBMesa02"); // NOI18N
-        jBMesa02.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa23.setName("jBMesa23"); // NOI18N
-        jBMesa23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa26.setName("jBMesa26"); // NOI18N
-        jBMesa26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa20.setName("jBMesa20"); // NOI18N
-        jBMesa20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa21.setName("jBMesa21"); // NOI18N
-        jBMesa21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa51.setName("jBMesa51"); // NOI18N
-        jBMesa51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa17.setName("jBMesa17"); // NOI18N
-        jBMesa17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa55.setName("jBMesa55"); // NOI18N
-        jBMesa55.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa50.setName("jBMesa50"); // NOI18N
-        jBMesa50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa56.setName("jBMesa56"); // NOI18N
-        jBMesa56.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa00.setName("jBMesa00"); // NOI18N
-        jBMesa00.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa44.setName("jBMesa44"); // NOI18N
-        jBMesa44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa05.setName("jBMesa05"); // NOI18N
-        jBMesa05.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa42.setName("jBMesa42"); // NOI18N
-        jBMesa42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa19.setName("jBMesa19"); // NOI18N
-        jBMesa19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa18.setName("jBMesa18"); // NOI18N
-        jBMesa18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa04.setName("jBMesa04"); // NOI18N
-        jBMesa04.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa03.setName("jBMesa03"); // NOI18N
-        jBMesa03.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa38.setName("jBMesa38"); // NOI18N
-        jBMesa38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa11.setName("jBMesa11"); // NOI18N
-        jBMesa11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa12.setName("jBMesa12"); // NOI18N
-        jBMesa12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa16.setName("jBMesa16"); // NOI18N
-        jBMesa16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa15.setName("jBMesa15"); // NOI18N
-        jBMesa15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa14.setName("jBMesa14"); // NOI18N
-        jBMesa14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa10.setName("jBMesa10"); // NOI18N
-        jBMesa10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa39.setName("jBMesa39"); // NOI18N
-        jBMesa39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa22.setName("jBMesa22"); // NOI18N
-        jBMesa22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa24.setName("jBMesa24"); // NOI18N
-        jBMesa24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa37.setName("jBMesa37"); // NOI18N
-        jBMesa37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa25.setName("jBMesa25"); // NOI18N
-        jBMesa25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa31.setName("jBMesa31"); // NOI18N
-        jBMesa31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
-
-        jBMesa13.setName("jBMesa13"); // NOI18N
-        jBMesa13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraDelTableroActionPerformed(evt);
-            }
-        });
+        jBPot9.setName("jBPot9"); // NOI18N
+        jBPot9.setBounds(810, 380, 74, 22);
+        jLayeredPane1.add(jBPot9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa09.setName("jBMesa09"); // NOI18N
         jBMesa09.addActionListener(new java.awt.event.ActionListener() {
@@ -496,55 +246,89 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa09.setBounds(680, 120, 73, 71);
+        jLayeredPane1.add(jBMesa09, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa08.setName("jBMesa08"); // NOI18N
-        jBMesa08.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa19.setName("jBMesa19"); // NOI18N
+        jBMesa19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa19.setBounds(680, 190, 73, 71);
+        jLayeredPane1.add(jBMesa19, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa54.setName("jBMesa54"); // NOI18N
-        jBMesa54.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa29.setName("jBMesa29"); // NOI18N
+        jBMesa29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa29.setBounds(680, 260, 73, 71);
+        jLayeredPane1.add(jBMesa29, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa59.setName("jBMesa59"); // NOI18N
-        jBMesa59.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa39.setName("jBMesa39"); // NOI18N
+        jBMesa39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa39.setBounds(680, 330, 73, 71);
+        jLayeredPane1.add(jBMesa39, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa57.setName("jBMesa57"); // NOI18N
-        jBMesa57.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa49.setName("jBMesa49"); // NOI18N
+        jBMesa49.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa49.setBounds(680, 400, 73, 71);
+        jLayeredPane1.add(jBMesa49, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa58.setName("jBMesa58"); // NOI18N
-        jBMesa58.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa48.setName("jBMesa48"); // NOI18N
+        jBMesa48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa48.setBounds(610, 400, 73, 71);
+        jLayeredPane1.add(jBMesa48, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa06.setName("jBMesa06"); // NOI18N
-        jBMesa06.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa47.setName("jBMesa47"); // NOI18N
+        jBMesa47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa47.setBounds(540, 400, 73, 71);
+        jLayeredPane1.add(jBMesa47, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa01.setName("jBMesa01"); // NOI18N
-        jBMesa01.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa46.setName("jBMesa46"); // NOI18N
+        jBMesa46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa46.setBounds(470, 400, 73, 71);
+        jLayeredPane1.add(jBMesa46, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa45.setName("jBMesa45"); // NOI18N
+        jBMesa45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa45.setBounds(400, 400, 73, 71);
+        jLayeredPane1.add(jBMesa45, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa44.setName("jBMesa44"); // NOI18N
+        jBMesa44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa44.setBounds(330, 400, 73, 71);
+        jLayeredPane1.add(jBMesa44, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa43.setName("jBMesa43"); // NOI18N
         jBMesa43.addActionListener(new java.awt.event.ActionListener() {
@@ -552,6 +336,233 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa43.setBounds(260, 400, 73, 71);
+        jLayeredPane1.add(jBMesa43, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa42.setName("jBMesa42"); // NOI18N
+        jBMesa42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa42.setBounds(190, 400, 73, 71);
+        jLayeredPane1.add(jBMesa42, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa41.setName("jBMesa41"); // NOI18N
+        jBMesa41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa41.setBounds(120, 400, 73, 71);
+        jLayeredPane1.add(jBMesa41, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa40.setName("jBMesa40"); // NOI18N
+        jBMesa40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa40.setBounds(50, 400, 73, 71);
+        jLayeredPane1.add(jBMesa40, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa30.setName("jBMesa30"); // NOI18N
+        jBMesa30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa30.setBounds(50, 330, 73, 71);
+        jLayeredPane1.add(jBMesa30, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa20.setName("jBMesa20"); // NOI18N
+        jBMesa20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa20.setBounds(50, 260, 73, 71);
+        jLayeredPane1.add(jBMesa20, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa10.setName("jBMesa10"); // NOI18N
+        jBMesa10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa10.setBounds(50, 190, 73, 71);
+        jLayeredPane1.add(jBMesa10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa00.setName("jBMesa00"); // NOI18N
+        jBMesa00.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa00.setBounds(50, 120, 73, 71);
+        jLayeredPane1.add(jBMesa00, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa01.setName("jBMesa01"); // NOI18N
+        jBMesa01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa01.setBounds(120, 120, 73, 71);
+        jLayeredPane1.add(jBMesa01, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa02.setName("jBMesa02"); // NOI18N
+        jBMesa02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa02.setBounds(190, 120, 73, 71);
+        jLayeredPane1.add(jBMesa02, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa03.setName("jBMesa03"); // NOI18N
+        jBMesa03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa03.setBounds(260, 120, 73, 71);
+        jLayeredPane1.add(jBMesa03, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa04.setName("jBMesa04"); // NOI18N
+        jBMesa04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa04.setBounds(330, 120, 73, 71);
+        jLayeredPane1.add(jBMesa04, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa05.setName("jBMesa05"); // NOI18N
+        jBMesa05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa05.setBounds(400, 120, 73, 71);
+        jLayeredPane1.add(jBMesa05, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa06.setName("jBMesa06"); // NOI18N
+        jBMesa06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa06.setBounds(470, 120, 73, 71);
+        jLayeredPane1.add(jBMesa06, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa07.setName("jBMesa07"); // NOI18N
+        jBMesa07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa07.setBounds(540, 120, 73, 71);
+        jLayeredPane1.add(jBMesa07, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa08.setName("jBMesa08"); // NOI18N
+        jBMesa08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa08.setBounds(610, 120, 73, 71);
+        jLayeredPane1.add(jBMesa08, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa18.setName("jBMesa18"); // NOI18N
+        jBMesa18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa18.setBounds(610, 190, 73, 71);
+        jLayeredPane1.add(jBMesa18, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa17.setName("jBMesa17"); // NOI18N
+        jBMesa17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa17.setBounds(540, 190, 73, 71);
+        jLayeredPane1.add(jBMesa17, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa16.setName("jBMesa16"); // NOI18N
+        jBMesa16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa16.setBounds(470, 190, 73, 71);
+        jLayeredPane1.add(jBMesa16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa15.setName("jBMesa15"); // NOI18N
+        jBMesa15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa15.setBounds(400, 190, 73, 71);
+        jLayeredPane1.add(jBMesa15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa14.setName("jBMesa14"); // NOI18N
+        jBMesa14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa14.setBounds(330, 190, 73, 71);
+        jLayeredPane1.add(jBMesa14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa13.setName("jBMesa13"); // NOI18N
+        jBMesa13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa13.setBounds(260, 190, 73, 71);
+        jLayeredPane1.add(jBMesa13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa12.setName("jBMesa12"); // NOI18N
+        jBMesa12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa12.setBounds(190, 190, 73, 71);
+        jLayeredPane1.add(jBMesa12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa11.setName("jBMesa11"); // NOI18N
+        jBMesa11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa11.setBounds(120, 190, 73, 71);
+        jLayeredPane1.add(jBMesa11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa21.setName("jBMesa21"); // NOI18N
+        jBMesa21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa21.setBounds(120, 260, 73, 71);
+        jLayeredPane1.add(jBMesa21, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa31.setName("jBMesa31"); // NOI18N
+        jBMesa31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa31.setBounds(120, 330, 73, 71);
+        jLayeredPane1.add(jBMesa31, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa32.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jBMesa32.setName("jBMesa32"); // NOI18N
@@ -560,13 +571,26 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa32.setBounds(190, 330, 73, 71);
+        jLayeredPane1.add(jBMesa32, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa34.setName("jBMesa34"); // NOI18N
-        jBMesa34.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa22.setName("jBMesa22"); // NOI18N
+        jBMesa22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa22.setBounds(190, 260, 73, 71);
+        jLayeredPane1.add(jBMesa22, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa23.setName("jBMesa23"); // NOI18N
+        jBMesa23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa23.setBounds(260, 260, 73, 71);
+        jLayeredPane1.add(jBMesa23, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa33.setAutoscrolls(true);
         jBMesa33.setName("jBMesa33"); // NOI18N
@@ -575,13 +599,248 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa33.setBounds(260, 330, 73, 71);
+        jLayeredPane1.add(jBMesa33, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBMesa07.setName("jBMesa07"); // NOI18N
-        jBMesa07.addActionListener(new java.awt.event.ActionListener() {
+        jBMesa34.setName("jBMesa34"); // NOI18N
+        jBMesa34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
+        jBMesa34.setBounds(330, 330, 73, 71);
+        jLayeredPane1.add(jBMesa34, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa24.setName("jBMesa24"); // NOI18N
+        jBMesa24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa24.setBounds(330, 260, 73, 71);
+        jLayeredPane1.add(jBMesa24, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa25.setName("jBMesa25"); // NOI18N
+        jBMesa25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa25.setBounds(400, 260, 73, 71);
+        jLayeredPane1.add(jBMesa25, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa26.setName("jBMesa26"); // NOI18N
+        jBMesa26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa26.setBounds(470, 260, 73, 71);
+        jLayeredPane1.add(jBMesa26, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa27.setName("jBMesa27"); // NOI18N
+        jBMesa27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa27.setBounds(540, 260, 73, 71);
+        jLayeredPane1.add(jBMesa27, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa28.setName("jBMesa28"); // NOI18N
+        jBMesa28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa28.setBounds(610, 260, 73, 71);
+        jLayeredPane1.add(jBMesa28, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa38.setName("jBMesa38"); // NOI18N
+        jBMesa38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa38.setBounds(610, 330, 73, 71);
+        jLayeredPane1.add(jBMesa38, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa35.setName("jBMesa35"); // NOI18N
+        jBMesa35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa35.setBounds(400, 330, 73, 71);
+        jLayeredPane1.add(jBMesa35, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa36.setName("jBMesa36"); // NOI18N
+        jBMesa36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa36.setBounds(470, 330, 73, 71);
+        jLayeredPane1.add(jBMesa36, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa37.setName("jBMesa37"); // NOI18N
+        jBMesa37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa37.setBounds(540, 330, 73, 71);
+        jLayeredPane1.add(jBMesa37, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa50.setName("jBMesa50"); // NOI18N
+        jBMesa50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa50.setBounds(50, 470, 73, 71);
+        jLayeredPane1.add(jBMesa50, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa51.setName("jBMesa51"); // NOI18N
+        jBMesa51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa51.setBounds(120, 470, 73, 71);
+        jLayeredPane1.add(jBMesa51, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa52.setName("jBMesa52"); // NOI18N
+        jBMesa52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa52.setBounds(190, 470, 73, 71);
+        jLayeredPane1.add(jBMesa52, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa53.setName("jBMesa53"); // NOI18N
+        jBMesa53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa53.setBounds(260, 470, 73, 71);
+        jLayeredPane1.add(jBMesa53, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa54.setName("jBMesa54"); // NOI18N
+        jBMesa54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa54.setBounds(330, 470, 73, 71);
+        jLayeredPane1.add(jBMesa54, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa55.setName("jBMesa55"); // NOI18N
+        jBMesa55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa55.setBounds(400, 470, 73, 71);
+        jLayeredPane1.add(jBMesa55, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa56.setName("jBMesa56"); // NOI18N
+        jBMesa56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa56.setBounds(470, 470, 73, 71);
+        jLayeredPane1.add(jBMesa56, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa57.setName("jBMesa57"); // NOI18N
+        jBMesa57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa57.setBounds(540, 470, 73, 71);
+        jLayeredPane1.add(jBMesa57, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa58.setName("jBMesa58"); // NOI18N
+        jBMesa58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa58.setBounds(610, 470, 73, 71);
+        jLayeredPane1.add(jBMesa58, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa59.setName("jBMesa59"); // NOI18N
+        jBMesa59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa59.setBounds(680, 470, 73, 71);
+        jLayeredPane1.add(jBMesa59, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBRotarIzq.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBRotarIzq.setForeground(new java.awt.Color(153, 51, 0));
+        jBRotarIzq.setText("RotI");
+        jBRotarIzq.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRotarIzqActionPerformed(evt);
+            }
+        });
+        jBRotarIzq.setBounds(730, 620, 57, 39);
+        jLayeredPane1.add(jBRotarIzq, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBRotarDer.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBRotarDer.setForeground(new java.awt.Color(153, 51, 0));
+        jBRotarDer.setText("RotD");
+        jBRotarDer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRotarDerActionPerformed(evt);
+            }
+        });
+        jBRotarDer.setBounds(730, 670, 63, 39);
+        jLayeredPane1.add(jBRotarDer, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot14.setName("jBPot14\n"); // NOI18N
+        jBPot14.setBounds(810, 530, 74, 22);
+        jLayeredPane1.add(jBPot14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot13.setName("jBPot13"); // NOI18N
+        jBPot13.setBounds(810, 500, 74, 22);
+        jLayeredPane1.add(jBPot13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot12.setName("jBPot12"); // NOI18N
+        jBPot12.setBounds(810, 470, 74, 22);
+        jLayeredPane1.add(jBPot12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot11.setName("jBPot11"); // NOI18N
+        jBPot11.setBounds(810, 440, 74, 22);
+        jLayeredPane1.add(jBPot11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPot10.setName("jBPot10"); // NOI18N
+        jBPot10.setBounds(810, 410, 74, 22);
+        jLayeredPane1.add(jBPot10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButtonPot.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonPot.setForeground(new java.awt.Color(153, 51, 0));
+        jButtonPot.setText("Pot");
+        jButtonPot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPotActionPerformed(evt);
+            }
+        });
+        jButtonPot.setBounds(810, 580, 74, 56);
+        jLayeredPane1.add(jButtonPot, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButtonPass.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonPass.setForeground(new java.awt.Color(153, 51, 0));
+        jButtonPass.setText("Pass");
+        jButtonPass.setName("jButtonPass"); // NOI18N
+        jButtonPass.setBounds(810, 650, 74, 56);
+        jLayeredPane1.add(jButtonPass, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra7.setName("jBPiedra7"); // NOI18N
         jBPiedra7.addActionListener(new java.awt.event.ActionListener() {
@@ -589,36 +848,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-
-        jBPiedra3.setName("jBPiedra3"); // NOI18N
-        jBPiedra3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraSeleccionadaActionPerformed(evt);
-            }
-        });
-
-        jBPiedra1.setName("jBPiedra1"); // NOI18N
-        jBPiedra1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraSeleccionadaActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Player");
-
-        jBPiedra2.setName("jBPiedra2"); // NOI18N
-        jBPiedra2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraSeleccionadaActionPerformed(evt);
-            }
-        });
-
-        jBPiedra4.setName("jBPiedra4"); // NOI18N
-        jBPiedra4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraSeleccionadaActionPerformed(evt);
-            }
-        });
+        jBPiedra7.setBounds(640, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra6.setName("6"); // NOI18N
         jBPiedra6.addActionListener(new java.awt.event.ActionListener() {
@@ -626,6 +857,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra6.setBounds(560, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra5.setName("jBPiedra5"); // NOI18N
         jBPiedra5.addActionListener(new java.awt.event.ActionListener() {
@@ -633,67 +866,44 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra5.setBounds(480, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPot3.setName("jBPot3"); // NOI18N
-
-        jBPot7.setName("jBPot7"); // NOI18N
-
-        jBPot2.setName("jBPot2"); // NOI18N
-
-        jBPot1.setName("jBPot1"); // NOI18N
-
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 24));
-        jLabel2.setText("POT");
-
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel6.setText("Game #");
-
-        jBPot11.setName("jBPot11"); // NOI18N
-
-        jBPot12.setName("jBPot12"); // NOI18N
-
-        jBPot13.setName("jBPot13"); // NOI18N
-
-        jBPot14.setName("jBPot14\n"); // NOI18N
-
-        jButtonPot.setText("Pot");
-        jButtonPot.addActionListener(new java.awt.event.ActionListener() {
+        jBPiedra4.setName("jBPiedra4"); // NOI18N
+        jBPiedra4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPotActionPerformed(evt);
+                jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra4.setBounds(400, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButtonPass.setText("Pass");
-        jButtonPass.setName("jButtonPass"); // NOI18N
-
-        jBPot6.setName("jBPot6"); // NOI18N
-
-        jBPot4.setName("jBPot4"); // NOI18N
-
-        jBPot5.setName("jBPot5"); // NOI18N
-
-        jBPot8.setName("jBPot8"); // NOI18N
-
-        jBPot9.setName("jBPot9"); // NOI18N
-
-        jBPot10.setName("jBPot10"); // NOI18N
-
-        jLabel7.setFont(new java.awt.Font("Calibri", 1, 24));
-        jLabel7.setText("iDomino");
-
-        jBRotarIzq.setText("RotI");
-        jBRotarIzq.addActionListener(new java.awt.event.ActionListener() {
+        jBPiedra3.setName("jBPiedra3"); // NOI18N
+        jBPiedra3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRotarIzqActionPerformed(evt);
+                jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra3.setBounds(320, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBRotarDer.setText("RotD");
-        jBRotarDer.addActionListener(new java.awt.event.ActionListener() {
+        jBPiedra2.setName("jBPiedra2"); // NOI18N
+        jBPiedra2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBRotarDerActionPerformed(evt);
+                jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra2.setBounds(240, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPiedra1.setName("jBPiedra1"); // NOI18N
+        jBPiedra1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+        jBPiedra1.setBounds(160, 580, 73, 71);
+        jLayeredPane1.add(jBPiedra1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra8.setName("jBPiedra1"); // NOI18N
         jBPiedra8.addActionListener(new java.awt.event.ActionListener() {
@@ -701,6 +911,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra8.setBounds(160, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra9.setName("jBPiedra2"); // NOI18N
         jBPiedra9.addActionListener(new java.awt.event.ActionListener() {
@@ -708,6 +920,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra9.setBounds(240, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra10.setName("jBPiedra3"); // NOI18N
         jBPiedra10.addActionListener(new java.awt.event.ActionListener() {
@@ -715,6 +929,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra10.setBounds(320, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra11.setName("jBPiedra4"); // NOI18N
         jBPiedra11.addActionListener(new java.awt.event.ActionListener() {
@@ -722,6 +938,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra11.setBounds(400, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra11, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra12.setName("jBPiedra5"); // NOI18N
         jBPiedra12.addActionListener(new java.awt.event.ActionListener() {
@@ -729,6 +947,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra12.setBounds(480, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra13.setName("6"); // NOI18N
         jBPiedra13.addActionListener(new java.awt.event.ActionListener() {
@@ -736,6 +956,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra13.setBounds(560, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra14.setName("jBPiedra7"); // NOI18N
         jBPiedra14.addActionListener(new java.awt.event.ActionListener() {
@@ -743,381 +965,31 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
+        jBPiedra14.setBounds(640, 660, 73, 71);
+        jLayeredPane1.add(jBPiedra14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
-            public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
-                jScrollBar1AdjustmentValueChanged(evt);
-            }
-        });
+        jLabel1.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLabel1.setText("Player");
+        jLabel1.setBounds(30, 690, 80, 31);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLAvatar.setText("AVATAR");
+        jLAvatar.setBounds(50, 620, 50, 40);
+        jLayeredPane1.add(jLAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel4.setBounds(-6, -110, 960, 990);
+        jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa00, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa01, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa02, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa03, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa04, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa05, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa06, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa07, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa08, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa09, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa10, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa11, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa12, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa13, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa14, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa15, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa16, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa17, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa18, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa19, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa30, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa31, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa32, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa33, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa34, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa35, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa36, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa37, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa38, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa39, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa20, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa21, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa22, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa23, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa24, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa25, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa26, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa27, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa28, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa29, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa40, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa41, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa42, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa43, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa44, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa45, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa46, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa47, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa48, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa49, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBMesa50, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa51, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa52, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa53, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa54, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa55, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa56, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa57, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa58, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBMesa59, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(jButton179, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton181, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton177, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton178, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton176, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton182, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton180, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBPiedra8, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra9, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra10, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra11, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra12, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra13, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra14, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBPiedra1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra6, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBPiedra7, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jBRotarIzq)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBRotarDer)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBPot1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot12, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBPot13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButtonPot, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jBPot14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)
-                        .addComponent(jButtonPass, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel6)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton180, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton182, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton176, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton178, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton177, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton181, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton179, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jBMesa06, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa05, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa04, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa03, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa02, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa01, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa00, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa07, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa08, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa09, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBMesa19, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa18, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa17, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa16, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa15, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa13, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa12, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa14, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jBMesa26, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa25, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa24, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa23, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa22, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa21, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa20, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa27, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa28, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa29, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBMesa39, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa38, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa37, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa36, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa35, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa33, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa32, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa31, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa30, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa34, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBMesa49, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa48, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa47, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa46, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa45, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa43, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa42, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa41, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa40, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa44, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jBMesa56, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa55, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa54, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa53, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa52, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa51, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa50, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa57, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa58, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBMesa59, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jBPiedra7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBPiedra1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jBPiedra14, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra13, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra12, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jBPiedra8, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel1)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jBRotarIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jBRotarDer, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot12, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBPot14, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41)
-                        .addComponent(jButtonPot, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButtonPass, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 798, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
         );
 
         pack();
@@ -1528,11 +1400,14 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JButton jButton182;
     private javax.swing.JButton jButtonPass;
     private javax.swing.JButton jButtonPot;
+    private javax.swing.JLabel jLAvatar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
     JButton botonActualSeleccionado;

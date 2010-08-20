@@ -6,6 +6,7 @@
 package cliente.logica;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import javax.swing.JLabel;
 import ve.edu.ucab.cliente.ClienteSocket;
 
 /**
@@ -32,7 +33,7 @@ public class ConexionJsockets {
         return resultado;
     }
 
-     public static String solicitudServidor2(JTextField username,String fechaInicio) {
+     public static String solicitudServidor2(JLabel username,String fechaInicio) {
         ClienteSocket cliente = new ClienteSocket();
         String nickname = username.getText();
         String opcion = "2";
