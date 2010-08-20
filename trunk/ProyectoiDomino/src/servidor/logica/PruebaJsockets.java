@@ -106,13 +106,17 @@ public class PruebaJsockets implements LogicaServidor {
                 cadena = "TRUE";
                 subArg = cadena.split(":");
                 resultado = subArg[0];
-                System.out.println("Agarrar pieza del Pozo -> " + cadena);
+                System.out.println("Fin de partida -> " + cadena);
                 break;
             case 7:
-                cadena = "TRUE:mensaje";
-                subArg = cadena.split(":");
-                resultado = subArg[0];
-                System.out.println("Fin de partida -> " + cadena);
+                Partida partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+
+                cadena = partidaExistente.getElJuego().getLaMesa().getElPozo().obtenerPiedraPozo();
+
+                resultado = "TRUE:" + cadena;
+                /*subArg = cadena.split(":");
+                resultado = subArg[0];*/
+                System.out.println("Agarrar pieza del Pozo -> " + resultado);
                 break;
         }
 

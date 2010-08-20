@@ -87,12 +87,11 @@ public class ConexionJsockets {
         System.out.println(resultado);
         return resultado;
     }
-          public static String solicitudServidor7(JTextField username, JPasswordField clave,String opcion) {
+          public static String solicitudServidor7(String nickname) {
         ClienteSocket cliente = new ClienteSocket();
-        String nickname = username.getText();
-        String password = clave.getText();
+        String opcion = "7";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }

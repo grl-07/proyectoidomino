@@ -309,7 +309,7 @@ public class Archivo {
 
                 //FIN PIEDRAS MESA
 
-                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);                
+                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);
 
                 //lo ulimo que se hace.
                 Partida laPartida = new Partida(elUsuario, numeroPartida, fechaInicial.getText(), fechaact.getText(), elJuego);
@@ -322,7 +322,7 @@ public class Archivo {
         return false;
     }
 
-     /////////////////////////////nuevo ABE/////////////////////////
+    /////////////////////////////nuevo ABE/////////////////////////
     public static void guardarDatosArchivoPartidas(ListaPartidas listaPartidas) {
 
         Partida nodoAuxiliar;
@@ -358,9 +358,9 @@ public class Archivo {
             //PIEDRAS EN MANO DEL JUGADOR
             Element piedraJugador = new Element("PiedrasJugador");
 
-            System.out.println("INICIO LISTA DE PIEDRAS EN MANO JUGADOR");
+            /*System.out.println("INICIO LISTA DE PIEDRAS EN MANO JUGADOR");
             nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
-            System.out.println("FIN LISTA DE PIEDRAS EN MANO JUGADOR");
+            System.out.println("FIN LISTA DE PIEDRAS EN MANO JUGADOR");*/
 
 
             Iterator iteradorJugador = nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().getIterator();
@@ -483,5 +483,4 @@ public class Archivo {
         }
     }
     /////////////////////////////nuevo ABE/////////////////////////
-   
 }
