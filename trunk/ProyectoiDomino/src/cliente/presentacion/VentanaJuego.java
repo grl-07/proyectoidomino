@@ -26,6 +26,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         this.nickname = nickname;
         this.mensaje = mensaje;
         inicializarPiedrasEnMano();
+        inicializarMesa();
     }
 
     /** This method is called from within the constructor to
@@ -135,7 +136,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jBRotarIzq = new javax.swing.JButton();
-        jBRotarIzq1 = new javax.swing.JButton();
+        jBRotarDer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,378 +149,443 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel3.setText("Computadora");
 
+        jBMesa45.setName("jBMesa45"); // NOI18N
         jBMesa45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa40.setName("jBMesa40"); // NOI18N
         jBMesa40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa29.setName("jBMesa29"); // NOI18N
         jBMesa29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa27.setName("jBMesa27"); // NOI18N
         jBMesa27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa52.setName("jBMesa52"); // NOI18N
         jBMesa52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa53.setName("jBMesa53"); // NOI18N
         jBMesa53.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa28.setName("jBMesa28"); // NOI18N
         jBMesa28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa46.setName("jBMesa46"); // NOI18N
         jBMesa46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa47.setName("jBMesa47"); // NOI18N
         jBMesa47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa48.setName("jBMesa48"); // NOI18N
         jBMesa48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa41.setName("jBMesa41"); // NOI18N
         jBMesa41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa35.setName("jBMesa35"); // NOI18N
         jBMesa35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa30.setName("jBMesa30"); // NOI18N
         jBMesa30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa36.setName("jBMesa36"); // NOI18N
         jBMesa36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa49.setName("jBMesa49"); // NOI18N
         jBMesa49.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa02.setName("jBMesa02"); // NOI18N
         jBMesa02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa23.setName("jBMesa23"); // NOI18N
         jBMesa23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa26.setName("jBMesa26"); // NOI18N
         jBMesa26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa20.setName("jBMesa20"); // NOI18N
         jBMesa20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa21.setName("jBMesa21"); // NOI18N
         jBMesa21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa51.setName("jBMesa51"); // NOI18N
         jBMesa51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa17.setName("jBMesa17"); // NOI18N
         jBMesa17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa55.setName("jBMesa55"); // NOI18N
         jBMesa55.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa50.setName("jBMesa50"); // NOI18N
         jBMesa50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa56.setName("jBMesa56"); // NOI18N
         jBMesa56.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa00.setName("jBMesa00"); // NOI18N
         jBMesa00.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa44.setName("jBMesa44"); // NOI18N
         jBMesa44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa05.setName("jBMesa05"); // NOI18N
         jBMesa05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa42.setName("jBMesa42"); // NOI18N
         jBMesa42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa19.setName("jBMesa19"); // NOI18N
         jBMesa19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa18.setName("jBMesa18"); // NOI18N
         jBMesa18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa04.setName("jBMesa04"); // NOI18N
         jBMesa04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa03.setName("jBMesa03"); // NOI18N
         jBMesa03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa38.setName("jBMesa38"); // NOI18N
         jBMesa38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa11.setName("jBMesa11"); // NOI18N
         jBMesa11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa12.setName("jBMesa12"); // NOI18N
         jBMesa12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa16.setName("jBMesa16"); // NOI18N
         jBMesa16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa15.setName("jBMesa15"); // NOI18N
         jBMesa15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa14.setName("jBMesa14"); // NOI18N
         jBMesa14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa10.setName("jBMesa10"); // NOI18N
         jBMesa10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa39.setName("jBMesa39"); // NOI18N
         jBMesa39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa22.setName("jBMesa22"); // NOI18N
         jBMesa22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa24.setName("jBMesa24"); // NOI18N
         jBMesa24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa37.setName("jBMesa37"); // NOI18N
         jBMesa37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa25.setName("jBMesa25"); // NOI18N
         jBMesa25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa31.setName("jBMesa31"); // NOI18N
         jBMesa31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa13.setName("jBMesa13"); // NOI18N
         jBMesa13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa09.setName("jBMesa09"); // NOI18N
         jBMesa09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa08.setName("jBMesa08"); // NOI18N
         jBMesa08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa54.setName("jBMesa54"); // NOI18N
         jBMesa54.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa59.setName("jBMesa59"); // NOI18N
         jBMesa59.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa57.setName("jBMesa57"); // NOI18N
         jBMesa57.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa58.setName("jBMesa58"); // NOI18N
         jBMesa58.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa06.setName("jBMesa06"); // NOI18N
         jBMesa06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa01.setName("jBMesa01"); // NOI18N
         jBMesa01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa43.setName("jBMesa43"); // NOI18N
         jBMesa43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa32.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jBMesa32.setName("jBMesa32"); // NOI18N
         jBMesa32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa34.setName("jBMesa34"); // NOI18N
         jBMesa34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa33.setAutoscrolls(true);
+        jBMesa33.setName("jBMesa33"); // NOI18N
         jBMesa33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBMesa07.setName("jBMesa07"); // NOI18N
         jBMesa07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
 
+        jBPiedra7.setName("jBPiedra7"); // NOI18N
         jBPiedra7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
 
+        jBPiedra3.setName("jBPiedra3"); // NOI18N
         jBPiedra3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
 
+        jBPiedra1.setName("jBPiedra1"); // NOI18N
         jBPiedra1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
@@ -528,24 +594,28 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jLabel1.setText("Player");
 
+        jBPiedra2.setName("jBPiedra2"); // NOI18N
         jBPiedra2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
 
+        jBPiedra4.setName("jBPiedra4"); // NOI18N
         jBPiedra4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
 
+        jBPiedra6.setName("6"); // NOI18N
         jBPiedra6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
 
+        jBPiedra5.setName("jBPiedra5"); // NOI18N
         jBPiedra5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
@@ -572,7 +642,12 @@ public class VentanaJuego extends javax.swing.JFrame {
             }
         });
 
-        jBRotarIzq1.setText("RotD");
+        jBRotarDer.setText("RotD");
+        jBRotarDer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBRotarDerActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -745,43 +820,40 @@ public class VentanaJuego extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jBRotarIzq)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBRotarIzq1)))
+                        .addComponent(jBRotarDer)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton105, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jLabel7))
-                                .addGap(236, 236, 236)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5))
-                            .addComponent(jLabel6))
-                        .addGap(77, 77, 77))
+                                    .addComponent(jButton105, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel7))
+                        .addGap(236, 236, 236)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5))
+                    .addComponent(jLabel6)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(36, 36, 36)
-                        .addComponent(jLabel2)
-                        .addContainerGap())))
+                        .addComponent(jLabel2)))
+                .addGap(77, 77, 77))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -935,7 +1007,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 .addComponent(jLabel1))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jBRotarIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jBRotarIzq1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jBRotarDer, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(47, Short.MAX_VALUE))
         );
 
@@ -961,6 +1033,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                 botonActual = arregloBotones[i][j];
 
                 botonActual.setIcon(null);
+
+                //botonActual.setEnabled(false);
 
                 botonActual.setFocusable(false);
             }
@@ -1033,17 +1107,9 @@ public class VentanaJuego extends javax.swing.JFrame {
         fuente = indiceString = nombreBoton = imagenAsociada = "";
         int indicePiedra;
 
-        System.out.println("piedra: " + botonPiedra.getName());
-
         nombreBoton = botonPiedra.getIcon().toString();
-        System.out.println("imagen: " + nombreBoton.substring(nombreBoton.length() - 13, nombreBoton.length() - 4));
-
-
-
-
 
         //PARA HALLAR LA IMAGEN ASOCIADA
-
         imagenAsociada = nombreBoton.substring(nombreBoton.length() - 13, nombreBoton.length() - 4);
         System.out.println("Imagen Asociada: " + imagenAsociada);
 
@@ -1051,7 +1117,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         //indiceString = nombreBoton.substring(NombreBotonSize - 5, NombreBotonSize - 4);
         indiceString = imagenAsociada.substring(imagenAsociada.length() - 1);
 
-        System.out.println("indice" + indiceString);
+        System.out.println("indice= " + indiceString);
 
         indicePiedra = Integer.parseInt(indiceString);
 
@@ -1059,7 +1125,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         String imagenAsociadaActual = cambiarImagenPiedra(rotarDerecha, indicePiedra, imagenAsociada);
 
-        System.out.println("Imagen Asociada: " + imagenAsociadaActual);
+        System.out.println("Imagen Asociada Actualizada: " + imagenAsociadaActual);
 
         fuente = direccion + imagenAsociadaActual;
 
@@ -1074,10 +1140,9 @@ public class VentanaJuego extends javax.swing.JFrame {
         String[] subArg = mensaje.split(":");
         String cadenaPiedra = "";
         String num1 = direccionIcono.substring(direccionIcono.length() - 13, direccionIcono.length() - 12);
-        String num2 = direccionIcono.substring(direccionIcono.length() - 12, direccionIcono.length() - 11 );
+        String num2 = direccionIcono.substring(direccionIcono.length() - 12, direccionIcono.length() - 11);
         cadenaPiedra = num1 + "-" + num2;
-        System.out.println("piedra: " + cadenaPiedra);
-        
+
         return cadenaPiedra;
     }
 
@@ -1087,7 +1152,6 @@ public class VentanaJuego extends javax.swing.JFrame {
         int i, j;
         String imagenActual = "";
         String img = direccionIcono.substring(direccionIcono.length() - 13);
-        System.out.println("img: " + img);
 
         for (i = 0; i < 7; i++) {
 
@@ -1095,7 +1159,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             String[] subArg2 = mensajeActual.split("-");
 
-            for (j = 3; j < 8; j++) {
+            for (j = 3; j < 7; j++) {
 
                 if (subArg2[j].equalsIgnoreCase(img)) {
                     imagenActual = subArg2[j];
@@ -1119,13 +1183,14 @@ public class VentanaJuego extends javax.swing.JFrame {
         if (botonActualSeleccionado != null) {
             boton.setIcon(botonActualSeleccionado.getIcon());
 
+            System.out.println("nombre de boton: " + boton.getName());
+
             String posX = boton.getName().toString();
             posX = posX.substring(posX.length() - 2, posX.length() - 1);
-            int x = Integer.parseInt(posX);
 
             String posY = boton.getName().toString();
             posY = posY.substring(posY.length() - 1);
-            int y = Integer.parseInt(posY);
+
 
             String posicion = posX + "-" + posY;
 
@@ -1133,26 +1198,37 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             String cadenaImagen = obtenerImagenAsociada(boton.getIcon().toString(), mensaje);
 
-            String mensaje = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
+            System.out.println("nickname: " + nickname);
+            System.out.println("piedra: " + cadenaPiedra);
+            System.out.println("posicion: " + posicion);
+            System.out.println("imagenSeleccionada: " + cadenaImagen);
+
+            String cadena = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
 
             botonActualSeleccionado.setIcon(null);
             botonActualSeleccionado.setEnabled(false);
-            //boton.setEnabled(false);
+
         }
     }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
 
     private void jBRotarIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRotarIzqActionPerformed
         // TODO add your handling code here:
-        if (botonActualSeleccionado != null && botonActualSeleccionado.isEnabled()) //por lo menos jBPiedra1
-        {
-            System.out.println("entro");
+        if (botonActualSeleccionado != null && botonActualSeleccionado.isEnabled()) {
             botonActualSeleccionado.setIcon(new javax.swing.ImageIcon(getClass().getResource(rotarPiedra(botonActualSeleccionado, false))));
 
             botonActualSeleccionado.requestFocus();
-        } else {
-            System.out.println("Boton Actual seleccionado: " + botonActualSeleccionado.getName());
         }
+
     }//GEN-LAST:event_jBRotarIzqActionPerformed
+
+    private void jBRotarDerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRotarDerActionPerformed
+        // TODO add your handling code here:
+        if (botonActualSeleccionado != null && botonActualSeleccionado.isEnabled()) {
+            botonActualSeleccionado.setIcon(new javax.swing.ImageIcon(getClass().getResource(rotarPiedra(botonActualSeleccionado, true))));
+
+            botonActualSeleccionado.requestFocus();
+        }
+    }//GEN-LAST:event_jBRotarDerActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1230,8 +1306,8 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JButton jBPiedra5;
     private javax.swing.JButton jBPiedra6;
     private javax.swing.JButton jBPiedra7;
+    private javax.swing.JButton jBRotarDer;
     private javax.swing.JButton jBRotarIzq;
-    private javax.swing.JButton jBRotarIzq1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton105;
