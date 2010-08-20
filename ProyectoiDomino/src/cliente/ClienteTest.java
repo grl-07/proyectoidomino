@@ -15,5 +15,6 @@ public class ClienteTest {
 
          VentanaLogin ventana = new VentanaLogin();
          ventana.setVisible(true);
+         ventana.setLocationRelativeTo(null);
     }
 }

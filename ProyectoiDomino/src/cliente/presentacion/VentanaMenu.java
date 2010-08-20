@@ -40,22 +40,48 @@ public class VentanaMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLavatar = new javax.swing.JLabel();
+        jLNickname = new javax.swing.JLabel();
+        jLNombre = new javax.swing.JLabel();
+        jLApellido = new javax.swing.JLabel();
+        jLBienvenida = new javax.swing.JLabel();
         jBCrearPartida = new javax.swing.JButton();
         jBCargarPartida = new javax.swing.JButton();
         jBModificar = new javax.swing.JButton();
-        jLBienvenida = new javax.swing.JLabel();
-        jTextNombre = new javax.swing.JTextField();
         jTextApellido = new javax.swing.JTextField();
-        jLNombre = new javax.swing.JLabel();
-        jLApellido = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jTextNombre = new javax.swing.JTextField();
         jTextNickname = new javax.swing.JTextField();
-        jLavatar = new javax.swing.JLabel();
+        jLFechaNac = new javax.swing.JLabel();
+        jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Welcome to iDomino");
 
-        jBCrearPartida.setFont(new java.awt.Font("Calibri", 0, 12));
+        jLavatar.setBounds(30, 65, 100, 90);
+        jLayeredPane1.add(jLavatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLNickname.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLNickname.setText("Nickname:");
+        jLNickname.setBounds(30, 170, 70, 17);
+        jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLNombre.setFont(new java.awt.Font("Calibri", 1, 14));
+        jLNombre.setText("Name:");
+        jLNombre.setBounds(50, 200, 40, 17);
+        jLayeredPane1.add(jLNombre, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLApellido.setFont(new java.awt.Font("Calibri", 1, 14));
+        jLApellido.setText("LastName:");
+        jLApellido.setBounds(30, 230, 70, 17);
+        jLayeredPane1.add(jLApellido, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLBienvenida.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
+        jLBienvenida.setBounds(10, 10, 377, 39);
+        jLayeredPane1.add(jLBienvenida, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBCrearPartida.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBCrearPartida.setForeground(new java.awt.Color(153, 51, 0));
         jBCrearPartida.setText("New Game");
         jBCrearPartida.setName("jBCrearPartida"); // NOI18N
         jBCrearPartida.addActionListener(new java.awt.event.ActionListener() {
@@ -63,14 +89,31 @@ public class VentanaMenu extends javax.swing.JFrame {
                 jBCrearPartidaActionPerformed(evt);
             }
         });
+        jBCrearPartida.setBounds(261, 130, 110, 25);
+        jLayeredPane1.add(jBCrearPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBCargarPartida.setFont(new java.awt.Font("Calibri", 0, 12));
+        jBCargarPartida.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBCargarPartida.setForeground(new java.awt.Color(153, 51, 0));
         jBCargarPartida.setText("Load Game");
+        jBCargarPartida.setBounds(260, 170, 110, 25);
+        jLayeredPane1.add(jBCargarPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBModificar.setFont(new java.awt.Font("Calibri", 0, 12));
+        jBModificar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBModificar.setForeground(new java.awt.Color(153, 51, 0));
         jBModificar.setText("Modify Info");
+        jBModificar.setBounds(260, 210, 110, 25);
+        jLayeredPane1.add(jBModificar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLBienvenida.setFont(new java.awt.Font("Corbel", 0, 24));
+        jTextApellido.setEditable(false);
+        jTextApellido.setFont(new java.awt.Font("Calibri", 1, 12));
+        jTextApellido.setBorder(null);
+        jTextApellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextApellidoActionPerformed(evt);
+            }
+        });
+        jTextApellido.setBounds(100, 230, 90, 20);
+        jLayeredPane1.add(jTextApellido, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextNombre.setEditable(false);
         jTextNombre.setFont(new java.awt.Font("Calibri", 1, 12));
@@ -81,99 +124,38 @@ public class VentanaMenu extends javax.swing.JFrame {
                 jTextNombreActionPerformed(evt);
             }
         });
-
-        jTextApellido.setEditable(false);
-        jTextApellido.setFont(new java.awt.Font("Calibri", 1, 12));
-        jTextApellido.setBorder(null);
-        jTextApellido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextApellidoActionPerformed(evt);
-            }
-        });
-
-        jLNombre.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLNombre.setText("Name:");
-
-        jLApellido.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLApellido.setText("LastName:");
-
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel1.setText("Nickname:");
+        jTextNombre.setBounds(100, 200, 90, 20);
+        jLayeredPane1.add(jTextNombre, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextNickname.setEditable(false);
         jTextNickname.setFont(new java.awt.Font("Calibri", 1, 12));
         jTextNickname.setBorder(null);
+        jTextNickname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNicknameActionPerformed(evt);
+            }
+        });
+        jTextNickname.setBounds(100, 170, 90, 20);
+        jLayeredPane1.add(jTextNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLFechaNac.setFont(new java.awt.Font("Calibri", 1, 14));
+        jLFechaNac.setText("Birth Date:");
+        jLFechaNac.setBounds(30, 260, 70, 17);
+        jLayeredPane1.add(jLFechaNac, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLFondo.setBounds(0, -6, 440, 380);
+        jLayeredPane1.add(jLFondo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLApellido)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextApellido))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLNombre)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(249, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(42, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLavatar, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBCrearPartida)
-                            .addComponent(jBCargarPartida)
-                            .addComponent(jBModificar))
-                        .addGap(91, 91, 91))))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLavatar, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                        .addGap(30, 30, 30))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBCrearPartida)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBCargarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jTextNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLNombre)
-                            .addComponent(jTextNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLApellido)
-                            .addComponent(jTextApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jBModificar)))
-                .addGap(76, 76, 76))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
         );
 
         pack();
@@ -193,6 +175,10 @@ public class VentanaMenu extends javax.swing.JFrame {
 
         new VentanaJuego(this, jTextNickname.getText(), mensaje).setVisible(true);
     }//GEN-LAST:event_jBCrearPartidaActionPerformed
+
+    private void jTextNicknameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNicknameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextNicknameActionPerformed
 
     public void setDatosUsuario(String nickname, String nombre, String apellido, String avatar) {
         jTextNickname.setText(nickname);
@@ -234,9 +220,12 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JButton jBModificar;
     private javax.swing.JLabel jLApellido;
     private javax.swing.JLabel jLBienvenida;
+    private javax.swing.JLabel jLFechaNac;
+    private javax.swing.JLabel jLFondo;
+    private javax.swing.JLabel jLNickname;
     private javax.swing.JLabel jLNombre;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLavatar;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JTextField jTextApellido;
     private javax.swing.JTextField jTextNickname;
     private javax.swing.JTextField jTextNombre;
