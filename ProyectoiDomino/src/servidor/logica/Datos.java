@@ -52,17 +52,6 @@ public class Datos {
         return (listaDePiedras.agregarPiedra(new Piedra(num1, num2)));
     }
 
-    /*public static boolean agregarPartida(String nickname) {
-        //Adaptar a JSockets
-        Usuario usuarioAuxiliar = new Usuario("", "", "", nickname, "");
-        Usuario elUsuario = listaDeUsuarios.buscarDatos(usuarioAuxiliar);
-        return listaDePartidas.agregarPartidaCreada(elUsuario);
-    }*/
-
-    /*public static void imprimirPartida() {
-        listaDePartidas.imprimirPartidas();
-    }*/
-
     public static boolean agregarUsuario(Usuario elUsuario) {
         return listaDeUsuarios.agregarUsuario(elUsuario);
 
@@ -72,40 +61,18 @@ public class Datos {
         listaDePiedras.imprimirListaPiedras();
     }
 
-    /*public static String asignarIconoUsuario(String nombre, String apellido, String username, String clave, JTextField avatar, JRadioButton perro, JRadioButton sombrilla) {
-        Usuario registro, elUsuario;
-
-        elUsuario = new Usuario(nombre, apellido, clave, username, "");
-
-        /*if (registro != null)
-        {
-        if (perro.isSelected()) {
-            elUsuario.setAvatar("perro");
-            sombrilla.setSelected(false);
-        }
-        if (sombrilla.isSelected()) {
-            elUsuario.setAvatar("sombrilla");
-            perro.setSelected(false);
-        }
-        avatar.setText(elUsuario.getAvatar());
-        return elUsuario.getAvatar();
-        //}
-    }*/
-
     public static boolean crearPartida(String nickname) {
         return listaDePartidas.crearPartida(nickname, listaDePiedras);
     }
+    
     public static Partida obtenerPartidaCreada(String nickname) {
         Partida laPartida;
         laPartida = new Partida().crearPartida(nickname, listaDePiedras);
+        listaDePartidas.agregarPartida(laPartida);
         return laPartida;
     }
 
-    /*public static Partida crearPartida(String nickname) {
-        return listaDePartidas.crearPartida(nickname);
-    }*/
-
-    /*public static boolean guardarPartida(Partida laPartida){
-        return listaDePartidas.agregarPartida(laPartida);
-    }*/
+    public static Partida obtenerPartidaExistente(String nickname) {
+        return listaDePartidas.buscarUsuario(new Usuario("","","",nickname,"",""));
+    }
 }
