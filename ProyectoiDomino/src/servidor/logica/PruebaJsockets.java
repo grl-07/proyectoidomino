@@ -61,6 +61,8 @@ public class PruebaJsockets implements LogicaServidor {
     public String respuestaServidor(Usuario elUsuario, Partida laPartida, int opcion) {
         String resultado = "FALSE";
         String cadena;
+        Partida partidaNueva = null;
+        Partida partidaExistente = null;
         String[] subArg;
         Usuario registro = null;
 
@@ -75,13 +77,12 @@ public class PruebaJsockets implements LogicaServidor {
                 }
                 break;
             case 2:
-                Partida partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
-                //Datos.crearPartida(elUsuario.getNickname());
-                String cadenaPiedras;
-                cadenaPiedras = partidaNueva.getElJuego().getLaMesa().getElPozo().obtenerPiedras();
+                partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
+
+                cadena = partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().obtenerPiedras();
                 //System.out.println("cadenaPiedras =  " + partidaNueva.getElJuego().getLaMesa().);
-                System.out.println("cadenaPiedras =  " + cadenaPiedras);
-                resultado = cadenaPiedras;
+                System.out.println("cadenaPiedras =  " + cadena);
+                resultado = cadena;
                 break;
             case 3:
                 if (Conector.comprobarNickname(elUsuario.getNickname()) == false) {
@@ -100,6 +101,10 @@ public class PruebaJsockets implements LogicaServidor {
                 cadena = "TRUE:x1-y1";
                 subArg = cadena.split(":");
                 resultado = subArg[0];
+                /*partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+
+                cadena = partidaNueva.getElJuego().getLaMesa().getMatrizPiedrasMesa().validarJugada(subArg[2], subArg[3]);
+                resultado = "TRUE:" + cadena;*/
                 System.out.println("Enviar Jugada -> " + cadena);
                 break;
             case 6:
@@ -109,11 +114,13 @@ public class PruebaJsockets implements LogicaServidor {
                 System.out.println("Fin de partida -> " + cadena);
                 break;
             case 7:
-                Partida partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+                partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
                 cadena = partidaExistente.getElJuego().getLaMesa().getElPozo().obtenerPiedraPozo();
 
-                resultado = "TRUE:" + cadena;
+                if (!cadena.equalsIgnoreCase("")) {
+                    resultado = "TRUE:" + cadena;
+                }
                 /*subArg = cadena.split(":");
                 resultado = subArg[0];*/
                 System.out.println("Agarrar pieza del Pozo -> " + resultado);

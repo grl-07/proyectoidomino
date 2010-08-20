@@ -22,6 +22,7 @@ public class VentanaLogin extends javax.swing.JFrame {
     public VentanaLogin() {
         initComponents();
         //inicializarComponentesPropios();
+        this.setTitle("iDomino");
     }
 
     /** This method is called from within the constructor to
