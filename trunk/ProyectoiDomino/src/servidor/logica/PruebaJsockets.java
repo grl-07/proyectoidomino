@@ -72,7 +72,7 @@ public class PruebaJsockets implements LogicaServidor {
                 boolean confirm = Conector.comprobarDatos(elUsuario.getNickname(), elUsuario.getClave());
                 if (confirm == true) {
                     registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
-                    resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar();
+                    resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
                     System.out.println("EN SERVIDOR Entrar al sistema -->" + resultado);
                 }
                 break;
