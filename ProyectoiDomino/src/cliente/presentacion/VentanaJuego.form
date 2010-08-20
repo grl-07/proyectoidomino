@@ -203,53 +203,48 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jBRotarIzq" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jBRotarIzq1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBRotarDer" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Component id="jButton1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton4" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton5" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton7" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton9" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton10" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton11" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton12" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton13" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="jButton14" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton4" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton5" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton7" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton9" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton10" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton11" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton12" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton13" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="jButton14" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="10" pref="10" max="10" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jButton105" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
-                                          <Component id="jButton106" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton105" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="jButton106" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -421,7 +416,7 @@
                           </Group>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jBRotarIzq" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                              <Component id="jBRotarIzq1" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jBRotarDer" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -471,316 +466,509 @@
     <Component class="javax.swing.JButton" name="jButton178">
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa45">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa45" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa40">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa40" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa29">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa29" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa27">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa27" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa52">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa52" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa53">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa53" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa28">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa28" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa46">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa46" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa47">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa47" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa48">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa48" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa41">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa41" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa35">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa35" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa30">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa30" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa36">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa36" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa49">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa49" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa02">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa02" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa23">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa23" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa26">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa26" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa20">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa20" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa21">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa21" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa51">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa51" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa17">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa17" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa55">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa55" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa50">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa50" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa56">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa56" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa00">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa00" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa44">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa44" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa05">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa05" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa42">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa42" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa19">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa19" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa18">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa18" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa04">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa04" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa03">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa03" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa38">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa38" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa11">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa11" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa12">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa12" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa16">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa16" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa15">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa15" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa14">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa14" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa10">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa10" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa39">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa39" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa22">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa22" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa24">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa24" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa37">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa37" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa25">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa25" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa31">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa31" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa13">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa13" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa09">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa09" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa08">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa08" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa54">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa54" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa59">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa59" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa57">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa57" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa58">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa58" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa06">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa06" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa01">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa01" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa43">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa43" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa32">
+      <Properties>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Default Cursor"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="jBMesa32" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa34">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa34" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa33">
+      <Properties>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+        <Property name="name" type="java.lang.String" value="jBMesa33" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBMesa07">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBMesa07" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraDelTableroActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra7">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra7" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra3">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra3" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra1">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra1" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
@@ -791,21 +979,33 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra2">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra2" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra4">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra4" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra6">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="6" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBPiedra5">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPiedra5" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
@@ -880,10 +1080,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBRotarIzqActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBRotarIzq1">
+    <Component class="javax.swing.JButton" name="jBRotarDer">
       <Properties>
         <Property name="text" type="java.lang.String" value="RotD"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBRotarDerActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
