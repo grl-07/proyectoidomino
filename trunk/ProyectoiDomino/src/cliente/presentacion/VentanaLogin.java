@@ -21,7 +21,7 @@ public class VentanaLogin extends javax.swing.JFrame {
     /** Creates new form VentanaLogin */
     public VentanaLogin() {
         initComponents();
-        inicializarComponentesPropios();
+        //inicializarComponentesPropios();
     }
 
     /** This method is called from within the constructor to
@@ -33,99 +33,101 @@ public class VentanaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         lbliDomino = new javax.swing.JLabel();
-        lblPassword = new javax.swing.JLabel();
-        lblNickname = new javax.swing.JLabel();
-        btnSignUp = new javax.swing.JButton();
-        btnCancel = new javax.swing.JButton();
-        btnOK = new javax.swing.JButton();
         txtNickname = new javax.swing.JTextField();
         txtPassword = new javax.swing.JPasswordField();
+        lblNickname = new javax.swing.JLabel();
+        lblPassword = new javax.swing.JLabel();
+        btnOK = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
+        btnSignUp = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sign in");
+        setBackground(new java.awt.Color(204, 204, 204));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(java.awt.Color.red);
 
-        lbliDomino.setFont(new java.awt.Font("Calibri", 0, 24));
+        lbliDomino.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
+        lbliDomino.setForeground(new java.awt.Color(255, 204, 0));
         lbliDomino.setText("iDomino");
+        lbliDomino.setBounds(190, 0, 108, 45);
+        jLayeredPane1.add(lbliDomino, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        lblPassword.setFont(new java.awt.Font("Calibri", 0, 14));
-        lblPassword.setText("Password");
-
-        lblNickname.setFont(new java.awt.Font("Calibri", 0, 14));
-        lblNickname.setText("Nickname");
-
-        btnSignUp.setText("Sign Up");
-        btnSignUp.addActionListener(new java.awt.event.ActionListener() {
+        txtNickname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 204, 0)));
+        txtNickname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSignUpActionPerformed(evt);
+                txtNicknameActionPerformed(evt);
             }
         });
+        txtNickname.setBounds(200, 60, 89, 16);
+        jLayeredPane1.add(txtNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        txtPassword.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 204, 0)));
+        txtPassword.setBounds(200, 100, 89, 16);
+        jLayeredPane1.add(txtPassword, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        lblNickname.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        lblNickname.setForeground(new java.awt.Color(255, 204, 0));
+        lblNickname.setText("Nickname");
+        lblNickname.setBounds(130, 60, 60, 17);
+        jLayeredPane1.add(lblNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        lblPassword.setFont(new java.awt.Font("Calibri", 1, 14));
+        lblPassword.setForeground(new java.awt.Color(255, 204, 0));
+        lblPassword.setText("Password");
+        lblPassword.setBounds(130, 100, 60, 17);
+        jLayeredPane1.add(lblPassword, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        btnOK.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnOK.setForeground(new java.awt.Color(153, 51, 0));
+        btnOK.setText("Sign in");
+        btnOK.setBorder(null);
+        btnOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOKActionPerformed(evt);
+            }
+        });
+        btnOK.setBounds(310, 100, 60, 20);
+        jLayeredPane1.add(btnOK, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        btnCancel.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnCancel.setForeground(new java.awt.Color(153, 51, 0));
         btnCancel.setText("Cancel");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelActionPerformed(evt);
             }
         });
+        btnCancel.setBounds(240, 140, 80, 20);
+        jLayeredPane1.add(btnCancel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        btnOK.setText("Sign in");
-        btnOK.addActionListener(new java.awt.event.ActionListener() {
+        btnSignUp.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnSignUp.setForeground(new java.awt.Color(153, 51, 0));
+        btnSignUp.setText("Sign Up");
+        btnSignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOKActionPerformed(evt);
+                btnSignUpActionPerformed(evt);
             }
         });
+        btnSignUp.setBounds(139, 140, 90, 20);
+        jLayeredPane1.add(btnSignUp, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        txtNickname.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNicknameActionPerformed(evt);
-            }
-        });
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel1.setBounds(-6, -6, 410, 210);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(104, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(btnSignUp)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCancel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNickname)
-                            .addComponent(lblPassword))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbliDomino)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(txtPassword, 0, 0, Short.MAX_VALUE)
-                                    .addComponent(txtNickname, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
-                                .addGap(17, 17, 17)
-                                .addComponent(btnOK)))))
-                .addGap(22, 22, 22))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(lbliDomino)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNickname)
-                    .addComponent(txtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPassword)
-                    .addComponent(btnOK)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCancel)
-                    .addComponent(btnSignUp))
-                .addContainerGap(52, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
         );
 
         pack();
@@ -139,7 +141,9 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
         // TODO add your handling code here:
-        new VentanaRegistro().setVisible(true);
+        VentanaRegistro ventana = new VentanaRegistro();
+        ventana.setVisible(true);
+        ventana.setLocationRelativeTo(null);
 
     }//GEN-LAST:event_btnSignUpActionPerformed
 
@@ -158,6 +162,7 @@ public class VentanaLogin extends javax.swing.JFrame {
             VentanaMenu ventanaMenu;
             ventanaMenu = new VentanaMenu(this);
             ventanaMenu.setVisible(true);
+            ventanaMenu.setLocationRelativeTo(null);
 
             ventanaMenu.setDatosUsuario(txtNickname.getText(),subArg[1], subArg[2], subArg[3]);
             this.dispose();
@@ -192,6 +197,8 @@ public class VentanaLogin extends javax.swing.JFrame {
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnOK;
     private javax.swing.JButton btnSignUp;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLabel lblNickname;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lbliDomino;

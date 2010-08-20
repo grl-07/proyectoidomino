@@ -51,160 +51,126 @@ public class Imagenes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel7 = new javax.swing.JLabel();
-        jRadioBMariposa = new javax.swing.JRadioButton();
-        jLabel8 = new javax.swing.JLabel();
-        jRadioBDog = new javax.swing.JRadioButton();
-        jRadioBCoco = new javax.swing.JRadioButton();
-        jButtonAceptar = new javax.swing.JButton();
-        jRadioBTortuga = new javax.swing.JRadioButton();
-        jRadioBDomino = new javax.swing.JRadioButton();
-        jRadioBSombrilla = new javax.swing.JRadioButton();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jRadioBTortuga = new javax.swing.JRadioButton();
+        jRadioBSombrilla = new javax.swing.JRadioButton();
+        jRadioBDog = new javax.swing.JRadioButton();
         jLabel12 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jRadioBDomino = new javax.swing.JRadioButton();
+        jRadioBCoco = new javax.swing.JRadioButton();
+        jRadioBMariposa = new javax.swing.JRadioButton();
+        jButtonAceptar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg"))); // NOI18N
+        jLabel9.setBounds(10, 10, -1, -1);
+        jLayeredPane1.add(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jRadioBMariposa.addActionListener(new java.awt.event.ActionListener() {
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png"))); // NOI18N
+        jLabel10.setBounds(200, 10, -1, -1);
+        jLayeredPane1.add(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg"))); // NOI18N
+        jLabel11.setBounds(360, 10, -1, -1);
+        jLayeredPane1.add(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jRadioBTortuga.setBackground(new java.awt.Color(153, 51, 0));
+        jRadioBTortuga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioBMariposaActionPerformed(evt);
+                jRadioBTortugaActionPerformed(evt);
             }
         });
+        jRadioBTortuga.setBounds(420, 160, -1, -1);
+        jLayeredPane1.add(jRadioBTortuga, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg"))); // NOI18N
+        jRadioBSombrilla.setBackground(new java.awt.Color(153, 51, 0));
+        jRadioBSombrilla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioBSombrillaActionPerformed(evt);
+            }
+        });
+        jRadioBSombrilla.setBounds(230, 160, -1, -1);
+        jLayeredPane1.add(jRadioBSombrilla, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jRadioBDog.setBackground(new java.awt.Color(153, 51, 0));
         jRadioBDog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioBDogActionPerformed(evt);
             }
         });
+        jRadioBDog.setBounds(70, 160, -1, -1);
+        jLayeredPane1.add(jRadioBDog, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png"))); // NOI18N
+        jLabel12.setBounds(20, 220, -1, -1);
+        jLayeredPane1.add(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg"))); // NOI18N
+        jLabel8.setBounds(190, 230, -1, -1);
+        jLayeredPane1.add(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png"))); // NOI18N
+        jLabel7.setBounds(360, 230, -1, -1);
+        jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jRadioBDomino.setBackground(new java.awt.Color(153, 51, 0));
+        jRadioBDomino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioBDominoActionPerformed(evt);
+            }
+        });
+        jRadioBDomino.setBounds(420, 380, -1, -1);
+        jLayeredPane1.add(jRadioBDomino, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jRadioBCoco.setBackground(new java.awt.Color(153, 51, 0));
         jRadioBCoco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioBCocoActionPerformed(evt);
             }
         });
+        jRadioBCoco.setBounds(240, 380, -1, -1);
+        jLayeredPane1.add(jRadioBCoco, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jRadioBMariposa.setBackground(new java.awt.Color(153, 51, 0));
+        jRadioBMariposa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioBMariposaActionPerformed(evt);
+            }
+        });
+        jRadioBMariposa.setBounds(70, 380, -1, -1);
+        jLayeredPane1.add(jRadioBMariposa, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButtonAceptar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonAceptar.setForeground(new java.awt.Color(153, 51, 0));
         jButtonAceptar.setText("OK");
         jButtonAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonAceptarActionPerformed(evt);
             }
         });
+        jButtonAceptar.setBounds(220, 440, -1, -1);
+        jLayeredPane1.add(jButtonAceptar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jRadioBTortuga.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioBTortugaActionPerformed(evt);
-            }
-        });
-
-        jRadioBDomino.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioBDominoActionPerformed(evt);
-            }
-        });
-
-        jRadioBSombrilla.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioBSombrillaActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg"))); // NOI18N
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png"))); // NOI18N
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg"))); // NOI18N
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel1.setBounds(0, -6, 510, 490);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(35, 35, 35)
-                                .addComponent(jLabel8))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(jRadioBMariposa)
-                                .addGap(139, 139, 139)
-                                .addComponent(jRadioBCoco)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(111, 111, 111)
-                                .addComponent(jRadioBDomino))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jLabel7)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(209, 209, 209)
-                        .addComponent(jButtonAceptar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addGap(55, 55, 55)
-                                .addComponent(jLabel10))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(54, 54, 54)
-                                .addComponent(jRadioBDog)
-                                .addGap(166, 166, 166)
-                                .addComponent(jRadioBSombrilla)))
-                        .addGap(94, 94, 94)
-                        .addComponent(jRadioBTortuga)))
-                .addContainerGap(20, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioBDog)
-                        .addGap(65, 65, 65))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jRadioBTortuga))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jRadioBSombrilla)))
-                        .addGap(76, 76, 76)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(30, 30, 30)
-                        .addComponent(jRadioBDomino))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioBCoco))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioBMariposa)))
-                .addGap(18, 18, 18)
-                .addComponent(jButtonAceptar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -376,12 +342,14 @@ public class Imagenes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAceptar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JRadioButton jRadioBCoco;
     private javax.swing.JRadioButton jRadioBDog;
     private javax.swing.JRadioButton jRadioBDomino;

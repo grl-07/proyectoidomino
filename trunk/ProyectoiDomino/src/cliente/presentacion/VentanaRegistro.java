@@ -27,68 +27,103 @@ public class VentanaRegistro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jTxtName = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jTxtLastName = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jDCFechaNac = new com.toedter.calendar.JDateChooser();
+        jTxtNickname = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jTxtName = new javax.swing.JTextField();
-        jTxtLastName = new javax.swing.JTextField();
-        jTxtNickname = new javax.swing.JTextField();
-        jTxtAvatar = new javax.swing.JTextField();
-        jBAceptar = new javax.swing.JButton();
-        jButtonCancel = new javax.swing.JButton();
         jPasswordFdRegister = new javax.swing.JPasswordField();
+        jLabel5 = new javax.swing.JLabel();
         jPasswordFdConfirm = new javax.swing.JPasswordField();
+        jTxtAvatar = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
         jBChooseImg = new javax.swing.JButton();
-        jDCFechaNac = new com.toedter.calendar.JDateChooser();
-        jLabel7 = new javax.swing.JLabel();
+        jButtonCancel = new javax.swing.JButton();
+        jBAceptar = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel1.setText("Name");
-
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel2.setText("Last Name");
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel3.setText("Nickname");
-
-        jLabel4.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel4.setText("Password");
-
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel5.setText("Confirm Password");
-
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel6.setText("Avatar");
-
         jTxtName.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtName.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jTxtName.setBounds(150, 30, 184, -1);
+        jLayeredPane1.add(jTxtName, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel1.setText("Name");
+        jLabel1.setBounds(92, 30, 40, -1);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel2.setText("Last Name");
+        jLabel2.setBounds(67, 70, 70, -1);
+        jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtLastName.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jTxtLastName.setBounds(150, 70, 184, -1);
+        jLayeredPane1.add(jTxtLastName, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel7.setText("Birth Date");
+        jLabel7.setBounds(70, 110, 70, -1);
+        jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jDCFechaNac.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jDCFechaNac.setFont(new java.awt.Font("Calibri", 0, 12));
+        jDCFechaNac.setBounds(150, 110, 204, 23);
+        jLayeredPane1.add(jDCFechaNac, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtNickname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jTxtNickname.setBounds(150, 160, 184, -1);
+        jLayeredPane1.add(jTxtNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel3.setText("Nickname");
+        jLabel3.setBounds(70, 160, 70, -1);
+        jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel4.setText("Password");
+        jLabel4.setBounds(70, 200, 70, -1);
+        jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jPasswordFdRegister.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jPasswordFdRegister.setBounds(150, 200, 184, 23);
+        jLayeredPane1.add(jPasswordFdRegister, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel5.setText("Confirm Password");
+        jLabel5.setBounds(20, 240, 110, -1);
+        jLayeredPane1.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jPasswordFdConfirm.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jPasswordFdConfirm.setBounds(150, 240, 184, 23);
+        jLayeredPane1.add(jPasswordFdConfirm, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTxtAvatar.setEditable(false);
         jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
+        jTxtAvatar.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jTxtAvatar.setBounds(150, 280, 184, -1);
+        jLayeredPane1.add(jTxtAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBAceptar.setFont(new java.awt.Font("Calibri", 0, 12));
-        jBAceptar.setText("OK");
-        jBAceptar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBAceptarActionPerformed(evt);
-            }
-        });
-
-        jButtonCancel.setFont(new java.awt.Font("Calibri", 0, 12));
-        jButtonCancel.setText("Cancel");
-        jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCancelActionPerformed(evt);
-            }
-        });
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel6.setText("Avatar");
+        jLabel6.setBounds(90, 280, 40, -1);
+        jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBChooseImg.setFont(new java.awt.Font("Calibri", 0, 10));
         jBChooseImg.setText("...");
@@ -97,103 +132,44 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 jBChooseImgActionPerformed(evt);
             }
         });
+        jBChooseImg.setBounds(340, 280, 22, -1);
+        jLayeredPane1.add(jBChooseImg, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jDCFechaNac.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jButtonCancel.setFont(new java.awt.Font("Calibri", 1, 14));
+        jButtonCancel.setForeground(new java.awt.Color(153, 51, 0));
+        jButtonCancel.setText("Cancel");
+        jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelActionPerformed(evt);
+            }
+        });
+        jButtonCancel.setBounds(230, 330, 80, -1);
+        jLayeredPane1.add(jButtonCancel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel7.setText("Fecha de Nacimiento");
+        jBAceptar.setFont(new java.awt.Font("Calibri", 1, 12));
+        jBAceptar.setForeground(new java.awt.Color(153, 0, 0));
+        jBAceptar.setText("OK");
+        jBAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBAceptarActionPerformed(evt);
+            }
+        });
+        jBAceptar.setBounds(147, 330, 60, -1);
+        jLayeredPane1.add(jBAceptar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel8.setBounds(0, -6, 420, 410);
+        jLayeredPane1.add(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTxtName, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTxtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(jBAceptar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonCancel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel4))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jBChooseImg, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel7))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jDCFechaNac, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(58, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel1))
-                    .addComponent(jTxtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTxtLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel7))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jDCFechaNac, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTxtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(jPasswordFdRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jPasswordFdConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(jBChooseImg))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBAceptar)
-                    .addComponent(jButtonCancel))
-                .addContainerGap(23, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -283,6 +259,8 @@ public class VentanaRegistro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPasswordField jPasswordFdConfirm;
     private javax.swing.JPasswordField jPasswordFdRegister;
     private javax.swing.JTextField jTxtAvatar;
