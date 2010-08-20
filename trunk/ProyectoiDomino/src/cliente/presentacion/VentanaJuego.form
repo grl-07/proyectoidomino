@@ -220,36 +220,24 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton4" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton5" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton7" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton9" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton10" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton11" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton12" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jButton13" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jButtonPot" alignment="0" max="32767" attributes="1"/>
-                              <Component id="jButton14" alignment="0" pref="74" max="32767" attributes="1"/>
-                              <Component id="jButtonPass" alignment="0" max="32767" attributes="1"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Component id="jBPot1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot4" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot5" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot7" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot9" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot10" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot11" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot12" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jBPot13" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jButtonPot" alignment="0" max="32767" attributes="1"/>
+                      <Component id="jBPot14" alignment="0" pref="74" max="32767" attributes="1"/>
+                      <Component id="jButtonPass" alignment="0" max="32767" attributes="1"/>
                   </Group>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
@@ -257,224 +245,192 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace pref="46" max="32767" attributes="0"/>
               <Component id="jScrollBar1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton180" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton182" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton176" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton178" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton177" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton181" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jButton179" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jBMesa06" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa05" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa04" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa03" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa02" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa01" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa00" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa07" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa08" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa09" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jBMesa19" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa18" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa17" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa16" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa15" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa13" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa12" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa11" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa10" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa14" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jBMesa26" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa25" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa24" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa23" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa22" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa21" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa20" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa27" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa28" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa29" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jBMesa39" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa38" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa37" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa36" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa35" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa33" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa32" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa31" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa30" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa34" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jBMesa49" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa48" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa47" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa46" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa45" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa43" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa42" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa41" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa40" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa44" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jBMesa56" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa55" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa54" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa53" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa52" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa51" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa50" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa57" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa58" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="jBMesa59" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jBPiedra7" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra6" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra5" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra4" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra3" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          <Component id="jBPiedra1" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jBPiedra14" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra13" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra12" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra11" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra10" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra9" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                              <Component id="jBPiedra8" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jBRotarIzq" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <Component id="jBRotarDer" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel2" min="-2" pref="22" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton1" min="-2" pref="22" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton2" min="-2" pref="22" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton3" min="-2" pref="22" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton4" min="-2" pref="22" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton5" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton6" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton7" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton8" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton9" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton10" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton11" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton12" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton13" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton14" min="-2" pref="22" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                              <Component id="jButtonPot" min="-2" pref="56" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jButtonPass" min="-2" pref="56" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jButton180" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton182" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton176" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton178" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton177" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton181" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jButton179" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollBar1" pref="795" max="32767" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jBMesa06" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa05" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa04" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa03" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa02" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa01" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa00" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa07" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa08" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa09" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jBMesa19" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa18" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa17" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa16" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa15" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa13" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa12" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa11" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa10" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa14" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jBMesa26" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa25" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa24" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa23" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa22" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa21" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa20" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa27" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa28" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa29" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jBMesa39" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa38" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa37" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa36" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa35" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa33" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa32" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa31" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa30" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa34" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jBMesa49" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa48" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa47" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa46" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa45" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa43" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa42" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa41" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa40" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa44" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jBMesa56" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa55" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa54" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa53" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa52" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa51" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa50" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa57" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa58" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="jBMesa59" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jBPiedra7" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra6" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra5" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra4" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra3" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jBPiedra1" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jBPiedra14" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra13" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra12" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra11" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra10" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra9" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="jBPiedra8" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jBRotarIzq" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jBRotarDer" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot1" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot2" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot3" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot4" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot5" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot6" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot7" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot8" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot9" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot10" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot11" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot12" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot13" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBPot14" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Component id="jButtonPot" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButtonPass" min="-2" pref="56" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
+          <Component id="jScrollBar1" alignment="0" pref="798" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Calibri" size="12" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Game #"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Calibri" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="iDomino"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1042,13 +998,25 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBPiedraSeleccionadaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="jBPot3">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot3" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="jBPot7">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot7" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="jBPot2">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot2" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jBPot1">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot1" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -1066,13 +1034,25 @@
         <Property name="text" type="java.lang.String" value="Game #"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton11">
+    <Component class="javax.swing.JButton" name="jBPot11">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot11" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton12">
+    <Component class="javax.swing.JButton" name="jBPot12">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot12" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton13">
+    <Component class="javax.swing.JButton" name="jBPot13">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot13" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton14">
+    <Component class="javax.swing.JButton" name="jBPot14">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot14&#xa;" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonPot">
       <Properties>
@@ -1088,17 +1068,35 @@
         <Property name="name" type="java.lang.String" value="jButtonPass" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="jBPot6">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot6" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="jBPot4">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot4" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="jBPot5">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot5" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="jBPot8">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot8" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="jBPot9">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot9" noResource="true"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="jBPot10">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jBPot10" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
@@ -1181,6 +1179,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JScrollBar" name="jScrollBar1">
+      <Events>
+        <EventHandler event="adjustmentValueChanged" listener="java.awt.event.AdjustmentListener" parameters="java.awt.event.AdjustmentEvent" handler="jScrollBar1AdjustmentValueChanged"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

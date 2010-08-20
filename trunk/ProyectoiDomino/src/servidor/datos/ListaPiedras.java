@@ -104,14 +104,15 @@ public class ListaPiedras {
     }
 
     public String obtenerPiedraPozo() {
-
+        String cadena = "";
+        if (laListaPiedras != null){
         Piedra laPiedra = laListaPiedras.remove(0);
 
-        String cadena = laPiedra.getID() + "-" + laPiedra.getNum1() + "-" + laPiedra.getNum2()
+        cadena = laPiedra.getID() + "-" + laPiedra.getNum1() + "-" + laPiedra.getNum2()
                 + "-" + laPiedra.getImagenArriba() + "-" + laPiedra.getImagenAbajo()
                 + "-" + laPiedra.getImagenIzquierda()
                 + "-" + laPiedra.getImagenDerecha();
-
+        }
         return cadena;
 
     }
