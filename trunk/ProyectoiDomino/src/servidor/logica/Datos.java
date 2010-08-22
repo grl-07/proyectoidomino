@@ -10,6 +10,13 @@ public class Datos {
     private static ListaPiedras listaDePiedras = null;
     private static ListaPartidas listaDePartidas = null;
     private static ListaUsuarios listaDeUsuarios = null;
+    private static Piedra[][] matrizPiedrasMesa = null;
+
+
+     private static ListaPiedras listaPiedrasMaquina = null;
+    private static ListaPiedras listaPiedrasJugador = null;
+    private static ListaPiedras listaPiedrasPozo = null;
+
 
     private Datos() {
     }
@@ -34,6 +41,48 @@ public class Datos {
             confirm = false;
         }
         return confirm;
+    }
+
+
+        public static boolean inicializarListasJuego() {
+        boolean confirm = false;
+        if (listaPiedrasMaquina == null) {
+            listaDePartidas = new ListaPartidas();
+            confirm = true;
+        } else {
+            confirm = false;
+        }
+        if (listaPiedrasJugador == null) {
+            listaDePartidas = new ListaPartidas();
+            confirm = true;
+        } else {
+            confirm = false;
+        }
+        if (listaPiedrasPozo == null) {
+            listaDePartidas = new ListaPartidas();
+            confirm = true;
+        } else {
+            confirm = false;
+        }
+        return confirm;
+    }
+
+
+
+     public static boolean inicializarMatrizPiedras() {
+        if (matrizPiedrasMesa == null) {
+            matrizPiedrasMesa = new Mesa().inicializarMatrizPiedras();
+            return true;
+        }
+        return false;
+    }
+
+    public static Piedra[][] getMatrizPiedrasMesa() {
+        return matrizPiedrasMesa;
+    }
+
+    public static void setMatrizPiedrasMesa(Piedra[][] matrizPiedrasMesa) {
+        Datos.matrizPiedrasMesa = matrizPiedrasMesa;
     }
 
     public static ListaUsuarios getListaDeUsuarios() {

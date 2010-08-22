@@ -183,4 +183,38 @@ public class ListaPiedras {
         System.out.println("PIEDRAS EN EL POZO");
         Pozo.imprimirListaPiedras();*/
     }
+
+
+
+
+    public Piedra buscarPiedra(int num1, int num2) {
+        boolean confirm = false;
+        Piedra piedra = null;
+
+        Piedra piedraABuscar = new Piedra(num1,num2);
+        Iterator iterador = laListaPiedras.iterator();
+
+
+        while (confirm != true && iterador.hasNext()) {
+            piedra = (Piedra) iterador.next();
+
+            if (piedra.getNum1() == piedraABuscar.getNum1() && piedra.getNum2() == piedraABuscar.getNum2()) {
+                return piedra;
+            }
+        }
+        return piedra;
+    }
+
+
+/*public String obtenerCadenaPiedra(Piedra laPiedra) {
+        String cadena = "";
+
+        cadena = laPiedra.getNum1() + "-" + laPiedra.getNum2()
+                + ":" + laPiedra.getPosicion()
+                + ":" + laPiedra.getImagenArriba() + "-" + laPiedra.getImagenAbajo()
+                + "-" + laPiedra.getImagenIzquierda() + "-" + laPiedra.getImagenDerecha()
+                + ":" + laPiedra.getImagenActual();
+
+        return cadena;
+    }*/
 }
