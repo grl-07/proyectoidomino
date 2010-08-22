@@ -45,7 +45,7 @@ public class PruebaJsockets implements LogicaServidor {
                 //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 5:
-                        elUsuario.setNickname(subArg[1]);
+                elUsuario.setNickname(subArg[1]);
                 String[] subArg2 = subArg[2].split("-");
                 num1 = Integer.parseInt(subArg2[0]);
                 num2 = Integer.parseInt(subArg2[1]);
@@ -66,16 +66,16 @@ public class PruebaJsockets implements LogicaServidor {
         return respuestaServidor(elUsuario, laPartida, laPiedra, opcion);
     }
 
-    public String respuestaServidor(Usuario elUsuario, Partida laPartida,Piedra laPiedra, int opcion) {
+    public String respuestaServidor(Usuario elUsuario, Partida laPartida, Piedra laPiedra, int opcion) {
         String resultado = "FALSE";
         String cadena;
         Partida partidaNueva = null;
         Partida partidaExistente = null;
-            String[] subArg;
+        String[] subArg;
         Usuario registro = null;
         String piedraStr;
         boolean confirm = false;
-       
+
 
         switch (opcion) {
             case 1:

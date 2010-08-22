@@ -12,8 +12,6 @@ package cliente.presentacion;
 
 import javax.swing.*;
 import cliente.logica.ConexionJsockets;
-import java.awt.BorderLayout;
-import java.util.Random;
 
 /**
  *
@@ -29,9 +27,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         this.mensaje = mensaje;
         this.piedrasEnMano = inicializarPiedrasEnMano();
         this.piedrasPozo = inicializarPiedraPozo();
+        this.laMesa = inicializarMesa();
         this.contadorPozo = 0;
 
-        inicializarMesa();
+        //inicializarMesa();
         this.setTitle("iDomino");
 
         //inicializarComponentesPropios();
@@ -159,11 +158,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLAvatar = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
-        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel3.setText("Computadora");
-        jLabel3.setBounds(40, 40, 117, 31);
+        jLabel3.setBounds(40, 40, -1, -1);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jButton179.setBounds(170, 20, 73, 71);
         jLayeredPane1.add(jButton179, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -180,18 +180,18 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButton182.setBounds(570, 20, 73, 71);
         jLayeredPane1.add(jButton182, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48));
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("iDomino");
-        jLabel7.setBounds(750, 20, 190, 60);
+        jLabel7.setBounds(750, 20, 190, -1);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel6.setText("Game #");
-        jLabel6.setBounds(790, 70, 41, 16);
+        jLabel6.setBounds(790, 70, -1, -1);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel2.setText("Pot");
         jLabel2.setBounds(820, 100, 60, 22);
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -212,6 +212,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPot4.setBounds(810, 230, 74, 22);
         jLayeredPane1.add(jBPot4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jScrollBar1.setAutoscrolls(true);
         jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
             public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
                 jScrollBar1AdjustmentValueChanged(evt);
@@ -782,7 +783,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBMesa59.setBounds(680, 470, 73, 71);
         jLayeredPane1.add(jBMesa59, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBRotarIzq.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBRotarIzq.setFont(new java.awt.Font("Calibri", 1, 14));
         jBRotarIzq.setForeground(new java.awt.Color(153, 51, 0));
         jBRotarIzq.setText("RotI");
         jBRotarIzq.addActionListener(new java.awt.event.ActionListener() {
@@ -790,10 +791,10 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarIzqActionPerformed(evt);
             }
         });
-        jBRotarIzq.setBounds(730, 620, 57, 39);
+        jBRotarIzq.setBounds(730, 620, 70, 39);
         jLayeredPane1.add(jBRotarIzq, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBRotarDer.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBRotarDer.setFont(new java.awt.Font("Calibri", 1, 14));
         jBRotarDer.setForeground(new java.awt.Color(153, 51, 0));
         jBRotarDer.setText("RotD");
         jBRotarDer.addActionListener(new java.awt.event.ActionListener() {
@@ -801,7 +802,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarDerActionPerformed(evt);
             }
         });
-        jBRotarDer.setBounds(730, 670, 63, 39);
+        jBRotarDer.setBounds(730, 670, 70, 39);
         jLayeredPane1.add(jBRotarDer, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPot14.setName("jBPot14\n"); // NOI18N
@@ -824,7 +825,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPot10.setBounds(810, 410, 74, 22);
         jLayeredPane1.add(jBPot10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButtonPot.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonPot.setFont(new java.awt.Font("Calibri", 1, 14));
         jButtonPot.setForeground(new java.awt.Color(153, 51, 0));
         jButtonPot.setText("Pot");
         jButtonPot.addActionListener(new java.awt.event.ActionListener() {
@@ -835,7 +836,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButtonPot.setBounds(810, 580, 74, 56);
         jLayeredPane1.add(jButtonPot, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButtonPass.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonPass.setFont(new java.awt.Font("Calibri", 1, 14));
         jButtonPass.setForeground(new java.awt.Color(153, 51, 0));
         jButtonPass.setText("Pass");
         jButtonPass.setName("jButtonPass"); // NOI18N
@@ -968,16 +969,21 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra14.setBounds(640, 660, 73, 71);
         jLayeredPane1.add(jBPiedra14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel1.setText("Player");
-        jLabel1.setBounds(30, 690, 80, 31);
+        jLabel1.setBounds(30, 690, 80, -1);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLAvatar.setText("AVATAR");
         jLAvatar.setBounds(50, 620, 50, 40);
         jLayeredPane1.add(jLAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel4.setAutoscrolls(true);
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel4.setMinimumSize(new java.awt.Dimension(800, 600));
+        jLabel4.setPreferredSize(new java.awt.Dimension(800, 600));
         jLabel4.setBounds(-6, -110, 960, 990);
         jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -995,7 +1001,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void inicializarMesa() {
+    private JButton[][] inicializarMesa() {
         int i, j;
 
         final JButton arregloBotones[][] = {
@@ -1023,6 +1029,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
 
         botonActualSeleccionado = null;
+        return arregloBotones;
     }
 
     private JButton[] inicializarPiedrasEnMano() {
@@ -1141,9 +1148,8 @@ public class VentanaJuego extends javax.swing.JFrame {
         return fuente;
     }
 
-    public String obtenerCadenaPiedra(String direccionIcono, String mensaje) {
+    public String obtenerCadenaPiedra(String direccionIcono) {
 
-        String[] subArg = mensaje.split(":");
         String cadenaPiedra = "";
         String num1 = direccionIcono.substring(direccionIcono.length() - 13, direccionIcono.length() - 12);
         String num2 = direccionIcono.substring(direccionIcono.length() - 12, direccionIcono.length() - 11);
@@ -1152,27 +1158,27 @@ public class VentanaJuego extends javax.swing.JFrame {
         return cadenaPiedra;
     }
 
-    public String obtenerImagenAsociada(String direccionIcono, String mensaje) {
+    public String obtenerImagenAsociada(String direccionIcono) {
 
-        String[] subArg = mensaje.split(":");
-        int i, j;
-        String imagenActual = "";
-        String img = direccionIcono.substring(direccionIcono.length() - 13);
+        String imagenActual = direccionIcono.substring(direccionIcono.length() - 13);
 
-        for (i = 0; i < 7; i++) {
+        return imagenActual;
+    }
 
-            String mensajeActual = subArg[i];
+    public JButton obtenerBotonPosicion(String posicion){
+        int i,j;
+        String button;
+        String subArg2[] = posicion.split("-");
+        button = "jBMesa" + subArg2[0] + subArg2[1];
 
-            String[] subArg2 = mensajeActual.split("-");
-
-            for (j = 3; j < 7; j++) {
-
-                if (subArg2[j].equalsIgnoreCase(img)) {
-                    imagenActual = subArg2[j];
+        for (i= 0; i < 6; i++) {
+            for (j= 0; j < 10; j++) {
+                if (laMesa[i][j].getName().equalsIgnoreCase(button)){
+                    return laMesa[i][j];
                 }
             }
         }
-        return imagenActual;
+        return null;
     }
 
     private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
@@ -1184,12 +1190,13 @@ public class VentanaJuego extends javax.swing.JFrame {
 
     private void jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraDelTableroActionPerformed
         // TODO add your handling code here:
+        System.out.println("\n\n" + "NUEVA JUGADA");
         JButton boton = (JButton) evt.getSource();
 
         if (botonActualSeleccionado != null) {
-            boton.setIcon(botonActualSeleccionado.getIcon());
+            //boton.setIcon(botonActualSeleccionado.getIcon());
 
-            System.out.println("nombre de boton: " + boton.getName());
+            //System.out.println("nombre de boton: " + boton.getName());
 
             String posX = boton.getName().toString();
             posX = posX.substring(posX.length() - 2, posX.length() - 1);
@@ -1199,10 +1206,10 @@ public class VentanaJuego extends javax.swing.JFrame {
 
 
             String posicion = posX + "-" + posY;
+            
+            String cadenaPiedra = obtenerCadenaPiedra(botonActualSeleccionado.getIcon().toString());
 
-            String cadenaPiedra = obtenerCadenaPiedra(boton.getIcon().toString(), mensaje);
-
-            String cadenaImagen = obtenerImagenAsociada(boton.getIcon().toString(), mensaje);
+            String cadenaImagen = obtenerImagenAsociada(botonActualSeleccionado.getIcon().toString()/*, mensaje*/);
 
             System.out.println("nickname: " + nickname);
             System.out.println("piedra: " + cadenaPiedra);
@@ -1211,8 +1218,17 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             String cadena = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
 
-            botonActualSeleccionado.setIcon(null);
-            botonActualSeleccionado.setEnabled(false);
+            String subArg[] = cadena.split(":");
+            if (subArg[0].equalsIgnoreCase("TRUE")) {
+                boton.setIcon(botonActualSeleccionado.getIcon());
+                botonActualSeleccionado.setIcon(null);
+                botonActualSeleccionado.setEnabled(false);
+
+                if (!subArg[1].equalsIgnoreCase("NULL")) {
+                    boton = obtenerBotonPosicion(subArg[2]);
+                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+                }
+            }
 
         }
     }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
@@ -1281,7 +1297,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 }
                 i++;
             }
-            if (contadorPozo == 14){
+            if (contadorPozo == 14) {
                 jButtonPot.setEnabled(false);
             }
         }
@@ -1416,6 +1432,7 @@ public class VentanaJuego extends javax.swing.JFrame {
     String mensaje;
     JButton[] piedrasEnMano;
     JButton[] piedrasPozo;
+    JButton[][] laMesa;
     int contadorPozo;
-    static JScrollPane panel1;
+    //static JScrollPane panel1;
 }
