@@ -175,6 +175,8 @@ public class VentanaLogin extends javax.swing.JFrame {
 
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Nickname or Password. Please try again");
+                txtNickname.setText("");
+                txtPassword.setText("");
             }
         }
 }//GEN-LAST:event_btnOKActionPerformed

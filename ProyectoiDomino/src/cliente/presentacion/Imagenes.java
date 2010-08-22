@@ -70,15 +70,15 @@ public class Imagenes extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg"))); // NOI18N
-        jLabel9.setBounds(10, 10, -1, -1);
+        jLabel9.setBounds(10, 10, 128, 128);
         jLayeredPane1.add(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png"))); // NOI18N
-        jLabel10.setBounds(200, 10, -1, -1);
+        jLabel10.setBounds(200, 10, 128, 128);
         jLayeredPane1.add(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg"))); // NOI18N
-        jLabel11.setBounds(360, 10, -1, -1);
+        jLabel11.setBounds(360, 10, 128, 128);
         jLayeredPane1.add(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBTortuga.setBackground(new java.awt.Color(153, 51, 0));
@@ -87,7 +87,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBTortugaActionPerformed(evt);
             }
         });
-        jRadioBTortuga.setBounds(420, 160, -1, -1);
+        jRadioBTortuga.setBounds(420, 160, 21, 21);
         jLayeredPane1.add(jRadioBTortuga, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBSombrilla.setBackground(new java.awt.Color(153, 51, 0));
@@ -96,7 +96,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBSombrillaActionPerformed(evt);
             }
         });
-        jRadioBSombrilla.setBounds(230, 160, -1, -1);
+        jRadioBSombrilla.setBounds(230, 160, 21, 21);
         jLayeredPane1.add(jRadioBSombrilla, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBDog.setBackground(new java.awt.Color(153, 51, 0));
@@ -105,19 +105,19 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBDogActionPerformed(evt);
             }
         });
-        jRadioBDog.setBounds(70, 160, -1, -1);
+        jRadioBDog.setBounds(70, 160, 21, 21);
         jLayeredPane1.add(jRadioBDog, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png"))); // NOI18N
-        jLabel12.setBounds(20, 220, -1, -1);
+        jLabel12.setBounds(20, 220, 128, 128);
         jLayeredPane1.add(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg"))); // NOI18N
-        jLabel8.setBounds(190, 230, -1, -1);
+        jLabel8.setBounds(190, 230, 120, 119);
         jLayeredPane1.add(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png"))); // NOI18N
-        jLabel7.setBounds(360, 230, -1, -1);
+        jLabel7.setBounds(360, 230, 131, 98);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBDomino.setBackground(new java.awt.Color(153, 51, 0));
@@ -126,7 +126,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBDominoActionPerformed(evt);
             }
         });
-        jRadioBDomino.setBounds(420, 380, -1, -1);
+        jRadioBDomino.setBounds(420, 380, 21, 21);
         jLayeredPane1.add(jRadioBDomino, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBCoco.setBackground(new java.awt.Color(153, 51, 0));
@@ -135,7 +135,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBCocoActionPerformed(evt);
             }
         });
-        jRadioBCoco.setBounds(240, 380, -1, -1);
+        jRadioBCoco.setBounds(240, 380, 21, 21);
         jLayeredPane1.add(jRadioBCoco, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioBMariposa.setBackground(new java.awt.Color(153, 51, 0));
@@ -144,10 +144,10 @@ public class Imagenes extends javax.swing.JFrame {
                 jRadioBMariposaActionPerformed(evt);
             }
         });
-        jRadioBMariposa.setBounds(70, 380, -1, -1);
+        jRadioBMariposa.setBounds(70, 380, 21, 21);
         jLayeredPane1.add(jRadioBMariposa, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButtonAceptar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jButtonAceptar.setFont(new java.awt.Font("Calibri", 1, 14));
         jButtonAceptar.setForeground(new java.awt.Color(153, 51, 0));
         jButtonAceptar.setText("OK");
         jButtonAceptar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jButtonAceptarActionPerformed(evt);
             }
         });
-        jButtonAceptar.setBounds(220, 440, -1, -1);
+        jButtonAceptar.setBounds(220, 440, 49, 25);
         jLayeredPane1.add(jButtonAceptar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
@@ -166,29 +166,42 @@ public class Imagenes extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 511, Short.MAX_VALUE)
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 481, Short.MAX_VALUE)
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioBMariposaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMariposaActionPerformed
+    private void jRadioBTortugaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBTortugaActionPerformed
         // TODO add your handling code here:
+
         FuncionGeneral.desmarcarRadioButton(jRadioBDog);
         FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
-        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
+        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
         FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
         //System.out.println("avatar = " + avatar.getText());
+    }//GEN-LAST:event_jRadioBTortugaActionPerformed
 
+    private void jRadioBSombrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBSombrillaActionPerformed
+        // TODO add your handling code here:
+        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
+        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
+        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
+        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
+        FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
-    }//GEN-LAST:event_jRadioBMariposaActionPerformed
+        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
+        //System.out.println("avatar = " + avatar.getText());
+}//GEN-LAST:event_jRadioBSombrillaActionPerformed
 
     private void jRadioBDogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDogActionPerformed
         // TODO add your handling code here:
@@ -202,8 +215,19 @@ public class Imagenes extends javax.swing.JFrame {
         //System.out.println("avatar = " + avatar.getText());
 
 
-
     }//GEN-LAST:event_jRadioBDogActionPerformed
+
+    private void jRadioBDominoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDominoActionPerformed
+        // TODO add your handling code here:
+        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
+        FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
+        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
+        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
+        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
+
+        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
+        //System.out.println("avatar = " + avatar.getText());
+    }//GEN-LAST:event_jRadioBDominoActionPerformed
 
     private void jRadioBCocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBCocoActionPerformed
         // TODO add your handling code here:
@@ -216,53 +240,26 @@ public class Imagenes extends javax.swing.JFrame {
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
         //System.out.println("avatar = " + avatar.getText());
-
     }//GEN-LAST:event_jRadioBCocoActionPerformed
+
+    private void jRadioBMariposaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMariposaActionPerformed
+        // TODO add your handling code here:
+        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
+        FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
+        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
+        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
+        FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
+
+        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
+        //System.out.println("avatar = " + avatar.getText());
+
+    }//GEN-LAST:event_jRadioBMariposaActionPerformed
 
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
         // TODO add your handling code here:
         ventanaPadre.setVisible(true);
         this.setVisible(false);
 }//GEN-LAST:event_jButtonAceptarActionPerformed
-
-    private void jRadioBTortugaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBTortugaActionPerformed
-        // TODO add your handling code here:
-
-        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
-        FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
-        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
-        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
-        FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
-
-        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
-
-    }//GEN-LAST:event_jRadioBTortugaActionPerformed
-
-    private void jRadioBDominoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDominoActionPerformed
-        // TODO add your handling code here:
-        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
-        FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
-        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
-        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
-        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
-
-        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
-
-    }//GEN-LAST:event_jRadioBDominoActionPerformed
-
-    private void jRadioBSombrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBSombrillaActionPerformed
-        // TODO add your handling code here:
-        FuncionGeneral.desmarcarRadioButton(jRadioBDog);
-        FuncionGeneral.desmarcarRadioButton(jRadioBTortuga);
-        FuncionGeneral.desmarcarRadioButton(jRadioBMariposa);
-        FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
-        FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
-
-        setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
-}//GEN-LAST:event_jRadioBSombrillaActionPerformed
 
     public void setearAvatar(JTextField txtavatar,JRadioButton perro, JRadioButton sombrilla, JRadioButton tortuga, JRadioButton mariposa, JRadioButton coco, JRadioButton domino) {
        

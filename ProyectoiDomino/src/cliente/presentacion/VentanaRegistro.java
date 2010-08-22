@@ -51,30 +51,30 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
         jTxtName.setFont(new java.awt.Font("Calibri", 0, 12));
         jTxtName.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
-        jTxtName.setBounds(150, 30, 184, -1);
+        jTxtName.setBounds(150, 30, 184, 18);
         jLayeredPane1.add(jTxtName, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel1.setForeground(new java.awt.Color(255, 153, 0));
         jLabel1.setText("Name");
-        jLabel1.setBounds(92, 30, 40, -1);
+        jLabel1.setBounds(92, 30, 40, 17);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel2.setForeground(new java.awt.Color(255, 153, 0));
         jLabel2.setText("Last Name");
-        jLabel2.setBounds(67, 70, 70, -1);
+        jLabel2.setBounds(67, 70, 70, 17);
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTxtLastName.setFont(new java.awt.Font("Calibri", 0, 12));
         jTxtLastName.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
-        jTxtLastName.setBounds(150, 70, 184, -1);
+        jTxtLastName.setBounds(150, 70, 184, 18);
         jLayeredPane1.add(jTxtLastName, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel7.setForeground(new java.awt.Color(255, 153, 0));
         jLabel7.setText("Birth Date");
-        jLabel7.setBounds(70, 110, 70, -1);
+        jLabel7.setBounds(70, 110, 70, 17);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jDCFechaNac.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
@@ -84,29 +84,29 @@ public class VentanaRegistro extends javax.swing.JFrame {
 
         jTxtNickname.setFont(new java.awt.Font("Calibri", 0, 12));
         jTxtNickname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
-        jTxtNickname.setBounds(150, 160, 184, -1);
+        jTxtNickname.setBounds(150, 160, 184, 18);
         jLayeredPane1.add(jTxtNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel3.setForeground(new java.awt.Color(255, 153, 0));
         jLabel3.setText("Nickname");
-        jLabel3.setBounds(70, 160, 70, -1);
+        jLabel3.setBounds(70, 160, 70, 17);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel4.setForeground(new java.awt.Color(255, 153, 0));
         jLabel4.setText("Password");
-        jLabel4.setBounds(70, 200, 70, -1);
+        jLabel4.setBounds(70, 200, 70, 17);
         jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jPasswordFdRegister.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
         jPasswordFdRegister.setBounds(150, 200, 184, 23);
         jLayeredPane1.add(jPasswordFdRegister, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel5.setForeground(new java.awt.Color(255, 153, 0));
         jLabel5.setText("Confirm Password");
-        jLabel5.setBounds(20, 240, 110, -1);
+        jLabel5.setBounds(20, 240, 110, 17);
         jLayeredPane1.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jPasswordFdConfirm.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
@@ -116,13 +116,13 @@ public class VentanaRegistro extends javax.swing.JFrame {
         jTxtAvatar.setEditable(false);
         jTxtAvatar.setFont(new java.awt.Font("Calibri", 0, 12));
         jTxtAvatar.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
-        jTxtAvatar.setBounds(150, 280, 184, -1);
+        jTxtAvatar.setBounds(150, 280, 184, 18);
         jLayeredPane1.add(jTxtAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14));
         jLabel6.setForeground(new java.awt.Color(255, 153, 0));
         jLabel6.setText("Avatar");
-        jLabel6.setBounds(90, 280, 40, -1);
+        jLabel6.setBounds(90, 280, 40, 17);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBChooseImg.setFont(new java.awt.Font("Calibri", 0, 10));
@@ -132,7 +132,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 jBChooseImgActionPerformed(evt);
             }
         });
-        jBChooseImg.setBounds(340, 280, 22, -1);
+        jBChooseImg.setBounds(340, 280, 22, 21);
         jLayeredPane1.add(jBChooseImg, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jButtonCancel.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -143,7 +143,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 jButtonCancelActionPerformed(evt);
             }
         });
-        jButtonCancel.setBounds(230, 330, 80, -1);
+        jButtonCancel.setBounds(230, 330, 80, 25);
         jLayeredPane1.add(jButtonCancel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBAceptar.setFont(new java.awt.Font("Calibri", 1, 12));
@@ -154,7 +154,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 jBAceptarActionPerformed(evt);
             }
         });
-        jBAceptar.setBounds(147, 330, 60, -1);
+        jBAceptar.setBounds(147, 330, 60, 25);
         jLayeredPane1.add(jBAceptar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
@@ -165,15 +165,30 @@ public class VentanaRegistro extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+            .addGap(0, 420, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 415, Short.MAX_VALUE)
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBChooseImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBChooseImgActionPerformed
+        // TODO add your handling code here:
+        //System.out.println("cargaa");
+        Imagenes ventanaImagenes;
+        ventanaImagenes = new Imagenes(this, jTxtAvatar);//, jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
+        ventanaImagenes.setVisible(true);
+    }//GEN-LAST:event_jBChooseImgActionPerformed
+
+    private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+}//GEN-LAST:event_jButtonCancelActionPerformed
 
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
@@ -205,21 +220,7 @@ public class VentanaRegistro extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Password and Confirmed Password do not match.");
             }
         }
-    }//GEN-LAST:event_jBAceptarActionPerformed
-
-    private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jButtonCancelActionPerformed
-
-    private void jBChooseImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBChooseImgActionPerformed
-        // TODO add your handling code here:
-        //System.out.println("cargaa");
-        Imagenes ventanaImagenes;
-        ventanaImagenes = new Imagenes(this, jTxtAvatar);//, jTxtName, jTxtLastName, jTxtNickname, jPasswordFdRegister, jTxtAvatar);
-        ventanaImagenes.setVisible(true);
-
-    }//GEN-LAST:event_jBChooseImgActionPerformed
+}//GEN-LAST:event_jBAceptarActionPerformed
 
 
     public static String getFecha(JDateChooser Jdc)

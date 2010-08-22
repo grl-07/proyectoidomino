@@ -16,9 +16,11 @@ public class PruebaJsockets implements LogicaServidor {
     //private static ListaUsuarios listaDeUsuarios = new ListaUsuarios();
 
     public String realizarOperacion(String arg) {
+        int num1, num2;
         String[] subArg = arg.split(":");
         Usuario elUsuario = new Usuario("", "", "", "", "", 0, 0, 0, 0);
         Partida laPartida = new Partida();
+        Piedra laPiedra = new Piedra(0, 0, "0");
         elUsuario.setID(Integer.parseInt(subArg[0]));
         int opcion = elUsuario.getID();
         switch (opcion) {
@@ -43,7 +45,13 @@ public class PruebaJsockets implements LogicaServidor {
                 //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 5:
-                elUsuario.setNickname(subArg[1]);
+                        elUsuario.setNickname(subArg[1]);
+                String[] subArg2 = subArg[2].split("-");
+                num1 = Integer.parseInt(subArg2[0]);
+                num2 = Integer.parseInt(subArg2[1]);
+                laPiedra.setNum1(num1);
+                laPiedra.setNum2(num2);
+                laPiedra.setPosicion(subArg[3]);
                 //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 6:
@@ -55,21 +63,23 @@ public class PruebaJsockets implements LogicaServidor {
                 break;
         }
 
-        return respuestaServidor(elUsuario, laPartida, opcion);
+        return respuestaServidor(elUsuario, laPartida, laPiedra, opcion);
     }
 
-    public String respuestaServidor(Usuario elUsuario, Partida laPartida, int opcion) {
+    public String respuestaServidor(Usuario elUsuario, Partida laPartida,Piedra laPiedra, int opcion) {
         String resultado = "FALSE";
         String cadena;
         Partida partidaNueva = null;
         Partida partidaExistente = null;
-        String[] subArg;
+            String[] subArg;
         Usuario registro = null;
-
+        String piedraStr;
+        boolean confirm = false;
+       
 
         switch (opcion) {
             case 1:
-                boolean confirm = Conector.comprobarDatos(elUsuario.getNickname(), elUsuario.getClave());
+                confirm = Conector.comprobarDatos(elUsuario.getNickname(), elUsuario.getClave());
                 if (confirm == true) {
                     registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                     resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
@@ -77,6 +87,9 @@ public class PruebaJsockets implements LogicaServidor {
                 }
                 break;
             case 2:
+                //Datos.inicializarListasJuego();
+                Datos.inicializarMatrizPiedras();
+
                 partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
 
                 cadena = partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().obtenerPiedras();
@@ -98,14 +111,24 @@ public class PruebaJsockets implements LogicaServidor {
                 System.out.println("Guardar Partida -> " + cadena);
                 break;
             case 5:
-                cadena = "TRUE:x1-y1";
+                /*cadena = "TRUE:x1-y1";
                 subArg = cadena.split(":");
-                resultado = subArg[0];
+                resultado = subArg[0];*/
                 /*partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
                 cadena = partidaNueva.getElJuego().getLaMesa().getMatrizPiedrasMesa().validarJugada(subArg[2], subArg[3]);
                 resultado = "TRUE:" + cadena;*/
-                System.out.println("Enviar Jugada -> " + cadena);
+                //System.out.println("Enviar Jugada -> " + cadena);
+                piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
+                partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+
+                laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(piedraStr, laPiedra.getPosicion(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa());
+
+                if (laPiedra != null) {
+                    resultado = "TRUE:NULL";
+                } else {
+                    resultado = "FALSE";
+                }
                 break;
             case 6:
                 cadena = "TRUE";

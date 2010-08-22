@@ -18,6 +18,8 @@ public class Piedra {
     private String ImagenAbajo;
     private String ImagenIzquierda;
     private String ImagenActual;
+    private int extremo;
+    private String posicion;
 
     public String getID() {
         return ID;
@@ -84,14 +86,40 @@ public class Piedra {
         this.ImagenIzquierda = ImagenIzquierda;
     }
 
-    public Piedra(int num1, int num2, String ImagenArriba, String ImagenDerecha, String ImagenAbajo, String ImagenIzquierda/*, String ImagenActual*/) {
+    public int getExtremo() {
+        return extremo;
+    }
+
+    public void setExtremo(int extremo) {
+        this.extremo = extremo;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
+    }
+
+
+    //Constructor
+    public Piedra(int num1, int num2, String posicion) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.posicion = posicion;
+    }
+
+    public Piedra(int num1, int num2, String ImagenArriba, String ImagenDerecha, String ImagenAbajo, String ImagenIzquierda, String ImagenActual, String posicion,int extremo) {
         this.num1 = num1;
         this.num2 = num2;
         this.ImagenArriba = ImagenArriba;
         this.ImagenDerecha = ImagenDerecha;
         this.ImagenAbajo = ImagenAbajo;
         this.ImagenIzquierda = ImagenIzquierda;
-        //this.ImagenActual = ImagenActual;
+        this.ImagenActual = ImagenActual;
+              this.posicion = posicion;
+        this.extremo = extremo;
     }
 
     public Piedra(String ID, int num1, int num2, String ImagenArriba, String ImagenDerecha, String ImagenAbajo, String ImagenIzquierda) {
@@ -102,10 +130,9 @@ public class Piedra {
         this.ImagenDerecha = ImagenDerecha;
         this.ImagenAbajo = ImagenAbajo;
         this.ImagenIzquierda = ImagenIzquierda;
-        this.ImagenActual = ImagenArriba;
+        //this.ImagenActual = ImagenArriba;
     }
 
-    //Constructor
     public Piedra(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
