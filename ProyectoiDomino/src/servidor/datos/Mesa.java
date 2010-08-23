@@ -23,7 +23,7 @@ public class Mesa {
     public Piedra[][] getMatrizPiedrasMesa() {
         return matrizPiedrasMesa;
     }
-    
+
     public void setMatrizPiedrasMesa(Piedra[][] matrizPiedrasMesa) {
         this.matrizPiedrasMesa = matrizPiedrasMesa;
     }
@@ -37,13 +37,12 @@ public class Mesa {
     }
 
     /*public Set<Mesa> getLasPiedrasMesa() {
-        return lasPiedrasMesa;
+    return lasPiedrasMesa;
     }
 
     public void setLasPiedrasMesa(Set<Mesa> lasPiedrasMesa) {
-        this.lasPiedrasMesa = lasPiedrasMesa;
+    this.lasPiedrasMesa = lasPiedrasMesa;
     }*/
-
     public ListaPiedras getPiedrasMesa() {
         return PiedrasMesa;
     }
@@ -94,10 +93,10 @@ public class Mesa {
     public Mesa(int extremo1, int extremo2) {
         this.extremo1 = extremo1;
         this.extremo2 = extremo2;
-      this.listaDeExtremos = new ArrayList();
+        this.listaDeExtremos = new ArrayList();
     }
 
-     public Piedra[][] inicializarMatrizPiedras() {
+    public Piedra[][] inicializarMatrizPiedras() {
 
         Piedra laPiedra = null;
         Piedra matriz[][] = {
@@ -131,7 +130,9 @@ public class Mesa {
             for (j = 0; j < 10; j++) {
                 if (matriz[i][j] == null) {
                     confirm = true;
-                } else return false;
+                } else {
+                    return false;
+                }
             }
         }
         return confirm;
@@ -170,6 +171,7 @@ public class Mesa {
 
     public Piedra validarJugada(String piedra, String posicion, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa) {
 
+        System.out.println("JUGADOR");
         boolean confirm = false;
         int num0;
         int num1;
@@ -179,18 +181,17 @@ public class Mesa {
         String[] subArg = piedra.split("-");
         num0 = Integer.parseInt(subArg[0]);
         num1 = Integer.parseInt(subArg[1]);
+        System.out.println("piedra: " + num0 + "-" + num1);
 
         laPiedra = laListaPiedras.buscarPiedra(num0, num1);
         laPiedra.setPosicion(posicion);
 
         confirm = matrizVacia(piedrasMesa);
         if (confirm == true) { //si el arreglo está vacío
-        //insertar la piedra en la lista extremos en posicion 0 y 1
+            //insertar la piedra en la lista extremos en posicion 0 y 1
             System.out.println("MATRIZ VACIA::::: " + confirm);
-            laPiedra.setExtremo(num0);
-            listaDeExtremos.add(0, laPiedra);
-            laPiedra.setExtremo(num1);
-            listaDeExtremos.add(1, laPiedra);
+            listaDeExtremos.add(new Piedra(num0, num1, laPiedra.getImagenActual(), num0, posicion));
+            listaDeExtremos.add(new Piedra(num0, num1, laPiedra.getImagenActual(), num1, posicion));
             piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
 
             return (laPiedra);
@@ -198,6 +199,9 @@ public class Mesa {
 
         ext0 = obtenerExtremo0();
         ext1 = obtenerExtremo1();
+
+        System.out.println("extremo 1= " + ext0);
+        System.out.println("extremo 2= " + ext1);
 
         if (num0 == ext0) {
             //confirmar posicion
@@ -254,11 +258,12 @@ public class Mesa {
                 return (laPiedra);
             }
         }
+        System.out.println("nuevo extremo 1 = " + this.obtenerExtremo0());
+        System.out.println("nuevo extremo 2 = " + this.obtenerExtremo1());
         return null;
     }
 
-
-    /*public String ponerPiedraEnMesaMaquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa) {
+    public String ponerPiedraEnMesaMaquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, boolean esExtremo0) {
         System.out.println("Extremo donde voy a insertar: " + extremoActual.getNum1() + "-" + extremoActual.getNum2());
         System.out.println("piedra a insertar: " + laPiedra.getNum1() + "-" + laPiedra.getNum2());
 
@@ -275,7 +280,7 @@ public class Mesa {
                         jAux--;
                         iAux2++;
                         jAux2++;
-                        if (iAux > -1) {
+                        if (iAux > -1 && esExtremo0) {
                             if (matrizMesa[iAux][j] == null) {
                                 matrizMesa[iAux][j] = laPiedra;
                                 PosicionInsertada = iAux + "-" + j;
@@ -283,7 +288,7 @@ public class Mesa {
                             }
                         }
 
-                        if (jAux > -1) {
+                        if (jAux > -1 && esExtremo0) {
                             if (matrizMesa[i][jAux] == null) {
                                 matrizMesa[i][jAux] = laPiedra;
                                 PosicionInsertada = i + "-" + jAux;
@@ -291,33 +296,33 @@ public class Mesa {
                             }
                         }
 
-                        if (iAux2 < 6) {
-                            if (matrizMesa[iAux][j] == null) {
-                                matrizMesa[iAux][j] = laPiedra;
-                                PosicionInsertada = iAux + "-" + j;
+                        if (iAux2 < 6 && !esExtremo0) {
+                            if (matrizMesa[iAux2][j] == null) {
+                                matrizMesa[iAux2][j] = laPiedra;
+                                PosicionInsertada = iAux2 + "-" + j;
                                 return PosicionInsertada;
                             }
                         }
 
-                        if (jAux2 < 6) {
-                            if (matrizMesa[i][jAux] == null) {
-                                matrizMesa[i][jAux] = laPiedra;
-                                PosicionInsertada = i + "-" + jAux;
+                        if (jAux2 < 6 && !esExtremo0) {
+                            if (matrizMesa[i][jAux2] == null) {
+                                matrizMesa[i][jAux2] = laPiedra;
+                                PosicionInsertada = i + "-" + jAux2;
                                 return PosicionInsertada;
                             }
                         }
+                    }
                 }
             }
         }
-     }
 
         //}
         return PosicionInsertada;
     }
 
+    public String realizarJugadaMaquina(ListaPiedras listaPiedrasMaquina, Piedra[][] piedrasMesa) {
 
-
-    public String realizarJugadaMaquina(ListaPiedras listaPiedrasMaquina) {
+        System.out.println("MAQUINA");
         String cadena = "";
         Piedra laPiedra = null;
         Iterator iterador = listaPiedrasMaquina.getIterator();
@@ -327,38 +332,46 @@ public class Mesa {
         ext2 = obtenerExtremo1();
         String posicion = ""; //posicion en la que es insertada la piedra en la matriz.
         boolean piedraPuesta = false;
+        System.out.println("extremo1 = " + ext1);
+        System.out.println("extremo2 = " + ext2);
 
         while (!piedraPuesta && iterador.hasNext()) {
             laPiedra = (Piedra) iterador.next();
 
             if (laPiedra.getNum1() == ext1) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra);
+                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, true);
                 laPiedra.setExtremo(laPiedra.getNum2());
                 listaDeExtremos.set(0, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum2() == ext1) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra);
+                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, true);
                 laPiedra.setExtremo(laPiedra.getNum1());
                 listaDeExtremos.set(0, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum1() == ext2) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra);
+                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, false);
                 laPiedra.setExtremo(laPiedra.getNum2());
-                listaDeExtremos.set(0, laPiedra);
+                listaDeExtremos.set(1, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum2() == ext2) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra);
+                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, false);
                 laPiedra.setExtremo(laPiedra.getNum1());
-                listaDeExtremos.set(0, laPiedra);
+                listaDeExtremos.set(1, laPiedra);
                 piedraPuesta = true;
             }
 
         }
 
+        if (piedraPuesta){
+            listaPiedrasMaquina.eliminarPiedra(laPiedra);
+        }
+
+        System.out.println("nuevo extremo 1 = " + this.obtenerExtremo0());
+        System.out.println("nuevo extremo 2 = " + this.obtenerExtremo1());
+
         laPiedra.setPosicion(posicion);
-        cadena = new ListaPiedras().obtenerCadenaPiedra(laPiedra);
+        cadena = laPiedra.obtenerCadenaPiedra();
+        System.out.println("PIEDRA A JUGAR DE LA MAQUINA: " + cadena);
         return cadena;
-    }*/
-
-
+    }
 }

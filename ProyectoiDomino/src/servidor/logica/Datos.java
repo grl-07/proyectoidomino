@@ -1,6 +1,8 @@
 package servidor.logica;
+
 import servidor.datos.*;
 import javax.swing.*;
+
 /**
  *
  * @author Alberly
@@ -11,12 +13,9 @@ public class Datos {
     private static ListaPartidas listaDePartidas = null;
     private static ListaUsuarios listaDeUsuarios = null;
     private static Piedra[][] matrizPiedrasMesa = null;
-
-
-     private static ListaPiedras listaPiedrasMaquina = null;
+    private static ListaPiedras listaPiedrasMaquina = null;
     private static ListaPiedras listaPiedrasJugador = null;
     private static ListaPiedras listaPiedrasPozo = null;
-
 
     private Datos() {
     }
@@ -43,8 +42,7 @@ public class Datos {
         return confirm;
     }
 
-
-        public static boolean inicializarListasJuego() {
+    public static boolean inicializarListasJuego() {
         boolean confirm = false;
         if (listaPiedrasMaquina == null) {
             listaDePartidas = new ListaPartidas();
@@ -67,9 +65,7 @@ public class Datos {
         return confirm;
     }
 
-
-
-     public static boolean inicializarMatrizPiedras() {
+    public static boolean inicializarMatrizPiedras() {
         if (matrizPiedrasMesa == null) {
             matrizPiedrasMesa = new Mesa().inicializarMatrizPiedras();
             return true;
@@ -97,6 +93,30 @@ public class Datos {
         return listaDePiedras;
     }
 
+    public static ListaPiedras getListaPiedrasJugador() {
+        return listaPiedrasJugador;
+    }
+
+    public static ListaPiedras getListaPiedrasMaquina() {
+        return listaPiedrasMaquina;
+    }
+
+    public static ListaPiedras getListaPiedrasPozo() {
+        return listaPiedrasPozo;
+    }
+
+    public static void setListaPiedrasJugador(ListaPiedras listaPiedrasJugador) {
+        Datos.listaPiedrasJugador = listaPiedrasJugador;
+    }
+
+    public static void setListaPiedrasMaquina(ListaPiedras listaPiedrasMaquina) {
+        Datos.listaPiedrasMaquina = listaPiedrasMaquina;
+    }
+
+    public static void setListaPiedrasPozo(ListaPiedras listaPiedrasPozo) {
+        Datos.listaPiedrasPozo = listaPiedrasPozo;
+    }
+
     public static boolean agregarLaPiedra(int num1, int num2) {
         return (listaDePiedras.agregarPiedra(new Piedra(num1, num2)));
     }
@@ -113,7 +133,7 @@ public class Datos {
     public static boolean crearPartida(String nickname) {
         return listaDePartidas.crearPartida(nickname, listaDePiedras);
     }
-    
+
     public static Partida obtenerPartidaCreada(String nickname) {
         Partida laPartida;
         laPartida = new Partida().crearPartida(nickname, listaDePiedras);
@@ -122,7 +142,7 @@ public class Datos {
     }
 
     public static Partida obtenerPartidaExistente(String nickname) {
-        return listaDePartidas.buscarUsuario(new Usuario("","","",nickname,"",""));
+        return listaDePartidas.buscarUsuario(new Usuario("", "", "", nickname, "", ""));
     }
 
     public static Usuario modificarDatosUsuario(Usuario elUsuario) {

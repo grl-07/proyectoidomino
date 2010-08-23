@@ -2,6 +2,7 @@ package servidor;
 
 import servidor.datos.*;
 import java.io.*;
+import java.util.Calendar;
 //import com.toedter.calendar.*;
 
 /*
@@ -37,7 +38,7 @@ public class Main {
 
         //Modificar Usuario
         /*System.out.println("\nMODIFICAR USUARIO\n");
-       Usuario elUsuario;
+        Usuario elUsuario;
         elUsuario = new Usuario("", "", "", "shishi348", "", 0, 0, 0, 0);
 
         if (listadoUsuarios.buscarNickname(elUsuario)) {
@@ -56,7 +57,7 @@ public class Main {
                 String x = br.readLine();
                 int opcion = Integer.parseInt(x);
 
-                switch(opcion) {
+                switch (opcion) {
                     case 1:
                         elUsuario = new Usuario("Jesse", "", "", "shishi348", "", 0, 0, 0, 0);
                         listadoUsuarios.modificarUsuario(elUsuario, "Jesse", opcion);
@@ -91,8 +92,8 @@ public class Main {
         ///Fin de Modificar Usuario */
 
         System.out.println("\nCREAR PARTIDA\n");
-     //   listadoPartidas.crearPartida("danieluchin");
-    //    listadoPartidas.crearPartida("alberlykida");
+        //   listadoPartidas.crearPartida("danieluchin");
+        //    listadoPartidas.crearPartida("alberlykida");
         System.out.println("\nLISTA PARTIDAS CREADAS\n");
         //listadoPartidas.imprimirPartidas();
 
@@ -109,6 +110,13 @@ public class Main {
         elReporte.ordenPartidasGanadas(listadoUsuarios);
         System.out.println("\n");
         elReporte.usuarioMayorScore(listadoUsuarios);
+
+        Calendar calendario = Calendar.getInstance();
+        int diaHoy = calendario.get(Calendar.DAY_OF_MONTH);
+        int mes = calendario.get(Calendar.MONTH);
+        int año = calendario.get(Calendar.YEAR);
+        System.out.println("dia: " + diaHoy + " mes: " + mes + " año: " + año);
+
 
 
     }
