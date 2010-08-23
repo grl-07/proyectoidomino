@@ -75,7 +75,7 @@ public class ListaUsuarios {
 
     }
 
-    public boolean modificarUsuario(Usuario elUsuario, String dato, int opcion) {
+   /* public boolean modificarUsuario(Usuario elUsuario, String dato, int opcion) {
         boolean encontrado = false;
         Usuario auxiliar = null;
         Iterator iterador = listadoUsuarios.iterator();
@@ -101,6 +101,27 @@ public class ListaUsuarios {
             return true;
         }
         return false;
+    }*/
+
+    public Usuario modificarUsuario(Usuario auxiliar,Usuario elUsuario) {
+
+       //System.out.println(auxiliar.getNickname());
+       auxiliar.setNickname(elUsuario.getNickname());
+       auxiliar.setNombre(elUsuario.getNombre());
+       auxiliar.setApellido(elUsuario.getApellido());
+       auxiliar.setClave(elUsuario.getClave());
+       auxiliar.setFechaNac(elUsuario.getFechaNac());
+       auxiliar.setAvatar(elUsuario.getAvatar());
+
+
+                /*auxiliar.clave = elUsuario.getNickname();
+                auxiliar.nombre = elUsuario.getNombre();
+                auxiliar.apellido = elUsuario.getApellido();
+                auxiliar.nickname = elUsuario.getClave();
+                auxiliar.fechaNac = elUsuario.getFechaNac();
+                auxiliar.avatar = elUsuario.getAvatar();*/
+           
+            return auxiliar;
     }
 
 

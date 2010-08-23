@@ -124,4 +124,14 @@ public class Datos {
     public static Partida obtenerPartidaExistente(String nickname) {
         return listaDePartidas.buscarUsuario(new Usuario("","","",nickname,"",""));
     }
+
+    public static Usuario modificarDatosUsuario(Usuario elUsuario) {
+        //Usuario usuariobuscado = new Usuario("","","",elUsuario.getNickname(),"","");
+        System.out.println(elUsuario.getNickname());
+        Usuario auxiliar = new Usuario("","","","","","");
+        auxiliar = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());//listaDeUsuarios.buscarDatos(elUsuario);
+        System.out.println(auxiliar.getNickname());
+
+        return (listaDeUsuarios.modificarUsuario(auxiliar,elUsuario));
+    }
 }

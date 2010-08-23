@@ -68,7 +68,7 @@ public class Conector {
     public static Usuario obtenerDatosDeUsuario(String nickname) {
         //listaDeUsuarios = Conector.getListaDeUsuarios();
         //listaDeUsuarios = Datos.getListaDeUsuarios();
-        Usuario auxiliar = new Usuario("","","",nickname,"",0,0,0,0);
+        Usuario auxiliar = new Usuario("","","","",nickname,"",0,0,0,0);
        return (Datos.getListaDeUsuarios().buscarDatos(auxiliar));
 
     }
@@ -77,4 +77,24 @@ public class Conector {
     public static void solicitarGuardarDatosPartidas(){
         Archivo.guardarDatosArchivoPartidas(Datos.getListaDePartidas());
     }
+
+    public static void guardarNumIngresos(Usuario elUsuario,int cont) {
+        cont++;
+        elUsuario.setNumIngresos(cont);
+        Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+    public static void guardarNuevoNombre(Usuario elUsuario) {
+        elUsuario.setNombre(elUsuario.getNombre());
+        Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+    
+    public static void guardarNumPartidasCreadas(Usuario elUsuario,int cont) {
+        cont++;
+        elUsuario.setNumPartCreadas(cont);
+        Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+
+
+
+
 }

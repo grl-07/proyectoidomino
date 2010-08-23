@@ -9,23 +9,6 @@ import cliente.logica.FuncionGeneral;
  */
 public class Imagenes extends javax.swing.JFrame {
 
-    /** Creates new form Imagenes */
-    /*public Imagenes(JFrame ventanaPadre, JTextField nombre, JTextField apellido, JTextField nickname, JTextField clave, JTextField avatar) {
-        initComponents();
-        this.username = nickname.getText();
-        this.apellido = apellido.getText();
-        this.nombre = nombre.getText();
-        this.clave = nombre.getText();
-        this.txtavatar = avatar;
-        this.ventanaPadre = ventanaPadre;
-    }*/
-
-    /*public Imagenes(JTextField nickname, JTextField avatar){
-        initComponents();
-        this.username = nickname.getText();
-        this.txtavatar = avatar;
-    }*/
-
     public Imagenes(JFrame ventanaPadre){
         initComponents();
         this.ventanaPadre = ventanaPadre;
@@ -155,7 +138,7 @@ public class Imagenes extends javax.swing.JFrame {
                 jButtonAceptarActionPerformed(evt);
             }
         });
-        jButtonAceptar.setBounds(220, 440, 49, 25);
+        jButtonAceptar.setBounds(220, 440, 60, 25);
         jLayeredPane1.add(jButtonAceptar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
@@ -166,12 +149,10 @@ public class Imagenes extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 511, Short.MAX_VALUE)
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 481, Short.MAX_VALUE)
             .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
@@ -188,7 +169,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+       
     }//GEN-LAST:event_jRadioBTortugaActionPerformed
 
     private void jRadioBSombrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBSombrillaActionPerformed
@@ -200,7 +181,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+       
 }//GEN-LAST:event_jRadioBSombrillaActionPerformed
 
     private void jRadioBDogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDogActionPerformed
@@ -212,7 +193,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+      
 
 
     }//GEN-LAST:event_jRadioBDogActionPerformed
@@ -226,7 +207,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBCoco);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+        
     }//GEN-LAST:event_jRadioBDominoActionPerformed
 
     private void jRadioBCocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBCocoActionPerformed
@@ -239,7 +220,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+      
     }//GEN-LAST:event_jRadioBCocoActionPerformed
 
     private void jRadioBMariposaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMariposaActionPerformed
@@ -251,7 +232,7 @@ public class Imagenes extends javax.swing.JFrame {
         FuncionGeneral.desmarcarRadioButton(jRadioBDomino);
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
-        //System.out.println("avatar = " + avatar.getText());
+       
 
     }//GEN-LAST:event_jRadioBMariposaActionPerformed
 
@@ -322,7 +303,6 @@ public class Imagenes extends javax.swing.JFrame {
     }
 
     public String setAvatar() {
-        //avatar.setText("Dog");
         return avatar.getText();
     }
 

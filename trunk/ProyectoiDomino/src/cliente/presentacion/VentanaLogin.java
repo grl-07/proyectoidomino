@@ -185,6 +185,9 @@ public class VentanaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
 }//GEN-LAST:event_txtNicknameActionPerformed
 
+    public String obtenerClave() {
+        return txtPassword.getText();
+    }
     private void inicializarComponentesPropios() {
         
 
