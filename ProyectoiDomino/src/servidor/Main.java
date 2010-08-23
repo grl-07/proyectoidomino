@@ -27,16 +27,16 @@ public class Main {
 
         //Agregar Usuario
 
-        listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 1, 5, 9, 4));
+    /*    listadoUsuarios.agregarUsuario(new Usuario("Daniel", "Sierra", "123456", "danieluchin", "dani54", 1, 5, 9, 4));
         listadoUsuarios.agregarUsuario(new Usuario("Alberly", "Martinez", "654321", "alberlykida12", "abe28", 4, 6, 5, 9));
         listadoUsuarios.agregarUsuario(new Usuario("Sheryl", "Ravelo", "135790", "shishi348", "shi8", 7, 8, 1, 3));
-
+*/
 
         System.out.println("\nLISTADO DE USUARIOS\n");
         listadoUsuarios.mostrarUsuario();
 
         //Modificar Usuario
-        System.out.println("\nMODIFICAR USUARIO\n");
+        /*System.out.println("\nMODIFICAR USUARIO\n");
        Usuario elUsuario;
         elUsuario = new Usuario("", "", "", "shishi348", "", 0, 0, 0, 0);
 
@@ -88,7 +88,7 @@ public class Main {
             System.out.println("Usuario incorrecto");
         }
         listadoUsuarios.mostrarUsuario();
-        ///Fin de Modificar Usuario
+        ///Fin de Modificar Usuario */
 
         System.out.println("\nCREAR PARTIDA\n");
      //   listadoPartidas.crearPartida("danieluchin");

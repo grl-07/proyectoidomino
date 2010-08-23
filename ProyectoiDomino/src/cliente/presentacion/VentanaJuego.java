@@ -154,7 +154,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra12 = new javax.swing.JButton();
         jBPiedra13 = new javax.swing.JButton();
         jBPiedra14 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLNickname = new javax.swing.JLabel();
         jLAvatar = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -791,7 +791,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarIzqActionPerformed(evt);
             }
         });
-        jBRotarIzq.setBounds(730, 620, 70, 39);
+        jBRotarIzq.setBounds(730, 580, 70, 39);
         jLayeredPane1.add(jBRotarIzq, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBRotarDer.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -802,7 +802,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarDerActionPerformed(evt);
             }
         });
-        jBRotarDer.setBounds(730, 670, 70, 39);
+        jBRotarDer.setBounds(730, 630, 70, 39);
         jLayeredPane1.add(jBRotarDer, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPot14.setName("jBPot14\n"); // NOI18N
@@ -969,13 +969,15 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra14.setBounds(640, 660, 73, 71);
         jLayeredPane1.add(jBPiedra14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setFont(new java.awt.Font("Brush Script MT", 1, 24));
-        jLabel1.setText("Player");
-        jLabel1.setBounds(30, 690, 80, -1);
-        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLNickname.setText("Player");
+        jLNickname.setBounds(30, 660, 120, 31);
+        jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLAvatar.setText("AVATAR");
-        jLAvatar.setBounds(50, 620, 50, 40);
+        jLAvatar.setBounds(40, 570, 110, 90);
         jLayeredPane1.add(jLAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1179,6 +1181,13 @@ public class VentanaJuego extends javax.swing.JFrame {
             }
         }
         return null;
+    }
+
+    public void setDatosUsuarioJuego(String nickname,JLabel avatar) {
+        jLNickname.setText(nickname);
+
+        //avatar.getIcon();
+        jLAvatar.setIcon(avatar.getIcon());
     }
 
     private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
@@ -1417,7 +1426,7 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPass;
     private javax.swing.JButton jButtonPot;
     private javax.swing.JLabel jLAvatar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLNickname;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

@@ -114,6 +114,7 @@ public class Archivo {
 
                 Element nombre = e.getChild("nombre");
                 Element apellido = e.getChild("apellido");
+                Element fechaNac = e.getChild("fechaNac");
                 Element nickname = e.getChild("nickname");
                 Element clave = e.getChild("clave");
                 Element avatar = e.getChild("avatar");
@@ -127,7 +128,7 @@ public class Archivo {
                 int numPartCreadas = Integer.parseInt(numPartidasCreadas.getText());
                 int puntaje = Integer.parseInt(elPuntaje.getText());
 
-                Usuario elUsuario = new Usuario(nombre.getText(), apellido.getText(), clave.getText(), nickname.getText(), avatar.getText(), numPartidasGanadas, numIngresos, numPartCreadas, puntaje);
+                Usuario elUsuario = new Usuario(nombre.getText(), apellido.getText(), fechaNac.getText(), clave.getText(), nickname.getText(), avatar.getText(), numPartidasGanadas, numIngresos, numPartCreadas, puntaje);
                 listaUsuarios.agregarUsuario(elUsuario);
             }
         } catch (Exception e) {

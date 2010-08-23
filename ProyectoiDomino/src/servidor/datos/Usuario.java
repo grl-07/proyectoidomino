@@ -109,9 +109,10 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public Usuario(String nombre, String apellido, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {
+    public Usuario(String nombre, String apellido, String fechaNac, String clave, String nickname, String avatar, int numPartidasGan, int numIngresos, int numPartCreadas, int puntaje) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.fechaNac = fechaNac;
         this.avatar = avatar;
         this.clave = clave;
         this.nickname = nickname;
@@ -139,6 +140,7 @@ public class Usuario {
         this.numPartCreadas = numPartCreadas;
         this.puntaje = puntaje;
     }
+
 
     public int hashCode()
     {

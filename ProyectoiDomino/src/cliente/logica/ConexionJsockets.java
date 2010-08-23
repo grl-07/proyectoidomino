@@ -96,13 +96,34 @@ public class ConexionJsockets {
         System.out.println(resultado);
         return resultado;
     }
-        public static String solicitudServidor8(JTextField username, JPasswordField clave,String opcion) {
+       /* public static String solicitudServidor8(JTextField name, JTextField lastName, JTextField username, JPasswordField clave,String avatar, String fechaNac) {
         ClienteSocket cliente = new ClienteSocket();
+        String opcion = "8";
         String nickname = username.getText();
         String password = clave.getText();
-        String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
-        System.out.println(resultado);
+        String nombre = name.getText();
+        String apellido = lastName.getText();
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password + ":" + nombre + ":" + apellido + ":" + fechaNac + ":" + avatar, "localhost", 9999);
+        System.out.println("RESULTADO = " + resultado);
+        /*
+        if (resultado.equals("TRUE")) {
+            System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
+        } else {
+            System.out.println("FALSE");
+        }
+        return resultado;
+    }*/
+        public static String solicitudServidor8(String nickname,String dato,String bandera) {
+        ClienteSocket cliente = new ClienteSocket();
+        String opcion = "8";
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + dato + ":" + bandera, "localhost", 9999);
+        System.out.println("RESULTADO = " + resultado);
+        /*
+        if (resultado.equals("TRUE")) {
+            System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
+        } else {
+            System.out.println("FALSE");
+        }*/
         return resultado;
     }
 
