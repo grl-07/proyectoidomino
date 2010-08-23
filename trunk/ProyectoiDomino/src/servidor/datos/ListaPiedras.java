@@ -35,27 +35,8 @@ public class ListaPiedras {
         return laListaPiedras.add(laPiedra);
     }
 
-    public boolean eliminarPiedra(ArrayList laLista, Piedra laPiedra) {
-
-        boolean encontrado = false;
-        Piedra piedraAux = null;
-        Iterator iterador = laLista.iterator();
-
-        while (!encontrado && iterador.hasNext()) {
-            piedraAux = (Piedra) iterador.next();
-
-            if (laPiedra.equals(piedraAux)) {
-                encontrado = true;
-            }
-        }
-
-        if (encontrado) {
-            if (laLista.remove(piedraAux)) {
-                return true;
-            }
-        }
-
-        return false;
+    public boolean eliminarPiedra(Piedra laPiedra) {
+        return laListaPiedras.remove(laPiedra);
     }
 
     public void imprimirListaPiedras() {
@@ -177,10 +158,10 @@ public class ListaPiedras {
         P.setElPozo(Pozo);
 
         /*System.out.println("PIEDRAS DEL JUGADOR");
-        PiedrasJ.imprimirListaPiedras();
+        PiedrasJ.imprimirListaPiedras();*/
         System.out.println("PIEDRAS DE LA MÁQUINA");
         PiedrasM.imprimirListaPiedras();
-        System.out.println("PIEDRAS EN EL POZO");
+        /*System.out.println("PIEDRAS EN EL POZO");
         Pozo.imprimirListaPiedras();*/
     }
 

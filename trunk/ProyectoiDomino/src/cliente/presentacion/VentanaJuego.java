@@ -1126,13 +1126,13 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         //PARA HALLAR LA IMAGEN ASOCIADA
         imagenAsociada = nombreBoton.substring(nombreBoton.length() - 13, nombreBoton.length() - 4);
-        System.out.println("Imagen Asociada: " + imagenAsociada);
+        //System.out.println("Imagen Asociada: " + imagenAsociada);
 
         //PARA HALLAR EL INDICE BEGIN
         //indiceString = nombreBoton.substring(NombreBotonSize - 5, NombreBotonSize - 4);
         indiceString = imagenAsociada.substring(imagenAsociada.length() - 1);
 
-        System.out.println("indice= " + indiceString);
+        //System.out.println("indice= " + indiceString);
 
         indicePiedra = Integer.parseInt(indiceString);
 
@@ -1140,11 +1140,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         String imagenAsociadaActual = cambiarImagenPiedra(rotarDerecha, indicePiedra, imagenAsociada);
 
-        System.out.println("Imagen Asociada Actualizada: " + imagenAsociadaActual);
+        //System.out.println("Imagen Asociada Actualizada: " + imagenAsociadaActual);
 
         fuente = direccion + imagenAsociadaActual;
 
-        System.out.println("fuente: " + fuente);
+        //System.out.println("fuente: " + fuente);
 
 
         return fuente;
@@ -1167,20 +1167,127 @@ public class VentanaJuego extends javax.swing.JFrame {
         return imagenActual;
     }
 
-    public JButton obtenerBotonPosicion(String posicion){
-        int i,j;
+    public JButton obtenerBotonPosicion(String posicion) {
+        int i, j;
         String button;
         String subArg2[] = posicion.split("-");
         button = "jBMesa" + subArg2[0] + subArg2[1];
 
-        for (i= 0; i < 6; i++) {
-            for (j= 0; j < 10; j++) {
-                if (laMesa[i][j].getName().equalsIgnoreCase(button)){
+        for (i = 0; i < 6; i++) {
+            for (j = 0; j < 10; j++) {
+                if (laMesa[i][j].getName().equalsIgnoreCase(button)) {
                     return laMesa[i][j];
                 }
             }
         }
         return null;
+    }
+
+    private String acomodarPiedraEnMesaMaquina(String piedra, String posicion) {
+        String subArgDireccionIcono[] = piedra.split("-");
+        String subArgPosicion[] = posicion.split("-");
+        String subArgExtremo[];
+        String extremoString, piedraAacomodar;
+        String fuente = "";
+        int posX, posY, posXaux, posYaux, posXaux2, posYaux2, num1, num2, num1PiedraExtremo, num2PiedraExtremo;
+        JButton botonPiedra = new JButton();
+
+        //Numeros de la piedra a insertar.
+        num1 = Integer.parseInt(subArgDireccionIcono[0]);
+        num2 = Integer.parseInt(subArgDireccionIcono[1]);
+
+
+        //Coordenadas de la posicion a insertar.
+        posX = Integer.parseInt(subArgPosicion[0]);
+
+        posY = Integer.parseInt(subArgPosicion[1]);
+
+        posXaux = posXaux2 = posX;
+        posYaux = posYaux2 = posY;
+
+        posXaux--;
+        posYaux--;
+        posXaux2++;
+        posYaux2++;
+
+        if (posYaux > -1) {
+            if (laMesa[posX][posYaux].getIcon() != null) {
+                System.out.println(laMesa[posX][posYaux].getName());
+                System.out.println("PIEDRA EXTREMO DE LA MESA: " + laMesa[posX][posYaux].getIcon().toString());
+                extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux].getIcon().toString());
+                subArgExtremo = extremoString.split("-");
+                num1PiedraExtremo = Integer.parseInt(subArgExtremo[0]);
+                num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
+
+                if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
+                    
+                }
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    
+                }
+
+            }
+        }
+
+        if (posXaux > -1) {
+            if (laMesa[posXaux][posY].getIcon() != null) {
+                extremoString = obtenerCadenaPiedra(laMesa[posXaux][posY].getIcon().toString());
+                subArgExtremo = extremoString.split("-");
+                num1PiedraExtremo = Integer.parseInt(subArgExtremo[0]);
+                num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
+
+                if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    
+                }
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    
+                }
+
+            }
+        }
+
+        if (posYaux2 < 6) {
+            if (laMesa[posX][posYaux2].getIcon() != null) {
+                extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux2].getIcon().toString());
+                subArgExtremo = extremoString.split("-");
+                num1PiedraExtremo = Integer.parseInt(subArgExtremo[0]);
+                num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
+
+                if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    
+                }
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
+                    
+                }
+
+            }
+        }
+
+        if (posXaux2 < 6) {
+            if (laMesa[posXaux2][posY].getIcon() != null) {
+                extremoString = obtenerCadenaPiedra(laMesa[posXaux2][posY].getIcon().toString());
+                subArgExtremo = extremoString.split("-");
+                num1PiedraExtremo = Integer.parseInt(subArgExtremo[0]);
+                num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
+
+                if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    
+                }
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    
+                }
+
+            }
+        }
+        return fuente;
     }
 
     public void setDatosUsuarioJuego(String nickname,JLabel avatar) {
@@ -1201,6 +1308,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("\n\n" + "NUEVA JUGADA");
         JButton boton = (JButton) evt.getSource();
+        JButton piedraAcomodada = null;
 
         if (botonActualSeleccionado != null) {
             //boton.setIcon(botonActualSeleccionado.getIcon());
@@ -1215,16 +1323,16 @@ public class VentanaJuego extends javax.swing.JFrame {
 
 
             String posicion = posX + "-" + posY;
-            
+
             String cadenaPiedra = obtenerCadenaPiedra(botonActualSeleccionado.getIcon().toString());
 
-            String cadenaImagen = obtenerImagenAsociada(botonActualSeleccionado.getIcon().toString()/*, mensaje*/);
+            String cadenaImagen = obtenerImagenAsociada(botonActualSeleccionado.getIcon().toString());
 
-            System.out.println("nickname: " + nickname);
+            /*System.out.println("nickname: " + nickname);
             System.out.println("piedra: " + cadenaPiedra);
             System.out.println("posicion: " + posicion);
-            System.out.println("imagenSeleccionada: " + cadenaImagen);
-
+            System.out.println("imagenSeleccionada: " + cadenaImagen);*/
+            System.out.println("");
             String cadena = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
 
             String subArg[] = cadena.split(":");
@@ -1233,9 +1341,11 @@ public class VentanaJuego extends javax.swing.JFrame {
                 botonActualSeleccionado.setIcon(null);
                 botonActualSeleccionado.setEnabled(false);
 
+                System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
+
                 if (!subArg[1].equalsIgnoreCase("NULL")) {
-                    boton = obtenerBotonPosicion(subArg[2]);
-                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+                    piedraAcomodada = obtenerBotonPosicion(subArg[2]);
+                    piedraAcomodada.setIcon(new javax.swing.ImageIcon(getClass().getResource(acomodarPiedraEnMesaMaquina(subArg[1], subArg[2]))));
                 }
             }
 

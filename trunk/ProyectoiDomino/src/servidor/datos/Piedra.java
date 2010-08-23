@@ -117,8 +117,8 @@ public class Piedra {
         this.ImagenDerecha = ImagenDerecha;
         this.ImagenAbajo = ImagenAbajo;
         this.ImagenIzquierda = ImagenIzquierda;
-        this.ImagenActual = ImagenActual;
-              this.posicion = posicion;
+        this.ImagenActual = ImagenArriba;
+        this.posicion = posicion;
         this.extremo = extremo;
     }
 
@@ -130,12 +130,34 @@ public class Piedra {
         this.ImagenDerecha = ImagenDerecha;
         this.ImagenAbajo = ImagenAbajo;
         this.ImagenIzquierda = ImagenIzquierda;
-        //this.ImagenActual = ImagenArriba;
+        this.ImagenActual = ImagenArriba;
     }
 
     public Piedra(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
+    }
+
+    public Piedra(int num1, int num2, String ImagenActual, int extremo, String posicion) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.ImagenActual = ImagenActual;
+        this.extremo = extremo;
+        this.posicion = posicion;
+    }
+
+
+
+    public String obtenerCadenaPiedra() {
+        String cadena = "";
+
+        cadena = getNum1() + "-" + getNum2()
+                + ":" + getPosicion()
+                + ":" + getImagenArriba() + "-" + getImagenAbajo()
+                + "-" + getImagenIzquierda() + "-" + getImagenDerecha()
+                + ":" + getImagenActual();
+
+        return cadena;
     }
 
     /*public void finalize() throws Throwable {

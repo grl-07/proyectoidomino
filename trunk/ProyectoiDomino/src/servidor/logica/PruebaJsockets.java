@@ -149,13 +149,30 @@ public class PruebaJsockets implements LogicaServidor {
                 cadena = partidaNueva.getElJuego().getLaMesa().getMatrizPiedrasMesa().validarJugada(subArg[2], subArg[3]);
                 resultado = "TRUE:" + cadena;*/
                 //System.out.println("Enviar Jugada -> " + cadena);
+
+                //Jugada del Jugador
                 piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
                 laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(piedraStr, laPiedra.getPosicion(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa());
 
                 if (laPiedra != null) {
-                    resultado = "TRUE:NULL";
+                   confirm = true;
+                }
+                //Jugada del Jugador FIN.
+
+                //Jugada de la Maquina
+                Datos.setListaPiedrasMaquina(partidaExistente.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano());
+                cadena = partidaExistente.getElJuego().getLaMesa().realizarJugadaMaquina(Datos.getListaPiedrasMaquina(), Datos.getMatrizPiedrasMesa());
+                String subArgCadena[] = cadena.split(":");
+                if (subArgCadena[1].equalsIgnoreCase("")) {
+                    cadena = "NULL";
+                }
+                //Jugada de la Maquina FIN.
+
+
+                if (confirm) {
+                    resultado = "TRUE:" + cadena;
                 } else {
                     resultado = "FALSE";
                 }
