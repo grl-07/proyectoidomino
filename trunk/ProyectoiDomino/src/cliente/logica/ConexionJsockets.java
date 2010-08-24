@@ -36,6 +36,9 @@ public class ConexionJsockets {
      public static String solicitudServidor2(JLabel username,String fechaInicio) {
         ClienteSocket cliente = new ClienteSocket();
         String nickname = username.getText();
+
+        System.err.println("nickname = @" + nickname + "@" );
+        
         String opcion = "2";
         String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + fechaInicio, "localhost", 9999);
         System.out.println(resultado);

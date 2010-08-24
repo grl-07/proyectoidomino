@@ -175,37 +175,71 @@ public class VentanaMenu extends javax.swing.JFrame {
 
     private void jBModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBModificarActionPerformed
         // TODO add your handling code here:
-        //String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname, "fechaInicio");
-        VentanaModificar ventana = new VentanaModificar();
+        VentanaModificar ventana = new VentanaModificar(this);
         ventana.setVisible(true);
-        VentanaLogin ventanaLogin = new VentanaLogin();
-        String clave = ventanaLogin.obtenerClave();
+        ventana.setLocationRelativeTo(null);
+        //VentanaLogin ventanaLogin = new VentanaLogin();
+        //String clave = ventanaLogin.obtenerClave();
 
-        ventana.setDatosUsuario(clave,jLNickname2.getText(),jLNombre2.getText(), jLApellido2.getText(), jLavatar.getText(), "");
+        ventana.setDatosUsuario("clave",jLNickname2.getText(),jLNombre2.getText(), jLApellido2.getText(), jLavatar.getText(), "");
     }//GEN-LAST:event_jBModificarActionPerformed
 
     public void setDatosUsuario(String nickname, String nombre, String apellido, String avatar,String FechaNac) {
-        jLNickname2.setText(" " + nickname);
-        jLNombre2.setText(" " + nombre);
-        jLApellido2.setText(" " + apellido);
+        jLNickname2.setText(nickname);
+        jLNombre2.setText(nombre);
+        jLApellido2.setText(apellido);
         jLFechaNac2.setText(FechaNac);
 
         if (avatar.equalsIgnoreCase("Dog")) {
             jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg")));
         } else if (avatar.equalsIgnoreCase("Umbrella")) {
+            jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png")));
         } else if (avatar.equalsIgnoreCase("Turtle")) {
+            jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg")));
         } else if (avatar.equalsIgnoreCase("Butterfly")) {
+            jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png")));
         } else if (avatar.equalsIgnoreCase("Bug")) {
+            jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg")));
         } else if (avatar.equalsIgnoreCase("Domino")) {
+            jLavatar.setText(avatar);
             jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
         }
 
         jLBienvenida.setText(" Welcome " + nickname + " to iDomino");
+
+    }
+
+    public void actualizarDato(String dato, String op) {
+        if (op.equalsIgnoreCase("1")) {
+            jLNombre2.setText(dato);
+        } else if (op.equalsIgnoreCase("2")) {
+            jLApellido2.setText(dato);
+        } else if (op.equalsIgnoreCase("4")) {
+            if (dato.equalsIgnoreCase("Dog")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg")));
+            } else if (dato.equalsIgnoreCase("Umbrella")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png")));
+            } else if (dato.equalsIgnoreCase("Turtle")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg")));
+            } else if (dato.equalsIgnoreCase("Butterfly")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png")));
+            } else if (dato.equalsIgnoreCase("Bug")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg")));
+            } else if (dato.equalsIgnoreCase("Domino")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
+            }
+        }
 
     }
 

@@ -715,7 +715,7 @@
         <Component class="javax.swing.JButton" name="jBMesa32">
           <Properties>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Default Cursor"/>
+              <Color id="Cursor predeterminado"/>
             </Property>
             <Property name="name" type="java.lang.String" value="jBMesa32" noResource="true"/>
           </Properties>
@@ -1367,7 +1367,7 @@
             </Property>
             <Property name="autoscrolls" type="boolean" value="true"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Default Cursor"/>
+              <Color id="Cursor predeterminado"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[800, 600]"/>
@@ -1378,7 +1378,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout$JLayeredPaneConstraintsDescription">
-              <JLayeredPaneConstraints x="-6" y="-110" width="960" height="990" layer="0" position="-1"/>
+              <JLayeredPaneConstraints x="0" y="-110" width="960" height="990" layer="0" position="-1"/>
             </Constraint>
           </Constraints>
         </Component>
