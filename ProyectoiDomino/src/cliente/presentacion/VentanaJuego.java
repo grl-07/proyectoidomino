@@ -163,7 +163,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel3.setText("Computadora");
-        jLabel3.setBounds(40, 40, -1, -1);
+        jLabel3.setBounds(40, 40, 117, 31);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jButton179.setBounds(170, 20, 73, 71);
         jLayeredPane1.add(jButton179, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -183,12 +183,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48));
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("iDomino");
-        jLabel7.setBounds(750, 20, 190, -1);
+        jLabel7.setBounds(750, 20, 190, 60);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel6.setText("Game #");
-        jLabel6.setBounds(790, 70, -1, -1);
+        jLabel6.setBounds(790, 70, 41, 16);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24));
@@ -969,7 +969,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra14.setBounds(640, 660, 73, 71);
         jLayeredPane1.add(jBPiedra14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24)); // NOI18N
+        jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLNickname.setText("Player");
         jLNickname.setBounds(30, 660, 120, 31);
@@ -986,7 +986,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel4.setMinimumSize(new java.awt.Dimension(800, 600));
         jLabel4.setPreferredSize(new java.awt.Dimension(800, 600));
-        jLabel4.setBounds(-6, -110, 960, 990);
+        jLabel4.setBounds(0, -110, 960, 990);
         jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

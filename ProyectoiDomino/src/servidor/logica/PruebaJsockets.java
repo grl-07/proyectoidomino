@@ -23,6 +23,8 @@ public class PruebaJsockets implements LogicaServidor {
         Piedra laPiedra = new Piedra(0, 0, "0");
         elUsuario.setID(Integer.parseInt(subArg[0]));
         int opcion = elUsuario.getID();
+
+        System.out.println("cadena = " + arg);
         switch (opcion) {
             case 1:
                 elUsuario.setNickname(subArg[1]);
@@ -107,17 +109,17 @@ public class PruebaJsockets implements LogicaServidor {
                     registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                     int cont = registro.getNumIngresos();
                     Conector.guardarNumIngresos(registro,cont);
-                    //resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
-                    resultado = "TRUE:prueba:prueba:prueba:prueba";
+                    resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
+                    //resultado = "TRUE:prueba:prueba:prueba:prueba";
                     System.out.println("EN SERVIDOR Entrar al sistema -->" + resultado);
                 }
                 break;
             case 2:
-                /*registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
+                registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                 System.out.println("Nombre -->" + registro.getNombre());
                 System.out.println("NICKNAME -->" + registro.getNickname());
-                int cont = registro.getNumIngresos();
-                Conector.guardarNumPartidasCreadas(registro,cont);*/
+                int cont = registro.getNumPartCreadas();
+                Conector.guardarNumPartidasCreadas(registro,cont);
                 //Datos.inicializarListasJuego();
                 Datos.inicializarMatrizPiedras();
 
@@ -197,18 +199,21 @@ public class PruebaJsockets implements LogicaServidor {
                 System.out.println("Agarrar pieza del Pozo -> " + resultado);
                 break;
             case 8:
-                /*registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
+                registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                 if (op.equalsIgnoreCase("1")) {
-                    Conector.guardarNuevoNombre(registro);
-                    //registro.setNombre(elUsuario.getNombre());
+                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    resultado = "TRUE:" + elUsuario.getNombre();
                 } else if (op.equalsIgnoreCase("2")) {
-                    registro.setApellido(elUsuario.getApellido());
+                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    resultado = "TRUE:" + elUsuario.getApellido();
                 } else if (op.equalsIgnoreCase("3")) {
-                    registro.setClave(elUsuario.getClave());
+                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    resultado = "TRUE:" + elUsuario.getClave();
                 } else if (op.equalsIgnoreCase("4")) {
-                    registro.setAvatar(elUsuario.getAvatar());
+                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    resultado = "TRUE:" + elUsuario.getAvatar();
                 }
-                resultado = "TRUE"; */
+                
 
                 /*elUsuario = Datos.modificarDatosUsuario(elUsuario);
                 Conector.guardarDatos(elUsuario.getNombre(), elUsuario.getApellido(), elUsuario.getNickname(), elUsuario.getClave(), elUsuario.getAvatar(), elUsuario.getFechaNac());

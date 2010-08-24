@@ -83,8 +83,17 @@ public class Conector {
         elUsuario.setNumIngresos(cont);
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
-    public static void guardarNuevoNombre(Usuario elUsuario) {
-        elUsuario.setNombre(elUsuario.getNombre());
+    public static void guardarNuevoDato(Usuario registro,Usuario elUsuario,String op) {
+        if (op.equalsIgnoreCase("1")) {
+            registro.setNombre(elUsuario.getNombre());
+        } else if (op.equalsIgnoreCase("2")) {
+            registro.setApellido(elUsuario.getApellido());
+        } else if (op.equalsIgnoreCase("3")) {
+            registro.setClave(elUsuario.getClave());
+        } else if (op.equalsIgnoreCase("4")) {
+            registro.setAvatar(elUsuario.getAvatar());
+        }
+
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
     
