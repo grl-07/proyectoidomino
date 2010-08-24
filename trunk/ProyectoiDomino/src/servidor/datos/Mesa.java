@@ -4,6 +4,7 @@
  */
 package servidor.datos;
 
+import servidor.logica.Datos;
 /**
  *
  * @author Alberly
@@ -169,7 +170,7 @@ public class Mesa {
 
     }
 
-    public Piedra validarJugada(String piedra, String posicion, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa) {
+    public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa) {
 
         System.out.println("JUGADOR");
         boolean confirm = false;
@@ -185,6 +186,8 @@ public class Mesa {
 
         laPiedra = laListaPiedras.buscarPiedra(num0, num1);
         laPiedra.setPosicion(posicion);
+        laPiedra.setImagenActual(imagenActual);
+        System.out.println("IMAGEN ACTUAL::::::::::" + laPiedra.getImagenActual());
 
         confirm = matrizVacia(piedrasMesa);
         if (confirm == true) { //si el arreglo está vacío
@@ -193,7 +196,8 @@ public class Mesa {
             listaDeExtremos.add(new Piedra(num0, num1, laPiedra.getImagenActual(), num0, posicion));
             listaDeExtremos.add(new Piedra(num0, num1, laPiedra.getImagenActual(), num1, posicion));
             piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
-
+            //Elimino la piedra de la lista piedras en mano
+            Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
             return (laPiedra);
         }
 
@@ -213,6 +217,8 @@ public class Mesa {
                 laPiedra.setExtremo(num1);
                 listaDeExtremos.set(0, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
+                //Elimino la piedra de la lista piedras en mano
+                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -227,6 +233,8 @@ public class Mesa {
                 laPiedra.setExtremo(num1);
                 listaDeExtremos.set(1, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
+                //Elimino la piedra de la lista piedras en mano
+                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -241,6 +249,8 @@ public class Mesa {
                 laPiedra.setExtremo(num0);
                 listaDeExtremos.set(0, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
+                //Elimino la piedra de la lista piedras en mano
+                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -255,6 +265,8 @@ public class Mesa {
                 laPiedra.setExtremo(num0);
                 listaDeExtremos.set(1, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
+                //Elimino la piedra de la lista piedras en mano
+                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -362,7 +374,7 @@ public class Mesa {
 
         }
 
-        if (piedraPuesta){
+        if (piedraPuesta) {
             listaPiedrasMaquina.eliminarPiedra(laPiedra);
         }
 

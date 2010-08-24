@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package servidor.datos;
+import java.util.Calendar;
 
 //import java.util.*;
 //import com.toedter.calendar.JCalendar;
@@ -89,19 +90,32 @@ public class Partida {
     public void cargarPartida() {
     }
 
+   public String obtenerFechaDelSistema(){
+   Calendar Calendario= Calendar.getInstance();
+   String fecha = Calendario.get(Calendario.DATE)+"/"+(Calendario.get(Calendario.MONTH)+1)+"/"+Calendario.get(Calendario.YEAR);
+   return (fecha);
+    }
+
     public Partida crearPartida(String nickname, ListaPiedras listaDePiedras) {
         int i = 0, j = 0;
 
         //ListaPiedras laListaPiedras;
         //laListaPiedras = new ListaPiedras();
-
+   String fechaInicioPartida = obtenerFechaDelSistema();
+        String fechaActual = obtenerFechaDelSistema();
         System.out.println("Partida creada por " + nickname);
         //this.setElUsuario(elUsuario);
         this.setIDPartida(1);
-        this.fechaIni = "11-08-10";
-        this.setFechaIni(fechaIni);
-        this.fechaactual = "11-08-10";
+        //this.fechaIni = "11-08-10";
+        //this.setFechaIni(fechaIni);
+        this.setFechaIni(fechaInicioPartida);
+        //this.fechaactual = "11-08-10";
+        this.setFechaactual(fechaActual);
         this.setFechaactual(fechaactual);
+
+        System.out.println("FECHA INICIO PARTIDA::::"+this.getFechaIni());
+        System.out.println("FECHA ACTUAL:::::"+this.getFechaactual());
+
 
         this.elJuego = new Juego(0, null, null, null);
         elJuego.setJugador1(new Jugador(nickname, "", 0, 0, 0, 0));
