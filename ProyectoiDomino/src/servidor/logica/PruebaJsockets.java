@@ -52,6 +52,7 @@ public class PruebaJsockets implements LogicaServidor {
                 laPiedra.setNum1(num1);
                 laPiedra.setNum2(num2);
                 laPiedra.setPosicion(subArg[3]);
+                laPiedra.setImagenActual(subArg[4]);
                 //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 6:
@@ -154,7 +155,7 @@ public class PruebaJsockets implements LogicaServidor {
                 piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
-                laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(piedraStr, laPiedra.getPosicion(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa());
+                laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(elUsuario.getNickname(),piedraStr, laPiedra.getPosicion(),laPiedra.getImagenActual(), Datos.getListaDePiedras(),Datos.getMatrizPiedrasMesa());
 
                 if (laPiedra != null) {
                    confirm = true;
