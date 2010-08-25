@@ -49,11 +49,11 @@ public class ListaPiedras {
         for (i = 0; i < arregloPiedras.length; i++) {
             registro = (Piedra) arregloPiedras[i];
             System.out.println("Piedra " + (i + 1) + ": " + registro.getNum1() + "-" + registro.getNum2());
-            System.out.println("Arriba: " + registro.getImagenArriba());
+            /*System.out.println("Arriba: " + registro.getImagenArriba());
             System.out.println("Derecha: " + registro.getImagenDerecha());
             System.out.println("Abajo: " + registro.getImagenAbajo());
             System.out.println("Izquierda: " + registro.getImagenIzquierda());
-            System.out.println("ID: " + registro.getID());
+            System.out.println("ID: " + registro.getID());*/
         }
 
     }
@@ -84,18 +84,8 @@ public class ListaPiedras {
 
     }
 
-    public String obtenerPiedraPozo() {
-        String cadena = "";
-        if (laListaPiedras != null){
-        Piedra laPiedra = laListaPiedras.remove(0);
-
-        cadena = laPiedra.getID() + "-" + laPiedra.getNum1() + "-" + laPiedra.getNum2()
-                + "-" + laPiedra.getImagenArriba() + "-" + laPiedra.getImagenAbajo()
-                + "-" + laPiedra.getImagenIzquierda()
-                + "-" + laPiedra.getImagenDerecha();
-        }
-        return cadena;
-
+    public Piedra obtenerPiedraPozo() {
+        return laListaPiedras.remove(0);
     }
 
     /*public boolean aprobarPiedra(Piedra laPiedra) {

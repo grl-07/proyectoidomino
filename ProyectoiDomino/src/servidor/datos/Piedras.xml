@@ -14,8 +14,8 @@
         <num2>0</num2>
          <ImagenArriba>00Indice0.png</ImagenArriba>
         <ImagenDerecha>00Indice1.png</ImagenDerecha>
-        <ImagenAbajo>00Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>00Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>00Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>00Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID2</ID>
@@ -77,8 +77,8 @@
         <num2>1</num2>
          <ImagenArriba>11Indice0.png</ImagenArriba>
         <ImagenDerecha>11Indice1.png</ImagenDerecha>
-        <ImagenAbajo>11Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>11Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>11Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>11Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID9</ID>
@@ -131,8 +131,8 @@
         <num2>2</num2>
         <ImagenArriba>22Indice0.png</ImagenArriba>
         <ImagenDerecha>22Indice1.png</ImagenDerecha>
-        <ImagenAbajo>22Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>22Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>22Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>22Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID15</ID>
@@ -176,8 +176,8 @@
         <num2>3</num2>
         <ImagenArriba>33Indice0.png</ImagenArriba>
         <ImagenDerecha>33Indice1.png</ImagenDerecha>
-        <ImagenAbajo>33Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>33Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>33Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>33Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID20</ID>
@@ -212,8 +212,8 @@
         <num2>4</num2>
         <ImagenArriba>44Indice0.png</ImagenArriba>
         <ImagenDerecha>44Indice1.png</ImagenDerecha>
-        <ImagenAbajo>44Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>44Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>44Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>44Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID24</ID>
@@ -239,8 +239,8 @@
         <num2>5</num2>
         <ImagenArriba>55Indice0.png</ImagenArriba>
         <ImagenDerecha>55Indice1.png</ImagenDerecha>
-        <ImagenAbajo>55Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>55Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>55Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>55Indice3.png</ImagenIzquierda>
     </piedra>
     <piedra>
         <ID>ID27</ID>
@@ -257,7 +257,7 @@
         <num2>6</num2>
         <ImagenArriba>66Indice0.png</ImagenArriba>
         <ImagenDerecha>66Indice1.png</ImagenDerecha>
-        <ImagenAbajo>66Indice0.png</ImagenAbajo>
-        <ImagenIzquierda>66Indice1.png</ImagenIzquierda>
+        <ImagenAbajo>66Indice2.png</ImagenAbajo>
+        <ImagenIzquierda>66Indice3.png</ImagenIzquierda>
     </piedra>
 </piedras>

@@ -170,7 +170,7 @@ public class Mesa {
 
     }
 
-    public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa) {
+    public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa, ListaPiedras listaPiedrasJugador) {
 
         System.out.println("JUGADOR");
         boolean confirm = false;
@@ -275,7 +275,7 @@ public class Mesa {
         return null;
     }
 
-    public String ponerPiedraEnMesaMaquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, boolean esExtremo0) {
+    public String ponerPiedraExtremo0Maquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, int numeroExtremo) {
         System.out.println("Extremo donde voy a insertar: " + extremoActual.getNum1() + "-" + extremoActual.getNum2());
         System.out.println("piedra a insertar: " + laPiedra.getNum1() + "-" + laPiedra.getNum2());
 
@@ -292,7 +292,10 @@ public class Mesa {
                         jAux--;
                         iAux2++;
                         jAux2++;
-                        if (iAux > -1 && esExtremo0) {
+
+
+                        if (iAux > -1 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+                            System.out.println("ENTRO EN IF 1");
                             if (matrizMesa[iAux][j] == null) {
                                 matrizMesa[iAux][j] = laPiedra;
                                 PosicionInsertada = iAux + "-" + j;
@@ -300,7 +303,8 @@ public class Mesa {
                             }
                         }
 
-                        if (jAux > -1 && esExtremo0) {
+                        if (jAux > -1 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+                            System.out.println("ENTRO EN IF 2");
                             if (matrizMesa[i][jAux] == null) {
                                 matrizMesa[i][jAux] = laPiedra;
                                 PosicionInsertada = i + "-" + jAux;
@@ -308,7 +312,8 @@ public class Mesa {
                             }
                         }
 
-                        if (iAux2 < 6 && !esExtremo0) {
+                        if (iAux2 < 6 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+                            System.out.println("ENTRO EN IF 3");
                             if (matrizMesa[iAux2][j] == null) {
                                 matrizMesa[iAux2][j] = laPiedra;
                                 PosicionInsertada = iAux2 + "-" + j;
@@ -316,7 +321,8 @@ public class Mesa {
                             }
                         }
 
-                        if (jAux2 < 6 && !esExtremo0) {
+                        if (jAux2 < 6 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+                            System.out.println("ENTRO EN IF 4");
                             if (matrizMesa[i][jAux2] == null) {
                                 matrizMesa[i][jAux2] = laPiedra;
                                 PosicionInsertada = i + "-" + jAux2;
@@ -327,23 +333,85 @@ public class Mesa {
                 }
             }
         }
-
-        //}
+        //};
         return PosicionInsertada;
     }
 
-    public String realizarJugadaMaquina(ListaPiedras listaPiedrasMaquina, Piedra[][] piedrasMesa) {
+    public String ponerPiedraExtremo1Maquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, int numeroExtremo) {
+        int i, j, iAux, jAux, iAux2, jAux2;
+        String PosicionInsertada = "";
+        //if (matrizMesa != null) {
+        for (i = 0; i < 6; i++) {
+            for (j = 0; j < 10; j++) {
+                iAux = iAux2 = i;
+                jAux = jAux2 = j;
+                if (matrizMesa[i][j] != null) {
+                    if (matrizMesa[i][j].getNum1() == extremoActual.getNum1() && matrizMesa[i][j].getNum2() == extremoActual.getNum2()) {
+                        iAux--;
+                        jAux--;
+                        iAux2++;
+                        jAux2++;
 
-        System.out.println("MAQUINA");
+                        if (iAux2 < 6 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+
+                            if (matrizMesa[iAux2][j] == null) {
+                                matrizMesa[iAux2][j] = laPiedra;
+                                PosicionInsertada = iAux2 + "-" + j;
+                                return PosicionInsertada;
+                            }
+                        }
+
+                        if (jAux2 < 6 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+
+                            if (matrizMesa[i][jAux2] == null) {
+                                matrizMesa[i][jAux2] = laPiedra;
+                                PosicionInsertada = i + "-" + jAux2;
+                                return PosicionInsertada;
+                            }
+                        }
+
+                        if (iAux > -1 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+
+                            if (matrizMesa[iAux][j] == null) {
+                                matrizMesa[iAux][j] = laPiedra;
+                                PosicionInsertada = iAux + "-" + j;
+                                return PosicionInsertada;
+                            }
+                        }
+
+                        if (jAux > -1 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+
+                            if (matrizMesa[i][jAux] == null) {
+                                matrizMesa[i][jAux] = laPiedra;
+                                PosicionInsertada = i + "-" + jAux;
+                                return PosicionInsertada;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //};
+        return PosicionInsertada;
+    }
+
+    public String realizarJugadaMaquina(ListaPiedras listaPiedrasMaquina, Piedra[][] piedrasMesa, ListaPiedras listaPiedrasPozo) {
+
+        System.out.println("\nMAQUINA");
         String cadena = "";
+        String posicion = ""; //posicion en la que es insertada la piedra en la matriz.
         Piedra laPiedra = null;
+        Piedra piedraPozo = null;
+        int ext1, ext2, numeroPiedrasMaquina; //los dos extremos de la mesa
+        int contPiedrasMaquina = 0;
+        boolean piedraPuesta = false;
+
         Iterator iterador = listaPiedrasMaquina.getIterator();
-        int ext1, ext2; //los dos extremos de la mesa
-        //boolean confirm = false;
+        numeroPiedrasMaquina = listaPiedrasMaquina.getLaListaPiedras().size();
+
         ext1 = obtenerExtremo0();
         ext2 = obtenerExtremo1();
-        String posicion = ""; //posicion en la que es insertada la piedra en la matriz.
-        boolean piedraPuesta = false;
+
         System.out.println("extremo1 = " + ext1);
         System.out.println("extremo2 = " + ext2);
 
@@ -351,25 +419,38 @@ public class Mesa {
             laPiedra = (Piedra) iterador.next();
 
             if (laPiedra.getNum1() == ext1) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, true);
+                posicion = ponerPiedraExtremo0Maquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, listaDeExtremos.get(0).getExtremo());
                 laPiedra.setExtremo(laPiedra.getNum2());
                 listaDeExtremos.set(0, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum2() == ext1) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, true);
+                posicion = ponerPiedraExtremo0Maquina(listaDeExtremos.get(0), laPiedra, piedrasMesa, listaDeExtremos.get(0).getExtremo());
                 laPiedra.setExtremo(laPiedra.getNum1());
                 listaDeExtremos.set(0, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum1() == ext2) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, false);
+                posicion = ponerPiedraExtremo1Maquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, listaDeExtremos.get(1).getExtremo());
                 laPiedra.setExtremo(laPiedra.getNum2());
                 listaDeExtremos.set(1, laPiedra);
                 piedraPuesta = true;
             } else if (laPiedra.getNum2() == ext2) {
-                posicion = ponerPiedraEnMesaMaquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, false);
+                posicion = ponerPiedraExtremo1Maquina(listaDeExtremos.get(1), laPiedra, piedrasMesa, listaDeExtremos.get(1).getExtremo());
                 laPiedra.setExtremo(laPiedra.getNum1());
                 listaDeExtremos.set(1, laPiedra);
                 piedraPuesta = true;
+            } else {
+                System.out.println("HOLA");
+                contPiedrasMaquina++;
+            }
+
+
+            if (contPiedrasMaquina == numeroPiedrasMaquina && !piedraPuesta && listaPiedrasMaquina != null) {
+                piedraPozo = listaPiedrasPozo.obtenerPiedraPozo();
+                System.out.println("Piedra a insertar del Pozo: " + piedraPozo.getNum1() + "-" + piedraPozo.getNum2());
+                listaPiedrasMaquina.agregarPiedra(piedraPozo);
+                iterador = listaPiedrasMaquina.getIterator();
+                numeroPiedrasMaquina = listaPiedrasMaquina.getLaListaPiedras().size();
+                contPiedrasMaquina = 0;
             }
 
         }
@@ -378,11 +459,16 @@ public class Mesa {
             listaPiedrasMaquina.eliminarPiedra(laPiedra);
         }
 
+        /*if (listaPiedrasMaquina == null) {
+        return cadena;
+        }*/
+
         System.out.println("nuevo extremo 1 = " + this.obtenerExtremo0());
         System.out.println("nuevo extremo 2 = " + this.obtenerExtremo1());
+        System.out.println("numero de Piedras en Mano: " + listaPiedrasMaquina.getLaListaPiedras().size());
 
         laPiedra.setPosicion(posicion);
-        cadena = laPiedra.obtenerCadenaPiedra();
+        cadena = laPiedra.obtenerCadenaPiedraMaquina(listaPiedrasMaquina.getLaListaPiedras().size());
         System.out.println("PIEDRA A JUGAR DE LA MAQUINA: " + cadena);
         return cadena;
     }
