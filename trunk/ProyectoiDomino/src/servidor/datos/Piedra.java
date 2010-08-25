@@ -148,14 +148,25 @@ public class Piedra {
 
 
 
-    public String obtenerCadenaPiedra() {
+    public String obtenerCadenaPiedraMaquina(int numeroPiedrasEnMano) {
         String cadena = "";
 
         cadena = getNum1() + "-" + getNum2()
                 + ":" + getPosicion()
                 + ":" + getImagenArriba() + "-" + getImagenAbajo()
                 + "-" + getImagenIzquierda() + "-" + getImagenDerecha()
-                + ":" + getImagenActual();
+                + ":" + getImagenActual() + ":" + numeroPiedrasEnMano;
+
+        return cadena;
+    }
+
+    public String obtenerCadenaPiedraJugador() {
+        String cadena = "";
+
+        cadena = getID() + "-" + getNum1() + "-" + getNum2()
+                + "-" + getImagenArriba() + "-" + getImagenAbajo()
+                + "-" + getImagenIzquierda()
+                + "-" + getImagenDerecha();
 
         return cadena;
     }

@@ -7,6 +7,7 @@ package servidor.logica;
 import servidor.datos.ListaUsuarios;
 import servidor.datos.Archivo;
 import servidor.datos.Usuario;
+
 /**
  *
  * @author Alberly
@@ -16,9 +17,8 @@ public class Conector {
     /*private static ListaUsuarios listaDeUsuarios;
 
     public static ListaUsuarios getListaDeUsuarios() {
-        return listaDeUsuarios;
+    return listaDeUsuarios;
     }*/
-
     public static boolean comprobarDatos(String nickname, String password) {
         boolean confirm;
         confirm = false;
@@ -41,23 +41,23 @@ public class Conector {
     }
 
     public static boolean llamarCliente(Usuario elUsuario) {
-       //ClienteTest.main(args, elUsuario);
-       return false;
-   }
+        //ClienteTest.main(args, elUsuario);
+        return false;
+    }
 
     public static void solicitarCargaDatosPiedras() {
         Archivo.cargarPiedrasArchivo(Datos.getListaDePiedras());
     }
 
-    public static void solicitarCargaDatosUsuario(){
+    public static void solicitarCargaDatosUsuario() {
         Archivo.cargarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
-    public static void solicitarCargaDatosPartidas(){
+    public static void solicitarCargaDatosPartidas() {
         Archivo.cargarPartidasArchivo(Datos.getListaDePartidas());
     }
 
-    public static void solicitarImpresionPartidas(){
+    public static void solicitarImpresionPartidas() {
         Datos.getListaDePartidas().imprimirPartidas();
     }
 
@@ -68,22 +68,22 @@ public class Conector {
     public static Usuario obtenerDatosDeUsuario(String nickname) {
         //listaDeUsuarios = Conector.getListaDeUsuarios();
         //listaDeUsuarios = Datos.getListaDeUsuarios();
-        Usuario auxiliar = new Usuario("","","","",nickname,"",0,0,0,0);
-       return (Datos.getListaDeUsuarios().buscarDatos(auxiliar));
+        Usuario auxiliar = new Usuario("", "", "", "", nickname, "", 0, 0, 0, 0);
+        return (Datos.getListaDeUsuarios().buscarDatos(auxiliar));
 
     }
 
-
-    public static void solicitarGuardarDatosPartidas(){
+    public static void solicitarGuardarDatosPartidas() {
         Archivo.guardarDatosArchivoPartidas(Datos.getListaDePartidas());
     }
 
-    public static void guardarNumIngresos(Usuario elUsuario,int cont) {
+    public static void guardarNumIngresos(Usuario elUsuario, int cont) {
         cont++;
         elUsuario.setNumIngresos(cont);
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
-    public static void guardarNuevoDato(Usuario registro,Usuario elUsuario,String op) {
+
+    public static void guardarNuevoDato(Usuario registro, Usuario elUsuario, String op) {
         if (op.equalsIgnoreCase("1")) {
             registro.setNombre(elUsuario.getNombre());
         } else if (op.equalsIgnoreCase("2")) {
@@ -96,14 +96,10 @@ public class Conector {
 
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
-    
-    public static void guardarNumPartidasCreadas(Usuario elUsuario,int cont) {
+
+    public static void guardarNumPartidasCreadas(Usuario elUsuario, int cont) {
         cont++;
         elUsuario.setNumPartCreadas(cont);
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
-
-
-
-
 }

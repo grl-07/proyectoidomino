@@ -972,7 +972,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLNickname.setText("Player");
-        jLNickname.setBounds(30, 660, 120, 31);
+        jLNickname.setBounds(30, 660, 120, -1);
         jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1183,7 +1183,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         return null;
     }
 
-    private String acomodarPiedraEnMesaMaquina(String piedra, String posicion) {
+    public String acomodarPiedraEnMesaMaquina(String piedra, String posicion) {
         String subArgDireccionIcono[] = piedra.split("-");
         String subArgPosicion[] = posicion.split("-");
         String subArgExtremo[];
@@ -1221,11 +1221,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
-                    
+
                 }
-                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
-                    
+
                 }
 
             }
@@ -1240,11 +1240,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
-                    
+
                 }
-                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
-                    
+
                 }
 
             }
@@ -1259,11 +1259,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
-                    
+
                 }
-                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
-                    
+
                 }
 
             }
@@ -1278,11 +1278,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
-                    
+
                 }
-                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo){
+                if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
                     fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
-                    
+
                 }
 
             }
@@ -1290,11 +1290,17 @@ public class VentanaJuego extends javax.swing.JFrame {
         return fuente;
     }
 
-    public void setDatosUsuarioJuego(String nickname,JLabel avatar) {
+    public void setDatosUsuarioJuego(String nickname, JLabel avatar) {
         jLNickname.setText(nickname);
 
         //avatar.getIcon();
         jLAvatar.setIcon(avatar.getIcon());
+    }
+
+    public void desabilitarPiedras(JButton[] piedrasEnMano) {
+        for (int i = 0; i < piedrasEnMano.length; i++) {
+            piedrasEnMano[i].setEnabled(false);
+        }
     }
 
     private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
@@ -1344,9 +1350,13 @@ public class VentanaJuego extends javax.swing.JFrame {
                 System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
 
                 if (!subArg[1].equalsIgnoreCase("NULL")) {
-                    piedraAcomodada = obtenerBotonPosicion(subArg[2]);
-                    piedraAcomodada.setIcon(new javax.swing.ImageIcon(getClass().getResource(acomodarPiedraEnMesaMaquina(subArg[1], subArg[2]))));
+                    boton = obtenerBotonPosicion(subArg[2]);
+                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(acomodarPiedraEnMesaMaquina(subArg[1], subArg[2]))));
+                    if (Integer.parseInt(subArg[5]) == 0) {
+                        desabilitarPiedras(piedrasEnMano);
+                    }
                 }
+
             }
 
         }
