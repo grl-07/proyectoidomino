@@ -157,13 +157,18 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLNickname = new javax.swing.JLabel();
         jLAvatar = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel3.setText("Computadora");
-        jLabel3.setBounds(40, 40, 117, 31);
+        jLabel3.setBounds(40, 40, -1, -1);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jButton179.setBounds(170, 20, 73, 71);
         jLayeredPane1.add(jButton179, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -183,12 +188,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48));
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("iDomino");
-        jLabel7.setBounds(750, 20, 190, 60);
+        jLabel7.setBounds(750, 20, 190, -1);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel6.setText("Game #");
-        jLabel6.setBounds(790, 70, 41, 16);
+        jLabel6.setBounds(790, 70, -1, -1);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24));
@@ -977,7 +982,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLNickname.setText("Player");
-        jLNickname.setBounds(30, 660, 120, 31);
+        jLNickname.setBounds(30, 660, 120, -1);
         jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -994,6 +999,32 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel4.setBounds(0, -110, 960, 990);
         jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jMenu1.setText("File");
+        jMenu1.setActionCommand("Options");
+
+        jMenuItem1.setText("Menu");
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("Save game");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuItem3.setText("Exit");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1002,7 +1033,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
         );
 
         pack();
@@ -1444,14 +1475,26 @@ public class VentanaJuego extends javax.swing.JFrame {
 
     private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
         // TODO add your handling code here:
-         String cadena = ConexionJsockets.solicitudServidor4(nickname);
-        if (cadena.equalsIgnoreCase("TRUE")) {
-            System.out.println("Se guardó la partida con éxito");
-        } else {
-            System.out.println("NO se guardó la partida con éxito");
-        }
+      
 
     }//GEN-LAST:event_jButtonPassActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+           String cadena = ConexionJsockets.solicitudServidor4(nickname);
+        if (cadena.equalsIgnoreCase("TRUE")) {
+            System.out.println("Se guardó la partida con éxito");
+            JOptionPane.showMessageDialog(null, "Saved Game");
+        } else {
+            System.out.println("NO se guardó la partida con éxito");
+            JOptionPane.showMessageDialog(null, "Unsaved Game");
+        }
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1569,6 +1612,11 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
     JButton botonActualSeleccionado;
