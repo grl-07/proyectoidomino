@@ -62,13 +62,12 @@ public class ConexionJsockets {
         }
         return resultado;
     }
-
-        public static String solicitudServidor4(JTextField username, JPasswordField clave,String opcion) {
+     
+      public static String solicitudServidor4(String nickname) {
         ClienteSocket cliente = new ClienteSocket();
-        String nickname = username.getText();
-        String password = clave.getText();
+        String opcion="4";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }

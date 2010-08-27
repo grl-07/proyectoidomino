@@ -840,6 +840,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButtonPass.setForeground(new java.awt.Color(153, 51, 0));
         jButtonPass.setText("Pass");
         jButtonPass.setName("jButtonPass"); // NOI18N
+        jButtonPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPassActionPerformed(evt);
+            }
+        });
         jButtonPass.setBounds(810, 650, 74, 56);
         jLayeredPane1.add(jButtonPass, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -972,7 +977,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLNickname.setText("Player");
-        jLNickname.setBounds(30, 660, 120, -1);
+        jLNickname.setBounds(30, 660, 120, 31);
         jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1436,6 +1441,17 @@ public class VentanaJuego extends javax.swing.JFrame {
     private void jScrollBar1AdjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {//GEN-FIRST:event_jScrollBar1AdjustmentValueChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_jScrollBar1AdjustmentValueChanged
+
+    private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
+        // TODO add your handling code here:
+         String cadena = ConexionJsockets.solicitudServidor4(nickname);
+        if (cadena.equalsIgnoreCase("TRUE")) {
+            System.out.println("Se guardó la partida con éxito");
+        } else {
+            System.out.println("NO se guardó la partida con éxito");
+        }
+
+    }//GEN-LAST:event_jButtonPassActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

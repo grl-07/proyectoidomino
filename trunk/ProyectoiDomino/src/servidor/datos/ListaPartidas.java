@@ -39,7 +39,7 @@ public class ListaPartidas {
 
         boolean confirm = false;
 
-        confirm = laListaUsuarios.buscarNickname(elUsuario);
+        confirm = laListaUsuarios.buscarNicknameReal(elUsuario);
 
         if (confirm == true) {
             Partida elGame = buscarUsuario(elUsuario);
@@ -118,6 +118,14 @@ public class ListaPartidas {
 
                 System.out.println("Username: " + auxiliarPartida.getElUsuario().getNickname());
                 System.out.println("IDPartida: " + auxiliarPartida.getIDPartida());
+                 System.out.println("Lista Piedras Jugador: ");
+                auxiliarPartida.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
+                System.out.println("Lista Piedras Maquina: ");
+                auxiliarPartida.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
+                System.out.println("Lista Piedras Pozo: ");
+                auxiliarPartida.getElJuego().getLaMesa().getElPozo().imprimirListaPiedras();
+                System.out.println("Lista Piedras Mesa");
+                auxiliarPartida.getElJuego().getLaMesa().getPiedrasMesa().imprimirListaPiedras();
             }
         } else System.out.println("La Lista esta vacia");
 

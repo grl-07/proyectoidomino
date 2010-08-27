@@ -16,6 +16,7 @@ public class Datos {
     private static ListaPiedras listaPiedrasMaquina = null;
     private static ListaPiedras listaPiedrasJugador = null;
     private static ListaPiedras listaPiedrasPozo = null;
+private static ListaPiedras listaPiedrasMesa = null;
 
     private Datos() {
     }
@@ -58,6 +59,12 @@ public class Datos {
         }
         if (listaPiedrasPozo == null) {
             listaDePartidas = new ListaPartidas();
+            confirm = true;
+        } else {
+            confirm = false;
+        }
+          if (listaPiedrasMesa == null) {
+            listaPiedrasMesa = new ListaPiedras();
             confirm = true;
         } else {
             confirm = false;
@@ -117,6 +124,14 @@ public class Datos {
         Datos.listaPiedrasPozo = listaPiedrasPozo;
     }
 
+    public static ListaPiedras getListaPiedrasMesa() {
+        return listaPiedrasMesa;
+    }
+
+    public static void setListaPiedrasMesa(ListaPiedras listaPiedrasMesa) {
+        Datos.listaPiedrasMesa = listaPiedrasMesa;
+    }
+
     public static boolean agregarLaPiedra(int num1, int num2) {
         return (listaDePiedras.agregarPiedra(new Piedra(num1, num2)));
     }
@@ -153,5 +168,9 @@ public class Datos {
         System.out.println(auxiliar.getNickname());
 
         return (listaDeUsuarios.modificarUsuario(auxiliar,elUsuario));
+    }
+
+     public static boolean guardarPartidaEnLista(Partida laPartida, Usuario elUsuario){
+        return (listaDePartidas.guardarPartida(laPartida, elUsuario));
     }
 }
