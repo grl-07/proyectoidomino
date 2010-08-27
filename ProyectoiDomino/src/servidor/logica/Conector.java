@@ -7,6 +7,9 @@ package servidor.logica;
 import servidor.datos.ListaUsuarios;
 import servidor.datos.Archivo;
 import servidor.datos.Usuario;
+import servidor.datos.Partida;
+import servidor.datos.Mesa;
+import servidor.datos.ListaPiedras;
 
 /**
  *
@@ -101,5 +104,15 @@ public class Conector {
         cont++;
         elUsuario.setNumPartCreadas(cont);
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+
+    public static boolean solicitarGuardarPartidaEnLista(String nickname) {
+        Mesa laMesa=new Mesa();
+        Usuario elUsuario = new Usuario("","","","",nickname,"",0,0,0,0);
+
+        Partida partidaExistente = Datos.obtenerPartidaExistente(nickname);
+        partidaExistente.getElJuego().getLaMesa().setPiedrasMesa(laMesa.pasarMatrizPiedrasMesaALista(Datos.getMatrizPiedrasMesa()));
+
+        return (Datos.guardarPartidaEnLista(partidaExistente, elUsuario));
     }
 }

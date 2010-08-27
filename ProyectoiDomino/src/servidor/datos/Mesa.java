@@ -97,6 +97,22 @@ public class Mesa {
         this.listaDeExtremos = new ArrayList();
     }
 
+    public ListaPiedras pasarMatrizPiedrasMesaALista(Piedra matriz[][]){
+    int i,j;
+        for (i= 0; i < 6; i++) {
+            for (j = 0; j < 10; j++) {
+                if (matriz[i][j]!=null){
+                //System.out.print(matriz[i][j].getPosicion()+",");
+                    Piedra laPiedra= (Piedra)matriz[i][j];
+                    PiedrasMesa.agregarPiedra(laPiedra);
+                }
+            }
+
+        }
+    return PiedrasMesa;
+    }
+
+
     public Piedra[][] inicializarMatrizPiedras() {
 
         Piedra laPiedra = null;
@@ -170,7 +186,7 @@ public class Mesa {
 
     }
 
-    public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa, ListaPiedras listaPiedrasJugador) {
+    public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa, ListaPiedras piedrasEnManoJugador) {
 
         System.out.println("JUGADOR");
         boolean confirm = false;
@@ -197,7 +213,8 @@ public class Mesa {
             listaDeExtremos.add(new Piedra(num0, num1, laPiedra.getImagenActual(), num1, posicion));
             piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
             //Elimino la piedra de la lista piedras en mano
-            Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+            piedrasEnManoJugador.eliminarPiedra(laPiedra);
+//            Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
             return (laPiedra);
         }
 
@@ -218,7 +235,8 @@ public class Mesa {
                 listaDeExtremos.set(0, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
                 //Elimino la piedra de la lista piedras en mano
-                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                //Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                    piedrasEnManoJugador.eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -234,7 +252,8 @@ public class Mesa {
                 listaDeExtremos.set(1, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
                 //Elimino la piedra de la lista piedras en mano
-                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                //Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                    piedrasEnManoJugador.eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -250,7 +269,8 @@ public class Mesa {
                 listaDeExtremos.set(0, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
                 //Elimino la piedra de la lista piedras en mano
-                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                //Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                    piedrasEnManoJugador.eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }
@@ -266,7 +286,8 @@ public class Mesa {
                 listaDeExtremos.set(1, laPiedra);
                 piedrasMesa = ponerPiedraEnMesaJugador(laPiedra, posicion, piedrasMesa);
                 //Elimino la piedra de la lista piedras en mano
-                Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                //Datos.obtenerPartidaExistente(nickname).getElJuego().getJugador1().getElJugador().getPiedrasEnMano().eliminarPiedra(laPiedra);
+                    piedrasEnManoJugador.eliminarPiedra(laPiedra);
                 return (laPiedra);
             }
         }

@@ -143,10 +143,13 @@ public class PruebaJsockets implements LogicaServidor {
                 }
                 break;
             case 4:
-                cadena = "TRUE:" + elUsuario.getNickname() + ":IDPartida";
-                subArg = cadena.split(":");
-                resultado = subArg[0];
-                System.out.println("Guardar Partida -> " + cadena);
+                if (Conector.solicitarGuardarPartidaEnLista(elUsuario.getNickname()) == true) {
+                    resultado = "TRUE";
+                    Conector.solicitarGuardarDatosPartidas();
+                } else {
+                    resultado = "FALSE";
+                }
+                System.out.println("Guardar Partida -> " + resultado);
                 break;
             case 5:
                 /*cadena = "TRUE:x1-y1";
@@ -161,7 +164,7 @@ public class PruebaJsockets implements LogicaServidor {
                 //Jugada del Jugador
                 piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
-
+Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
                 laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(elUsuario.getNickname(), piedraStr, laPiedra.getPosicion(), laPiedra.getImagenActual(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa(), Datos.getListaPiedrasJugador());
 
                 if (laPiedra != null) {
