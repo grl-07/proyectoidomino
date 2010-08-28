@@ -478,7 +478,7 @@ public class Mesa {
                             }
                         }
 
-                        if (jAux2 < 11 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
+                        if (jAux2 < 10 && (laPiedra.getNum1() == numeroExtremo || laPiedra.getNum2() == numeroExtremo)) {
                             System.out.println("A LA DERECHA NO SE SALE DE LA MATRIZ");
                             if (matrizMesa[i][jAux2] == null) {
                                 matrizMesa[i][jAux2] = laPiedra;

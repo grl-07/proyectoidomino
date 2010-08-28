@@ -198,15 +198,17 @@ public class PruebaJsockets implements LogicaServidor {
             case 7:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
-                laPiedra = Datos.getListaPiedrasPozo().obtenerPiedraPozo();
-                cadena = laPiedra.obtenerCadenaPiedraJugador();
-
-                if (!cadena.equalsIgnoreCase("")) {
-                    partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().agregarPiedra(laPiedra);
-                    resultado = "TRUE:" + cadena;
+                if (!Datos.getListaPiedrasPozo().getLaListaPiedras().isEmpty()) {
+                    laPiedra = Datos.getListaPiedrasPozo().obtenerPiedraPozo();
+                    cadena = laPiedra.obtenerCadenaPiedraJugador();
+                    if (!cadena.equalsIgnoreCase("")) {
+                        partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().agregarPiedra(laPiedra);
+                        resultado = "TRUE:" + cadena;
+                    }
+                } else {
+                    resultado = "FALSE";
                 }
-                /*subArg = cadena.split(":");
-                resultado = subArg[0];*/
+
                 System.out.println("Agarrar pieza del Pozo -> " + resultado);
                 break;
             case 8:
