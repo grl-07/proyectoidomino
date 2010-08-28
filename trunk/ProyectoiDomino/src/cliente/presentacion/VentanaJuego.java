@@ -50,14 +50,6 @@ public class VentanaJuego extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLabel3 = new javax.swing.JLabel();
-        jButton179 = new javax.swing.JButton();
-        jButton181 = new javax.swing.JButton();
-        jButton177 = new javax.swing.JButton();
-        jButton178 = new javax.swing.JButton();
-        jButton176 = new javax.swing.JButton();
-        jButton180 = new javax.swing.JButton();
-        jButton182 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -65,7 +57,6 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPot2 = new javax.swing.JButton();
         jBPot3 = new javax.swing.JButton();
         jBPot4 = new javax.swing.JButton();
-        jScrollBar1 = new javax.swing.JScrollBar();
         jBPot5 = new javax.swing.JButton();
         jBPot6 = new javax.swing.JButton();
         jBPot7 = new javax.swing.JButton();
@@ -140,23 +131,35 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPot10 = new javax.swing.JButton();
         jButtonPot = new javax.swing.JButton();
         jButtonPass = new javax.swing.JButton();
-        jBPiedra7 = new javax.swing.JButton();
+        jBPiedra8 = new javax.swing.JButton();
         jBPiedra6 = new javax.swing.JButton();
         jBPiedra5 = new javax.swing.JButton();
         jBPiedra4 = new javax.swing.JButton();
         jBPiedra3 = new javax.swing.JButton();
         jBPiedra2 = new javax.swing.JButton();
         jBPiedra1 = new javax.swing.JButton();
-        jBPiedra8 = new javax.swing.JButton();
         jBPiedra9 = new javax.swing.JButton();
         jBPiedra10 = new javax.swing.JButton();
         jBPiedra11 = new javax.swing.JButton();
         jBPiedra12 = new javax.swing.JButton();
         jBPiedra13 = new javax.swing.JButton();
         jBPiedra14 = new javax.swing.JButton();
+        jBPiedra16 = new javax.swing.JButton();
         jLNickname = new javax.swing.JLabel();
         jLAvatar = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jBPiedra7 = new javax.swing.JButton();
+        jBPiedra15 = new javax.swing.JButton();
+        jBMesa60 = new javax.swing.JButton();
+        jBMesa61 = new javax.swing.JButton();
+        jBMesa62 = new javax.swing.JButton();
+        jBMesa63 = new javax.swing.JButton();
+        jBMesa64 = new javax.swing.JButton();
+        jBMesa65 = new javax.swing.JButton();
+        jBMesa66 = new javax.swing.JButton();
+        jBMesa67 = new javax.swing.JButton();
+        jBMesa68 = new javax.swing.JButton();
+        jBMesa69 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -166,84 +169,65 @@ public class VentanaJuego extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 24));
-        jLabel3.setText("Computadora");
-        jLabel3.setBounds(40, 40, -1, -1);
-        jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton179.setBounds(170, 20, 73, 71);
-        jLayeredPane1.add(jButton179, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton181.setBounds(250, 20, 73, 71);
-        jLayeredPane1.add(jButton181, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton177.setBounds(330, 20, 73, 71);
-        jLayeredPane1.add(jButton177, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton178.setBounds(410, 20, 73, 71);
-        jLayeredPane1.add(jButton178, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton176.setBounds(490, 20, 73, 71);
-        jLayeredPane1.add(jButton176, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton180.setBounds(650, 20, 73, 71);
-        jLayeredPane1.add(jButton180, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jButton182.setBounds(570, 20, 73, 71);
-        jLayeredPane1.add(jButton182, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48));
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("iDomino");
-        jLabel7.setBounds(750, 20, 190, -1);
+        jLabel7.setBounds(830, 10, 150, 60);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel6.setText("Game #");
-        jLabel6.setBounds(790, 70, -1, -1);
+        jLabel6.setBounds(890, 60, 41, 16);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLabel2.setText("Pot");
-        jLabel2.setBounds(820, 100, 60, 22);
+        jLabel2.setBounds(910, 100, 60, 22);
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot1.setName("jBPot1"); // NOI18N
-        jBPot1.setBounds(810, 140, 74, 22);
+        jBPot1.setBounds(830, 140, 70, 40);
         jLayeredPane1.add(jBPot1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot2.setName("jBPot2"); // NOI18N
-        jBPot2.setBounds(810, 170, 74, 22);
+        jBPot2.setBounds(830, 190, 70, 40);
         jLayeredPane1.add(jBPot2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot3.setName("jBPot3"); // NOI18N
-        jBPot3.setBounds(810, 200, 74, 22);
+        jBPot3.setBounds(830, 240, 70, 40);
         jLayeredPane1.add(jBPot3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot4.setName("jBPot4"); // NOI18N
-        jBPot4.setBounds(810, 230, 74, 22);
+        jBPot4.setBounds(830, 290, 70, 40);
         jLayeredPane1.add(jBPot4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jScrollBar1.setAutoscrolls(true);
-        jScrollBar1.addAdjustmentListener(new java.awt.event.AdjustmentListener() {
-            public void adjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {
-                jScrollBar1AdjustmentValueChanged(evt);
-            }
-        });
-        jScrollBar1.setBounds(930, 0, 20, 770);
-        jLayeredPane1.add(jScrollBar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
+        jBPot5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot5.setName("jBPot5"); // NOI18N
-        jBPot5.setBounds(810, 260, 74, 22);
+        jBPot5.setBounds(830, 340, 70, 40);
         jLayeredPane1.add(jBPot5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot6.setName("jBPot6"); // NOI18N
-        jBPot6.setBounds(810, 290, 74, 22);
+        jBPot6.setBounds(830, 390, 70, 40);
         jLayeredPane1.add(jBPot6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot7.setName("jBPot7"); // NOI18N
-        jBPot7.setBounds(810, 320, 74, 22);
+        jBPot7.setBounds(830, 440, 70, 40);
         jLayeredPane1.add(jBPot7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot8.setName("jBPot8"); // NOI18N
-        jBPot8.setBounds(810, 350, 74, 22);
+        jBPot8.setBounds(930, 140, 70, 40);
         jLayeredPane1.add(jBPot8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot9.setName("jBPot9"); // NOI18N
-        jBPot9.setBounds(810, 380, 74, 22);
+        jBPot9.setBounds(930, 190, 70, 40);
         jLayeredPane1.add(jBPot9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa09.setName("jBMesa09"); // NOI18N
@@ -252,7 +236,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa09.setBounds(680, 120, 73, 71);
+        jBMesa09.setBounds(680, 40, 73, 71);
         jLayeredPane1.add(jBMesa09, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa19.setName("jBMesa19"); // NOI18N
@@ -261,7 +245,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa19.setBounds(680, 190, 73, 71);
+        jBMesa19.setBounds(680, 110, 73, 71);
         jLayeredPane1.add(jBMesa19, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa29.setName("jBMesa29"); // NOI18N
@@ -270,7 +254,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa29.setBounds(680, 260, 73, 71);
+        jBMesa29.setBounds(680, 180, 73, 71);
         jLayeredPane1.add(jBMesa29, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa39.setName("jBMesa39"); // NOI18N
@@ -279,7 +263,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa39.setBounds(680, 330, 73, 71);
+        jBMesa39.setBounds(680, 250, 73, 71);
         jLayeredPane1.add(jBMesa39, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa49.setName("jBMesa49"); // NOI18N
@@ -288,7 +272,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa49.setBounds(680, 400, 73, 71);
+        jBMesa49.setBounds(680, 320, 73, 71);
         jLayeredPane1.add(jBMesa49, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa48.setName("jBMesa48"); // NOI18N
@@ -297,7 +281,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa48.setBounds(610, 400, 73, 71);
+        jBMesa48.setBounds(610, 320, 73, 71);
         jLayeredPane1.add(jBMesa48, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa47.setName("jBMesa47"); // NOI18N
@@ -306,7 +290,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa47.setBounds(540, 400, 73, 71);
+        jBMesa47.setBounds(540, 320, 73, 71);
         jLayeredPane1.add(jBMesa47, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa46.setName("jBMesa46"); // NOI18N
@@ -315,7 +299,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa46.setBounds(470, 400, 73, 71);
+        jBMesa46.setBounds(470, 320, 73, 71);
         jLayeredPane1.add(jBMesa46, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa45.setName("jBMesa45"); // NOI18N
@@ -324,7 +308,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa45.setBounds(400, 400, 73, 71);
+        jBMesa45.setBounds(400, 320, 73, 71);
         jLayeredPane1.add(jBMesa45, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa44.setName("jBMesa44"); // NOI18N
@@ -333,7 +317,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa44.setBounds(330, 400, 73, 71);
+        jBMesa44.setBounds(330, 320, 73, 71);
         jLayeredPane1.add(jBMesa44, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa43.setName("jBMesa43"); // NOI18N
@@ -342,7 +326,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa43.setBounds(260, 400, 73, 71);
+        jBMesa43.setBounds(260, 320, 73, 71);
         jLayeredPane1.add(jBMesa43, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa42.setName("jBMesa42"); // NOI18N
@@ -351,7 +335,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa42.setBounds(190, 400, 73, 71);
+        jBMesa42.setBounds(190, 320, 73, 71);
         jLayeredPane1.add(jBMesa42, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa41.setName("jBMesa41"); // NOI18N
@@ -360,7 +344,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa41.setBounds(120, 400, 73, 71);
+        jBMesa41.setBounds(120, 320, 73, 71);
         jLayeredPane1.add(jBMesa41, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa40.setName("jBMesa40"); // NOI18N
@@ -369,7 +353,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa40.setBounds(50, 400, 73, 71);
+        jBMesa40.setBounds(50, 320, 73, 71);
         jLayeredPane1.add(jBMesa40, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa30.setName("jBMesa30"); // NOI18N
@@ -378,7 +362,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa30.setBounds(50, 330, 73, 71);
+        jBMesa30.setBounds(50, 250, 73, 71);
         jLayeredPane1.add(jBMesa30, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa20.setName("jBMesa20"); // NOI18N
@@ -387,7 +371,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa20.setBounds(50, 260, 73, 71);
+        jBMesa20.setBounds(50, 180, 73, 71);
         jLayeredPane1.add(jBMesa20, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa10.setName("jBMesa10"); // NOI18N
@@ -396,7 +380,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa10.setBounds(50, 190, 73, 71);
+        jBMesa10.setBounds(50, 110, 73, 71);
         jLayeredPane1.add(jBMesa10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa00.setName("jBMesa00"); // NOI18N
@@ -405,7 +389,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa00.setBounds(50, 120, 73, 71);
+        jBMesa00.setBounds(50, 40, 73, 71);
         jLayeredPane1.add(jBMesa00, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa01.setName("jBMesa01"); // NOI18N
@@ -414,7 +398,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa01.setBounds(120, 120, 73, 71);
+        jBMesa01.setBounds(120, 40, 73, 71);
         jLayeredPane1.add(jBMesa01, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa02.setName("jBMesa02"); // NOI18N
@@ -423,7 +407,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa02.setBounds(190, 120, 73, 71);
+        jBMesa02.setBounds(190, 40, 73, 71);
         jLayeredPane1.add(jBMesa02, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa03.setName("jBMesa03"); // NOI18N
@@ -432,7 +416,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa03.setBounds(260, 120, 73, 71);
+        jBMesa03.setBounds(260, 40, 73, 71);
         jLayeredPane1.add(jBMesa03, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa04.setName("jBMesa04"); // NOI18N
@@ -441,7 +425,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa04.setBounds(330, 120, 73, 71);
+        jBMesa04.setBounds(330, 40, 73, 71);
         jLayeredPane1.add(jBMesa04, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa05.setName("jBMesa05"); // NOI18N
@@ -450,7 +434,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa05.setBounds(400, 120, 73, 71);
+        jBMesa05.setBounds(400, 40, 73, 71);
         jLayeredPane1.add(jBMesa05, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa06.setName("jBMesa06"); // NOI18N
@@ -459,7 +443,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa06.setBounds(470, 120, 73, 71);
+        jBMesa06.setBounds(470, 40, 73, 71);
         jLayeredPane1.add(jBMesa06, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa07.setName("jBMesa07"); // NOI18N
@@ -468,7 +452,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa07.setBounds(540, 120, 73, 71);
+        jBMesa07.setBounds(540, 40, 73, 71);
         jLayeredPane1.add(jBMesa07, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa08.setName("jBMesa08"); // NOI18N
@@ -477,7 +461,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa08.setBounds(610, 120, 73, 71);
+        jBMesa08.setBounds(610, 40, 73, 71);
         jLayeredPane1.add(jBMesa08, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa18.setName("jBMesa18"); // NOI18N
@@ -486,7 +470,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa18.setBounds(610, 190, 73, 71);
+        jBMesa18.setBounds(610, 110, 73, 71);
         jLayeredPane1.add(jBMesa18, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa17.setName("jBMesa17"); // NOI18N
@@ -495,7 +479,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa17.setBounds(540, 190, 73, 71);
+        jBMesa17.setBounds(540, 110, 73, 71);
         jLayeredPane1.add(jBMesa17, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa16.setName("jBMesa16"); // NOI18N
@@ -504,7 +488,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa16.setBounds(470, 190, 73, 71);
+        jBMesa16.setBounds(470, 110, 73, 71);
         jLayeredPane1.add(jBMesa16, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa15.setName("jBMesa15"); // NOI18N
@@ -513,7 +497,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa15.setBounds(400, 190, 73, 71);
+        jBMesa15.setBounds(400, 110, 73, 71);
         jLayeredPane1.add(jBMesa15, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa14.setName("jBMesa14"); // NOI18N
@@ -522,7 +506,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa14.setBounds(330, 190, 73, 71);
+        jBMesa14.setBounds(330, 110, 73, 71);
         jLayeredPane1.add(jBMesa14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa13.setName("jBMesa13"); // NOI18N
@@ -531,7 +515,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa13.setBounds(260, 190, 73, 71);
+        jBMesa13.setBounds(260, 110, 73, 71);
         jLayeredPane1.add(jBMesa13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa12.setName("jBMesa12"); // NOI18N
@@ -540,7 +524,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa12.setBounds(190, 190, 73, 71);
+        jBMesa12.setBounds(190, 110, 73, 71);
         jLayeredPane1.add(jBMesa12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa11.setName("jBMesa11"); // NOI18N
@@ -549,7 +533,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa11.setBounds(120, 190, 73, 71);
+        jBMesa11.setBounds(120, 110, 73, 71);
         jLayeredPane1.add(jBMesa11, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa21.setName("jBMesa21"); // NOI18N
@@ -558,7 +542,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa21.setBounds(120, 260, 73, 71);
+        jBMesa21.setBounds(120, 180, 73, 71);
         jLayeredPane1.add(jBMesa21, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa31.setName("jBMesa31"); // NOI18N
@@ -567,7 +551,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa31.setBounds(120, 330, 73, 71);
+        jBMesa31.setBounds(120, 250, 73, 71);
         jLayeredPane1.add(jBMesa31, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa32.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -577,7 +561,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa32.setBounds(190, 330, 73, 71);
+        jBMesa32.setBounds(190, 250, 73, 71);
         jLayeredPane1.add(jBMesa32, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa22.setName("jBMesa22"); // NOI18N
@@ -586,7 +570,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa22.setBounds(190, 260, 73, 71);
+        jBMesa22.setBounds(190, 180, 73, 71);
         jLayeredPane1.add(jBMesa22, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa23.setName("jBMesa23"); // NOI18N
@@ -595,7 +579,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa23.setBounds(260, 260, 73, 71);
+        jBMesa23.setBounds(260, 180, 73, 71);
         jLayeredPane1.add(jBMesa23, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa33.setAutoscrolls(true);
@@ -605,7 +589,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa33.setBounds(260, 330, 73, 71);
+        jBMesa33.setBounds(260, 250, 73, 71);
         jLayeredPane1.add(jBMesa33, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa34.setName("jBMesa34"); // NOI18N
@@ -614,7 +598,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa34.setBounds(330, 330, 73, 71);
+        jBMesa34.setBounds(330, 250, 73, 71);
         jLayeredPane1.add(jBMesa34, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa24.setName("jBMesa24"); // NOI18N
@@ -623,7 +607,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa24.setBounds(330, 260, 73, 71);
+        jBMesa24.setBounds(330, 180, 73, 71);
         jLayeredPane1.add(jBMesa24, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa25.setName("jBMesa25"); // NOI18N
@@ -632,7 +616,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa25.setBounds(400, 260, 73, 71);
+        jBMesa25.setBounds(400, 180, 73, 71);
         jLayeredPane1.add(jBMesa25, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa26.setName("jBMesa26"); // NOI18N
@@ -641,7 +625,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa26.setBounds(470, 260, 73, 71);
+        jBMesa26.setBounds(470, 180, 73, 71);
         jLayeredPane1.add(jBMesa26, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa27.setName("jBMesa27"); // NOI18N
@@ -650,7 +634,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa27.setBounds(540, 260, 73, 71);
+        jBMesa27.setBounds(540, 180, 73, 71);
         jLayeredPane1.add(jBMesa27, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa28.setName("jBMesa28"); // NOI18N
@@ -659,7 +643,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa28.setBounds(610, 260, 73, 71);
+        jBMesa28.setBounds(610, 180, 73, 71);
         jLayeredPane1.add(jBMesa28, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa38.setName("jBMesa38"); // NOI18N
@@ -668,7 +652,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa38.setBounds(610, 330, 73, 71);
+        jBMesa38.setBounds(610, 250, 73, 71);
         jLayeredPane1.add(jBMesa38, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa35.setName("jBMesa35"); // NOI18N
@@ -677,7 +661,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa35.setBounds(400, 330, 73, 71);
+        jBMesa35.setBounds(400, 250, 73, 71);
         jLayeredPane1.add(jBMesa35, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa36.setName("jBMesa36"); // NOI18N
@@ -686,7 +670,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa36.setBounds(470, 330, 73, 71);
+        jBMesa36.setBounds(470, 250, 73, 71);
         jLayeredPane1.add(jBMesa36, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa37.setName("jBMesa37"); // NOI18N
@@ -695,7 +679,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa37.setBounds(540, 330, 73, 71);
+        jBMesa37.setBounds(540, 250, 73, 71);
         jLayeredPane1.add(jBMesa37, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa50.setName("jBMesa50"); // NOI18N
@@ -704,7 +688,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa50.setBounds(50, 470, 73, 71);
+        jBMesa50.setBounds(50, 390, 73, 71);
         jLayeredPane1.add(jBMesa50, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa51.setName("jBMesa51"); // NOI18N
@@ -713,7 +697,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa51.setBounds(120, 470, 73, 71);
+        jBMesa51.setBounds(120, 390, 73, 71);
         jLayeredPane1.add(jBMesa51, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa52.setName("jBMesa52"); // NOI18N
@@ -722,7 +706,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa52.setBounds(190, 470, 73, 71);
+        jBMesa52.setBounds(190, 390, 73, 71);
         jLayeredPane1.add(jBMesa52, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa53.setName("jBMesa53"); // NOI18N
@@ -731,7 +715,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa53.setBounds(260, 470, 73, 71);
+        jBMesa53.setBounds(260, 390, 73, 71);
         jLayeredPane1.add(jBMesa53, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa54.setName("jBMesa54"); // NOI18N
@@ -740,7 +724,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa54.setBounds(330, 470, 73, 71);
+        jBMesa54.setBounds(330, 390, 73, 71);
         jLayeredPane1.add(jBMesa54, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa55.setName("jBMesa55"); // NOI18N
@@ -749,7 +733,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa55.setBounds(400, 470, 73, 71);
+        jBMesa55.setBounds(400, 390, 73, 71);
         jLayeredPane1.add(jBMesa55, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa56.setName("jBMesa56"); // NOI18N
@@ -758,7 +742,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa56.setBounds(470, 470, 73, 71);
+        jBMesa56.setBounds(470, 390, 73, 71);
         jLayeredPane1.add(jBMesa56, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa57.setName("jBMesa57"); // NOI18N
@@ -767,7 +751,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa57.setBounds(540, 470, 73, 71);
+        jBMesa57.setBounds(540, 390, 73, 71);
         jLayeredPane1.add(jBMesa57, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa58.setName("jBMesa58"); // NOI18N
@@ -776,7 +760,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa58.setBounds(610, 470, 73, 71);
+        jBMesa58.setBounds(610, 390, 73, 71);
         jLayeredPane1.add(jBMesa58, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBMesa59.setName("jBMesa59"); // NOI18N
@@ -785,7 +769,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraDelTableroActionPerformed(evt);
             }
         });
-        jBMesa59.setBounds(680, 470, 73, 71);
+        jBMesa59.setBounds(680, 390, 73, 71);
         jLayeredPane1.add(jBMesa59, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBRotarIzq.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -796,7 +780,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarIzqActionPerformed(evt);
             }
         });
-        jBRotarIzq.setBounds(730, 580, 70, 39);
+        jBRotarIzq.setBounds(800, 560, 70, 39);
         jLayeredPane1.add(jBRotarIzq, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBRotarDer.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -807,27 +791,32 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBRotarDerActionPerformed(evt);
             }
         });
-        jBRotarDer.setBounds(730, 630, 70, 39);
+        jBRotarDer.setBounds(800, 610, 70, 39);
         jLayeredPane1.add(jBRotarDer, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot14.setName("jBPot14\n"); // NOI18N
-        jBPot14.setBounds(810, 530, 74, 22);
+        jBPot14.setBounds(930, 440, 70, 40);
         jLayeredPane1.add(jBPot14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot13.setName("jBPot13"); // NOI18N
-        jBPot13.setBounds(810, 500, 74, 22);
+        jBPot13.setBounds(930, 390, 70, 40);
         jLayeredPane1.add(jBPot13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot12.setName("jBPot12"); // NOI18N
-        jBPot12.setBounds(810, 470, 74, 22);
+        jBPot12.setBounds(930, 340, 70, 40);
         jLayeredPane1.add(jBPot12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot11.setName("jBPot11"); // NOI18N
-        jBPot11.setBounds(810, 440, 74, 22);
+        jBPot11.setBounds(930, 290, 70, 40);
         jLayeredPane1.add(jBPot11, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBPot10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/piedraPozo.png"))); // NOI18N
         jBPot10.setName("jBPot10"); // NOI18N
-        jBPot10.setBounds(810, 410, 74, 22);
+        jBPot10.setBounds(930, 240, 70, 40);
         jLayeredPane1.add(jBPot10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jButtonPot.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -838,29 +827,24 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jButtonPotActionPerformed(evt);
             }
         });
-        jButtonPot.setBounds(810, 580, 74, 56);
+        jButtonPot.setBounds(880, 540, 74, 56);
         jLayeredPane1.add(jButtonPot, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jButtonPass.setFont(new java.awt.Font("Calibri", 1, 14));
         jButtonPass.setForeground(new java.awt.Color(153, 51, 0));
         jButtonPass.setText("Pass");
         jButtonPass.setName("jButtonPass"); // NOI18N
-        jButtonPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPassActionPerformed(evt);
-            }
-        });
-        jButtonPass.setBounds(810, 650, 74, 56);
+        jButtonPass.setBounds(880, 610, 74, 56);
         jLayeredPane1.add(jButtonPass, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra7.setName("jBPiedra7"); // NOI18N
-        jBPiedra7.addActionListener(new java.awt.event.ActionListener() {
+        jBPiedra8.setName("jBPiedra8"); // NOI18N
+        jBPiedra8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra7.setBounds(640, 580, 73, 71);
-        jLayeredPane1.add(jBPiedra7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jBPiedra8.setBounds(700, 550, 73, 71);
+        jLayeredPane1.add(jBPiedra8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra6.setName("6"); // NOI18N
         jBPiedra6.addActionListener(new java.awt.event.ActionListener() {
@@ -868,7 +852,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra6.setBounds(560, 580, 73, 71);
+        jBPiedra6.setBounds(540, 550, 73, 71);
         jLayeredPane1.add(jBPiedra6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra5.setName("jBPiedra5"); // NOI18N
@@ -877,7 +861,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra5.setBounds(480, 580, 73, 71);
+        jBPiedra5.setBounds(460, 550, 73, 71);
         jLayeredPane1.add(jBPiedra5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra4.setName("jBPiedra4"); // NOI18N
@@ -886,7 +870,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra4.setBounds(400, 580, 73, 71);
+        jBPiedra4.setBounds(380, 550, 73, 71);
         jLayeredPane1.add(jBPiedra4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra3.setName("jBPiedra3"); // NOI18N
@@ -895,7 +879,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra3.setBounds(320, 580, 73, 71);
+        jBPiedra3.setBounds(300, 550, 73, 71);
         jLayeredPane1.add(jBPiedra3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra2.setName("jBPiedra2"); // NOI18N
@@ -904,7 +888,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra2.setBounds(240, 580, 73, 71);
+        jBPiedra2.setBounds(220, 550, 73, 71);
         jLayeredPane1.add(jBPiedra2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBPiedra1.setName("jBPiedra1"); // NOI18N
@@ -913,91 +897,194 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra1.setBounds(160, 580, 73, 71);
+        jBPiedra1.setBounds(140, 550, 73, 71);
         jLayeredPane1.add(jBPiedra1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra8.setName("jBPiedra1"); // NOI18N
-        jBPiedra8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBPiedraSeleccionadaActionPerformed(evt);
-            }
-        });
-        jBPiedra8.setBounds(160, 660, 73, 71);
-        jLayeredPane1.add(jBPiedra8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jBPiedra9.setName("jBPiedra2"); // NOI18N
+        jBPiedra9.setName("jBPiedra1"); // NOI18N
         jBPiedra9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra9.setBounds(240, 660, 73, 71);
+        jBPiedra9.setBounds(140, 630, 73, 71);
         jLayeredPane1.add(jBPiedra9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra10.setName("jBPiedra3"); // NOI18N
+        jBPiedra10.setName("jBPiedra2"); // NOI18N
         jBPiedra10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra10.setBounds(320, 660, 73, 71);
+        jBPiedra10.setBounds(220, 630, 73, 71);
         jLayeredPane1.add(jBPiedra10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra11.setName("jBPiedra4"); // NOI18N
+        jBPiedra11.setName("jBPiedra3"); // NOI18N
         jBPiedra11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra11.setBounds(400, 660, 73, 71);
+        jBPiedra11.setBounds(300, 630, 73, 71);
         jLayeredPane1.add(jBPiedra11, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra12.setName("jBPiedra5"); // NOI18N
+        jBPiedra12.setName("jBPiedra4"); // NOI18N
         jBPiedra12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra12.setBounds(480, 660, 73, 71);
+        jBPiedra12.setBounds(380, 630, 73, 71);
         jLayeredPane1.add(jBPiedra12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra13.setName("6"); // NOI18N
+        jBPiedra13.setName("jBPiedra5"); // NOI18N
         jBPiedra13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra13.setBounds(560, 660, 73, 71);
+        jBPiedra13.setBounds(460, 630, 73, 71);
         jLayeredPane1.add(jBPiedra13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBPiedra14.setName("jBPiedra7"); // NOI18N
+        jBPiedra14.setName("6"); // NOI18N
         jBPiedra14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBPiedraSeleccionadaActionPerformed(evt);
             }
         });
-        jBPiedra14.setBounds(640, 660, 73, 71);
+        jBPiedra14.setBounds(540, 630, 73, 71);
         jLayeredPane1.add(jBPiedra14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPiedra16.setName("jBPiedra7"); // NOI18N
+        jBPiedra16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+        jBPiedra16.setBounds(700, 630, 73, 71);
+        jLayeredPane1.add(jBPiedra16, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
         jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLNickname.setText("Player");
-        jLNickname.setBounds(30, 660, 120, -1);
+        jLNickname.setBounds(10, 650, 120, 31);
         jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLAvatar.setText("AVATAR");
-        jLAvatar.setBounds(40, 570, 110, 90);
+        jLAvatar.setBounds(20, 550, 110, 90);
         jLayeredPane1.add(jLAvatar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
-        jLabel4.setAutoscrolls(true);
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jLabel4.setMinimumSize(new java.awt.Dimension(800, 600));
-        jLabel4.setPreferredSize(new java.awt.Dimension(800, 600));
-        jLabel4.setBounds(0, -110, 960, 990);
-        jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jBPiedra7.setName("jBPiedra7"); // NOI18N
+        jBPiedra7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+        jBPiedra7.setBounds(620, 550, 73, 71);
+        jLayeredPane1.add(jBPiedra7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBPiedra15.setName("jBPiedra7"); // NOI18N
+        jBPiedra15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraSeleccionadaActionPerformed(evt);
+            }
+        });
+        jBPiedra15.setBounds(620, 630, 73, 71);
+        jLayeredPane1.add(jBPiedra15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa60.setName("jBMesa60"); // NOI18N
+        jBMesa60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa60.setBounds(50, 460, 73, 71);
+        jLayeredPane1.add(jBMesa60, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa61.setName("jBMesa61"); // NOI18N
+        jBMesa61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa61.setBounds(120, 460, 73, 71);
+        jLayeredPane1.add(jBMesa61, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa62.setName("jBMesa62"); // NOI18N
+        jBMesa62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa62.setBounds(190, 460, 73, 71);
+        jLayeredPane1.add(jBMesa62, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa63.setName("jBMesa63"); // NOI18N
+        jBMesa63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa63.setBounds(260, 460, 73, 71);
+        jLayeredPane1.add(jBMesa63, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa64.setName("jBMesa64"); // NOI18N
+        jBMesa64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa64.setBounds(330, 460, 73, 71);
+        jLayeredPane1.add(jBMesa64, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa65.setName("jBMesa65"); // NOI18N
+        jBMesa65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa65.setBounds(400, 460, 73, 71);
+        jLayeredPane1.add(jBMesa65, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa66.setName("jBMesa66"); // NOI18N
+        jBMesa66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa66.setBounds(470, 460, 73, 71);
+        jLayeredPane1.add(jBMesa66, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa67.setName("jBMesa67"); // NOI18N
+        jBMesa67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa67.setBounds(540, 460, 73, 71);
+        jLayeredPane1.add(jBMesa67, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa68.setName("jBMesa68"); // NOI18N
+        jBMesa68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa68.setBounds(610, 460, 73, 71);
+        jLayeredPane1.add(jBMesa68, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jBMesa69.setName("jBMesa69"); // NOI18N
+        jBMesa69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBPiedraDelTableroActionPerformed(evt);
+            }
+        });
+        jBMesa69.setBounds(680, 460, 73, 71);
+        jLayeredPane1.add(jBMesa69, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel1.setBounds(0, 0, 1024, 730);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jMenu1.setText("File");
         jMenu1.setActionCommand("Options");
@@ -1029,11 +1116,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 723, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -1043,17 +1130,18 @@ public class VentanaJuego extends javax.swing.JFrame {
         int i, j;
 
         final JButton arregloBotones[][] = {
-            {jBMesa00, jBMesa01, jBMesa02, jBMesa03, jBMesa04, jBMesa05, jBMesa06, jBMesa07, jBMesa08, jBMesa09},
-            {jBMesa10, jBMesa11, jBMesa12, jBMesa13, jBMesa14, jBMesa15, jBMesa16, jBMesa17, jBMesa18, jBMesa19},
-            {jBMesa20, jBMesa21, jBMesa22, jBMesa23, jBMesa24, jBMesa25, jBMesa26, jBMesa27, jBMesa28, jBMesa29},
-            {jBMesa30, jBMesa31, jBMesa32, jBMesa33, jBMesa34, jBMesa35, jBMesa36, jBMesa37, jBMesa38, jBMesa39},
-            {jBMesa40, jBMesa41, jBMesa42, jBMesa43, jBMesa44, jBMesa45, jBMesa46, jBMesa47, jBMesa48, jBMesa49},
-            {jBMesa50, jBMesa51, jBMesa52, jBMesa53, jBMesa54, jBMesa55, jBMesa56, jBMesa57, jBMesa58, jBMesa59}
+            {jBMesa00, jBMesa01, jBMesa02, jBMesa03, jBMesa04, jBMesa05, jBMesa06, jBMesa07, jBMesa08, jBMesa09,},
+            {jBMesa10, jBMesa11, jBMesa12, jBMesa13, jBMesa14, jBMesa15, jBMesa16, jBMesa17, jBMesa18, jBMesa19,},
+            {jBMesa20, jBMesa21, jBMesa22, jBMesa23, jBMesa24, jBMesa25, jBMesa26, jBMesa27, jBMesa28, jBMesa29,},
+            {jBMesa30, jBMesa31, jBMesa32, jBMesa33, jBMesa34, jBMesa35, jBMesa36, jBMesa37, jBMesa38, jBMesa39,},
+            {jBMesa40, jBMesa41, jBMesa42, jBMesa43, jBMesa44, jBMesa45, jBMesa46, jBMesa47, jBMesa48, jBMesa49,},
+            {jBMesa50, jBMesa51, jBMesa52, jBMesa53, jBMesa54, jBMesa55, jBMesa56, jBMesa57, jBMesa58, jBMesa59,},
+            {jBMesa60, jBMesa61, jBMesa62, jBMesa63, jBMesa64, jBMesa65, jBMesa66, jBMesa67, jBMesa68, jBMesa69,}
         };
 
         JButton botonActual;
 
-        for (i = 0; i < 6; i++) {
+        for (i = 0; i < 7; i++) {
             for (j = 0; j < 10; j++) {
                 botonActual = arregloBotones[i][j];
 
@@ -1074,7 +1162,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         int i, j;
 
         final JButton arregloBotones[] = {jBPiedra1, jBPiedra2, jBPiedra3, jBPiedra4, jBPiedra5, jBPiedra6, jBPiedra7,
-            jBPiedra8, jBPiedra9, jBPiedra10, jBPiedra11, jBPiedra12, jBPiedra13, jBPiedra14};
+            jBPiedra8, jBPiedra9, jBPiedra10, jBPiedra11, jBPiedra12, jBPiedra13, jBPiedra14, jBPiedra15, jBPiedra16};
 
         JButton botonActual;
 
@@ -1093,7 +1181,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             botonActual.setEnabled(true);
         }
 
-        for (i = 7; i < 14; i++) {
+        for (i = 7; i < 16; i++) {
             botonActual = arregloBotones[i];
             //botonActual.setEnabled(false);
             botonActual.setVisible(false);
@@ -1118,6 +1206,17 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
 
         return arregloBotones;
+    }
+
+    private boolean mesaVacia() {
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (laMesa[i][j].getIcon() != null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public static String obtenerImagenPiedra(String mensaje) {
@@ -1209,7 +1308,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         String subArg2[] = posicion.split("-");
         button = "jBMesa" + subArg2[0] + subArg2[1];
 
-        for (i = 0; i < 6; i++) {
+        for (i = 0; i < 7; i++) {
             for (j = 0; j < 10; j++) {
                 if (laMesa[i][j].getName().equalsIgnoreCase(button)) {
                     return laMesa[i][j];
@@ -1219,7 +1318,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         return null;
     }
 
-    public String acomodarPiedraEnMesaMaquina(String piedra, String posicion) {
+    public String acomodarPiedraEnMesa(String piedra, String posicion) {
         String subArgDireccionIcono[] = piedra.split("-");
         String subArgPosicion[] = posicion.split("-");
         String subArgExtremo[];
@@ -1286,7 +1385,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             }
         }
 
-        if (posYaux2 < 6) {
+        if (posYaux2 < 10) {
             if (laMesa[posX][posYaux2].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux2].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1305,7 +1404,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             }
         }
 
-        if (posXaux2 < 6) {
+        if (posXaux2 < 7) {
             if (laMesa[posXaux2][posY].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posXaux2][posY].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1379,18 +1478,22 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             String subArg[] = cadena.split(":");
             if (subArg[0].equalsIgnoreCase("TRUE")) {
-                boton.setIcon(botonActualSeleccionado.getIcon());
-                botonActualSeleccionado.setIcon(null);
-                botonActualSeleccionado.setEnabled(false);
+                if (mesaVacia()) {
+                    boton.setIcon(botonActualSeleccionado.getIcon());
+                     botonActualSeleccionado.setIcon(null);
+                    botonActualSeleccionado.setEnabled(false);
+                } else {
+                    String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
+                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
+                    botonActualSeleccionado.setIcon(null);
+                    botonActualSeleccionado.setEnabled(false);
+                }
 
                 System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
 
                 if (!subArg[1].equalsIgnoreCase("NULL")) {
                     boton = obtenerBotonPosicion(subArg[2]);
-                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(acomodarPiedraEnMesaMaquina(subArg[1], subArg[2]))));
-                    if (Integer.parseInt(subArg[5]) == 0) {
-                        desabilitarPiedras(piedrasEnMano);
-                    }
+                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
                 }
 
             }
@@ -1444,7 +1547,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 i++;
             }
 
-            while (!piedraPuesta && i > 6 && i < 14) {
+            while (!piedraPuesta && i > 6 && i < 16) {
                 //for (i = 7; i < 14; i++) {
                 if (!piedrasEnMano[i].isEnabled()) {
                     piedrasEnMano[i].setEnabled(true);
@@ -1469,32 +1572,22 @@ public class VentanaJuego extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButtonPotActionPerformed
 
-    private void jScrollBar1AdjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {//GEN-FIRST:event_jScrollBar1AdjustmentValueChanged
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jScrollBar1AdjustmentValueChanged
-
-    private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
-        // TODO add your handling code here:
-      
-
-    }//GEN-LAST:event_jButtonPassActionPerformed
+        String cadena = ConexionJsockets.solicitudServidor4(nickname);
+        if (cadena.equalsIgnoreCase("TRUE")) {
+            System.out.println("Se guardÃ³ la partida con Ã©xito");
+            JOptionPane.showMessageDialog(null, "Saved Game");
+        } else {
+            System.out.println("NO se guardÃ³ la partida con Ã©xito");
+            JOptionPane.showMessageDialog(null, "Unsaved Game");
+        }
+}//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-           String cadena = ConexionJsockets.solicitudServidor4(nickname);
-        if (cadena.equalsIgnoreCase("TRUE")) {
-            System.out.println("Se guardó la partida con éxito");
-            JOptionPane.showMessageDialog(null, "Saved Game");
-        } else {
-            System.out.println("NO se guardó la partida con éxito");
-            JOptionPane.showMessageDialog(null, "Unsaved Game");
-        }
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+}//GEN-LAST:event_jMenuItem3ActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1565,12 +1658,24 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JButton jBMesa57;
     private javax.swing.JButton jBMesa58;
     private javax.swing.JButton jBMesa59;
+    private javax.swing.JButton jBMesa60;
+    private javax.swing.JButton jBMesa61;
+    private javax.swing.JButton jBMesa62;
+    private javax.swing.JButton jBMesa63;
+    private javax.swing.JButton jBMesa64;
+    private javax.swing.JButton jBMesa65;
+    private javax.swing.JButton jBMesa66;
+    private javax.swing.JButton jBMesa67;
+    private javax.swing.JButton jBMesa68;
+    private javax.swing.JButton jBMesa69;
     private javax.swing.JButton jBPiedra1;
     private javax.swing.JButton jBPiedra10;
     private javax.swing.JButton jBPiedra11;
     private javax.swing.JButton jBPiedra12;
     private javax.swing.JButton jBPiedra13;
     private javax.swing.JButton jBPiedra14;
+    private javax.swing.JButton jBPiedra15;
+    private javax.swing.JButton jBPiedra16;
     private javax.swing.JButton jBPiedra2;
     private javax.swing.JButton jBPiedra3;
     private javax.swing.JButton jBPiedra4;
@@ -1595,20 +1700,12 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JButton jBPot9;
     private javax.swing.JButton jBRotarDer;
     private javax.swing.JButton jBRotarIzq;
-    private javax.swing.JButton jButton176;
-    private javax.swing.JButton jButton177;
-    private javax.swing.JButton jButton178;
-    private javax.swing.JButton jButton179;
-    private javax.swing.JButton jButton180;
-    private javax.swing.JButton jButton181;
-    private javax.swing.JButton jButton182;
     private javax.swing.JButton jButtonPass;
     private javax.swing.JButton jButtonPot;
     private javax.swing.JLabel jLAvatar;
     private javax.swing.JLabel jLNickname;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLayeredPane jLayeredPane1;
@@ -1617,7 +1714,6 @@ public class VentanaJuego extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
     JButton botonActualSeleccionado;
     JFrame ventanaPadre;

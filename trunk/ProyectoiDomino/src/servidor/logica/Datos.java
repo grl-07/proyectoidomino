@@ -23,8 +23,7 @@ private static ListaPiedras listaPiedrasMesa = null;
 
     public static boolean inicializarListasDeDatos() {
         boolean confirm = false;
-        if (listaDeUsuarios == null) {
-            System.out.println("Entro");
+        if (listaDeUsuarios == null) {            
             listaDeUsuarios = new ListaUsuarios();
             confirm = true;
         }
