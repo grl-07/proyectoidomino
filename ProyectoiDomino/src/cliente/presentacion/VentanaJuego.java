@@ -833,6 +833,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButtonPass.setFont(new java.awt.Font("Calibri", 1, 14));
         jButtonPass.setForeground(new java.awt.Color(153, 51, 0));
         jButtonPass.setText("Pass");
+        jButtonPass.setEnabled(false);
         jButtonPass.setName("jButtonPass"); // NOI18N
         jButtonPass.setBounds(880, 610, 74, 56);
         jLayeredPane1.add(jButtonPass, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -1083,7 +1084,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLayeredPane1.add(jBMesa69, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
-        jLabel1.setBounds(0, 0, 1024, 730);
+        jLabel1.setBounds(0, -20, 1024, 740);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jMenu1.setText("File");
@@ -1568,6 +1569,9 @@ public class VentanaJuego extends javax.swing.JFrame {
             if (contadorPozo == 14) {
                 jButtonPot.setEnabled(false);
             }
+        } else{
+            jButtonPot.setEnabled(false);
+            jButtonPass.setEnabled(true);
         }
 
     }//GEN-LAST:event_jButtonPotActionPerformed
