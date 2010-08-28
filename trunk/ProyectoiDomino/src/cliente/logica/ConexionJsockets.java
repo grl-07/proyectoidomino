@@ -81,6 +81,15 @@ public class ConexionJsockets {
         System.out.println(resultado);
         return resultado;
     }
+
+        public static String solicitudServidor5(String username, String piedra) {
+        ClienteSocket cliente = new ClienteSocket();
+        String opcion = "5";
+        String resultado = "";
+        resultado = cliente.ejecutarPeticion(opcion + ":" + username + ":" + piedra, "localhost", 9999);
+        System.out.println(resultado);
+        return resultado;
+    }
          public static String solicitudServidor6(JTextField username, JPasswordField clave,String opcion) {
         ClienteSocket cliente = new ClienteSocket();
         String nickname = username.getText();

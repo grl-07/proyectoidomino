@@ -145,7 +145,6 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra13 = new javax.swing.JButton();
         jBPiedra14 = new javax.swing.JButton();
         jBPiedra16 = new javax.swing.JButton();
-        jLNickname = new javax.swing.JLabel();
         jLAvatar = new javax.swing.JLabel();
         jBPiedra7 = new javax.swing.JButton();
         jBPiedra15 = new javax.swing.JButton();
@@ -159,6 +158,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBMesa67 = new javax.swing.JButton();
         jBMesa68 = new javax.swing.JButton();
         jBMesa69 = new javax.swing.JButton();
+        jLNickname = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -172,12 +172,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Brush Script MT", 1, 48));
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("iDomino");
-        jLabel7.setBounds(830, 10, 150, 60);
+        jLabel7.setBounds(830, 10, 150, -1);
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12));
         jLabel6.setText("Game #");
-        jLabel6.setBounds(890, 60, 41, 16);
+        jLabel6.setBounds(890, 60, -1, -1);
         jLayeredPane1.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 24));
@@ -835,6 +835,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         jButtonPass.setText("Pass");
         jButtonPass.setEnabled(false);
         jButtonPass.setName("jButtonPass"); // NOI18N
+        jButtonPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPassActionPerformed(evt);
+            }
+        });
         jButtonPass.setBounds(880, 610, 74, 56);
         jLayeredPane1.add(jButtonPass, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -964,12 +969,6 @@ public class VentanaJuego extends javax.swing.JFrame {
         jBPiedra16.setBounds(700, 630, 73, 71);
         jLayeredPane1.add(jBPiedra16, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
-        jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLNickname.setText("Player");
-        jLNickname.setBounds(10, 650, 120, 31);
-        jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         jLAvatar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLAvatar.setText("AVATAR");
         jLAvatar.setBounds(20, 550, 110, 90);
@@ -1082,6 +1081,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         });
         jBMesa69.setBounds(680, 460, 73, 71);
         jLayeredPane1.add(jBMesa69, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLNickname.setFont(new java.awt.Font("Brush Script MT", 1, 24));
+        jLNickname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLNickname.setText("Player");
+        jLNickname.setBounds(10, 650, 120, 31);
+        jLayeredPane1.add(jLNickname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
         jLabel1.setBounds(0, -20, 1024, 740);
@@ -1450,12 +1455,8 @@ public class VentanaJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("\n\n" + "NUEVA JUGADA");
         JButton boton = (JButton) evt.getSource();
-        JButton piedraAcomodada = null;
 
         if (botonActualSeleccionado != null) {
-            //boton.setIcon(botonActualSeleccionado.getIcon());
-
-            //System.out.println("nombre de boton: " + boton.getName());
 
             String posX = boton.getName().toString();
             posX = posX.substring(posX.length() - 2, posX.length() - 1);
@@ -1481,7 +1482,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             if (subArg[0].equalsIgnoreCase("TRUE")) {
                 if (mesaVacia()) {
                     boton.setIcon(botonActualSeleccionado.getIcon());
-                     botonActualSeleccionado.setIcon(null);
+                    botonActualSeleccionado.setIcon(null);
                     botonActualSeleccionado.setEnabled(false);
                 } else {
                     String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
@@ -1569,7 +1570,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             if (contadorPozo == 14) {
                 jButtonPot.setEnabled(false);
             }
-        } else{
+        } else {
             jButtonPot.setEnabled(false);
             jButtonPass.setEnabled(true);
         }
@@ -1592,6 +1593,18 @@ public class VentanaJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
 }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
+        // TODO add your handling code here:
+        String cadena = ConexionJsockets.solicitudServidor5(nickname, "NULL-NULL");
+
+        JButton botonTablero;
+        String[] subArg = cadena.split(":");
+        if (!subArg[1].equalsIgnoreCase("NULL")) {
+            botonTablero = obtenerBotonPosicion(subArg[2]);
+            botonTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+        }
+    }//GEN-LAST:event_jButtonPassActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

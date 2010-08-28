@@ -38,6 +38,8 @@ public class ControlJugadores {
         this.pass = pass;
     }
 
+
+
     //Constructor
     public ControlJugadores() {
         pass = false;
