@@ -1,4 +1,3 @@
-
 package servidor;
 
 import ve.edu.ucab.server.logica.Servidor;
@@ -13,7 +12,7 @@ public class ServidorApp {
 
     public static void main(String[] args) {
 
-         Datos.inicializarListasDeDatos();
+        Datos.inicializarListasDeDatos();
         Conector.solicitarCargaDatosUsuario();
         Conector.solicitarCargaDatosPiedras();
         //Conector.solicitarImpresionPiedras();

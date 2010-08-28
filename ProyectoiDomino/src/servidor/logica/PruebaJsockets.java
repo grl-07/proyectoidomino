@@ -164,7 +164,9 @@ public class PruebaJsockets implements LogicaServidor {
                 //Jugada del Jugador
                 piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+
                 Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
+
                 laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(elUsuario.getNickname(), piedraStr, laPiedra.getPosicion(), laPiedra.getImagenActual(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa(), Datos.getListaPiedrasJugador());
 
                 if (laPiedra != null) {
