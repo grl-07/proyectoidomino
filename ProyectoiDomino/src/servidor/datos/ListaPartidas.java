@@ -31,43 +31,7 @@ public class ListaPartidas {
         return laListaPartidas.iterator();
     }
 
-    public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
-        //buscar nickname en la lista de partidas guardadas
-
-        ListaUsuarios laListaUsuarios;
-        laListaUsuarios = new ListaUsuarios();
-
-        boolean confirm = false;
-
-        confirm = laListaUsuarios.buscarNicknameReal(elUsuario);
-
-        if (confirm == true) {
-            Partida elGame = buscarUsuario(elUsuario);
-            eliminarPartida(elGame);
-            agregarPartida(laPartidaAGuardar);
-
-        } else {
-            agregarPartida(laPartidaAGuardar);
-        }
-        return true;
-    }
-
-    public boolean crearPartida(String nickname, ListaPiedras listaDePiedras) {
-        Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras);
-        return laListaPartidas.add(laPartida);
-    }
-
-   /* public Partida crearPartida(String nickname) {
-        Partida laPartida = new Partida().crearPartida(nickname);
-        laListaPartidas.add(laPartida);
-        return laPartida;
-    }*/
-
-    public boolean agregarPartida(Partida laPartida) {
-        return laListaPartidas.add(laPartida);
-    }
-
-    public Partida buscarUsuario(Usuario elUsuario) {  //Busca usuario y devuelve su partida guardada
+     public Partida buscarUsuario(Usuario elUsuario) {  //Busca usuario y devuelve su partida guardada
         Partida auxiliar = null;
         Iterator iterador = laListaPartidas.iterator();
 
@@ -78,10 +42,32 @@ public class ListaPartidas {
                 return auxiliar;
             }
         }
-        return auxiliar;
+        return null;
 
     }
 
+
+      public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
+        //buscar nickname en la lista de partidas guardadas
+        Partida laPartida= buscarUsuario(elUsuario);
+        while (laPartida!=null){   //si tiene partida guardada
+            eliminarPartida(laPartida);   //eliminar
+            laPartida=buscarUsuario(elUsuario);   //busca otra partida guardada
+        }
+        agregarPartida(laPartidaAGuardar);
+        return true;
+    }
+
+
+    public boolean crearPartida(String nickname, ListaPiedras listaDePiedras) {
+        Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras);
+        return laListaPartidas.add(laPartida);
+    }
+
+    public void agregarPartida(Partida laPartida) {
+         laListaPartidas.add(0,laPartida);
+    }
+  
     public boolean eliminarPartida(Partida laPartida) {
         boolean encontrado = false;
         Partida partidaAux = null;

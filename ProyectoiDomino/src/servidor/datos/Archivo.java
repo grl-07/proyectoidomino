@@ -198,12 +198,11 @@ public class Archivo {
 
             Iterator i = listaPartidas.iterator();
 
+            while (i.hasNext()) {
             ListaPiedras listaPiedrasJugador = new ListaPiedras();
             ListaPiedras listaPiedrasMaquina = new ListaPiedras();
             ListaPiedras listaPiedrasPozo = new ListaPiedras();
             ListaPiedras listaPiedrasMesa = new ListaPiedras();
-
-            while (i.hasNext()) {
 
                 Element e = (Element) i.next();
 
