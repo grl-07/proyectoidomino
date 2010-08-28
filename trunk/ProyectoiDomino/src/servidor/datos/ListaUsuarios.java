@@ -55,28 +55,6 @@ public class ListaUsuarios {
         }
     }
 
-    public boolean buscarNicknameReal(Usuario elUsuario) {
-        boolean encontrado = true;
-        Usuario auxiliar = null;
-        Iterator iterador = listadoUsuarios.iterator();
-
-        while (!encontrado && iterador.hasNext()) {
-            auxiliar = (Usuario) iterador.next();
-
-
-            if (elUsuario.getNickname().equalsIgnoreCase(auxiliar.getNickname())){
-                encontrado = true;
-            }
-        }
-
-        if (encontrado==true) {
-            return true;
-        }
-        return false;
-
-    }
-
-
     public boolean buscarNickname(Object elUsuario) {
         boolean encontrado = false;
         Usuario auxiliar = null;

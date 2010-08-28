@@ -119,7 +119,7 @@ public class PruebaJsockets implements LogicaServidor {
                 System.out.println("Nombre -->" + registro.getNombre());
                 System.out.println("NICKNAME -->" + registro.getNickname());
                 int cont = registro.getNumPartCreadas();
-                Conector.guardarNumPartidasCreadas(registro,cont);
+                Conector.guardarNumPartidasCreadas(registro, cont);
                 //Datos.inicializarListasJuego();                
 
                 partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
@@ -164,7 +164,7 @@ public class PruebaJsockets implements LogicaServidor {
                 //Jugada del Jugador
                 piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
-Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
+                Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
                 laPiedra = partidaExistente.getElJuego().getLaMesa().validarJugada(elUsuario.getNickname(), piedraStr, laPiedra.getPosicion(), laPiedra.getImagenActual(), Datos.getListaDePiedras(), Datos.getMatrizPiedrasMesa(), Datos.getListaPiedrasJugador());
 
                 if (laPiedra != null) {
@@ -200,6 +200,7 @@ Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJu
                 cadena = laPiedra.obtenerCadenaPiedraJugador();
 
                 if (!cadena.equalsIgnoreCase("")) {
+                    partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().agregarPiedra(laPiedra);
                     resultado = "TRUE:" + cadena;
                 }
                 /*subArg = cadena.split(":");
@@ -210,35 +211,35 @@ Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJu
                 registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                 if (op.equalsIgnoreCase("1")) {
 
-                //Conector.guardarNuevoNombre(registro);
-                //registro.setNombre(elUsuario.getNombre());
+                    //Conector.guardarNuevoNombre(registro);
+                    //registro.setNombre(elUsuario.getNombre());
 
-                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    Conector.guardarNuevoDato(registro, elUsuario, op);
                     resultado = "TRUE:" + elUsuario.getNombre();
 
                 } else if (op.equalsIgnoreCase("2")) {
 
-                registro.setApellido(elUsuario.getApellido());
+                    registro.setApellido(elUsuario.getApellido());
 
-                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    Conector.guardarNuevoDato(registro, elUsuario, op);
                     resultado = "TRUE:" + elUsuario.getApellido();
 
                 } else if (op.equalsIgnoreCase("3")) {
 
-                registro.setClave(elUsuario.getClave());
+                    registro.setClave(elUsuario.getClave());
 
-                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    Conector.guardarNuevoDato(registro, elUsuario, op);
                     resultado = "TRUE:" + elUsuario.getClave();
 
                 } else if (op.equalsIgnoreCase("4")) {
 
-                registro.setAvatar(elUsuario.getAvatar());
+                    registro.setAvatar(elUsuario.getAvatar());
 
-                    Conector.guardarNuevoDato(registro,elUsuario,op);
+                    Conector.guardarNuevoDato(registro, elUsuario, op);
                     resultado = "TRUE:" + elUsuario.getAvatar();
 
                 }
-                
+
 
                 /*elUsuario = Datos.modificarDatosUsuario(elUsuario);
                 Conector.guardarDatos(elUsuario.getNombre(), elUsuario.getApellido(), elUsuario.getNickname(), elUsuario.getClave(), elUsuario.getAvatar(), elUsuario.getFechaNac());
