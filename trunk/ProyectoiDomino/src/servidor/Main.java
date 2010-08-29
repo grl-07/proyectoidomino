@@ -101,7 +101,7 @@ public class Main {
 
 
         //REPORTE
-        Reporte elReporte = new Reporte();
+      /*  Reporte elReporte = new Reporte();
         System.out.println("\nREPORTES \n");
         elReporte.ordenarPorIngresos(listadoUsuarios);
         System.out.println("\n");
@@ -110,7 +110,7 @@ public class Main {
         elReporte.ordenPartidasGanadas(listadoUsuarios);
         System.out.println("\n");
         elReporte.usuarioMayorScore(listadoUsuarios);
-
+*/
         Calendar calendario = Calendar.getInstance();
         int diaHoy = calendario.get(Calendar.DAY_OF_MONTH);
         int mes = calendario.get(Calendar.MONTH);

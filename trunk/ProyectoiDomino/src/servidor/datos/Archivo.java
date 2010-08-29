@@ -20,6 +20,10 @@ public class Archivo {
     private static List<Element> piedrasPozo = null;
     private static List<Element> piedrasMesa = null;*/
 
+    /**
+     * guardarDatosArchivoUsuario guarda en el archivo la lista de usuarios
+     * @param listaUsuarios
+     */
     public static void guardarDatosArchivoUsuario(ListaUsuarios listaUsuarios) {
         Usuario nodoAuxiliar;
 
@@ -93,6 +97,10 @@ public class Archivo {
         }
     }
 
+    /**
+     * cargarDatosArchivoUsuario lee el archivo con la informacion de los usuarios
+     * @param listaUsuarios
+     */
     public static void cargarDatosArchivoUsuario(ListaUsuarios listaUsuarios) {
         try {
             SAXBuilder builder = new SAXBuilder();
