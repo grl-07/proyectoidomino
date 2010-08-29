@@ -11,14 +11,25 @@ public class ListaUsuarios {
 
     private List<Usuario> listadoUsuarios;
 
+    /**
+     * getListadoUsuarios para saber cual es la lista de usuarios
+     * @return retorna la lista de usuario
+     */
     public List<Usuario> getListadoUsuarios() {
         return listadoUsuarios;
     }
 
+    /**
+     * setListadoUsuarios establece la lista de usuarios
+     * @param listadoUsuarios una lista para asignarle a la lista usuarios
+     */
     public void setListadoUsuarios(List<Usuario> listadoUsuarios) {
         this.listadoUsuarios = listadoUsuarios;
     }
 
+    /**
+     * Constructor que inicializa la lista de usuarios
+     */
     public ListaUsuarios() {
         listadoUsuarios = new ArrayList();
     }
@@ -26,14 +37,27 @@ public class ListaUsuarios {
     /*public void finalize() throws Throwable {
 
     }*/
+    
+    /**
+     * agregarUsuario agrega un usuario a la lista de los usuarios
+     * @param elUsuario el objeto de tipo Usuario que se va a agregar en la lista
+     * @return el resultado del add
+     */
     public boolean agregarUsuario(Usuario elUsuario) {
         return (listadoUsuarios.add(elUsuario));
     }
 
+    /**
+     * getIterator para allar el iterador de la lista
+     * @return el iterador de la lista usuarios
+     */
     public Iterator getIterator(){
         return listadoUsuarios.iterator();
     }
 
+    /**
+     * mostrarUsuario para imprimir la lista de usuarios
+     */
     public void mostrarUsuario() {
         int i;
         Usuario registro;
@@ -55,6 +79,11 @@ public class ListaUsuarios {
         }
     }
 
+    /**
+     * buscarNickname busca por nickname en la lista para saber si existe el usuario
+     * @param elUsuario contiene el nickname para buscar con el de la lista
+     * @return un booelan true para saber si el nicknae esta y false si no se encuentra
+     */
     public boolean buscarNickname(Object elUsuario) {
         boolean encontrado = false;
         Usuario auxiliar = null;
@@ -74,52 +103,21 @@ public class ListaUsuarios {
         return false;
 
     }
-
-   /* public boolean modificarUsuario(Usuario elUsuario, String dato, int opcion) {
-        boolean encontrado = false;
-        Usuario auxiliar = null;
-        Iterator iterador = listadoUsuarios.iterator();
-
-        while (!encontrado && iterador.hasNext()) {
-            auxiliar = (Usuario) iterador.next();
-
-            if (elUsuario.equals(auxiliar)) {
-                if (opcion == 1) {
-                    auxiliar.nombre = dato;
-                } else if (opcion == 2) {
-                    auxiliar.apellido = dato;
-                } else if (opcion == 3) {
-                    auxiliar.clave = dato;
-                } else if (opcion == 4) {
-                    auxiliar.avatar = dato;
-                }
-                encontrado = true;
-            }
-        }
-
-        if (encontrado) {
-            return true;
-        }
-        return false;
-    }*/
-
+    
+    /**
+     * modificarUsuario para modificar la informacion del usuario, 
+     * @param auxiliar 
+     * @param elUsuario
+     * @return
+     */    
     public Usuario modificarUsuario(Usuario auxiliar,Usuario elUsuario) {
 
-       //System.out.println(auxiliar.getNickname());
        auxiliar.setNickname(elUsuario.getNickname());
        auxiliar.setNombre(elUsuario.getNombre());
        auxiliar.setApellido(elUsuario.getApellido());
        auxiliar.setClave(elUsuario.getClave());
        auxiliar.setFechaNac(elUsuario.getFechaNac());
        auxiliar.setAvatar(elUsuario.getAvatar());
-
-
-                /*auxiliar.clave = elUsuario.getNickname();
-                auxiliar.nombre = elUsuario.getNombre();
-                auxiliar.apellido = elUsuario.getApellido();
-                auxiliar.nickname = elUsuario.getClave();
-                auxiliar.fechaNac = elUsuario.getFechaNac();
-                auxiliar.avatar = elUsuario.getAvatar();*/
            
             return auxiliar;
     }
@@ -144,6 +142,11 @@ public class ListaUsuarios {
         return confirm;
     }
 
+    /**
+     * buscarDatos es para buscar los datos de un usuario
+     * @param elUsuario contiene el nickname a buscar
+     * @return retorna  el usuario con toda su informacion
+     */
     public Usuario buscarDatos(Object elUsuario) {
         boolean encontrado = false;
         Usuario auxiliar = null;
