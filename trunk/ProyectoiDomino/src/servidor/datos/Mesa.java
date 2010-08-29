@@ -592,14 +592,6 @@ public class Mesa {
             listaPiedrasMaquina.eliminarPiedra(laPiedra);
         }
 
-        /*if (listaPiedrasMaquina.getLaListaPiedras().isEmpty()){
-
-        }*/
-
-        /*if (listaPiedrasMaquina == null) {
-        return cadena;
-        }*/
-
         System.out.println("nuevo extremo 1 = " + this.obtenerExtremo0());
         System.out.println("nuevo extremo 2 = " + this.obtenerExtremo1());
         System.out.println("numero de Piedras en Mano: " + listaPiedrasMaquina.getLaListaPiedras().size());
