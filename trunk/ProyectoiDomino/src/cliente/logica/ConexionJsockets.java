@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package cliente.logica;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
@@ -133,12 +132,11 @@ public class ConexionJsockets {
      * @param opcion
      * @return
      */
-    public static String solicitudServidor6(JTextField username, JPasswordField clave, String opcion) {
+    public static String solicitudServidor6(String nickname) {
         ClienteSocket cliente = new ClienteSocket();
-        String nickname = username.getText();
-        String password = clave.getText();
+        String opcion = "6";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
         System.out.println(resultado);
         return resultado;
     }

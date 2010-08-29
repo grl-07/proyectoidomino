@@ -1571,31 +1571,90 @@ public class VentanaJuego extends javax.swing.JFrame {
             String cadena = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
 
             String subArg[] = cadena.split(":");
-            if (subArg[0].equalsIgnoreCase("TRUE")) {
-                if (mesaVacia()) {
-                    boton.setIcon(botonActualSeleccionado.getIcon());
-                    botonActualSeleccionado.setIcon(null);
-                    botonActualSeleccionado.setEnabled(false);
-                    abilitarPiedrasMesa(posicion);
+            cadena = ConexionJsockets.solicitudServidor6(nickname);
+            String subArg2[] = cadena.split(":");
+            if (subArg2[0].equalsIgnoreCase("TRUE")) {
+
+                if (subArg2[1].equalsIgnoreCase("USTED HA GANADO")) {
+                    if (subArg[0].equalsIgnoreCase("TRUE")) {
+                        if (mesaVacia()) {
+                            boton.setIcon(botonActualSeleccionado.getIcon());
+                            botonActualSeleccionado.setIcon(null);
+                            botonActualSeleccionado.setEnabled(false);
+                            abilitarPiedrasMesa(posicion);
+                        } else {
+                            String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
+                            boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
+                            botonActualSeleccionado.setIcon(null);
+                            botonActualSeleccionado.setEnabled(false);
+                            abilitarPiedrasMesa(posicion);
+                        }
+                        System.out.println("YOU WON!!!");
+                        JOptionPane.showMessageDialog(null, "CONGRATS. YOU WON!!!");
+                        //REGRESAR A LA VENTANA MENU
+                        this.dispose();
+                    }
                 } else {
-                    String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
-                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
-                    botonActualSeleccionado.setIcon(null);
-                    botonActualSeleccionado.setEnabled(false);
-                    abilitarPiedrasMesa(posicion);
+                    if (subArg2[1].equalsIgnoreCase("USTED HA PERDIDO")) {
+                        if (subArg[0].equalsIgnoreCase("TRUE")) {
+                            if (mesaVacia()) {
+                                boton.setIcon(botonActualSeleccionado.getIcon());
+                                botonActualSeleccionado.setIcon(null);
+                                botonActualSeleccionado.setEnabled(false);
+                                abilitarPiedrasMesa(posicion);
+                            } else {
+                                String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
+                                boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
+                                botonActualSeleccionado.setIcon(null);
+                                botonActualSeleccionado.setEnabled(false);
+                                abilitarPiedrasMesa(posicion);
+                            }
+                            System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
+                            if (!subArg[1].equalsIgnoreCase("NULL")) {
+                                boton = obtenerBotonPosicion(subArg[2]);
+                                System.out.println("boton: " + boton.getName());
+                                boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+                                abilitarPiedrasMesa(subArg[2]);
+
+                                System.out.println("YOU LOST!!!");
+                                JOptionPane.showMessageDialog(null, "YOU LOST!!!");
+                                //REGRESAR A LA VENTANA MENU
+                                this.dispose();
+                            }
+                        }
+                    }
                 }
 
-                System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
 
-                if (!subArg[1].equalsIgnoreCase("NULL")) {
-                    boton = obtenerBotonPosicion(subArg[2]);
-                    System.out.println("boton: " + boton.getName());
-                    boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
-                    abilitarPiedrasMesa(subArg[2]);
+
+            } else {
+
+                if (subArg[0].equalsIgnoreCase("TRUE")) {
+                    if (mesaVacia()) {
+                        boton.setIcon(botonActualSeleccionado.getIcon());
+                        botonActualSeleccionado.setIcon(null);
+                        botonActualSeleccionado.setEnabled(false);
+                        abilitarPiedrasMesa(posicion);
+                    } else {
+                        String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
+                        boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
+                        botonActualSeleccionado.setIcon(null);
+                        botonActualSeleccionado.setEnabled(false);
+                        abilitarPiedrasMesa(posicion);
+                    }
+
+                    System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
+
+                    if (!subArg[1].equalsIgnoreCase("NULL")) {
+                        boton = obtenerBotonPosicion(subArg[2]);
+                        System.out.println("boton: " + boton.getName());
+                        boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+                        abilitarPiedrasMesa(subArg[2]);
+                        System.out.println("THE GAME IS NOT OVER");
+                    }
                 }
 
             }
-
         }
     }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
 
@@ -1694,12 +1753,23 @@ public class VentanaJuego extends javax.swing.JFrame {
     private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor5(nickname, "NULL-NULL");
+        String cadenaJuegoTrancado = ConexionJsockets.solicitudServidor6(nickname);
 
         JButton botonTablero;
         String[] subArg = cadena.split(":");
         if (!subArg[1].equalsIgnoreCase("NULL")) {
             botonTablero = obtenerBotonPosicion(subArg[2]);
             botonTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+        }
+
+        String subArg2[] = cadenaJuegoTrancado.split(":");
+        if (subArg2[0].equalsIgnoreCase("TRUE")) {
+            if (subArg2[1].equalsIgnoreCase("JUEGO TRANCADO")) {
+                System.out.println("JUEGO TRANCADO!!!");
+                JOptionPane.showMessageDialog(null, "BLOCKED GAME!!!");
+                //REGRESAR A LA VENTANA MENU
+                this.dispose();
+            }
         }
     }//GEN-LAST:event_jButtonPassActionPerformed
 

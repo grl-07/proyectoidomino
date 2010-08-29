@@ -134,6 +134,8 @@ public class PruebaJsockets implements LogicaServidor {
                 Datos.setListaPiedrasJugador(partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
                 Datos.setListaPiedrasMaquina(partidaNueva.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano());
                 Datos.setListaPiedrasPozo(partidaNueva.getElJuego().getLaMesa().getElPozo());
+                //NUEVA LINEA PARA INICIAR LA MATRIZ DE PIEDRAS DEL JUEGO
+                Datos.setMatrizPiedrasMesa(partidaNueva.getElJuego().getLaMesa().inicializarMatrizPiedras());
 
                 cadena = partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().obtenerPiedras();
                 //System.out.println("cadenaPiedras =  " + partidaNueva.getElJuego().getLaMesa().);
@@ -158,6 +160,8 @@ public class PruebaJsockets implements LogicaServidor {
                 break;
             case 5:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+                partidaExistente.getElJuego().getJugador1().getElJugador().setPass(false);
+                partidaExistente.getElJuego().getJugador2().getLaMaquina().setPass(false);
 
                 //Jugada del Jugador
                 if (laPiedra.getNum1() != -1) {
@@ -175,6 +179,7 @@ public class PruebaJsockets implements LogicaServidor {
                     confirm = true;
                     if (Datos.getListaPiedrasJugador().getLaListaPiedras().isEmpty()) {
                         partidaExistente.getElJuego().getJugador1().getElJugador().setEstado(true);
+                        System.out.println("\nGano el jugador");
                     }
                 }
                 //Jugada del Jugador FIN.
@@ -201,10 +206,24 @@ public class PruebaJsockets implements LogicaServidor {
                 }
                 break;
             case 6:
-                cadena = "TRUE";
-                subArg = cadena.split(":");
-                resultado = subArg[0];
-                System.out.println("Fin de partida -> " + cadena);
+                partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+                if (partidaExistente.getElJuego().getJugador1().getElJugador().isEstado() == true) {
+                    resultado = "TRUE:USTED HA GANADO";
+                } else {
+                    if (partidaExistente.getElJuego().getJugador2().getLaMaquina().isEstado() == true) {
+                        resultado = "TRUE:USTED HA PERDIDO";
+                    } else {
+                        if (partidaExistente.getElJuego().getJugador1().getElJugador().isPass() == true && partidaExistente.getElJuego().getJugador2().getLaMaquina().isPass() == true) {
+
+                            System.out.println("JUEGO TRANCADO:::::::::::::::::::::::");
+                            resultado = "TRUE:JUEGO TRANCADO";
+                        } else {
+                            resultado = "FALSE";
+                        }
+                    }
+                }
+
+                System.out.println("Fin de partida -> " + resultado);
                 break;
             case 7:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
