@@ -186,11 +186,11 @@ public class Mesa {
         if (jAux > -1 && piedrasMesa[i][jAux] != null) {
             System.out.println("ENTRO EN EL IF DE LA IZQUIERDA");
             System.out.println(laPiedra.getNum1() + "-" + laPiedra.getNum2());
-            /*if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[i][jAux].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux].getNum2())){
-            System.out.println("ENTRO EN EL IF DEL DOBLE");
-            laPiedra.setImagenActual(laPiedra.getImagenAbajo());
-            return laPiedra;
-            }*/
+            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[i][jAux].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux].getNum2()) && jAux -1 > -1) {
+                System.out.println("ENTRO EN EL IF DEL DOBLE");
+                laPiedra.setImagenActual(laPiedra.getImagenAbajo());
+                return laPiedra;
+            }
 
             if (laPiedra.getNum1() == piedrasMesa[i][jAux].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux].getNum2()) {
                 laPiedra.setImagenActual(laPiedra.getImagenIzquierda());
@@ -205,11 +205,12 @@ public class Mesa {
         if (iAux > -1 && piedrasMesa[iAux][j] != null) {
             System.out.println("ENTRO EN EL IF DE ARRIBA");
             System.out.println(laPiedra.getNum1() + "-" + laPiedra.getNum2());
-            /*if ((laPiedra.getNum1() == laPiedra.getNum2()) && laPiedra.getNum1() == piedrasMesa[iAux][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux][j].getNum2()){
-            System.out.println("ENTRO EN EL IF DEL DOBLE");
-            laPiedra.setImagenActual(laPiedra.getImagenDerecha());
-            return laPiedra;
-            }*/
+
+            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[iAux][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux][j].getNum2()) && iAux - 1 > -1) {
+                System.out.println("ENTRO EN EL IF DEL DOBLE");
+                laPiedra.setImagenActual(laPiedra.getImagenDerecha());
+                return laPiedra;
+            }
 
             if (laPiedra.getNum1() == piedrasMesa[iAux][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux][j].getNum2()) {
                 laPiedra.setImagenActual(laPiedra.getImagenArriba());
@@ -224,11 +225,11 @@ public class Mesa {
         if (jAux2 < 10 && piedrasMesa[i][jAux2] != null) {
             System.out.println("ENTRO EN EL IF DE LA DERECHA");
             System.out.println(laPiedra.getNum1() + "-" + laPiedra.getNum2());
-            /*if ((laPiedra.getNum1() == laPiedra.getNum2()) && laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum2()){
-            System.out.println("ENTRO EN EL IF DEL DOBLE");
-            laPiedra.setImagenActual(laPiedra.getImagenAbajo());
-            return laPiedra;
-            }*/
+            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum2()) && jAux2 + 1 < 10) {
+                System.out.println("ENTRO EN EL IF DEL DOBLE");
+                laPiedra.setImagenActual(laPiedra.getImagenAbajo());
+                return laPiedra;
+            }
 
             if (laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux2].getNum2()) {
                 laPiedra.setImagenActual(laPiedra.getImagenDerecha());
@@ -243,11 +244,11 @@ public class Mesa {
         if (iAux2 < 7 && piedrasMesa[iAux2][j] != null) {
             System.out.println("ENTRO EN EL IF DE ABAJO");
             System.out.println(laPiedra.getNum1() + "-" + laPiedra.getNum2());
-            /*if ((laPiedra.getNum1() == laPiedra.getNum2()) && laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum2()){
-            System.out.println("ENTRO EN EL IF DEL DOBLE");
-            laPiedra.setImagenActual(laPiedra.getImagenDerecha());
-            return laPiedra;
-            }*/
+            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum2()) && iAux2 + 1 < 7) {
+                System.out.println("ENTRO EN EL IF DEL DOBLE");
+                laPiedra.setImagenActual(laPiedra.getImagenDerecha());
+                return laPiedra;
+            }
 
             if (laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum1() || laPiedra.getNum1() == piedrasMesa[iAux2][j].getNum2()) {
                 laPiedra.setImagenActual(laPiedra.getImagenAbajo());

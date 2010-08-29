@@ -1154,6 +1154,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 botonActual.setIcon(null);
                 botonActual.setFocusable(false);
                 botonActual.setEnabled(false);
+                botonActual.setOpaque(false);
             }
         }
 
@@ -1326,10 +1327,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         String subArgDireccionIcono[] = piedra.split("-");
         String subArgPosicion[] = posicion.split("-");
         String subArgExtremo[];
-        String extremoString, piedraAacomodar;
+        String extremoString;
         String fuente = "";
         int posX, posY, posXaux, posYaux, posXaux2, posYaux2, num1, num2, num1PiedraExtremo, num2PiedraExtremo;
-        JButton botonPiedra = new JButton();
+
 
         //Numeros de la piedra a insertar.
         num1 = Integer.parseInt(subArgDireccionIcono[0]);
@@ -1350,6 +1351,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         posYaux2++;
 
         if (posYaux > -1) {
+            System.out.println("ENTRO AL IF 1");
             if (laMesa[posX][posYaux].getIcon() != null) {
                 System.out.println(laMesa[posX][posYaux].getName());
                 System.out.println("PIEDRA EXTREMO DE LA MESA: " + laMesa[posX][posYaux].getIcon().toString());
@@ -1359,11 +1361,19 @@ public class VentanaJuego extends javax.swing.JFrame {
                 num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
+                    if (num1 == num2 && posYaux - 1 > -1) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
+                    }
 
                 }
                 if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    if (num1 == num2 && posYaux - 1 > -1) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    }
 
                 }
 
@@ -1371,6 +1381,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
 
         if (posXaux > -1) {
+            System.out.println("ENTRO AL IF 2");
             if (laMesa[posXaux][posY].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posXaux][posY].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1378,18 +1389,26 @@ public class VentanaJuego extends javax.swing.JFrame {
                 num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    if (num1 == num2 && posXaux - 1 > -1) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    }
 
                 }
                 if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
-
+                    if (num1 == num2 && posXaux - 1 > -1) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    }
                 }
 
             }
         }
 
         if (posYaux2 < 10) {
+            System.out.println("ENTRO AL IF 3");
             if (laMesa[posX][posYaux2].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux2].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1397,18 +1416,25 @@ public class VentanaJuego extends javax.swing.JFrame {
                 num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
-
+                    if (num1 == num2 && posYaux2 + 1 < 10) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    }
                 }
                 if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
-
+                    if (num1 == num2 && posYaux2 + 1 < 10) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice3.png";
+                    }
                 }
 
             }
         }
 
         if (posXaux2 < 7) {
+            System.out.println("ENTRO AL IF 4");
             if (laMesa[posXaux2][posY].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posXaux2][posY].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1416,12 +1442,18 @@ public class VentanaJuego extends javax.swing.JFrame {
                 num2PiedraExtremo = Integer.parseInt(subArgExtremo[1]);
 
                 if (num1 == num1PiedraExtremo || num1 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
-
+                    if (num1 == num2 && posXaux2 + 1 < 7) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice2.png";
+                    }
                 }
                 if (num2 == num1PiedraExtremo || num2 == num2PiedraExtremo) {
-                    fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
-
+                    if (num1 == num2 && posXaux2 + 1 < 7) {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice1.png";
+                    } else {
+                        fuente = "/cliente/presentacion/resources/Piedras/" + num1 + num2 + "Indice0.png";
+                    }
                 }
 
             }
@@ -1557,6 +1589,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                 if (!subArg[1].equalsIgnoreCase("NULL")) {
                     boton = obtenerBotonPosicion(subArg[2]);
+                    System.out.println("boton: " + boton.getName());
                     boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
                     abilitarPiedrasMesa(subArg[2]);
                 }
