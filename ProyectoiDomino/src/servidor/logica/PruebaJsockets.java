@@ -55,11 +55,11 @@ public class PruebaJsockets implements LogicaServidor {
                     laPiedra.setNum1(num1);
                     laPiedra.setNum2(num2);
                     laPiedra.setPosicion(subArg[3]);
-                laPiedra.setImagenActual(subArg[4]);
+                    laPiedra.setImagenActual(subArg[4]);
                 } else {
                     laPiedra.setNum1(-1);
                     laPiedra.setNum2(-1);
-                }                
+                }
                 //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 6:
@@ -161,7 +161,7 @@ public class PruebaJsockets implements LogicaServidor {
 
                 //Jugada del Jugador
                 if (laPiedra.getNum1() != -1) {
-                    piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();                    
+                    piedraStr = laPiedra.getNum1() + "-" + laPiedra.getNum2();
 
                     Datos.setListaPiedrasJugador(partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
 
@@ -173,6 +173,9 @@ public class PruebaJsockets implements LogicaServidor {
 
                 if (laPiedra != null) {
                     confirm = true;
+                    if (Datos.getListaPiedrasJugador().getLaListaPiedras().isEmpty()) {
+                        partidaExistente.getElJuego().getJugador1().getElJugador().setEstado(true);
+                    }
                 }
                 //Jugada del Jugador FIN.
 
@@ -183,7 +186,12 @@ public class PruebaJsockets implements LogicaServidor {
                 if (subArgCadena[1].equalsIgnoreCase("")) {
                     cadena = "NULL";
                     partidaExistente.getElJuego().getJugador2().getLaMaquina().setPass(true);
+                } else if (Datos.getListaPiedrasMaquina().getLaListaPiedras().isEmpty() && !partidaExistente.getElJuego().getJugador1().getElJugador().isEstado()) {
+                    partidaExistente.getElJuego().getJugador2().getLaMaquina().setEstado(true);
+                    System.out.println("\nGano la Maquina");
                 }
+
+
                 //Jugada de la Maquina FIN.
 
                 if (confirm) {
