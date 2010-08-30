@@ -1,24 +1,15 @@
 package servidor.datos;
-
 import java.io.*;
 import org.jdom.*;
 import org.jdom.input.*;
 import org.jdom.output.*;
 import java.util.*;
 
-/**
- *
- * @author Alberly
- */
 public class Archivo {
 
     private static String direccionUsuarios = "src/servidor/datos/Usuarios.xml";
     private static String nombreArchivo = "src/servidor/datos/Piedras.xml";
     private static String direccionPartidas = "src/servidor/datos/Partidas.xml";
-    /*private static List<Element> piedrasJugador = null;
-    private static List<Element> piedrasMaquina = null;
-    private static List<Element> piedrasPozo = null;
-    private static List<Element> piedrasMesa = null;*/
 
     /**
      * guardarDatosArchivoUsuario guarda en el archivo la lista de usuarios
@@ -144,6 +135,10 @@ public class Archivo {
         }
     }
 
+    /**
+     * cargarPiedrasArchivo lee el archivo con la información de las piedras y llena la lista de piedras
+     * @param listaDePiedras
+     */
     public static void cargarPiedrasArchivo(ListaPiedras listaDePiedras) {
         try {
             SAXBuilder builder = new SAXBuilder();
@@ -189,6 +184,12 @@ public class Archivo {
             e.printStackTrace();
         }
     }
+
+    /**
+     * cargarPartidasArchivo lee el archivo que contiene la información de las partidas guardadas
+     * @param listaDePartidas la lista donde se guardará la información leida del archivo xml
+     * @return un boolean false si se leyó correctamente
+     */
 
     public static boolean cargarPartidasArchivo(ListaPartidas listaDePartidas) {
         try {
@@ -330,7 +331,10 @@ public class Archivo {
         return false;
     }
 
-    /////////////////////////////nuevo ABE/////////////////////////
+    /**
+     * guardarDatosArchivoPartidas para guardar en el archivo xml la información de las partidas que han sido guardadas por el usuario
+     * @param listaPartidas la lista de partidas que se vaciará en el archivo xml
+     */
     public static void guardarDatosArchivoPartidas(ListaPartidas listaPartidas) {
 
         Partida nodoAuxiliar;
@@ -365,11 +369,6 @@ public class Archivo {
             Piedra nodoAuxiliarPiedra;
             //PIEDRAS EN MANO DEL JUGADOR
             Element piedraJugador = new Element("PiedrasJugador");
-
-            /*System.out.println("INICIO LISTA DE PIEDRAS EN MANO JUGADOR");
-            nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
-            System.out.println("FIN LISTA DE PIEDRAS EN MANO JUGADOR");*/
-
 
             Iterator iteradorJugador = nodoAuxiliar.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().getIterator();
 
@@ -490,5 +489,4 @@ public class Archivo {
             e.printStackTrace();
         }
     }
-    /////////////////////////////nuevo ABE/////////////////////////
 }
