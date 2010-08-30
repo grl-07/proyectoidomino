@@ -1,128 +1,65 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package servidor.datos;
 
-/**
- *
- * @author Alberly
- */
 public class ControlJugadores {
 
     private boolean estado;
     private boolean pass;
     private ListaPiedras piedrasEnMano;
 
+    /**
+     * getPiedrasEnMano se utiliza para obtener las piedras en mano de un jugador.
+     * @return un tipo List que se utilizará para las listas de los jugadores.
+     */
     public ListaPiedras getPiedrasEnMano() {
         return piedrasEnMano;
     }
 
+    /**
+     * setPiedrasEnMano setea las piedras en mano de un jugador.
+     * @param la lista que se le asignará al tipo List.
+     */
     public void setPiedrasEnMano(ListaPiedras PiedrasEnMano) {
         this.piedrasEnMano = PiedrasEnMano;
     }
 
+    /**
+     * isEstado método utilizado para obtener el estado de un jugador, es decir, si ha ganado o no.
+     * @return retorna true si el jugador ha ganado, false si no ha pasado nada.
+     */
     public boolean isEstado() {
         return estado;
     }
 
+    /**
+     * setEstado asigna el estado de un jugador.
+     * @param recibe el estado actual del jugador, es decir, si ha ganado o no.
+     */
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
+    /**
+     * isPass se utiliza para saber si el jugador ha pasado.
+     * @return retorna true si el jugador ha pasado.
+     */
     public boolean isPass() {
         return pass;
     }
 
+    /**
+     * setPass asigna el valor a la variable pass que informa si el jugador ha pasado o no.
+     * @param variable que indica si el jugador ha pasado o no.
+     */
     public void setPass(boolean pass) {
         this.pass = pass;
     }
 
-
-
-    //Constructor
+    /**
+     * Constructor
+     */
     public ControlJugadores() {
         pass = false;
         estado = false;
         piedrasEnMano = new ListaPiedras();
-        /*this.estado = estado;
-        this.pass = pass;
-        this.PiedrasEnMano = PiedrasEnMano;*/
     }
-
-    /*public void finalize() throws Throwable {
-
-    }*/
-    public boolean cambiarEstado() {
-        return false;
-    }
-
-    public boolean pasarTurno() {
-        return false;
-    }
-
-    /**
-     *
-     * @param laMesa
-     * @param laPiedra
-     */
-/*    public boolean ponerPieza(Mesa laMesa, Piedra laPiedra) {
-
-        ListaPiedras listaMesa;
-        listaMesa = new ListaPiedras();
-
-        boolean confirm;
-        confirm = laMesa.aprobarPiedra(laPiedra);
-
-        if (confirm==true){
-            listaMesa.agregarPiedra(laPiedra);  //PROVICIONAL, IMPLEMENTAR EL AGREGAR AL PRINCIPIO O FINAL DE LA LISTA
-            return true;
-        }
-        else{
-            System.out.println("La piedra que intenta jugar no es válida");
-            return false;
-        }
-    }*/
-
-    /**
-     *
-     * @param laMesa
-     */
-    public Piedra tomarDelPozo(Mesa laMesa) {
-        return null;
-    }
-
-
-
-/*    public boolean jugarPiedra(){
-
-
-        
-        Mesa laMesa;
-        laMesa = new Mesa();
-
-           try {
-
-
-                System.out.println("Ingrese num1 de ficha: ");
-            String numero1=br.readLine();
-            int num1 = Integer.parseInt(numero1);
-
-        System.out.println("Ingrese num2 de ficha: ");
-        String numero2=br.readLine();
-        int num2 = Integer.parseInt(numero2);
-
-        ponerPieza(laMesa.getPiedrasMesa(), new Piedra(num1,num2));
-
-
-            } catch (Exception e) {
-            }
-        }
-        listadoUsuarios.mostrarUsuario();
-
-
-
-
-    }*/
-
 }

@@ -317,7 +317,7 @@ public class Archivo {
 
                 //FIN PIEDRAS MESA
 
-                Juego elJuego = new Juego(0, elJugador, laMaquina, laMesa);
+                Juego elJuego = new Juego(elJugador, laMaquina, laMesa);
 
                 //lo ulimo que se hace.
                 Partida laPartida = new Partida(elUsuario, numeroPartida, fechaInicial.getText(), fechaact.getText(), elJuego);

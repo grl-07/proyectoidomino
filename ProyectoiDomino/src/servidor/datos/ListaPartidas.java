@@ -1,37 +1,48 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package servidor.datos;
 
-/**
- *
- * @author Alberly
- */
 import java.util.*;
 
 public class ListaPartidas {
-//private Partida ListaPartidas[];
 
     private List<Partida> laListaPartidas;
 
+    /**
+     * getLaListaPartidas obtiene una lista de partidas guardadas.
+     * @return retorna un tipo List.
+     */
     public List<Partida> getLaListaPartidas() {
         return laListaPartidas;
     }
 
+    /**
+     * setLaListaPartidas setea una lista de partidas guardadas.
+     * @param recibe una lista de tipo List.
+     */
     public void setLaListaPartidas(List<Partida> laListaPartidas) {
         this.laListaPartidas = laListaPartidas;
     }
 
+    /**
+     * Constructor
+     */
     public ListaPartidas() {
         laListaPartidas = new ArrayList();
     }
 
-    public Iterator getIterator(){
+    /**
+     * obtiene el iterador de la lista.
+     * @return retorna el iterador de lista, de tipo Iterator.
+     */
+    public Iterator getIterator() {
         return laListaPartidas.iterator();
     }
 
-     public Partida buscarUsuario(Usuario elUsuario) {  //Busca usuario y devuelve su partida guardada
+    /**
+     * busca usuario y devuelve su partida guardada
+     * @param elUsuario el Usuario del cual se quiere buscar la partida.
+     * @return retorna la partida de dicho usuario, si existe.
+     */
+    public Partida buscarUsuario(Usuario elUsuario) {
         Partida auxiliar = null;
         Iterator iterador = laListaPartidas.iterator();
 
@@ -46,28 +57,47 @@ public class ListaPartidas {
 
     }
 
-
-      public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
+    /**
+     *
+     * @param laPartidaAGuardar partida que se quiere guardar
+     * @param elUsuario usuario del que se guardará la partida
+     * @return true
+     */
+    public boolean guardarPartida(Partida laPartidaAGuardar, Usuario elUsuario) {
         //buscar nickname en la lista de partidas guardadas
-        Partida laPartida= buscarUsuario(elUsuario);
-        while (laPartida!=null){   //si tiene partida guardada
+        Partida laPartida = buscarUsuario(elUsuario);
+        while (laPartida != null) {   //si tiene partida guardada
             eliminarPartida(laPartida);   //eliminar
-            laPartida=buscarUsuario(elUsuario);   //busca otra partida guardada
+            laPartida = buscarUsuario(elUsuario);   //busca otra partida guardada
         }
         agregarPartida(laPartidaAGuardar);
         return true;
     }
 
-
+    /**
+     * crea la partida para un usuario
+     * @param nickname el nickname del usuario
+     * @param listaDePiedras la lista a donde se le asignarán las piedras al jugador
+     * @return true
+     */
     public boolean crearPartida(String nickname, ListaPiedras listaDePiedras) {
         Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras);
         return laListaPartidas.add(laPartida);
     }
 
+    /**
+     * agrega una partida existente a una lista.
+     * @param laPartida la partida a ser agregada.
+     */
     public void agregarPartida(Partida laPartida) {
-         laListaPartidas.add(0,laPartida);
+        laListaPartidas.add(0, laPartida);
     }
-  
+
+    /**
+     * elimina una partida de una lista.
+     * @param laPartida partida a ser eliminada.
+     * @return true si se pudo remover, false si no pudo ser eliminada.
+     */
     public boolean eliminarPartida(Partida laPartida) {
         boolean encontrado = false;
         Partida partidaAux = null;
@@ -104,7 +134,7 @@ public class ListaPartidas {
 
                 System.out.println("Username: " + auxiliarPartida.getElUsuario().getNickname());
                 System.out.println("IDPartida: " + auxiliarPartida.getIDPartida());
-                 System.out.println("Lista Piedras Jugador: ");
+                System.out.println("Lista Piedras Jugador: ");
                 auxiliarPartida.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().imprimirListaPiedras();
                 System.out.println("Lista Piedras Maquina: ");
                 auxiliarPartida.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano().imprimirListaPiedras();
@@ -113,7 +143,9 @@ public class ListaPartidas {
                 System.out.println("Lista Piedras Mesa");
                 auxiliarPartida.getElJuego().getLaMesa().getPiedrasMesa().imprimirListaPiedras();
             }
-        } else System.out.println("La Lista esta vacia");
+        } else {
+            System.out.println("La Lista esta vacia");
+        }
 
     }
 }

@@ -1,12 +1,5 @@
 package servidor.datos;
 
-/**
- * @author Mis hijos
- * @version 1.0
- * @created 31-Jul-2010 2:44:00 PM
- */
-//import java.util.*;
-//import com.toedter.calendar.JCalendar;
 public class Usuario {
 
     protected String apellido;

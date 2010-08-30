@@ -117,7 +117,7 @@ public class Partida {
         System.out.println("FECHA ACTUAL:::::"+this.getFechaactual());
 
 
-        this.elJuego = new Juego(0, null, null, null);
+        this.elJuego = new Juego(null, null, null);
         elJuego.setJugador1(new Jugador(nickname, "", 0, 0, 0, 0));
         elJuego.setJugador2(new Maquina());
         elJuego.setLaMesa(new Mesa(new ListaPiedras(), -1, -1,null));
