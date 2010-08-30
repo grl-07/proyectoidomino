@@ -1,10 +1,4 @@
 package servidor.datos;
-
-/**
- * @author Mis hijos
- * @version 1.0
- * @created 01-Aug-2010 5:29:46 PM
- */
 import java.util.*;
 
 public class ListaUsuarios {
@@ -34,10 +28,6 @@ public class ListaUsuarios {
         listadoUsuarios = new ArrayList();
     }
 
-    /*public void finalize() throws Throwable {
-
-    }*/
-    
     /**
      * agregarUsuario agrega un usuario a la lista de los usuarios
      * @param elUsuario el objeto de tipo Usuario que se va a agregar en la lista
@@ -51,7 +41,7 @@ public class ListaUsuarios {
      * getIterator para allar el iterador de la lista
      * @return el iterador de la lista usuarios
      */
-    public Iterator getIterator(){
+    public Iterator getIterator() {
         return listadoUsuarios.iterator();
     }
 
@@ -103,26 +93,24 @@ public class ListaUsuarios {
         return false;
 
     }
-    
+
     /**
      * modificarUsuario para modificar la informacion del usuario, 
      * @param auxiliar 
      * @param elUsuario
      * @return
-     */    
-    public Usuario modificarUsuario(Usuario auxiliar,Usuario elUsuario) {
+     */
+    public Usuario modificarUsuario(Usuario auxiliar, Usuario elUsuario) {
 
-       auxiliar.setNickname(elUsuario.getNickname());
-       auxiliar.setNombre(elUsuario.getNombre());
-       auxiliar.setApellido(elUsuario.getApellido());
-       auxiliar.setClave(elUsuario.getClave());
-       auxiliar.setFechaNac(elUsuario.getFechaNac());
-       auxiliar.setAvatar(elUsuario.getAvatar());
-           
-            return auxiliar;
+        auxiliar.setNickname(elUsuario.getNickname());
+        auxiliar.setNombre(elUsuario.getNombre());
+        auxiliar.setApellido(elUsuario.getApellido());
+        auxiliar.setClave(elUsuario.getClave());
+        auxiliar.setFechaNac(elUsuario.getFechaNac());
+        auxiliar.setAvatar(elUsuario.getAvatar());
+
+        return auxiliar;
     }
-
-
 
     public boolean comprobarDatos(String nickname, String password) {
         int i;
@@ -166,5 +154,4 @@ public class ListaUsuarios {
         return null;
 
     }
-
 }

@@ -1590,7 +1590,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                             abilitarPiedrasMesa(posicion);
                         }
                         System.out.println("YOU WON!!!");
-                        JOptionPane.showMessageDialog(null, "CONGRATS. YOU WON!!!");
+                        JOptionPane.showMessageDialog(null, "CONGRATULATIONS! YOU WON");
                         //REGRESAR A LA VENTANA MENU
                         this.dispose();
                     }

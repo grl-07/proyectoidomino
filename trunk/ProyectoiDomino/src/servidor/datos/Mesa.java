@@ -1,14 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package servidor.datos;
-
 import servidor.logica.Datos;
-/**
- *
- * @author Alberly
- */
 import java.util.*;
 
 public class Mesa {
@@ -18,71 +9,120 @@ public class Mesa {
     private int extremo2;
     private ListaPiedras PiedrasMesa;
     private List<Piedra> listaDeExtremos;
-    //private Set<Mesa> lasPiedrasMesa;
-    private Piedra matrizPiedrasMesa[][]; //las verdaderas piedras de la mesa.
+    private Piedra matrizPiedrasMesa[][];
 
+    /**
+     * getMatrizPiedrasMesa para obtener la matriz que contiene las piedras de la mesa
+     * @return Piedra[][] la matriz con las piedras de la mesa
+     */
     public Piedra[][] getMatrizPiedrasMesa() {
         return matrizPiedrasMesa;
     }
 
+    /**
+     * setMatrizPiedrasMesa para setear la matriz que contiene las piedras de la mesa
+     * @param matrizPiedrasMesa
+     */
     public void setMatrizPiedrasMesa(Piedra[][] matrizPiedrasMesa) {
         this.matrizPiedrasMesa = matrizPiedrasMesa;
     }
 
+    /**
+     * getListaDeExtremos para obtener la lista de extremos que contiene las piedras que se encuentran en el extremo en la mesa
+     * @return List con objetos tipo piedra
+     */
     public List<Piedra> getListaDeExtremos() {
         return listaDeExtremos;
     }
 
+    /**
+     * setListaDeExtremos para setear la lista que contiene los extremos de la mesa
+     * @param listaDeExtremos Coleccion tipo List formada por objetos tipo Piedra
+     */
     public void setListaDeExtremos(List<Piedra> listaDeExtremos) {
         this.listaDeExtremos = listaDeExtremos;
     }
 
-    /*public Set<Mesa> getLasPiedrasMesa() {
-    return lasPiedrasMesa;
-    }
-
-    public void setLasPiedrasMesa(Set<Mesa> lasPiedrasMesa) {
-    this.lasPiedrasMesa = lasPiedrasMesa;
-    }*/
+    /**
+     * getPiedrasMesa para obtener las piedras que están en la mesa
+     * @return una lista de piedras de la mesa
+     */
     public ListaPiedras getPiedrasMesa() {
         return PiedrasMesa;
     }
 
+    /**
+     * setPiedrasMesa para setear las piedras de la mesa en la lista de piedras
+     * @param PiedrasMesa tipo ListaPiedras,
+     */
     public void setPiedrasMesa(ListaPiedras PiedrasMesa) {
         this.PiedrasMesa = PiedrasMesa;
     }
 
+    /**
+     * getElPozo para obtener la lista de piedras del pozo
+     * @return la lista de piedras del pozo
+     */
     public ListaPiedras getElPozo() {
         return elPozo;
     }
 
+    /**
+     * setElPozo para setear la lista de piedras del pozo
+     * @param elPozo la lista de piedras del pozo
+     */
     public void setElPozo(ListaPiedras elPozo) {
         this.elPozo = elPozo;
     }
 
+    /**
+     * getExtremo1 para obtener uno de los extremos de la mesa
+     * @return un entero que es uno de los extremos de la mesa
+     */
     public int getExtremo1() {
         return extremo1;
     }
 
+    /**
+     * setExtremo1 para setear un número como extremo de la mesa
+     * @param extremo1 un entero que es uno de los extremos de la mesa
+     */
     public void setExtremo1(int extremo1) {
         this.extremo1 = extremo1;
     }
 
+    /**
+     * getExtremo2 para obtener el otro extremo de la mesa
+     * @return un entero que es otro de los extremos de la mesa
+     */
     public int getExtremo2() {
         return extremo2;
     }
 
+    /**
+     * setExtremo2 para setear un número como extremo de la mesa
+     * @param extremo2 un entero que es otro de los extremos de la mesa
+     */
     public void setExtremo2(int extremo2) {
         this.extremo2 = extremo2;
     }
 
-    //Constructor
+    /**
+     * Constructor
+     */
     public Mesa() {
         elPozo = new ListaPiedras();
         PiedrasMesa = new ListaPiedras();
         this.listaDeExtremos = new ArrayList();
     }
 
+    /**
+     * Constructor
+     * @param elPozo tipo ListaPiedras para asignar la lista de piedras del pozo
+     * @param extremo1 tipo entero para asignar uno de los extremos de la mesa
+     * @param extremo2 tipo entero para asignar otro de los extremos de la mesa
+     * @param matrizPiedrasMesa para asignar la matriz que contiene las piedras de la mesa
+     */
     public Mesa(ListaPiedras elPozo, int extremo1, int extremo2, Piedra[][] matrizPiedrasMesa) {
         this.elPozo = elPozo;
         this.extremo1 = extremo1;
@@ -91,12 +131,21 @@ public class Mesa {
         this.listaDeExtremos = new ArrayList();
     }
 
+    /**
+     * Constructor
+     * @param extremo1 tipo entero para asignar uno de los extremos de la mesa
+     * @param extremo2 tipo entero para asignar otro de los extremos de la mesa
+     */
     public Mesa(int extremo1, int extremo2) {
         this.extremo1 = extremo1;
         this.extremo2 = extremo2;
         this.listaDeExtremos = new ArrayList();
     }
 
+    /**
+     * inicializarMatrizPiedras para inicializar la matriz con una piedra null en todas su posiciones
+     * @return la matriz inicializada
+     */
     public Piedra[][] inicializarMatrizPiedras() {
 
         Piedra laPiedra = null;
@@ -109,11 +158,15 @@ public class Mesa {
             {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra,},
             {laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra, laPiedra,}
         };
-        //this.matrizPiedrasMesa = matriz;
         return matriz;
 
     }
 
+    /**
+     * pasarMatrizPiedrasMesaALista pasa las piedras que están en la matriz de la mesa a una lista de tipo ListPiedras
+     * @param matriz la matriz de tipo Piedra que será pasada a la lista de piedras
+     * @return la lista con las piedras de la mesa
+     */
     public ListaPiedras pasarMatrizPiedrasMesaALista(Piedra matriz[][]) {
         int i, j;
         for (i = 0; i < 7; i++) {
@@ -129,6 +182,13 @@ public class Mesa {
         return PiedrasMesa;
     }
 
+    /**
+     * ponerPiedraEnMesaJugador coloca la piedra enviada por el jugador en caso de ser válida en la matriz que contiene las piedras de la mesa
+     * @param laPiedra tipo Piedra, la piedra que se va a insertar en la matriz
+     * @param posicion tipo String, la posición que ocupará la piedra en la matriz
+     * @param matriz tipo Piedra donde se insertará la piedra. Es la matriz de la mesa.
+     * @return la matriz que contiene las piedras de la mesa, con la nueva piedra agregada
+     */
     private Piedra[][] ponerPiedraEnMesaJugador(Piedra laPiedra, String posicion, Piedra[][] matriz) {
         String[] subArg = posicion.split("-");
         int posX = Integer.parseInt(subArg[0]);
@@ -139,6 +199,11 @@ public class Mesa {
 
     }
 
+    /**
+     * matrizVacia para verificar si la matriz está vacía
+     * @param matriz la matriz que se va a verificar
+     * @return un boolean, true si está vacía, false en caso contrario
+     */
     private boolean matrizVacia(Piedra matriz[][]) {
         int i, j;
         boolean confirm = false;
@@ -155,16 +220,31 @@ public class Mesa {
         return confirm;
     }
 
+    /**
+     * obtenerExtremo0 para obtener uno de los extremos de la mesa
+     * @return el número extremo de la mesa
+     */
     public int obtenerExtremo0() {
         int ext0 = listaDeExtremos.get(0).getExtremo();
         return ext0;
     }
 
+    /**
+     * obtenerExtremo1 para obtener el otro de los extremos de la mesa
+     * @return el otro número extremo de la mesa
+     */
     public int obtenerExtremo1() {
         int ext1 = listaDeExtremos.get(1).getExtremo();
         return ext1;
     }
 
+    /**
+     * asignarImagenActual para asignar la imagen actual a una piedra
+     * @param laPiedra la piedra a la cual se le va a asignar la imagen actual
+     * @param posicion la posicion de la piedra
+     * @param piedrasMesa la matriz de las piedras de la mesa
+     * @return la piedra con la imagenActual asignada
+     */
     private Piedra asignarImagenActual(Piedra laPiedra, String posicion, Piedra[][] piedrasMesa) {
 
         String subArgPosicion[] = posicion.split("-");
@@ -186,7 +266,7 @@ public class Mesa {
         if (jAux > -1 && piedrasMesa[i][jAux] != null) {
             System.out.println("ENTRO EN EL IF DE LA IZQUIERDA");
             System.out.println(laPiedra.getNum1() + "-" + laPiedra.getNum2());
-            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[i][jAux].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux].getNum2()) && jAux -1 > -1) {
+            if ((laPiedra.getNum1() == laPiedra.getNum2()) && (laPiedra.getNum1() == piedrasMesa[i][jAux].getNum1() || laPiedra.getNum1() == piedrasMesa[i][jAux].getNum2()) && jAux - 1 > -1) {
                 System.out.println("ENTRO EN EL IF DEL DOBLE");
                 laPiedra.setImagenActual(laPiedra.getImagenAbajo());
                 return laPiedra;
@@ -262,6 +342,12 @@ public class Mesa {
         return laPiedra;
     }
 
+    /**
+     * validarPosicion para validar que la piedra está siendo puesta pegada al extremo por donde se quiere jugar
+     * @param posicion string, la posicion de la piedra extremo
+     * @param posicionAComparar string, la posicion de la piedra que se está jugando
+     * @return un boolean true si es válida la posición donde el usuario intentó colocar la piedra, false en caso contrario
+     */
     public boolean validarPosicion(String posicion, String posicionAComparar) {
         boolean confirm = false;
 
@@ -283,6 +369,17 @@ public class Mesa {
 
     }
 
+    /**
+     * validarJugada para validar si la piedra que quiere jugar el usuario coincide con alguno de los extremos de la mesa de juego
+     * @param nickname string con el nickname del usuario
+     * @param piedra string, la piedra que se quiere validar
+     * @param posicion la posición donde se intenta colocar la piedra
+     * @param imagenActual string, imagen actual de la piedra que se intenta jugar
+     * @param laListaPiedras para buscar una piedra por sus dos números en esa lista y obtener toda la información de esa piedra
+     * @param piedrasMesa matriz con las piedras de la mesa
+     * @param listaPiedrasJugador Lista con las piedras del Jugador
+     * @return si la piedra es válida para jugarla la retorna, en caso contrario retorna null
+     */
     public Piedra validarJugada(String nickname, String piedra, String posicion, String imagenActual, ListaPiedras laListaPiedras, Piedra[][] piedrasMesa, ListaPiedras listaPiedrasJugador) {
 
         System.out.println("JUGADOR");
@@ -392,6 +489,14 @@ public class Mesa {
         return null;
     }
 
+    /**
+     * ponerPiedraExtremo0Maquina colocar la piedra a jugar de la máquina en el extremo 0 de la mesa
+     * @param extremoActual la piedra extremo actual de la mesa
+     * @param laPiedra la piedra que se va a colocar
+     * @param matrizMesa la matriz que contiene las piedras de la mesa
+     * @param numeroExtremo el número extremo de la mesa
+     * @return un string con la posición donde fue insertada la piedra
+     */
     public String ponerPiedraExtremo0Maquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, int numeroExtremo) {
         System.out.println("Extremo donde voy a insertar: " + extremoActual.getNum1() + "-" + extremoActual.getNum2());
         System.out.println("piedra a insertar: " + laPiedra.getNum1() + "-" + laPiedra.getNum2());
@@ -454,6 +559,14 @@ public class Mesa {
         return PosicionInsertada;
     }
 
+    /**
+     * ponerPiedraExtremo1Maquina colocar la piedra a jugar de la máquina en el extremo 0 de la mesa
+     * @param extremoActual la piedra extremo actual de la mesa
+     * @param laPiedra la piedra que se va a colocar
+     * @param matrizMesa la matriz que contiene las piedras de la mesa
+     * @param numeroExtremo el número extremo de la mesa
+     * @return un string con la posición donde fue insertada la piedra
+     */
     public String ponerPiedraExtremo1Maquina(Piedra extremoActual, Piedra laPiedra, Piedra[][] matrizMesa, int numeroExtremo) {
         int i, j, iAux, jAux, iAux2, jAux2;
         String PosicionInsertada = "";
@@ -513,6 +626,13 @@ public class Mesa {
         return PosicionInsertada;
     }
 
+    /**
+     * realizarJugadaMaquina realiza la jugada de la máquina, busca si tiene piedras para jugar, toma del pozo, pasa.
+     * @param listaPiedrasMaquina la lista de piedras de la máquina
+     * @param piedrasMesa matriz de la mesa que contiene las piedras
+     * @param listaPiedrasPozo la lista de las piedras del pozo
+     * @return un string con la piedra a jugar de la máquina
+     */
     public String realizarJugadaMaquina(ListaPiedras listaPiedrasMaquina, Piedra[][] piedrasMesa, ListaPiedras listaPiedrasPozo) {
 
         System.out.println("\nMAQUINA");
