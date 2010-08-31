@@ -10,6 +10,10 @@ import servidor.logica.Datos;
  */
 public class ServidorApp {
 
+    /**
+     * Main del servidor, donde se ejecuta el servido y se inicializan todas las listas y se cargan los archivos
+     * @param args
+     */
     public static void main(String[] args) {
 
         Datos.inicializarListasDeDatos();

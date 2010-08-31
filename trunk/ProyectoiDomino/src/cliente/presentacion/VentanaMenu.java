@@ -12,7 +12,12 @@ package cliente.presentacion;
 
 import javax.swing.JFrame;
 import cliente.logica.ConexionJsockets;
-
+import java.awt.Desktop;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author Alberly
@@ -54,6 +59,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLApellido2 = new javax.swing.JLabel();
         jLNombre2 = new javax.swing.JLabel();
         jLNickname2 = new javax.swing.JLabel();
+        jBReporte = new javax.swing.JButton();
         jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -97,7 +103,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLayeredPane1.add(jBCrearPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBCargarPartida.setBackground(new java.awt.Color(255, 204, 153));
-        jBCargarPartida.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBCargarPartida.setFont(new java.awt.Font("Calibri", 1, 14));
         jBCargarPartida.setForeground(new java.awt.Color(153, 51, 0));
         jBCargarPartida.setText("Load Game");
         jBCargarPartida.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -105,7 +111,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLayeredPane1.add(jBCargarPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBModificar.setBackground(new java.awt.Color(255, 204, 153));
-        jBModificar.setFont(new java.awt.Font("Calibri", 1, 14));
+        jBModificar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jBModificar.setForeground(new java.awt.Color(153, 51, 0));
         jBModificar.setText("Modify Info");
         jBModificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -140,13 +146,26 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLNombre2.setBounds(140, 240, 90, 20);
         jLayeredPane1.add(jLNombre2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLNickname2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLNickname2.setFont(new java.awt.Font("Calibri", 1, 14));
         jLNickname2.setForeground(new java.awt.Color(255, 153, 0));
         jLNickname2.setBounds(140, 210, 90, 20);
         jLayeredPane1.add(jLNickname2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jBReporte.setBackground(new java.awt.Color(255, 204, 153));
+        jBReporte.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBReporte.setForeground(new java.awt.Color(153, 51, 0));
+        jBReporte.setText("Generar Reporte");
+        jBReporte.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jBReporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBReporteActionPerformed(evt);
+            }
+        });
+        jBReporte.setBounds(340, 310, 110, 21);
+        jLayeredPane1.add(jBReporte, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         jLFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
-        jLFondo.setBounds(-6, 0, 570, 370);
+        jLFondo.setBounds(-6, -6, 570, 390);
         jLayeredPane1.add(jLFondo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -183,6 +202,20 @@ public class VentanaMenu extends javax.swing.JFrame {
 
         ventana.setDatosUsuario("clave",jLNickname2.getText(),jLNombre2.getText(), jLApellido2.getText(), jLavatar.getText(), "");
     }//GEN-LAST:event_jBModificarActionPerformed
+
+    private void jBReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBReporteActionPerformed
+        // TODO add your handling code here:
+        try {
+            Desktop.getDesktop().browse(new URI ("http://localhost:8080/ReportesJSP/Reporte"));
+        }
+        catch (URISyntaxException ex) {
+
+            Logger.getLogger(VentanaMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        catch (IOException ex) {
+            Logger.getLogger(VentanaMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jBReporteActionPerformed
 
     public void setDatosUsuario(String nickname, String nombre, String apellido, String avatar,String FechaNac) {
         jLNickname2.setText(nickname);
@@ -258,6 +291,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JButton jBCargarPartida;
     private javax.swing.JButton jBCrearPartida;
     private javax.swing.JButton jBModificar;
+    private javax.swing.JButton jBReporte;
     private javax.swing.JLabel jLApellido;
     private javax.swing.JLabel jLApellido2;
     private javax.swing.JLabel jLBienvenida;
