@@ -31,6 +31,8 @@ public class Score {
      */
     public void ajustarPuntaje(Usuario elUsuario) {
         puntaje = elUsuario.getPuntaje();
-        puntaje = puntaje + 10;
+        /*puntaje = puntaje + 10;*/
+        ProcesarProperties.inicializarProcesarProperties();
+        puntaje = puntaje +  ProcesarProperties.leerPropiedad();
     }
 }

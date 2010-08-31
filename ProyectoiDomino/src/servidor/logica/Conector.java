@@ -4,12 +4,10 @@
  */
 package servidor.logica;
 
-import servidor.datos.ListaUsuarios;
 import servidor.datos.Archivo;
 import servidor.datos.Usuario;
 import servidor.datos.Partida;
 import servidor.datos.Mesa;
-import servidor.datos.ListaPiedras;
 
 /**
  *
@@ -68,9 +66,12 @@ public class Conector {
         Datos.getListaDePiedras().imprimirListaPiedras();
     }
 
+    /**
+     * Obteniene los datos del Usuario
+     * @param nickname es el nickname para buscar los datos del usuario
+     * @return Retorna los datos del Usuario
+     */
     public static Usuario obtenerDatosDeUsuario(String nickname) {
-        //listaDeUsuarios = Conector.getListaDeUsuarios();
-        //listaDeUsuarios = Datos.getListaDeUsuarios();
         Usuario auxiliar = new Usuario("", "", "", "", nickname, "", 0, 0, 0, 0);
         return (Datos.getListaDeUsuarios().buscarDatos(auxiliar));
 
@@ -80,12 +81,23 @@ public class Conector {
         Archivo.guardarDatosArchivoPartidas(Datos.getListaDePartidas());
     }
 
+    /**
+     * Guarda el numero de ingresos en el usuario y actualiza el archivo de Usuarios con ese numero.
+     * @param elUsuario es el Usuario que quiero contarle un nuevo ingreso al sistema
+     * @param cont contiene el numero de ingresos y aumenta
+     */
     public static void guardarNumIngresos(Usuario elUsuario, int cont) {
         cont++;
         elUsuario.setNumIngresos(cont);
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
+    /**
+     * Guarda el nuevo dato dependiendo de la opcion que se modifico
+     * @param registro es el usuario actual para sobreescribir
+     * @param elUsuario es el Usuario con el nuevo dato (nombre, apellido, avatar, clave o fechaNac)
+     * @param op Es la opcion a modificar (1: Nombre, 2: apellido, 3: clave, 4:avatar, 5: fechaNac)
+     */
     public static void guardarNuevoDato(Usuario registro, Usuario elUsuario, String op) {
         if (op.equalsIgnoreCase("1")) {
             registro.setNombre(elUsuario.getNombre());
