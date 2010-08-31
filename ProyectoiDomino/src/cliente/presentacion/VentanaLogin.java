@@ -170,7 +170,7 @@ public class VentanaLogin extends javax.swing.JFrame {
                 ventanaMenu.setVisible(true);
                 ventanaMenu.setLocationRelativeTo(null);
 
-                ventanaMenu.setDatosUsuario(txtNickname.getText(),subArg[1], subArg[2], subArg[3],subArg[4]);
+                ventanaMenu.setDatosUsuario(txtPassword.getText(),txtNickname.getText(),subArg[1], subArg[2], subArg[3],subArg[4]);
 
                 /*VentanaModificar ventanaModificar;
                 ventanaModificar = new VentanaModificar(this);

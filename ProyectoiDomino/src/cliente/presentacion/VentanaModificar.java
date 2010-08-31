@@ -54,7 +54,6 @@ public class VentanaModificar extends javax.swing.JFrame {
         jLNombre3 = new javax.swing.JLabel();
         jPClave = new javax.swing.JPasswordField();
         jBclave = new javax.swing.JButton();
-        jDCFechaNac = new com.toedter.calendar.JDateChooser();
         jLNombre5 = new javax.swing.JLabel();
         jLNombre = new javax.swing.JLabel();
         jTextAvatar = new javax.swing.JTextField();
@@ -63,6 +62,7 @@ public class VentanaModificar extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jBCancelar = new javax.swing.JButton();
         jBOK = new javax.swing.JButton();
+        jTextFechaNac = new javax.swing.JTextField();
         jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,20 +70,20 @@ public class VentanaModificar extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("User data**");
+        jLabel1.setText("User data");
         jLabel1.setBounds(110, 10, 180, 40);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLNombre1.setFont(new java.awt.Font("Calibri", 1, 14));
         jLNombre1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLNombre1.setText("Name:");
-        jLNombre1.setBounds(60, 90, 50, 20);
+        jLNombre1.setBounds(60, 100, 50, 20);
         jLayeredPane1.add(jLNombre1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextNombre.setFont(new java.awt.Font("Calibri", 1, 14));
         jTextNombre.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
         jTextNombre.setEnabled(false);
-        jTextNombre.setBounds(120, 90, 160, 19);
+        jTextNombre.setBounds(120, 100, 160, 19);
         jLayeredPane1.add(jTextNombre, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBname.setText("...");
@@ -92,7 +92,7 @@ public class VentanaModificar extends javax.swing.JFrame {
                 jBnameActionPerformed(evt);
             }
         });
-        jBname.setBounds(290, 90, 27, 23);
+        jBname.setBounds(290, 100, 27, 23);
         jLayeredPane1.add(jBname, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBlastName.setText("...");
@@ -153,15 +153,10 @@ public class VentanaModificar extends javax.swing.JFrame {
         jBclave.setBounds(290, 190, 27, 23);
         jLayeredPane1.add(jBclave, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jDCFechaNac.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
-        jDCFechaNac.setFont(new java.awt.Font("Calibri", 0, 12));
-        jDCFechaNac.setBounds(120, 220, 180, 23);
-        jLayeredPane1.add(jDCFechaNac, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLNombre5.setFont(new java.awt.Font("Calibri", 1, 14));
+        jLNombre5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLNombre5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLNombre5.setText("Birth Date:");
-        jLNombre5.setBounds(40, 220, 70, 20);
+        jLNombre5.setText("*Birth Date:");
+        jLNombre5.setBounds(30, 220, 80, 20);
         jLayeredPane1.add(jLNombre5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLNombre.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -185,14 +180,14 @@ public class VentanaModificar extends javax.swing.JFrame {
         jButton1.setBounds(290, 250, 27, 23);
         jLayeredPane1.add(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12));
-        jLabel2.setText("*Estos campos no pueden modificarse");
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel2.setText("*This fields cannot be change");
         jLabel2.setBounds(40, 290, 220, 16);
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel3.setText("** Los cambios se veran la proxima vez que inicies sesion");
-        jLabel3.setBounds(40, 310, 316, 16);
+        jLabel3.setText("Note: Changes will show next time you login");
+        jLabel3.setBounds(40, 310, 241, 16);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBCancelar.setFont(new java.awt.Font("Calibri", 1, 14));
@@ -217,8 +212,19 @@ public class VentanaModificar extends javax.swing.JFrame {
         jBOK.setBounds(90, 340, 70, 25);
         jLayeredPane1.add(jBOK, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jTextFechaNac.setEditable(false);
+        jTextFechaNac.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jTextFechaNac.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 153, 0)));
+        jTextFechaNac.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFechaNacActionPerformed(evt);
+            }
+        });
+        jTextFechaNac.setBounds(120, 220, 160, 20);
+        jLayeredPane1.add(jTextFechaNac, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         jLFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
-        jLFondo.setBounds(0, 0, 400, 390);
+        jLFondo.setBounds(0, -10, 400, 410);
         jLayeredPane1.add(jLFondo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -229,12 +235,62 @@ public class VentanaModificar extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * modifica nombre, apellido, avatar y clave, dependiendo de la opcion de se le pase al sevidor
+     * @param evt
+     */
+    private void jBOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBOKActionPerformed
+        // TODO add your handling code here:
+        if (jTextNombre.getText().equalsIgnoreCase("")
+                || jTextApellido.getText().equalsIgnoreCase("")
+                || jTextNickname.getText().equalsIgnoreCase("")
+                || jPClave.getText().equalsIgnoreCase("")
+                || jTextAvatar.getText().equalsIgnoreCase("")) {
+            JOptionPane.showMessageDialog(null, "All fields must be written in.");
+        } else {
+            if (confirm1.equalsIgnoreCase("1")) {
+                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextNombre.getText(), confirm1);
+                String subArg[] = mensaje.split(":");
+                System.out.println("Se modifico correctamente el nombre a = " + subArg[1]);
+            }
+            if (confirm1.equalsIgnoreCase("2")) {
+                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextApellido.getText(), confirm1);
+                String subArg[] = mensaje.split(":");
+                System.out.println("Se modifico correctamente el apellido a = " + subArg[1]);
+            }
+            if (confirm1.equalsIgnoreCase("3")) {
+                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jPClave.getText(), confirm1);
+                String subArg[] = mensaje.split(":");
+                System.out.println("Se modifico correctamente la clave a = " + subArg[1]);
+            }
+            if (confirm1.equalsIgnoreCase("4")) {
+                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextAvatar.getText(), confirm1);
+                String subArg[] = mensaje.split(":");
+                System.out.println("Se modiifico correctamente el avatar a = " + subArg[1]);
+            }
+        }
+        this.dispose();
+}//GEN-LAST:event_jBOKActionPerformed
+
+    /**
+     * boton de cancelar hace que se destruya la ventana
+     * @param evt
+     */
+    private void jBCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCancelarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+}//GEN-LAST:event_jBCancelarActionPerformed
+
+    /**
+     * Modifica el avatar, este boton lleva a la ventana de imagenes para seleccionarla
+     * @param evt
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Imagenes ventanaImagenes;
@@ -243,88 +299,73 @@ public class VentanaModificar extends javax.swing.JFrame {
         confirm1 = "4";
 }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jBCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCancelarActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-}//GEN-LAST:event_jBCancelarActionPerformed
-
-    private void jBOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBOKActionPerformed
-        // TODO add your handling code here:
-        if (jTextNombre.getText().equalsIgnoreCase("")
-                || jTextApellido.getText().equalsIgnoreCase("")
-                || jTextNickname.getText().equalsIgnoreCase("")
-                || jPClave.getText().equalsIgnoreCase("")
-                || jTextAvatar.getText().equalsIgnoreCase("")
-                /* || getFecha(jDCFechaNac).equalsIgnoreCase("")*/) {
-            JOptionPane.showMessageDialog(null, "All fields must be written in.");
-        } else {
-            if (confirm1.equalsIgnoreCase("1")) {
-                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextNombre.getText(), confirm1);
-                String subArg[] = mensaje.split(":");
-                if (subArg[0].equalsIgnoreCase("TRUE")) {
-                    VentanaMenu ventanaMenu = new VentanaMenu();
-                    ventanaMenu.actualizarDato(subArg[1], confirm1);
-                }
-            }
-            if (confirm1.equalsIgnoreCase("2")) {
-                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextApellido.getText(), confirm1);
-                String subArg[] = mensaje.split(":");
-                if (subArg[0].equalsIgnoreCase("TRUE")) {
-                    VentanaMenu ventanaMenu = new VentanaMenu();
-                    ventanaMenu.actualizarDato(subArg[1], confirm1);
-                }
-            }
-            if (confirm1.equalsIgnoreCase("3")) {
-                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jPClave.getText(), confirm1);
-               /* String subArg[] = mensaje.split(":");
-                if (subArg[0].equalsIgnoreCase("TRUE")) {
-                    VentanaMenu ventanaMenu = new VentanaMenu();
-                    ventanaMenu.actualizarDato(subArg[1], confirm1);
-                }*/
-            }
-            if (confirm1.equalsIgnoreCase("4")) {
-                String mensaje = ConexionJsockets.solicitudServidor8(jTextNickname.getText(), jTextAvatar.getText(), confirm1);
-                String subArg[] = mensaje.split(":");
-                if (subArg[0].equalsIgnoreCase("TRUE")) {
-                    VentanaMenu ventanaMenu = new VentanaMenu();
-                    ventanaMenu.actualizarDato(subArg[1], confirm1);
-                }
-            }
-        }
-        this.dispose();
-            
-
-               /* if (mensaje.equals("TRUE")) {
-                    System.out.println(mensaje);
-                    this.dispose();
-                } else {
-                    JOptionPane.showMessageDialog(null, "Nickname already exists, please try another one.");
-                }*/
-        
-}//GEN-LAST:event_jBOKActionPerformed
-
-    private void jBnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnameActionPerformed
-        // TODO add your handling code here:
-        jTextNombre.enable(true);
-        confirm1 = "1";
-    }//GEN-LAST:event_jBnameActionPerformed
-
-    private void jBlastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBlastNameActionPerformed
-        // TODO add your handling code here:
-        jTextApellido.enable(true);
-        confirm1 = "2";
-    }//GEN-LAST:event_jBlastNameActionPerformed
-
+    /**
+     * Modifica la clave del usuario
+     * @param evt
+     */
     private void jBclaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBclaveActionPerformed
         // TODO add your handling code here:
         jPClave.enable(true);
         confirm1 = "3";
-    }//GEN-LAST:event_jBclaveActionPerformed
+}//GEN-LAST:event_jBclaveActionPerformed
 
     private void jTextNicknameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNicknameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextNicknameActionPerformed
+}//GEN-LAST:event_jTextNicknameActionPerformed
 
+    /**
+     * Modifica el apellido del usuario
+     * @param evt
+     */
+    private void jBlastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBlastNameActionPerformed
+        // TODO add your handling code here:
+        jTextApellido.enable(true);
+        confirm1 = "2";
+}//GEN-LAST:event_jBlastNameActionPerformed
+
+    /**
+     * modifica el nombre del usuario
+     * @param evt
+     */
+    private void jBnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnameActionPerformed
+        // TODO add your handling code here:
+        jTextNombre.enable(true);
+        confirm1 = "1";
+}//GEN-LAST:event_jBnameActionPerformed
+
+    private void jTextFechaNacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFechaNacActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFechaNacActionPerformed
+
+    /**
+     * Es la accion del boton par modificar el avatar del usuario
+     * @param evt
+     */
+    /**
+     * El boton candelar destruye la ventana
+     * @param evt
+     */
+    /**
+     * El boton ok, modifica dependiendo de la opcion (confirm1) que se haya activado
+     * @param evt
+     */
+    /**
+     * El boton que modifica el nombre del usuario
+     * @param evt
+     */
+    /**
+     * el Boton para modificar el apellido del usuario
+     * @param evt
+     */
+    /**
+     * el Boton para modificar la clave
+     * @param evt
+     */
+    /**
+     * Para agarrar la fecha del Jcalendar con el formato establecido y pasarla a String
+     * @param Jdc es del tipo de la libreria Jcalendar
+     * @return retorna el string con la fecha
+     */
     public static String getFecha(JDateChooser Jdc)
      {
         Calendar fechadate;
@@ -337,14 +378,23 @@ public class VentanaModificar extends javax.swing.JFrame {
 
       }
 
-    public void setDatosUsuario(String clave, String nickname, String nombre, String apellido, String avatar, String FechaNac) {
+    /**
+     * Escribe en la ventana Modificar los datos actuales del usuario
+     * @param clave es la clave actual del usuario
+     * @param nickname es el nickname actual del usuario, el nickname no se modifica
+     * @param nombre es el nombre actual del usuario
+     * @param apellido es el apellido actual del usuario
+     * @param avatar es el avatar actual del usuario
+     * @param FechaNac es la fecha de nac actual del usuario
+     */
+    public void setDatosUsuarioModificar(String clave, String nickname, String nombre, String apellido, String avatar,String fechaNac) {
 
         jTextNombre.setText(nombre);
         jTextApellido.setText(apellido);
         jPClave.setText(clave);
         jTextAvatar.setText(avatar);
         jTextNickname.setText(nickname);
-
+        jTextFechaNac.setText(fechaNac);
 
     }
 
@@ -366,7 +416,6 @@ public class VentanaModificar extends javax.swing.JFrame {
     private javax.swing.JButton jBlastName;
     private javax.swing.JButton jBname;
     private javax.swing.JButton jButton1;
-    private com.toedter.calendar.JDateChooser jDCFechaNac;
     private javax.swing.JLabel jLFondo;
     private javax.swing.JLabel jLNombre;
     private javax.swing.JLabel jLNombre1;
@@ -381,6 +430,7 @@ public class VentanaModificar extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPClave;
     private javax.swing.JTextField jTextApellido;
     private javax.swing.JTextField jTextAvatar;
+    private javax.swing.JTextField jTextFechaNac;
     private javax.swing.JTextField jTextNickname;
     private javax.swing.JTextField jTextNombre;
     // End of variables declaration//GEN-END:variables
