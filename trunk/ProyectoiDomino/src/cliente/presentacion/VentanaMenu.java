@@ -52,7 +52,6 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLApellido = new javax.swing.JLabel();
         jLBienvenida = new javax.swing.JLabel();
         jBCrearPartida = new javax.swing.JButton();
-        jBCargarPartida = new javax.swing.JButton();
         jBModificar = new javax.swing.JButton();
         jLFechaNac = new javax.swing.JLabel();
         jLFechaNac2 = new javax.swing.JLabel();
@@ -102,16 +101,8 @@ public class VentanaMenu extends javax.swing.JFrame {
         jBCrearPartida.setBounds(340, 190, 110, 21);
         jLayeredPane1.add(jBCrearPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jBCargarPartida.setBackground(new java.awt.Color(255, 204, 153));
-        jBCargarPartida.setFont(new java.awt.Font("Calibri", 1, 14));
-        jBCargarPartida.setForeground(new java.awt.Color(153, 51, 0));
-        jBCargarPartida.setText("Load Game");
-        jBCargarPartida.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jBCargarPartida.setBounds(340, 230, 110, 21);
-        jLayeredPane1.add(jBCargarPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         jBModificar.setBackground(new java.awt.Color(255, 204, 153));
-        jBModificar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBModificar.setFont(new java.awt.Font("Calibri", 1, 14));
         jBModificar.setForeground(new java.awt.Color(153, 51, 0));
         jBModificar.setText("Modify Info");
         jBModificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -154,14 +145,14 @@ public class VentanaMenu extends javax.swing.JFrame {
         jBReporte.setBackground(new java.awt.Color(255, 204, 153));
         jBReporte.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jBReporte.setForeground(new java.awt.Color(153, 51, 0));
-        jBReporte.setText("Generar Reporte");
+        jBReporte.setText("Show Report");
         jBReporte.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jBReporte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBReporteActionPerformed(evt);
             }
         });
-        jBReporte.setBounds(340, 310, 110, 21);
+        jBReporte.setBounds(340, 230, 110, 21);
         jLayeredPane1.add(jBReporte, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
@@ -197,10 +188,9 @@ public class VentanaMenu extends javax.swing.JFrame {
         VentanaModificar ventana = new VentanaModificar(this);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
-        //VentanaLogin ventanaLogin = new VentanaLogin();
-        //String clave = ventanaLogin.obtenerClave();
 
-        ventana.setDatosUsuario("clave",jLNickname2.getText(),jLNombre2.getText(), jLApellido2.getText(), jLavatar.getText(), "");
+        ventana.setDatosUsuarioModificar(password, jLNickname2.getText(),jLNombre2.getText(), jLApellido2.getText(), jLavatar.getText(),jLFechaNac2.getText());
+        
     }//GEN-LAST:event_jBModificarActionPerformed
 
     private void jBReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBReporteActionPerformed
@@ -217,11 +207,12 @@ public class VentanaMenu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBReporteActionPerformed
 
-    public void setDatosUsuario(String nickname, String nombre, String apellido, String avatar,String FechaNac) {
+    public void setDatosUsuario(String clave,String nickname, String nombre, String apellido, String avatar,String FechaNac) {
         jLNickname2.setText(nickname);
         jLNombre2.setText(nombre);
         jLApellido2.setText(apellido);
         jLFechaNac2.setText(FechaNac);
+        password = clave;
 
         if (avatar.equalsIgnoreCase("Dog")) {
             jLavatar.setText(avatar);
@@ -247,35 +238,7 @@ public class VentanaMenu extends javax.swing.JFrame {
 
     }
 
-    public void actualizarDato(String dato, String op) {
-        if (op.equalsIgnoreCase("1")) {
-            jLNombre2.setText(dato);
-        } else if (op.equalsIgnoreCase("2")) {
-            jLApellido2.setText(dato);
-        } else if (op.equalsIgnoreCase("4")) {
-            if (dato.equalsIgnoreCase("Dog")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg")));
-            } else if (dato.equalsIgnoreCase("Umbrella")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png")));
-            } else if (dato.equalsIgnoreCase("Turtle")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg")));
-            } else if (dato.equalsIgnoreCase("Butterfly")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png")));
-            } else if (dato.equalsIgnoreCase("Bug")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg")));
-            } else if (dato.equalsIgnoreCase("Domino")) {
-                jLavatar.setText(dato);
-                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
-            }
-        }
-
-    }
-
+   
     /**
      * @param args the command line arguments
      */
@@ -288,7 +251,6 @@ public class VentanaMenu extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBCargarPartida;
     private javax.swing.JButton jBCrearPartida;
     private javax.swing.JButton jBModificar;
     private javax.swing.JButton jBReporte;
@@ -305,4 +267,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLavatar;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
+
+    private String password;
+
 }
