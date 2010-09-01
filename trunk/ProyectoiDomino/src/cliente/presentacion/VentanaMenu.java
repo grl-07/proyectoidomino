@@ -1,14 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * VentanaMenu.java
- *
- * Created on 08/08/2010, 10:10:02 AM
- */
 package cliente.presentacion;
+import java.util.Calendar;
 
 import javax.swing.JFrame;
 import cliente.logica.ConexionJsockets;
@@ -18,10 +9,6 @@ import java.net.URISyntaxException;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-/**
- *
- * @author Alberly
- */
 public class VentanaMenu extends javax.swing.JFrame {
 
     javax.swing.JFrame ventanaPadre;
@@ -173,9 +160,16 @@ public class VentanaMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * hace visible la mesa de juego "VentanaJuego"
+     * @param evt
+     */
     private void jBCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearPartidaActionPerformed
         // TODO add your handling code here:
-        String mensaje = ConexionJsockets.solicitudServidor2(jLNickname2, "fechaInicio");
+        Calendar Calendario = Calendar.getInstance();
+        String fecha = Calendario.get(Calendario.DATE) + "/" + (Calendario.get(Calendario.MONTH) + 1) + "/" + Calendario.get(Calendario.YEAR);
+
+        String mensaje = ConexionJsockets.solicitudServidor2(jLNickname2, fecha);
 
         VentanaJuego ventanaJuego = new VentanaJuego(this, jLNickname2.getText(), mensaje);
         ventanaJuego.setVisible(true);
@@ -183,6 +177,10 @@ public class VentanaMenu extends javax.swing.JFrame {
         ventanaJuego.setDatosUsuarioJuego(jLNickname2.getText(), jLavatar);
     }//GEN-LAST:event_jBCrearPartidaActionPerformed
 
+    /**
+     * hace visible la ventana para modificar datos "VentanaModificar"
+     * @param evt
+     */
     private void jBModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBModificarActionPerformed
         // TODO add your handling code here:
         VentanaModificar ventana = new VentanaModificar(this);
@@ -238,7 +236,40 @@ public class VentanaMenu extends javax.swing.JFrame {
 
     }
 
-   
+    /**
+     * setea el nuevo dato en la opción escogida por el cliente
+     * @param dato, nuevo dato a ser seteado
+     * @param op, opción a modificar
+     */
+    public void actualizarDato(String dato, String op) {
+        if (op.equalsIgnoreCase("1")) {
+            jLNombre2.setText(dato);
+        } else if (op.equalsIgnoreCase("2")) {
+            jLApellido2.setText(dato);
+        } else if (op.equalsIgnoreCase("4")) {
+            if (dato.equalsIgnoreCase("Dog")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen10.jpg")));
+            } else if (dato.equalsIgnoreCase("Umbrella")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen8.png")));
+            } else if (dato.equalsIgnoreCase("Turtle")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen9.jpg")));
+            } else if (dato.equalsIgnoreCase("Butterfly")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen6.png")));
+            } else if (dato.equalsIgnoreCase("Bug")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen12.jpg")));
+            } else if (dato.equalsIgnoreCase("Domino")) {
+                jLavatar.setText(dato);
+                jLavatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Imagen13.png")));
+            }
+        }
+
+    }
+
     /**
      * @param args the command line arguments
      */

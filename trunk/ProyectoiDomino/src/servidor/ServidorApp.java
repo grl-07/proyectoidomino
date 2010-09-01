@@ -1,17 +1,12 @@
 package servidor;
-
 import ve.edu.ucab.server.logica.Servidor;
 import servidor.logica.Conector;
 import servidor.logica.Datos;
 
-/**
- *
- * @author CASITA
- */
 public class ServidorApp {
 
     /**
-     * Main del servidor, donde se ejecuta el servido y se inicializan todas las listas y se cargan los archivos
+     * Main del servidor, donde se ejecuta el servidor y se inicializan todas las listas y se carga la información contenida en los archivos
      * @param args
      */
     public static void main(String[] args) {

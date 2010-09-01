@@ -1591,6 +1591,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                         }
                         System.out.println("YOU WON!!!");
                         JOptionPane.showMessageDialog(null, "CONGRATULATIONS! YOU WON");
+
                         //REGRESAR A LA VENTANA MENU
                         this.dispose();
                     }

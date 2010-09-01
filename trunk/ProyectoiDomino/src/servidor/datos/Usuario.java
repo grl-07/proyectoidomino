@@ -55,6 +55,8 @@ public class Usuario {
         this.numPartCreadas = numPartCreadas;
     }
 
+  
+
     /**
      * getPuntaje para saber el valor del puntaje del usuario
      * @return un entero con el puntaje
@@ -62,6 +64,9 @@ public class Usuario {
     public int getPuntaje() {
         return puntaje;
     }
+
+
+
 
     /**
      * setPuntaje establece el puntaje del usuario
