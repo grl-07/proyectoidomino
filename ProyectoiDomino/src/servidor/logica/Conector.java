@@ -1,25 +1,19 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package servidor.logica;
 
 import servidor.datos.Archivo;
 import servidor.datos.Usuario;
 import servidor.datos.Partida;
 import servidor.datos.Mesa;
+import servidor.datos.Score;
 
-/**
- *
- * @author Alberly
- */
 public class Conector {
 
-    /*private static ListaUsuarios listaDeUsuarios;
-
-    public static ListaUsuarios getListaDeUsuarios() {
-    return listaDeUsuarios;
-    }*/
+    /**
+     * comprobarDatos obtiene la lista de usuarios registrados en el sistema de la clase Datos y llama a la función que verifica que el nickname y el password ingresado por el cliente son correctos para darle acceso a la aplicación
+     * @param nickname nickname a verificar
+     * @param password password a verificar
+     * @return true si coinciden los datos, false en caso contrario
+     */
     public static boolean comprobarDatos(String nickname, String password) {
         boolean confirm;
         confirm = false;
@@ -27,11 +21,26 @@ public class Conector {
         return confirm;
     }
 
+    /**
+     * guardarDatos obtiene la lista de usuarios de la clase Datos y llama al método que agrega un usuario a la lista
+     * de usuarios,posteriormente llama a una función para que agregue el usuario al archivo Usuarios.xml
+     * @param name nombre ingresado por el usuario
+     * @param lastName apellido ingresado por el usuario
+     * @param nickname nickname ingresado por el usuario
+     * @param password password ingresado por el usuario
+     * @param avatar avatar escojido por el usuario
+     * @param fechaNac fecha de nacimiento ingresado por el usuario
+     */
     public static void guardarDatos(String name, String lastName, String nickname, String password, String avatar, String fechaNac) {
         Datos.getListaDeUsuarios().agregarUsuario(new Usuario(name, lastName, password, nickname, avatar, fechaNac));
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
+    /**
+     * comprobarNickname obtiene la lista de usuarios y llama a la función que pasado un nickname confirme si el usuario está registrado
+     * @param nickname a buscar
+     * @return true si el usuario está registrado, false en caso contrario
+     */
     public static boolean comprobarNickname(String nickname) {
         Usuario elUsuario = new Usuario("", "", "", nickname, "", "");
         if (Datos.getListaDeUsuarios().buscarNickname(elUsuario) == false) {
@@ -46,14 +55,23 @@ public class Conector {
         return false;
     }
 
+    /**
+     * solicitarCargaDatosPiedras llama al método que cargará la información contenida en el archivo Piedras.xml a la lista de piedras
+     */
     public static void solicitarCargaDatosPiedras() {
         Archivo.cargarPiedrasArchivo(Datos.getListaDePiedras());
     }
 
+    /**
+     * solicitarCargaDatosUsuario llama al método que cargará la información contenida en el archivo Usuarios.xml a la lista de usuarios
+     */
     public static void solicitarCargaDatosUsuario() {
         Archivo.cargarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
+    /**
+     * solicitarCargaDatosPartidas llama al método que cargará la información contenida en el archivo Partidas.xml a la lista de partidas
+     */
     public static void solicitarCargaDatosPartidas() {
         Archivo.cargarPartidasArchivo(Datos.getListaDePartidas());
     }
@@ -77,6 +95,10 @@ public class Conector {
 
     }
 
+    /**
+     * solicitarGuardarDatosPartidas llama a la función encargada de guardar los datos contenida en la lista partidas
+     * en el archivo Partidas.xml
+     */
     public static void solicitarGuardarDatosPartidas() {
         Archivo.guardarDatosArchivoPartidas(Datos.getListaDePartidas());
     }
@@ -118,9 +140,36 @@ public class Conector {
         Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
     }
 
+    /**
+     * guardarNumPartidasGanadas llama al método necesario para incrementar en 1 las partidas ganadas
+     * @param elUsuario, el usuario al cual se le va a incrementar las partidas ganadas
+     * @param partidasGanadas número de partidas ganadas que tiene el usuario hasta el momento
+     */
+    public static void guardarNumPartidasGanadas(Usuario elUsuario, int partidasGanadas) {
+        partidasGanadas++;
+        elUsuario.setNumPartidasGan(partidasGanadas);
+        Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+
+    /**
+     * guardarNuevoPuntaje llama al método necesario para ajustar el puntaje cuando el usuario gana una partida
+     * @param elUsuario, el usuario al cual se le va a ajustar el puntaje
+     */
+    public static void guardarNuevoPuntaje(Usuario elUsuario) {
+        Score elScore = new Score();
+        int puntaje = elScore.ajustarPuntaje(elUsuario);
+        elUsuario.setPuntaje(puntaje);
+        Archivo.guardarDatosArchivoUsuario(Datos.getListaDeUsuarios());
+    }
+
+    /**
+     * solicitarGuardarPartidaEnLista llama al método encargado de guardar una partida en la lista partidas
+     * @param nickname, usuario al cual se le va a guardar la partida
+     * @return true si se guardó la partida, false en caso contrario
+     */
     public static boolean solicitarGuardarPartidaEnLista(String nickname) {
-        Mesa laMesa=new Mesa();
-        Usuario elUsuario = new Usuario("","","","",nickname,"",0,0,0,0);
+        Mesa laMesa = new Mesa();
+        Usuario elUsuario = new Usuario("", "", "", "", nickname, "", 0, 0, 0, 0);
 
         Partida partidaExistente = Datos.obtenerPartidaExistente(nickname);
         partidaExistente.getElJuego().getLaMesa().setPiedrasMesa(laMesa.pasarMatrizPiedrasMesaALista(Datos.getMatrizPiedrasMesa()));

@@ -8,7 +8,7 @@ import java.util.*;
 public class Archivo {
 
     private static String direccionUsuarios = "src/servidor/datos/Usuarios.xml";
-    private static String nombreArchivo = "src/servidor/datos/Piedras.xml";
+    private static String direccionPiedras = "src/servidor/datos/Piedras.xml";
     private static String direccionPartidas = "src/servidor/datos/Partidas.xml";
 
     /**
@@ -144,7 +144,7 @@ public class Archivo {
             SAXBuilder builder = new SAXBuilder();
 
 
-            Document doc = builder.build(nombreArchivo);
+            Document doc = builder.build(direccionPiedras);
 
 
             Element raiz = doc.getRootElement();

@@ -80,8 +80,8 @@ public class ListaPartidas {
      * @param listaDePiedras la lista a donde se le asignarán las piedras al jugador
      * @return true
      */
-    public boolean crearPartida(String nickname, ListaPiedras listaDePiedras) {
-        Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras);
+    public boolean crearPartida(String nickname, ListaPiedras listaDePiedras, String fechaInicio) {
+        Partida laPartida = new Partida().crearPartida(nickname, listaDePiedras, fechaInicio);
         return laListaPartidas.add(laPartida);
     }
 

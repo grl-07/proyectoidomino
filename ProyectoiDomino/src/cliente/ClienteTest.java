@@ -1,16 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cliente;
 import cliente.presentacion.VentanaLogin;
 
-/**
- *
- * @author CASITA
- */
+
 public class ClienteTest {
 
+    /**
+     * main, método que dispara la ventana inicial del juego al cliente, la ventana para loguearse o registrarse.
+     * @param args
+     */
     public static void main(String[] args) {
 
          VentanaLogin ventana = new VentanaLogin();

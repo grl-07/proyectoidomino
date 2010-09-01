@@ -3,16 +3,22 @@ import javax.swing.*;
 import cliente.logica.FuncionGeneral;
 
 
-/**
- *
- * @author CASITA
- */
 public class Imagenes extends javax.swing.JFrame {
 
+    /**
+     * Constructor
+     * @param ventanaPadre para establecer la ventana padre de Imagenes
+     */
     public Imagenes(JFrame ventanaPadre){
         initComponents();
         this.ventanaPadre = ventanaPadre;
     }
+
+    /**
+     * Constructor
+     * @param ventanaPadre para establecer la ventana padre de Imagenes
+     * @param avatar para establecer el avatar
+     */
     public Imagenes(JFrame ventanaPadre,JTextField avatar){
         initComponents();
         this.ventanaPadre = ventanaPadre;
@@ -20,6 +26,9 @@ public class Imagenes extends javax.swing.JFrame {
 
     }
 
+    /**
+     * Constructor
+     */
     public Imagenes(){
         initComponents();
     }
@@ -159,6 +168,10 @@ public class Imagenes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Método que marca el radio button de la tortuga y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBTortugaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBTortugaActionPerformed
         // TODO add your handling code here:
 
@@ -172,6 +185,10 @@ public class Imagenes extends javax.swing.JFrame {
        
     }//GEN-LAST:event_jRadioBTortugaActionPerformed
 
+    /**
+     * Método que marca el radio button de la sombrilla y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBSombrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBSombrillaActionPerformed
         // TODO add your handling code here:
         FuncionGeneral.desmarcarRadioButton(jRadioBDog);
@@ -184,6 +201,10 @@ public class Imagenes extends javax.swing.JFrame {
        
 }//GEN-LAST:event_jRadioBSombrillaActionPerformed
 
+    /**
+     * Método que marca el radio button del perro y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBDogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDogActionPerformed
         // TODO add your handling code here:
         FuncionGeneral.desmarcarRadioButton(jRadioBSombrilla);
@@ -194,10 +215,13 @@ public class Imagenes extends javax.swing.JFrame {
 
         setearAvatar(avatar,jRadioBDog, jRadioBSombrilla,jRadioBTortuga,jRadioBMariposa,jRadioBCoco,jRadioBDomino);
       
-
-
     }//GEN-LAST:event_jRadioBDogActionPerformed
 
+
+    /**
+     * Método que marca el radio button del dominó y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBDominoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBDominoActionPerformed
         // TODO add your handling code here:
         FuncionGeneral.desmarcarRadioButton(jRadioBDog);
@@ -210,6 +234,10 @@ public class Imagenes extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jRadioBDominoActionPerformed
 
+    /**
+     * Método que marca el radio button del coco y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBCocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBCocoActionPerformed
         // TODO add your handling code here:
 
@@ -223,6 +251,11 @@ public class Imagenes extends javax.swing.JFrame {
       
     }//GEN-LAST:event_jRadioBCocoActionPerformed
 
+
+    /**
+     * Método que marca el radio button de la mariposa y desmarca el resto. Llama a una función para setear el nombre del avatar seleccionado en el textField de "Avatar"
+     * @param evt
+     */
     private void jRadioBMariposaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBMariposaActionPerformed
         // TODO add your handling code here:
         FuncionGeneral.desmarcarRadioButton(jRadioBDog);
@@ -236,12 +269,27 @@ public class Imagenes extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jRadioBMariposaActionPerformed
 
+
+    /**
+     * Este método cierra esta ventana de Imágenes y regresa a su ventana padre VentanaLogin
+     * @param evt
+     */
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
         // TODO add your handling code here:
         ventanaPadre.setVisible(true);
         this.setVisible(false);
 }//GEN-LAST:event_jButtonAceptarActionPerformed
 
+    /**
+     * Este método setea la imagen seleccionada al textField de Avatar "txtavatar"
+     * @param txtavatar texfield donde se va a setear el nombre del avatar seleccionado
+     * @param perro radiobutton
+     * @param sombrilla radiobutton
+     * @param tortuga radiobutton
+     * @param mariposa radiobutton
+     * @param coco radiobutton
+     * @param domino radiobutton
+     */
     public void setearAvatar(JTextField txtavatar,JRadioButton perro, JRadioButton sombrilla, JRadioButton tortuga, JRadioButton mariposa, JRadioButton coco, JRadioButton domino) {
        
 

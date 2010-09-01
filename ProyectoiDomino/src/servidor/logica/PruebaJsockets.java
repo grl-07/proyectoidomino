@@ -1,20 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author CASITA
- */
 package servidor.logica;
 
 import ve.edu.ucab.server.logica.LogicaServidor;
-//import Logica.Conector.*;
 import servidor.datos.*;
 
 public class PruebaJsockets implements LogicaServidor {
     //private static ListaUsuarios listaDeUsuarios = new ListaUsuarios();
 
+    /**
+     * setea datos del usuario, la piedra, la partida, y llama a respuesta servidor con estos objetos seteados
+     * @param arg cadena de protocolo con la información necesaria para ser seteada en el usuario, piedra o partida.
+     * @return un string, una cadena con la respuesta del servidor
+     */
     public String realizarOperacion(String arg) {
         int num1, num2;
         String[] subArg = arg.split(":");
@@ -94,6 +90,16 @@ public class PruebaJsockets implements LogicaServidor {
         return respuestaServidor(elUsuario, laPartida, laPiedra, opcion, "");
     }
 
+    /**
+     * Este método es el encargado de realizar las diferentes solicitudes del cliente: ingresar al sistema,
+     * crear partida, registrar, guardar partida, validar jugada, terminar juego, tomar piedra del pozo, modificar datos del cliente.
+     * @param elUsuario con la información del usuario que realizó la solicitud
+     * @param laPartida con la información básica (nickname, fecha de inicio) de la partida
+     * @param laPiedra con la información necesaria para validar una jugada
+     * @param opcion, entero para determinar cual es la solicitud del cliente
+     * @param op
+     * @return un string, una cadena con el protocolo establecido de retorno de las solicitudes
+     */
     public String respuestaServidor(Usuario elUsuario, Partida laPartida, Piedra laPiedra, int opcion, String op) {
         String resultado = "FALSE";
         String cadena;
@@ -127,7 +133,7 @@ public class PruebaJsockets implements LogicaServidor {
                 Conector.guardarNumPartidasCreadas(registro, cont);
                 //Datos.inicializarListasJuego();                
 
-                partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname());
+                partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname(), laPartida.getFechaIni());
 
                 //inicializarPiedrasJuego
                 Datos.inicializarMatrizPiedras();
@@ -209,6 +215,10 @@ public class PruebaJsockets implements LogicaServidor {
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
                 if (partidaExistente.getElJuego().getJugador1().getElJugador().isEstado() == true) {
                     resultado = "TRUE:USTED HA GANADO";
+                    registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
+                    int partidasGanadas = registro.getNumPartidasGan();
+                    Conector.guardarNumPartidasGanadas(registro, partidasGanadas);
+                    Conector.guardarNuevoPuntaje(registro);
                 } else {
                     if (partidaExistente.getElJuego().getJugador2().getLaMaquina().isEstado() == true) {
                         resultado = "TRUE:USTED HA PERDIDO";

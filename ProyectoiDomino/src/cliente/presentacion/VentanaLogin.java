@@ -1,27 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * VentanaLogin.java
- *
- * Created on 08/08/2010, 10:04:23 AM
- */
 package cliente.presentacion;
 import cliente.logica.ConexionJsockets;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Alberly
- */
 public class VentanaLogin extends javax.swing.JFrame {
 
     /** Creates new form VentanaLogin */
     public VentanaLogin() {
         initComponents();
-        //inicializarComponentesPropios();
         this.setTitle("iDomino");
     }
 
@@ -140,6 +125,10 @@ public class VentanaLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Este método llama a la ventana de registro
+     * @param evt
+     */
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
         // TODO add your handling code here:
         VentanaRegistro ventana = new VentanaRegistro();
@@ -147,20 +136,26 @@ public class VentanaLogin extends javax.swing.JFrame {
         ventana.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnSignUpActionPerformed
 
+    /**
+     * Este método cierra la ventana de login
+     * @param evt
+     */
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
-
         System.exit(0);
 }//GEN-LAST:event_btnCancelActionPerformed
 
+    /**
+     * Este método comprueba que no estén vacios los texfield de nickname y password, si es asi, envia un mensaje, en caso
+     * contrario llama al servidor para que compruebe los datos del cliente.
+     * @param evt
+     */
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
         if (txtNickname.getText().equalsIgnoreCase("") || txtPassword.getText().equalsIgnoreCase("")) {
             JOptionPane.showMessageDialog(null, "All fields must be written in.");
         } else {
-
             String mensaje = ConexionJsockets.solicitudServidor1(txtNickname, txtPassword);
-            //System.out.println("EL SERVIDOR RESPONDE " + mensaje);
             String[] subArg = mensaje.split(":");
             mensaje = subArg[0];
             if (mensaje.equals("TRUE")) {
@@ -191,13 +186,14 @@ public class VentanaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
 }//GEN-LAST:event_txtNicknameActionPerformed
 
-    public String obtenerClave() {
+    /**
+     *
+     * @return
+     */
+    /*public String obtenerClave() {
         return txtPassword.getText();
-    }
-    private void inicializarComponentesPropios() {
-        
-
-    }
+    }*/
+   
 
     /**
      * @param args the command line arguments

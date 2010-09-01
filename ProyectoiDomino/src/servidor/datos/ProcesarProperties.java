@@ -17,8 +17,8 @@ public class ProcesarProperties {
 //"D:\Documents and Settings\Sheryl\Mis documentos\NetBeansProjects\trunk\ProyectoiDomino\src\servidor\datos\valorPartida.properties";
 
     private static Properties properties;
-    private static String archivo = "/src/servidor/datos/valorPartida.properties";
-
+    private static String archivo = "src/servidor/datos/valorPartida.properties";
+//C:\Users\Alberly\Documents\NetBeansProjects\ProyectoiDomino\src\servidor\datos\valorPartida.properties
     /**
      * Constructor
      */

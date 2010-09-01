@@ -151,15 +151,14 @@ public class Partida {
      * @param listaDePiedras de tipo ListaPiedras con la lista de piedras del juego
      * @return objeto Partida con la información de la partida creada
      */
-    public Partida crearPartida(String nickname, ListaPiedras listaDePiedras) {
+    public Partida crearPartida(String nickname, ListaPiedras listaDePiedras, String fechaInicio) {
 
-        String fechaInicioPartida = obtenerFechaDelSistema();
         String fechaActual = obtenerFechaDelSistema();
         System.out.println("Partida creada por " + nickname);
         this.setIDPartida(1);
-        this.setFechaIni(fechaInicioPartida);
+        this.setFechaIni(fechaInicio);
         this.setFechaactual(fechaActual);
-        this.setFechaactual(fechaactual);
+        //this.setFechaactual(fechaactual);
 
         System.out.println("FECHA INICIO PARTIDA::::" + this.getFechaIni());
         System.out.println("FECHA ACTUAL:::::" + this.getFechaactual());
