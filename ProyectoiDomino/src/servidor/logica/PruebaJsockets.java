@@ -102,7 +102,7 @@ public class PruebaJsockets implements LogicaServidor {
      */
     public String respuestaServidor(Usuario elUsuario, Partida laPartida, Piedra laPiedra, int opcion, String op) {
         String resultado = "FALSE";
-        String cadena;
+        String cadena = "";
         Partida partidaNueva = null;
         Partida partidaExistente = null;
         String[] subArg;
@@ -180,6 +180,7 @@ public class PruebaJsockets implements LogicaServidor {
                 } else {
                     partidaExistente.getElJuego().getJugador1().getElJugador().setPass(true);
                 }
+                //Jugada del Jugador FIN.
 
                 if (laPiedra != null) {
                     confirm = true;
@@ -187,23 +188,21 @@ public class PruebaJsockets implements LogicaServidor {
                         partidaExistente.getElJuego().getJugador1().getElJugador().setEstado(true);
                         System.out.println("\nGano el jugador");
                     }
+
+                    //Jugada de la Maquina
+                    cadena = partidaExistente.getElJuego().getLaMesa().realizarJugadaMaquina(Datos.getListaPiedrasMaquina(), Datos.getMatrizPiedrasMesa(), Datos.getListaPiedrasPozo());
+
+                    String subArgCadena[] = cadena.split(":");
+                    if (subArgCadena[1].equalsIgnoreCase("")) {
+                        cadena = "NULL";
+                        partidaExistente.getElJuego().getJugador2().getLaMaquina().setPass(true);
+                    } else if (Datos.getListaPiedrasMaquina().getLaListaPiedras().isEmpty() && !partidaExistente.getElJuego().getJugador1().getElJugador().isEstado()) {
+                        partidaExistente.getElJuego().getJugador2().getLaMaquina().setEstado(true);
+                        System.out.println("\nGano la Maquina");
+                    }
+                    //Jugada de la Maquina FIN.
+                    //}
                 }
-                //Jugada del Jugador FIN.
-
-                //Jugada de la Maquina
-                cadena = partidaExistente.getElJuego().getLaMesa().realizarJugadaMaquina(Datos.getListaPiedrasMaquina(), Datos.getMatrizPiedrasMesa(), Datos.getListaPiedrasPozo());
-
-                String subArgCadena[] = cadena.split(":");
-                if (subArgCadena[1].equalsIgnoreCase("")) {
-                    cadena = "NULL";
-                    partidaExistente.getElJuego().getJugador2().getLaMaquina().setPass(true);
-                } else if (Datos.getListaPiedrasMaquina().getLaListaPiedras().isEmpty() && !partidaExistente.getElJuego().getJugador1().getElJugador().isEstado()) {
-                    partidaExistente.getElJuego().getJugador2().getLaMaquina().setEstado(true);
-                    System.out.println("\nGano la Maquina");
-                }
-
-
-                //Jugada de la Maquina FIN.
 
                 if (confirm) {
                     resultado = "TRUE:" + cadena;
