@@ -1495,7 +1495,6 @@ public class VentanaJuego extends javax.swing.JFrame {
                 botonMesa.setEnabled(true);
             }
         }
-
         if (i > 3) {
             if (i + 1 < 7 && laMesa[i + 1][j].getIcon() == null) {
                 botonMesa = obtenerBotonPosicion((i + 1) + "-" + j);
@@ -1537,9 +1536,17 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         botonActualSeleccionado = boton;
 
+
+
+
+
         if (mesaVacia()) {
             jBMesa34.setEnabled(true);
             jBMesa35.setEnabled(true);
+
+
+
+
         }
     }//GEN-LAST:event_jBPiedraSeleccionadaActionPerformed
 
@@ -1547,6 +1554,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("\n\n" + "NUEVA JUGADA");
         JButton boton = (JButton) evt.getSource();
+
+
+
+
 
         if (botonActualSeleccionado != null) {
 
@@ -1573,6 +1584,10 @@ public class VentanaJuego extends javax.swing.JFrame {
             String subArg[] = cadena.split(":");
             cadena = ConexionJsockets.solicitudServidor6(nickname);
             String subArg2[] = cadena.split(":");
+
+
+
+
             if (subArg2[0].equalsIgnoreCase("TRUE")) {
 
                 if (subArg2[1].equalsIgnoreCase("USTED HA GANADO")) {
@@ -1581,19 +1596,37 @@ public class VentanaJuego extends javax.swing.JFrame {
                             boton.setIcon(botonActualSeleccionado.getIcon());
                             botonActualSeleccionado.setIcon(null);
                             botonActualSeleccionado.setEnabled(false);
-                            abilitarPiedrasMesa(posicion);
+                            abilitarPiedrasMesa(
+                                    posicion);
+
+
+
+
                         } else {
                             String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                             boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
                             botonActualSeleccionado.setIcon(null);
                             botonActualSeleccionado.setEnabled(false);
-                            abilitarPiedrasMesa(posicion);
+                            abilitarPiedrasMesa(
+                                    posicion);
+
+
+
+
                         }
                         System.out.println("YOU WON!!!");
                         JOptionPane.showMessageDialog(null, "CONGRATULATIONS! YOU WON");
 
                         //REGRESAR A LA VENTANA MENU
+
+
+
+
                         this.dispose();
+
+
+
+
                     }
                 } else {
                     if (subArg2[1].equalsIgnoreCase("USTED HA PERDIDO")) {
@@ -1602,25 +1635,48 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 boton.setIcon(botonActualSeleccionado.getIcon());
                                 botonActualSeleccionado.setIcon(null);
                                 botonActualSeleccionado.setEnabled(false);
-                                abilitarPiedrasMesa(posicion);
+                                abilitarPiedrasMesa(
+                                        posicion);
+
+
+
+
                             } else {
                                 String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                                 boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
                                 botonActualSeleccionado.setIcon(null);
                                 botonActualSeleccionado.setEnabled(false);
-                                abilitarPiedrasMesa(posicion);
+                                abilitarPiedrasMesa(
+                                        posicion);
+
+
+
+
                             }
                             System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
+
+
+
+
                             if (!subArg[1].equalsIgnoreCase("NULL")) {
                                 boton = obtenerBotonPosicion(subArg[2]);
                                 System.out.println("boton: " + boton.getName());
                                 boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
-                                abilitarPiedrasMesa(subArg[2]);
+                                abilitarPiedrasMesa(
+                                        subArg[2]);
 
                                 System.out.println("YOU LOST!!!");
                                 JOptionPane.showMessageDialog(null, "YOU LOST!!!");
                                 //REGRESAR A LA VENTANA MENU
+
+
+
+
                                 this.dispose();
+
+
+
+
                             }
                         }
                     }
@@ -1635,23 +1691,42 @@ public class VentanaJuego extends javax.swing.JFrame {
                         boton.setIcon(botonActualSeleccionado.getIcon());
                         botonActualSeleccionado.setIcon(null);
                         botonActualSeleccionado.setEnabled(false);
-                        abilitarPiedrasMesa(posicion);
+                        abilitarPiedrasMesa(
+                                posicion);
+
+
+
+
                     } else {
                         String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                         boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
                         botonActualSeleccionado.setIcon(null);
                         botonActualSeleccionado.setEnabled(false);
-                        abilitarPiedrasMesa(posicion);
+                        abilitarPiedrasMesa(
+                                posicion);
+
+
+
+
                     }
 
                     System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
+
+
+
+
 
                     if (!subArg[1].equalsIgnoreCase("NULL")) {
                         boton = obtenerBotonPosicion(subArg[2]);
                         System.out.println("boton: " + boton.getName());
                         boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
-                        abilitarPiedrasMesa(subArg[2]);
+                        abilitarPiedrasMesa(
+                                subArg[2]);
                         System.out.println("THE GAME IS NOT OVER");
+
+
+
+
                     }
                 }
 
@@ -1665,6 +1740,10 @@ public class VentanaJuego extends javax.swing.JFrame {
             botonActualSeleccionado.setIcon(new javax.swing.ImageIcon(getClass().getResource(rotarPiedra(botonActualSeleccionado, false))));
 
             botonActualSeleccionado.requestFocus();
+
+
+
+
         }
 
     }//GEN-LAST:event_jBRotarIzqActionPerformed
@@ -1675,6 +1754,10 @@ public class VentanaJuego extends javax.swing.JFrame {
             botonActualSeleccionado.setIcon(new javax.swing.ImageIcon(getClass().getResource(rotarPiedra(botonActualSeleccionado, true))));
 
             botonActualSeleccionado.requestFocus();
+
+
+
+
         }
     }//GEN-LAST:event_jBRotarDerActionPerformed
 
@@ -1686,12 +1769,28 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         String subArg[] = cadena.split(":");
 
+
+
+
+
         if (subArg[0].equalsIgnoreCase("TRUE") && contadorPozo < 14) {
 
             String imagenPiedra = obtenerImagenPiedra(subArg[1]);
+
+
+
+
             int i = 0;
+
+
+
+
             boolean piedraPuesta = false;
             JButton botonPote = piedrasPozo[contadorPozo];
+
+
+
+
 
             while (!piedraPuesta && i > -1 && i < 7) {
                 //for (i = 0; i < 7; i++) {
@@ -1701,8 +1800,17 @@ public class VentanaJuego extends javax.swing.JFrame {
                     piedraPuesta = true;
                     botonPote.setVisible(false);
                     contadorPozo++;
+
                 }
+
+
+
+
                 i++;
+
+
+
+
             }
 
             while (!piedraPuesta && i > 6 && i < 16) {
@@ -1720,16 +1828,33 @@ public class VentanaJuego extends javax.swing.JFrame {
                     piedraPuesta = true;
                     botonPote.setVisible(false);
                     contadorPozo++;
+
                 }
+
+
+
+
                 i++;
+
+
+
+
             }
             if (contadorPozo == 14) {
                 jButtonPot.setEnabled(false);
                 jButtonPass.setEnabled(true);
+
+
+
+
             }
         } else {
             jButtonPot.setEnabled(false);
             jButtonPass.setEnabled(true);
+
+
+
+
         }
 
     }//GEN-LAST:event_jButtonPotActionPerformed
@@ -1737,12 +1862,24 @@ public class VentanaJuego extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor4(nickname);
+
+
+
+
         if (cadena.equalsIgnoreCase("TRUE")) {
             System.out.println("Se guardÃ³ la partida con Ã©xito");
             JOptionPane.showMessageDialog(null, "Saved Game");
+
+
+
+
         } else {
             System.out.println("NO se guardÃ³ la partida con Ã©xito");
             JOptionPane.showMessageDialog(null, "Unsaved Game");
+
+
+
+
         }
 }//GEN-LAST:event_jMenuItem2ActionPerformed
 
@@ -1758,18 +1895,37 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         JButton botonTablero;
         String[] subArg = cadena.split(":");
+
+
+
+
         if (!subArg[1].equalsIgnoreCase("NULL")) {
             botonTablero = obtenerBotonPosicion(subArg[2]);
             botonTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
+            abilitarPiedrasMesa(
+                    subArg[2]);
+
+
         }
 
         String subArg2[] = cadenaJuegoTrancado.split(":");
+
+
+
+
         if (subArg2[0].equalsIgnoreCase("TRUE")) {
             if (subArg2[1].equalsIgnoreCase("JUEGO TRANCADO")) {
                 System.out.println("JUEGO TRANCADO!!!");
                 JOptionPane.showMessageDialog(null, "BLOCKED GAME!!!");
                 //REGRESAR A LA VENTANA MENU
+
+
+
                 this.dispose();
+
+
+
+
             }
         }
     }//GEN-LAST:event_jButtonPassActionPerformed
@@ -1779,8 +1935,16 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             public void run() {
                 new VentanaJuego(null, "", "").setVisible(true);
+
+
+
+
             }
         });
+
+
+
+
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBMesa00;
