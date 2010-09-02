@@ -175,6 +175,10 @@ public class VentanaRegistro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * abre una ventana donde se podrá elegir el avatar que se se desee.
+     * @param evt
+     */
     private void jBChooseImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBChooseImgActionPerformed
         // TODO add your handling code here:
         //System.out.println("cargaa");
@@ -183,11 +187,19 @@ public class VentanaRegistro extends javax.swing.JFrame {
         ventanaImagenes.setVisible(true);
     }//GEN-LAST:event_jBChooseImgActionPerformed
 
+    /**
+     * cierra inmediatamente esta ventana.
+     * @param evt
+     */
     private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
         // TODO add your handling code here:
         this.dispose();
 }//GEN-LAST:event_jButtonCancelActionPerformed
 
+    /**
+     * procesa la información introducida por el usuario y verifica que sea válida.
+     * @param evt
+     */
     private void jBAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAceptarActionPerformed
         // TODO add your handling code here:
 
@@ -221,6 +233,11 @@ public class VentanaRegistro extends javax.swing.JFrame {
 }//GEN-LAST:event_jBAceptarActionPerformed
 
 
+    /**
+     * obtiene la fecha elegida por el usuario y la convierte en un string.
+     * @param Jdc
+     * @return String con la fecha elegida por el usuario.
+     */
     public static String getFecha(JDateChooser Jdc)
      {
         Calendar fechadate;
