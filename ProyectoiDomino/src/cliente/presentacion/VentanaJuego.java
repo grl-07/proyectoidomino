@@ -1,22 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * VentanaJuego.java
- *
- * Created on 08-ago-2010, 21:17:21
- */
 package cliente.presentacion;
 
 import javax.swing.*;
 import cliente.logica.ConexionJsockets;
 
-/**
- *
- * @author CASITA
- */
 public class VentanaJuego extends javax.swing.JFrame {
 
     /** Creates new form VentanaJuego */
@@ -1132,6 +1118,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * inicializa una matriz de botones.
+     * @return JButton[][] la matriz de botones que se usará como la mesa.
+     */
     private JButton[][] inicializarMesa() {
         int i, j;
 
@@ -1163,6 +1153,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         return arregloBotones;
     }
 
+    /**
+     * inicializa el arreglo de piedras en mano del jugador, en botones.
+     * @return JButton[] el arreglo de botones que se utilizará para las piedras del jugador.
+     */
     private JButton[] inicializarPiedrasEnMano() {
         int i, j;
 
@@ -1196,6 +1190,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         return arregloBotones;
     }
 
+    /**
+     * inicializa un arreglo de botones, para el pozo.
+     * @return JButton[] arreglo de botones que se utilizará para representar las piedras que hay en el pozo.
+     */
     private JButton[] inicializarPiedraPozo() {
         int i;
 
@@ -1213,6 +1211,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         return arregloBotones;
     }
 
+    /**
+     * valida si la mesa del juego está vacía, es decir, si una matriz de botones está vacía.
+     * @return boolean - true si la mesa está vacía.
+     */
     private boolean mesaVacia() {
         for (int i = 0; i < 7; i++) {
             for (int j = 0; j < 10; j++) {
@@ -1224,6 +1226,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * obtiene la dirección de la imagen para la piedra que se le pasa como parámetro.
+     * @param mensaje la piedra devuelta por el pozo, donde se tiene los valores de la piedra y las imágenes asociadas.
+     * @return String la direccion de la imagen de una piedra.
+     */
     public static String obtenerImagenPiedra(String mensaje) {
         String img = "";
         String direccion = "/cliente/presentacion/resources/Piedras/";
@@ -1233,6 +1240,13 @@ public class VentanaJuego extends javax.swing.JFrame {
         return img = direccion + subArg2[3];
     }
 
+    /**
+     * cambia la imagen de una piedra, para una de sus 4 posturas.
+     * @param rotarDerecha indica si se esta rotando para la derecha o no, en caso de ser falso se asume que se está rotando para la izquierda.
+     * @param indice el índice de la imagen actual, es el valor que se va a modificar para cambiar la imagen.
+     * @param imagenAsociadaActual imagen actual asociada para la piedra.
+     * @return la nueva imagen asociada, si fue cambiada.
+     */
     public static String cambiarImagenPiedra(boolean rotarDerecha, int indice, String imagenAsociadaActual) {
 
         if (rotarDerecha) {
@@ -1256,6 +1270,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         return imagenAsociadaActual;
     }
 
+    /**
+     * rota la piedra que se le esté indicando, para la derecha o para la izquierda.
+     * @param botonPiedra el boton asignado a la imagen que se quiere rotar.
+     * @param rotarDerecha - true si se está rotando a la derecha, false si es hacia la izquierda.
+     * @return String - la imagen rotada.
+     */
     public static String rotarPiedra(JButton botonPiedra, boolean rotarDerecha) {
         String direccion = "/cliente/presentacion/resources/Piedras/";
         String fuente, indiceString, nombreBoton, imagenAsociada;
@@ -1290,6 +1310,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         return fuente;
     }
 
+    /**
+     * obtiene una piedra en forma de cadena desde la dirección de su imagen.
+     * @param direccionIcono la direccion de la imagen asignada para la piedra que se quiere obtener.
+     * @return String - la piedra en forma de num1-num2.
+     */
     public String obtenerCadenaPiedra(String direccionIcono) {
 
         String cadenaPiedra = "";
@@ -1300,6 +1325,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         return cadenaPiedra;
     }
 
+    /**
+     * obtiene la imagen Asociada a una piedra mediante la cadena de su dirección.
+     * @param direccionIcono dirección de la imagen asociada a una piedra.
+     * @return String - imagen de una piedra.
+     */
     public String obtenerImagenAsociada(String direccionIcono) {
 
         String imagenActual = direccionIcono.substring(direccionIcono.length() - 13);
@@ -1307,6 +1337,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         return imagenActual;
     }
 
+    /**
+     * obtiene un botón desde una matriz de botones, conocida la posición del mismo.
+     * @param posicion - posicion del botón a buscar.
+     * @return JButton
+     */
     public JButton obtenerBotonPosicion(String posicion) {
         int i, j;
         String button;
@@ -1323,6 +1358,12 @@ public class VentanaJuego extends javax.swing.JFrame {
         return null;
     }
 
+    /**
+     * acomoda la piedra en la mesa si el usuario la ha puesto de forma incorrecta.
+     * @param piedra - cadena de la piedra a acomodar.
+     * @param posicion - posición de la piedra a acomodar.
+     * @return
+     */
     public String acomodarPiedraEnMesa(String piedra, String posicion) {
         String subArgDireccionIcono[] = piedra.split("-");
         String subArgPosicion[] = posicion.split("-");
@@ -1461,6 +1502,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         return fuente;
     }
 
+    /**
+     * muestra el avatar y el nombre de usuario en la ventana del juego.
+     * @param nickname - nickname del usuario.
+     * @param avatar - avatar del usuario.
+     */
     public void setDatosUsuarioJuego(String nickname, JLabel avatar) {
         jLNickname.setText(nickname);
 
@@ -1468,12 +1514,20 @@ public class VentanaJuego extends javax.swing.JFrame {
         jLAvatar.setIcon(avatar.getIcon());
     }
 
+    /**
+     * desabilita los botones de un arreglo de botones.
+     * @param piedrasEnMano - el arreglo de botones que se quiere desabilitar.
+     */
     public void desabilitarPiedras(JButton[] piedrasEnMano) {
         for (int i = 0; i < piedrasEnMano.length; i++) {
             piedrasEnMano[i].setEnabled(false);
         }
     }
 
+    /**
+     * abilita los botones de la mesa conforme se va jugando, para darle las opciones al usuario de donde puede jugar.
+     * @param posicion - posicion de la piedra que se insertó en la matriz, para asi saber que botones se deben abilitar.
+     */
     public void abilitarPiedrasMesa(String posicion) {
         String[] subArg = posicion.split("-");
         int i = Integer.parseInt(subArg[0]);
@@ -1530,34 +1584,31 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * le asigna el botón actual seleccionado a una variable global de la clase, adicionalmente
+     * si la mesa del juego está vacia abilita los dos botones del juego.
+     * @param evt
+     */
     private void jBPiedraSeleccionadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraSeleccionadaActionPerformed
         // TODO add your handling code here:
         JButton boton = (JButton) evt.getSource();
 
         botonActualSeleccionado = boton;
 
-
-
-
-
         if (mesaVacia()) {
             jBMesa34.setEnabled(true);
             jBMesa35.setEnabled(true);
-
-
-
-
         }
     }//GEN-LAST:event_jBPiedraSeleccionadaActionPerformed
 
+    /**
+     * le manda la jugada al servidor, si la jugada es válida dibuja la piedra en el tablero, asi como la jugada de la máquina.
+     * @param evt
+     */
     private void jBPiedraDelTableroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBPiedraDelTableroActionPerformed
         // TODO add your handling code here:
         System.out.println("\n\n" + "NUEVA JUGADA");
         JButton boton = (JButton) evt.getSource();
-
-
-
-
 
         if (botonActualSeleccionado != null) {
 
@@ -1585,9 +1636,6 @@ public class VentanaJuego extends javax.swing.JFrame {
             cadena = ConexionJsockets.solicitudServidor6(nickname);
             String subArg2[] = cadena.split(":");
 
-
-
-
             if (subArg2[0].equalsIgnoreCase("TRUE")) {
 
                 if (subArg2[1].equalsIgnoreCase("USTED HA GANADO")) {
@@ -1599,9 +1647,6 @@ public class VentanaJuego extends javax.swing.JFrame {
                             abilitarPiedrasMesa(
                                     posicion);
 
-
-
-
                         } else {
                             String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                             boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
@@ -1609,24 +1654,12 @@ public class VentanaJuego extends javax.swing.JFrame {
                             botonActualSeleccionado.setEnabled(false);
                             abilitarPiedrasMesa(
                                     posicion);
-
-
-
-
                         }
                         System.out.println("YOU WON!!!");
                         JOptionPane.showMessageDialog(null, "CONGRATULATIONS! YOU WON");
 
                         //REGRESAR A LA VENTANA MENU
-
-
-
-
                         this.dispose();
-
-
-
-
                     }
                 } else {
                     if (subArg2[1].equalsIgnoreCase("USTED HA PERDIDO")) {
@@ -1638,9 +1671,6 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 abilitarPiedrasMesa(
                                         posicion);
 
-
-
-
                             } else {
                                 String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                                 boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
@@ -1648,15 +1678,8 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 botonActualSeleccionado.setEnabled(false);
                                 abilitarPiedrasMesa(
                                         posicion);
-
-
-
-
                             }
                             System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
-
-
-
 
                             if (!subArg[1].equalsIgnoreCase("NULL")) {
                                 boton = obtenerBotonPosicion(subArg[2]);
@@ -1668,21 +1691,11 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 System.out.println("YOU LOST!!!");
                                 JOptionPane.showMessageDialog(null, "YOU LOST!!!");
                                 //REGRESAR A LA VENTANA MENU
-
-
-
-
                                 this.dispose();
-
-
-
-
                             }
                         }
                     }
                 }
-
-
 
             } else {
 
@@ -1694,9 +1707,6 @@ public class VentanaJuego extends javax.swing.JFrame {
                         abilitarPiedrasMesa(
                                 posicion);
 
-
-
-
                     } else {
                         String fuente = acomodarPiedraEnMesa(cadenaPiedra, posicion);
                         boton.setIcon(new javax.swing.ImageIcon(getClass().getResource(fuente)));
@@ -1705,16 +1715,9 @@ public class VentanaJuego extends javax.swing.JFrame {
                         abilitarPiedrasMesa(
                                 posicion);
 
-
-
-
                     }
 
                     System.out.println("RESPUESTA SERVIDOR MAQUINA: " + subArg[1]);
-
-
-
-
 
                     if (!subArg[1].equalsIgnoreCase("NULL")) {
                         boton = obtenerBotonPosicion(subArg[2]);
@@ -1724,9 +1727,6 @@ public class VentanaJuego extends javax.swing.JFrame {
                                 subArg[2]);
                         System.out.println("THE GAME IS NOT OVER");
 
-
-
-
                     }
                 }
 
@@ -1734,6 +1734,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBPiedraDelTableroActionPerformed
 
+    /**
+     * rota una imagen hacia la izquierda.
+     * @param evt
+     */
     private void jBRotarIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRotarIzqActionPerformed
         // TODO add your handling code here:
         if (botonActualSeleccionado != null && botonActualSeleccionado.isEnabled()) {
@@ -1748,6 +1752,10 @@ public class VentanaJuego extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jBRotarIzqActionPerformed
 
+    /**
+     * rota una imagen hacia la derecha.
+     * @param evt
+     */
     private void jBRotarDerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRotarDerActionPerformed
         // TODO add your handling code here:
         if (botonActualSeleccionado != null && botonActualSeleccionado.isEnabled()) {
@@ -1761,6 +1769,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBRotarDerActionPerformed
 
+    /**
+     * le manda la solicitud al servidor para tomar una piedra del pozo, si el pozo no está vacío se dibuja
+     * la piedra en la mano del jugador, en caso contrario, se desabilita este boton y se abilita el botón para pasar.
+     */
     private void jButtonPotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPotActionPerformed
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor7(nickname);
@@ -1770,27 +1782,14 @@ public class VentanaJuego extends javax.swing.JFrame {
         String subArg[] = cadena.split(":");
 
 
-
-
-
         if (subArg[0].equalsIgnoreCase("TRUE") && contadorPozo < 14) {
 
             String imagenPiedra = obtenerImagenPiedra(subArg[1]);
 
-
-
-
             int i = 0;
-
-
-
 
             boolean piedraPuesta = false;
             JButton botonPote = piedrasPozo[contadorPozo];
-
-
-
-
 
             while (!piedraPuesta && i > -1 && i < 7) {
                 //for (i = 0; i < 7; i++) {
@@ -1802,15 +1801,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                     contadorPozo++;
 
                 }
-
-
-
-
                 i++;
-
-
-
-
             }
 
             while (!piedraPuesta && i > 6 && i < 16) {
@@ -1830,64 +1821,49 @@ public class VentanaJuego extends javax.swing.JFrame {
                     contadorPozo++;
 
                 }
-
-
-
-
                 i++;
-
-
-
-
             }
             if (contadorPozo == 14) {
                 jButtonPot.setEnabled(false);
                 jButtonPass.setEnabled(true);
-
-
-
-
             }
         } else {
             jButtonPot.setEnabled(false);
             jButtonPass.setEnabled(true);
-
-
-
-
         }
-
     }//GEN-LAST:event_jButtonPotActionPerformed
 
+    /**
+     * guarda la partida actual.
+     * @param evt
+     */
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor4(nickname);
 
-
-
-
         if (cadena.equalsIgnoreCase("TRUE")) {
             System.out.println("Se guardÃ³ la partida con Ã©xito");
             JOptionPane.showMessageDialog(null, "Saved Game");
-
-
-
-
         } else {
             System.out.println("NO se guardÃ³ la partida con Ã©xito");
             JOptionPane.showMessageDialog(null, "Unsaved Game");
-
-
-
-
         }
 }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    /**
+     * se sale completamente del programa.
+     * @param evt
+     */
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
 }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    /**
+     * se le indica al servidor que el jugador está pasando, adicionalmente se verifica si el juego está
+     * trancado o si la máquina puede jugar.
+     * @param evt
+     */
     private void jButtonPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPassActionPerformed
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor5(nickname, "NULL-NULL");
@@ -1896,36 +1872,20 @@ public class VentanaJuego extends javax.swing.JFrame {
         JButton botonTablero;
         String[] subArg = cadena.split(":");
 
-
-
-
         if (!subArg[1].equalsIgnoreCase("NULL")) {
             botonTablero = obtenerBotonPosicion(subArg[2]);
             botonTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
-            abilitarPiedrasMesa(
-                    subArg[2]);
-
-
+            abilitarPiedrasMesa(subArg[2]);
         }
 
         String subArg2[] = cadenaJuegoTrancado.split(":");
-
-
-
 
         if (subArg2[0].equalsIgnoreCase("TRUE")) {
             if (subArg2[1].equalsIgnoreCase("JUEGO TRANCADO")) {
                 System.out.println("JUEGO TRANCADO!!!");
                 JOptionPane.showMessageDialog(null, "BLOCKED GAME!!!");
                 //REGRESAR A LA VENTANA MENU
-
-
-
                 this.dispose();
-
-
-
-
             }
         }
     }//GEN-LAST:event_jButtonPassActionPerformed
@@ -1936,14 +1896,8 @@ public class VentanaJuego extends javax.swing.JFrame {
             public void run() {
                 new VentanaJuego(null, "", "").setVisible(true);
 
-
-
-
             }
         });
-
-
-
 
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables

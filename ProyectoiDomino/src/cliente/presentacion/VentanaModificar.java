@@ -1,14 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * VentanaModificar.java
- *
- * Created on 22/08/2010, 12:59:00
- */
-
 package cliente.presentacion;
 import cliente.logica.ConexionJsockets;
 import javax.swing.*;
@@ -16,10 +5,6 @@ import com.toedter.calendar.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- *
- * @author Sheryl
- */
 public class VentanaModificar extends javax.swing.JFrame {
 
     /** Creates new form VentanaModificar */
