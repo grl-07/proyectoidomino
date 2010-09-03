@@ -14,6 +14,8 @@ import ve.edu.ucab.cliente.ClienteSocket;
  */
 public class ConexionJsockets {
 
+    private static String IP = "localhost";
+
     /**
      * solicitudServidor1 ejecuta la peticion al servidor con la cadena de protocolo para el ingreso al sistema
      * @param username es un jTextField que tiene el nickname del usuario
@@ -25,7 +27,7 @@ public class ConexionJsockets {
         String opcion = "1";
         String nickname = username.getText();
         String password = clave.getText();
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, "localhost", 9999);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password, IP, 9999);
         System.out.println("RESULTADO = " + resultado);
         String[] subArg = resultado.split(":");
         String respuesta = subArg[0];
@@ -50,7 +52,7 @@ public class ConexionJsockets {
         System.err.println("nickname = @" + nickname + "@");
 
         String opcion = "2";
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + fechaInicio, "localhost", 9999);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + fechaInicio, IP, 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -73,7 +75,7 @@ public class ConexionJsockets {
         String nombre = name.getText();
         String apellido = lastName.getText();
         //String avatar = IDavatar.getText();
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password + ":" + nombre + ":" + apellido + ":" + fechaNac + ":" + avatar, "localhost", 9999);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + password + ":" + nombre + ":" + apellido + ":" + fechaNac + ":" + avatar, IP, 9999);
         System.out.println("RESULTADO = " + resultado);
         if (resultado.equals("TRUE")) {
             System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
@@ -92,7 +94,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "4";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, IP, 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -111,7 +113,7 @@ public class ConexionJsockets {
         /*String nickname = username.getText();
         String password = clave.getText();*/
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + username + ":" + piedra + ":" + posicion + ":" + imagen, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + username + ":" + piedra + ":" + posicion + ":" + imagen, IP, 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -120,7 +122,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "5";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + username + ":" + piedra, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + username + ":" + piedra, IP, 9999);
         System.out.println(resultado);
         return resultado;
     }
@@ -136,7 +138,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "6";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, IP, 9999);
         return resultado;
     }
 
@@ -149,7 +151,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "7";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, IP, 9999);
         //System.out.println(resultado);
         return resultado;
     }
@@ -164,7 +166,7 @@ public class ConexionJsockets {
     public static String solicitudServidor8(String nickname, String dato, String bandera) {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "8";
-        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + dato + ":" + bandera, "localhost", 9999);
+        String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + dato + ":" + bandera, IP, 9999);
         System.out.println("RESULTADO = " + resultado);
         
         return resultado;
@@ -174,7 +176,7 @@ public class ConexionJsockets {
         ClienteSocket cliente = new ClienteSocket();
         String opcion = "9";
         String resultado = "";
-        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, IP, 9999);
         //System.out.println(resultado);
         return resultado;
     }
