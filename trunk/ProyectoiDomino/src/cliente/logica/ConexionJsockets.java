@@ -175,4 +175,13 @@ public class ConexionJsockets {
         }*/
         return resultado;
     }
+
+    public static String solicitudServidor9(String nickname) {
+        ClienteSocket cliente = new ClienteSocket();
+        String opcion = "9";
+        String resultado = "";
+        resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
+        System.out.println(resultado);
+        return resultado;
+    }
 }
