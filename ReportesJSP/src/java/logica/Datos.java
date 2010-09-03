@@ -1,7 +1,6 @@
 package logica;
 import datos.*;
 
-
 public class Datos {
 
     private static ListaReportes listaDeUsuarios = null;

@@ -1,7 +1,6 @@
 package datos;
 import java.util.Comparator;
 
-
 public class ComparadorGanadas implements Comparator {
 
     /**
@@ -12,7 +11,6 @@ public class ComparadorGanadas implements Comparator {
      * son mayores a las del usuario2, y -1: si las partidas ganadas del usuario2 son mayores a las del usuario1
      */
     public int compare(Object usuario1, Object usuario2) {
-
         Usuario user1 = (Usuario) usuario1;
         Usuario user2 = (Usuario) usuario2;
 
