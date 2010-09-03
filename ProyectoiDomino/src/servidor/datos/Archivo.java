@@ -102,9 +102,6 @@ public class Archivo {
 
             List listadoUsuarios = raiz.getChildren("Usuario");
 
-            System.out.println("Formada por:" + listadoUsuarios.size() + " usuarios");
-            System.out.println("------------------");
-
             Iterator i = listadoUsuarios.iterator();
 
             while (i.hasNext()) {
@@ -150,13 +147,8 @@ public class Archivo {
             Element raiz = doc.getRootElement();
 
 
-            System.out.println(raiz.getAttributeValue("tipo"));
-
-
             List listaPiedras = raiz.getChildren("piedra");
 
-            System.out.println("Formada por:" + listaPiedras.size() + " piedras");
-            System.out.println("------------------");
 
             Iterator i = listaPiedras.iterator();
 
@@ -176,7 +168,6 @@ public class Archivo {
 
                 Piedra laPiedra = new Piedra(ID.getText(), numeroUno, numeroDos, ImagenArriba.getText(), ImagenDerecha.getText(), ImagenAbajo.getText(), ImagenIzquierda.getText());
 
-                //Piedra laPiedra = new Piedra(numeroUno, numeroDos);
                 listaDePiedras.agregarPiedra(laPiedra);
 
             }
@@ -201,9 +192,6 @@ public class Archivo {
             Element raiz = doc.getRootElement();
 
             List listaPartidas = raiz.getChildren("Partida");
-
-            System.out.println("Formada por:" + listaPartidas.size() + " partidas");
-            System.out.println("------------------");
 
             Iterator i = listaPartidas.iterator();
 
@@ -243,8 +231,6 @@ public class Archivo {
 
                 Usuario elUsuario = new Usuario("", "", "", username.getText(), "", "");
 
-                //Usuario usuarioAuxiliar = new ListaUsuarios().buscarDatos(elUsuario);
-                //Jugador elJugador = new Jugador(usuarioAuxiliar.getNombre(), usuarioAuxiliar.getApellido(), usuarioAuxiliar.getClave(), username.getText(), usuarioAuxiliar.getAvatar(), 0, 0, 0, 0);
                 Jugador elJugador = new Jugador(username.getText(), "", 0, 0, 0, 0);
                 elJugador.getElJugador().setPiedrasEnMano(listaPiedrasJugador);
 
@@ -253,7 +239,6 @@ public class Archivo {
 
                 //PIEDRAS MAQUINA
                 Element subRaizMaquina = e.getChild("PiedrasMaquina");
-                //piedrasMaquina = new ArrayList();
                 List piedrasMaquina = subRaizMaquina.getChildren("Piedra");
                 Iterator iteradorMaquina = piedrasMaquina.iterator();
 
@@ -276,7 +261,6 @@ public class Archivo {
 
                 //PIEDRAS POZO
                 Element subRaizPozo = e.getChild("PiedrasPozo");
-                //piedrasPozo = new ArrayList();
                 List piedrasPozo = subRaizPozo.getChildren("Piedra");
                 Iterator iteradorPozo = piedrasPozo.iterator();
 
@@ -298,7 +282,6 @@ public class Archivo {
 
                 //PIEDRAS MESA
                 Element subRaizMesa = e.getChild("PiedrasMesa");
-                //piedrasMesa = new ArrayList();
                 List piedrasMesa = subRaizMesa.getChildren("Piedra");
                 Iterator iteradorMesa = piedrasMesa.iterator();
 
@@ -320,7 +303,6 @@ public class Archivo {
 
                 Juego elJuego = new Juego(elJugador, laMaquina, laMesa);
 
-                //lo ulimo que se hace.
                 Partida laPartida = new Partida(elUsuario, numeroPartida, fechaInicial.getText(), fechaact.getText(), elJuego);
 
                 listaDePartidas.agregarPartida(laPartida);

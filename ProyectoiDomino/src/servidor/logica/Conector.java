@@ -51,7 +51,7 @@ public class Conector {
     }
 
     public static boolean llamarCliente(Usuario elUsuario) {
-        //ClienteTest.main(args, elUsuario);
+        
         return false;
     }
 
@@ -74,14 +74,6 @@ public class Conector {
      */
     public static void solicitarCargaDatosPartidas() {
         Archivo.cargarPartidasArchivo(Datos.getListaDePartidas());
-    }
-
-    public static void solicitarImpresionPartidas() {
-        Datos.getListaDePartidas().imprimirPartidas();
-    }
-
-    public static void solicitarImpresionPiedras() {
-        Datos.getListaDePiedras().imprimirListaPiedras();
     }
 
     /**

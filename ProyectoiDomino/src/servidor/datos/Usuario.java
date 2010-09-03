@@ -278,7 +278,6 @@ public class Usuario {
 
         segundoObjeto = (Usuario) objeto;
 
-        //if (this.nombre.equals(segundoObjeto.nombre) && this.apellido.equals(segundoObjeto.apellido) && this.cargo.equals(segundoObjeto.cargo))
         if (this.nickname.hashCode() == segundoObjeto.nickname.hashCode())  {
             return true;
         }
@@ -286,6 +285,4 @@ public class Usuario {
         return false;
     }
 
-    /*public void finalize() throws Throwable {
-    }*/
 }

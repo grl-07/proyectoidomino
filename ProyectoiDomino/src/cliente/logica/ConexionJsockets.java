@@ -137,7 +137,6 @@ public class ConexionJsockets {
         String opcion = "6";
         String resultado = "";
         resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
-        System.out.println(resultado);
         return resultado;
     }
 
@@ -151,7 +150,7 @@ public class ConexionJsockets {
         String opcion = "7";
         String resultado = "";
         resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
-        System.out.println(resultado);
+        //System.out.println(resultado);
         return resultado;
     }
 
@@ -167,12 +166,7 @@ public class ConexionJsockets {
         String opcion = "8";
         String resultado = cliente.ejecutarPeticion(opcion + ":" + nickname + ":" + dato + ":" + bandera, "localhost", 9999);
         System.out.println("RESULTADO = " + resultado);
-        /*
-        if (resultado.equals("TRUE")) {
-        System.out.println("CLIENTE Registro en el sistema -> de " + nombre + " " + apellido);
-        } else {
-        System.out.println("FALSE");
-        }*/
+        
         return resultado;
     }
 
@@ -181,7 +175,7 @@ public class ConexionJsockets {
         String opcion = "9";
         String resultado = "";
         resultado = cliente.ejecutarPeticion(opcion + ":" + nickname, "localhost", 9999);
-        System.out.println(resultado);
+        //System.out.println(resultado);
         return resultado;
     }
 }

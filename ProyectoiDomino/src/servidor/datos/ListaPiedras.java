@@ -55,25 +55,6 @@ public class ListaPiedras {
         return laListaPiedras.remove(laPiedra);
     }
 
-    public void imprimirListaPiedras() {
-
-        int i;
-        Object[] arregloPiedras;
-        arregloPiedras = laListaPiedras.toArray();
-        Piedra registro;
-        //System.out.println("PIEDRAS DEL JUEGO");
-        for (i = 0; i < arregloPiedras.length; i++) {
-            registro = (Piedra) arregloPiedras[i];
-            System.out.println("Piedra " + (i + 1) + ": " + registro.getNum1() + "-" + registro.getNum2());
-            /*System.out.println("Arriba: " + registro.getImagenArriba());
-            System.out.println("Derecha: " + registro.getImagenDerecha());
-            System.out.println("Abajo: " + registro.getImagenAbajo());
-            System.out.println("Izquierda: " + registro.getImagenIzquierda());
-            System.out.println("ID: " + registro.getID());*/
-        }
-
-    }
-
     /**
      * se utiliza para obtener una cadena de 1 o más piedras con todos sus datos.
      * @return String de la cadena de piedras.
@@ -160,12 +141,6 @@ public class ListaPiedras {
         }
         P.setElPozo(Pozo);
 
-        /*System.out.println("PIEDRAS DEL JUGADOR");
-        PiedrasJ.imprimirListaPiedras();*/
-        System.out.println("PIEDRAS DE LA MÁQUINA");
-        PiedrasM.imprimirListaPiedras();
-        /*System.out.println("PIEDRAS EN EL POZO");
-        Pozo.imprimirListaPiedras();*/
     }
 
     /**

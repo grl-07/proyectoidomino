@@ -212,10 +212,6 @@ public class Datos {
         return listaDeUsuarios.agregarUsuario(elUsuario);
     }
 
-    public static void imprimirListaPiedras() {
-        listaDePiedras.imprimirListaPiedras();
-    }
-
     /**
      * crearPartida llama a la función que crear una partida
      * @param nickname, cliente que está creando la partida

@@ -46,7 +46,8 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLNombre2 = new javax.swing.JLabel();
         jLNickname2 = new javax.swing.JLabel();
         jBReporte = new javax.swing.JButton();
-        jLFondo = new javax.swing.JLabel();
+        jBCrearPartida1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Welcome to iDomino");
@@ -76,7 +77,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         jBCrearPartida.setBackground(new java.awt.Color(255, 204, 153));
         jBCrearPartida.setFont(new java.awt.Font("Calibri", 1, 14));
         jBCrearPartida.setForeground(new java.awt.Color(153, 51, 0));
-        jBCrearPartida.setText("New Game");
+        jBCrearPartida.setText("Exit");
         jBCrearPartida.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jBCrearPartida.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jBCrearPartida.setName("jBCrearPartida"); // NOI18N
@@ -85,7 +86,7 @@ public class VentanaMenu extends javax.swing.JFrame {
                 jBCrearPartidaActionPerformed(evt);
             }
         });
-        jBCrearPartida.setBounds(340, 190, 110, 21);
+        jBCrearPartida.setBounds(340, 310, 110, 21);
         jLayeredPane1.add(jBCrearPartida, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBModificar.setBackground(new java.awt.Color(255, 204, 153));
@@ -130,7 +131,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         jLayeredPane1.add(jLNickname2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jBReporte.setBackground(new java.awt.Color(255, 204, 153));
-        jBReporte.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jBReporte.setFont(new java.awt.Font("Calibri", 1, 14));
         jBReporte.setForeground(new java.awt.Color(153, 51, 0));
         jBReporte.setText("Show Report");
         jBReporte.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -142,9 +143,25 @@ public class VentanaMenu extends javax.swing.JFrame {
         jBReporte.setBounds(340, 230, 110, 21);
         jLayeredPane1.add(jBReporte, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
-        jLFondo.setBounds(-6, -6, 570, 390);
-        jLayeredPane1.add(jLFondo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jBCrearPartida1.setBackground(new java.awt.Color(255, 204, 153));
+        jBCrearPartida1.setFont(new java.awt.Font("Calibri", 1, 14));
+        jBCrearPartida1.setForeground(new java.awt.Color(153, 51, 0));
+        jBCrearPartida1.setText("New Game");
+        jBCrearPartida1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jBCrearPartida1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jBCrearPartida1.setName("jBCrearPartida"); // NOI18N
+        jBCrearPartida1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCrearPartida1ActionPerformed(evt);
+            }
+        });
+        jBCrearPartida1.setBounds(340, 190, 110, 21);
+        jLayeredPane1.add(jBCrearPartida1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Fondo-Madera1.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.setBounds(-6, -6, 560, 380);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,15 +183,7 @@ public class VentanaMenu extends javax.swing.JFrame {
      */
     private void jBCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearPartidaActionPerformed
         // TODO add your handling code here:
-        Calendar Calendario = Calendar.getInstance();
-        String fecha = Calendario.get(Calendario.DATE) + "/" + (Calendario.get(Calendario.MONTH) + 1) + "/" + Calendario.get(Calendario.YEAR);
-
-        String mensaje = ConexionJsockets.solicitudServidor2(jLNickname2, fecha);
-
-        VentanaJuego ventanaJuego = new VentanaJuego(this, jLNickname2.getText(), mensaje);
-        ventanaJuego.setVisible(true);
-        ventanaJuego.setLocationRelativeTo(null);
-        ventanaJuego.setDatosUsuarioJuego(jLNickname2.getText(), jLavatar);
+        System.exit(0);
     }//GEN-LAST:event_jBCrearPartidaActionPerformed
 
     /**
@@ -204,6 +213,19 @@ public class VentanaMenu extends javax.swing.JFrame {
             Logger.getLogger(VentanaMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jBReporteActionPerformed
+
+    private void jBCrearPartida1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearPartida1ActionPerformed
+        // TODO add your handling code here:
+         Calendar Calendario = Calendar.getInstance();
+        String fecha = Calendario.get(Calendario.DATE) + "/" + (Calendario.get(Calendario.MONTH) + 1) + "/" + Calendario.get(Calendario.YEAR);
+
+        String mensaje = ConexionJsockets.solicitudServidor2(jLNickname2, fecha);
+
+        VentanaJuego ventanaJuego = new VentanaJuego(this, jLNickname2.getText(), mensaje);
+        ventanaJuego.setVisible(true);
+        ventanaJuego.setLocationRelativeTo(null);
+        ventanaJuego.setDatosUsuarioJuego(jLNickname2.getText(), jLavatar);
+    }//GEN-LAST:event_jBCrearPartida1ActionPerformed
 
     public void setDatosUsuario(String clave,String nickname, String nombre, String apellido, String avatar,String FechaNac) {
         jLNickname2.setText(nickname);
@@ -283,6 +305,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBCrearPartida;
+    private javax.swing.JButton jBCrearPartida1;
     private javax.swing.JButton jBModificar;
     private javax.swing.JButton jBReporte;
     private javax.swing.JLabel jLApellido;
@@ -290,11 +313,11 @@ public class VentanaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLBienvenida;
     private javax.swing.JLabel jLFechaNac;
     private javax.swing.JLabel jLFechaNac2;
-    private javax.swing.JLabel jLFondo;
     private javax.swing.JLabel jLNickname;
     private javax.swing.JLabel jLNickname2;
     private javax.swing.JLabel jLNombre;
     private javax.swing.JLabel jLNombre2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLavatar;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
