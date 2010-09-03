@@ -1232,6 +1232,19 @@ public class VentanaJuego extends javax.swing.JFrame {
     }
 
     /**
+     * indica si un arreglo de botones está vacío.
+     * @return true si el arreglo está vacío.
+     */
+    private boolean arregloBotonesVacio(JButton[] arreglo){
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i].isVisible()) {
+                    return false;
+                }
+        }
+        return true;
+    }
+
+    /**
      * obtiene la dirección de la imagen para la piedra que se le pasa como parámetro.
      * @param mensaje la piedra devuelta por el pozo, donde se tiene los valores de la piedra y las imágenes asociadas.
      * @return String la direccion de la imagen de una piedra.
@@ -1617,6 +1630,8 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         if (botonActualSeleccionado != null) {
 
+            jButtonPot.setEnabled(true);
+
             String posX = boton.getName().toString();
             posX = posX.substring(posX.length() - 2, posX.length() - 1);
 
@@ -1833,7 +1848,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 jButtonPot.setEnabled(false);
                 jButtonPass.setEnabled(true);
             }
-        } else {
+        } else if (arregloBotonesVacio(piedrasPozo)){
             jButtonPot.setEnabled(false);
             jButtonPass.setEnabled(true);
         }
