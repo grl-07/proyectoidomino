@@ -76,12 +76,11 @@ public class PruebaJsockets implements LogicaServidor {
                 } else if (subArg[3].equalsIgnoreCase("4")) {
                     elUsuario.setAvatar(subArg[2]);
                 }
-
-
-
                 //elUsuario.setFechaNac(subArg[5]);
-
                 break;
+
+            case 9:
+                elUsuario.setNickname(subArg[1]);
         }
         if (elUsuario.getID() == 8) {
             return respuestaServidor(elUsuario, laPartida, laPiedra, opcion, subArg[3]);
@@ -289,9 +288,20 @@ public class PruebaJsockets implements LogicaServidor {
                 resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
                 System.out.println("cadena = " + resultado);*/
                 break;
+
+            case 9:
+                partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
+
+                if (!Datos.getListaPiedrasPozo().getLaListaPiedras().isEmpty()) {
+                    int numPiedrasPozo = Datos.getListaPiedrasPozo().getLaListaPiedras().size();
+                    resultado = Integer.toString(numPiedrasPozo);                    
+                } else {
+                    resultado = "0";
+                }
+
+                System.out.println("Numero de piedras del pozo -> " + resultado);
+                break;
         }
-
-
         return resultado;
     }
 }
