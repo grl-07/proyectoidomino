@@ -722,4 +722,24 @@ public class Mesa {
         System.out.println("PIEDRA A JUGAR DE LA MAQUINA: " + cadena);
         return cadena;
     }
+
+    /**
+     * comprueba que el jugador no tenga piedras en la mano que pueda poner en la mesa.
+     * @param piedrasEnMano - la lista de piedras del jugador.
+     * @return false si el jugador no tiene piedras para poner.
+     */
+    public boolean comprobarPiedrasEnMano(ListaPiedras piedrasEnMano){
+        Object arreglo[] = piedrasEnMano.getLaListaPiedras().toArray();
+        Piedra piedra;
+        int ext0 = obtenerExtremo0();
+        int ext1 = obtenerExtremo1();        
+        
+        for (int i = 0; i < arreglo.length; i++) {
+            piedra = (Piedra) arreglo[i];
+            if (piedra.getNum1() == ext0 || piedra.getNum1() == ext1 || piedra.getNum2() == ext0 || piedra.getNum2() == ext1) {
+                return true;
+            }            
+        }
+        return false;        
+    }
 }

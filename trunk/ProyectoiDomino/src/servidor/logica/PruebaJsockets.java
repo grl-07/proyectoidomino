@@ -236,16 +236,20 @@ public class PruebaJsockets implements LogicaServidor {
             case 7:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
 
-                if (!Datos.getListaPiedrasPozo().getLaListaPiedras().isEmpty()) {
-                    laPiedra = Datos.getListaPiedrasPozo().obtenerPiedraPozo();
-                    cadena = laPiedra.obtenerCadenaPiedraJugador();
-                    if (!cadena.equalsIgnoreCase("")) {
-                        partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().agregarPiedra(laPiedra);
-                        resultado = "TRUE:" + cadena;
+                confirm = partidaExistente.getElJuego().getLaMesa().comprobarPiedrasEnMano(Datos.getListaPiedrasJugador());
+
+                if (!confirm) {
+                    if (!Datos.getListaPiedrasPozo().getLaListaPiedras().isEmpty()) {
+                        laPiedra = Datos.getListaPiedrasPozo().obtenerPiedraPozo();
+                        cadena = laPiedra.obtenerCadenaPiedraJugador();
+                        if (!cadena.equalsIgnoreCase("")) {
+                            partidaExistente.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().agregarPiedra(laPiedra);
+                            resultado = "TRUE:" + cadena;
+                        }
+                    } else {
+                        resultado = "FALSE";
                     }
-                } else {
-                    resultado = "FALSE";
-                }
+                } else resultado = "FALSE";
 
                 System.out.println("Agarrar pieza del Pozo -> " + resultado);
                 break;
@@ -294,7 +298,7 @@ public class PruebaJsockets implements LogicaServidor {
 
                 if (!Datos.getListaPiedrasPozo().getLaListaPiedras().isEmpty()) {
                     int numPiedrasPozo = Datos.getListaPiedrasPozo().getLaListaPiedras().size();
-                    resultado = Integer.toString(numPiedrasPozo);                    
+                    resultado = Integer.toString(numPiedrasPozo);
                 } else {
                     resultado = "0";
                 }
