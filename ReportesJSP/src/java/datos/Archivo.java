@@ -1,27 +1,17 @@
 package datos;
-
 import java.io.*;
 import org.jdom.*;
 import org.jdom.input.*;
 import org.jdom.output.*;
 import java.util.*;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author CASITA
- */
 public class Archivo {
-    private static String direccionUsuarios = "D:/Documents and Settings/Sheryl/Mis documentos/NetBeansProjects/trunk/ProyectoiDomino/src/servidor/datos/JSPnumIngresos.xml";
-    private static String direccionUsuarios2 = "D:/Documents and Settings/Sheryl/Mis documentos/NetBeansProjects/trunk/ProyectoiDomino/src/servidor/datos/JSPpartidasCreadas.xml";
-    private static String direccionUsuarios3 = "D:/Documents and Settings/Sheryl/Mis documentos/NetBeansProjects/trunk/ProyectoiDomino/src/servidor/datos/JSPpartidasGanadas.xml";
-    private static String direccionUsuarios4 = "D:/Documents and Settings/Sheryl/Mis documentos/NetBeansProjects/trunk/ProyectoiDomino/src/servidor/datos/JSPmayorScore.xml";
+    private static String direccionUsuarios = "C:/Users/Alberly/Documents/NetBeansProjects/ProyectoiDomino/src/servidor/datos/JSPnumIngresos.xml";
+    private static String direccionUsuarios2 = "C:/Users/Alberly/Documents/NetBeansProjects/ProyectoiDomino/src/servidor/datos/JSPpartidasCreadas.xml";
+    private static String direccionUsuarios3 = "C:/Users/Alberly/Documents/NetBeansProjects/ProyectoiDomino/src/servidor/datos/JSPpartidasGanadas.xml";
+    private static String direccionUsuarios4 = "C:/Users/Alberly/Documents/NetBeansProjects/ProyectoiDomino/src/servidor/datos/JSPmayorScore.xml";
 
-    private static String archivoUsuarios = "D:/Documents and Settings/Sheryl/Mis documentos/NetBeansProjects/trunk/ProyectoiDomino/src/servidor/datos/Usuarios.xml";
+    private static String archivoUsuarios = "C:/Users/Alberly/Documents/NetBeansProjects/ProyectoiDomino/src/servidor/datos/Usuarios.xml";
 
     /**
      * guardarDatosArchivoUsuario guarda en el archivo xml la lista ordenada por numero de ingresos

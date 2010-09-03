@@ -1,16 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datos;
-
 import java.io.PrintWriter;
 import logica.Comunicacion;
-
-/**
- *
- * @author Sheryl
- */
 import java.util.*;
 
 public class ListaReportes {
@@ -20,6 +10,9 @@ public class ListaReportes {
     private List<Usuario> listaOrdenMayorScore;
     private List<Usuario> listaOrdenCreadas;
 
+    /**
+     * Constructor
+     */
     public ListaReportes() {
         listaOrdenIn = new ArrayList();
         listaOrdenPartGan = new ArrayList();

@@ -1,28 +1,30 @@
 package logica;
-
 import datos.*;
 
-/**
- *
- * @author Alberly
- */
+
 public class Datos {
 
     private static ListaReportes listaDeUsuarios = null;
 
+    /**
+     * Constructor
+     */
     private Datos() {
     }
 
-    public static boolean inicializarListasDeDatos() {
-        if (listaDeUsuarios == null)
-        {
+    /**
+     * Inicializa la lista de datos de usuarios
+     * @return true
+     */
+    public static boolean inicializarListasDeDatos() {  
             listaDeUsuarios = new ListaReportes();
             return true;
-        }
-
-        return false;
     }
 
+    /**
+     * getListaDeUsuarios obtiene la lista de usuarios
+     * @return la lista de los reportes
+     */
     public static ListaReportes getListaDeUsuarios() {
         return listaDeUsuarios;
     }

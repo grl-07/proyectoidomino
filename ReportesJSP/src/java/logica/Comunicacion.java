@@ -1,17 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package logica;
 
 import datos.Archivo;
 import java.io.PrintWriter;
 
-/**
- *
- * @author sheryl
- */
 public class Comunicacion
 {
     /**
@@ -34,7 +25,7 @@ public class Comunicacion
     }
 
     /**
-     * solicitar imprsion usuarios Jsp, llama a imprimir coleccion JSP para mostrar las listas en HTML
+     * solicitar impresion usuarios Jsp, llama a imprimir coleccion JSP para mostrar las listas en HTML
      * @param out
      */
     public static void solicitarImpresionUsuariosJSP(PrintWriter out)
