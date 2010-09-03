@@ -154,16 +154,10 @@ public class Partida {
     public Partida crearPartida(String nickname, ListaPiedras listaDePiedras, String fechaInicio) {
 
         String fechaActual = obtenerFechaDelSistema();
-        System.out.println("Partida creada por " + nickname);
         this.setIDPartida(1);
         this.setFechaIni(fechaInicio);
         this.setFechaactual(fechaActual);
-        //this.setFechaactual(fechaactual);
-
-        System.out.println("FECHA INICIO PARTIDA::::" + this.getFechaIni());
-        System.out.println("FECHA ACTUAL:::::" + this.getFechaactual());
-
-
+       
         this.elJuego = new Juego(null, null, null);
         elJuego.setJugador1(new Jugador(nickname, "", 0, 0, 0, 0));
         elJuego.setJugador2(new Maquina());
@@ -174,7 +168,6 @@ public class Partida {
         Partida laPartida;
         elUsuario = new Usuario("", "", "", nickname, "", "");
         laPartida = new Partida(elUsuario, IDPartida, fechaIni, fechaactual, elJuego);
-
 
         return (laPartida);
     }

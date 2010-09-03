@@ -1179,15 +1179,11 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             botonActual.setIcon(new javax.swing.ImageIcon(getClass().getResource(obtenerImagenPiedra(mensajeActual))));
 
-            /*String nombreBoton = botonActual.getIcon().toString();
-            System.out.println("imagen: " + nombreBoton.substring(nombreBoton.length()-13, nombreBoton.length()-4));*/
-
             botonActual.setEnabled(true);
         }
 
         for (i = 7; i < 16; i++) {
             botonActual = arregloBotones[i];
-            //botonActual.setEnabled(false);
             botonActual.setVisible(false);
         }
 
@@ -1304,25 +1300,20 @@ public class VentanaJuego extends javax.swing.JFrame {
 
         //PARA HALLAR LA IMAGEN ASOCIADA
         imagenAsociada = nombreBoton.substring(nombreBoton.length() - 13, nombreBoton.length() - 4);
-        //System.out.println("Imagen Asociada: " + imagenAsociada);
 
         //PARA HALLAR EL INDICE BEGIN
-        //indiceString = nombreBoton.substring(NombreBotonSize - 5, NombreBotonSize - 4);
         indiceString = imagenAsociada.substring(imagenAsociada.length() - 1);
 
-        //System.out.println("indice= " + indiceString);
-
         indicePiedra = Integer.parseInt(indiceString);
+
 
         //PARA HALLAR EL INDICE END.        
 
         String imagenAsociadaActual = cambiarImagenPiedra(rotarDerecha, indicePiedra, imagenAsociada);
 
-        //System.out.println("Imagen Asociada Actualizada: " + imagenAsociadaActual);
 
         fuente = direccion + imagenAsociadaActual;
 
-        //System.out.println("fuente: " + fuente);
 
 
         return fuente;
@@ -1410,10 +1401,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         posYaux2++;
 
         if (posYaux > -1) {
-            System.out.println("ENTRO AL IF 1");
+            
             if (laMesa[posX][posYaux].getIcon() != null) {
-                System.out.println(laMesa[posX][posYaux].getName());
-                System.out.println("PIEDRA EXTREMO DE LA MESA: " + laMesa[posX][posYaux].getIcon().toString());
+            
+            
                 extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
                 num1PiedraExtremo = Integer.parseInt(subArgExtremo[0]);
@@ -1440,7 +1431,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
 
         if (posXaux > -1) {
-            System.out.println("ENTRO AL IF 2");
+            
             if (laMesa[posXaux][posY].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posXaux][posY].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1467,7 +1458,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
 
         if (posYaux2 < 10) {
-            System.out.println("ENTRO AL IF 3");
+
             if (laMesa[posX][posYaux2].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posX][posYaux2].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1493,7 +1484,7 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
 
         if (posXaux2 < 7) {
-            System.out.println("ENTRO AL IF 4");
+            
             if (laMesa[posXaux2][posY].getIcon() != null) {
                 extremoString = obtenerCadenaPiedra(laMesa[posXaux2][posY].getIcon().toString());
                 subArgExtremo = extremoString.split("-");
@@ -1528,7 +1519,6 @@ public class VentanaJuego extends javax.swing.JFrame {
     public void setDatosUsuarioJuego(String nickname, JLabel avatar) {
         jLNickname.setText(nickname);
 
-        //avatar.getIcon();
         jLAvatar.setIcon(avatar.getIcon());
     }
 
@@ -1645,10 +1635,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
             String cadenaImagen = obtenerImagenAsociada(botonActualSeleccionado.getIcon().toString());
 
-            /*System.out.println("nickname: " + nickname);
-            System.out.println("piedra: " + cadenaPiedra);
-            System.out.println("posicion: " + posicion);
-            System.out.println("imagenSeleccionada: " + cadenaImagen);*/
+  
             System.out.println("");
             String cadena = ConexionJsockets.solicitudServidor5(nickname, cadenaPiedra, posicion, cadenaImagen);
 
@@ -1699,7 +1686,7 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                             if (!subArg[1].equalsIgnoreCase("NULL")) {
                                 boton = obtenerBotonPosicion(subArg[2]);
-                                System.out.println("boton: " + boton.getName());
+
                                 boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
                                 habilitarPiedrasMesa(subArg[2]);
 
@@ -1734,13 +1721,12 @@ public class VentanaJuego extends javax.swing.JFrame {
 
                     if (!subArg[1].equalsIgnoreCase("NULL")) {
                         boton = obtenerBotonPosicion(subArg[2]);
-                        System.out.println("boton: " + boton.getName());
+                       
                         boton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cliente/presentacion/resources/Piedras/" + subArg[4])));
                         habilitarPiedrasMesa(subArg[2]);              
 
 
                         System.out.println("THE GAME IS NOT OVER");
-
                     }
                 }
 
@@ -1798,8 +1784,6 @@ public class VentanaJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
         String cadena = ConexionJsockets.solicitudServidor7(nickname);
 
-        System.out.println("cadena: " + cadena);
-
         String subArg[] = cadena.split(":");
 
 
@@ -1813,7 +1797,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             JButton botonPote = piedrasPozo[contadorPozo];
 
             while (!piedraPuesta && i > -1 && i < 7) {
-                //for (i = 0; i < 7; i++) {
+
                 if (!piedrasEnMano[i].isEnabled()) {
                     piedrasEnMano[i].setEnabled(true);
                     piedrasEnMano[i].setIcon(new javax.swing.ImageIcon(getClass().getResource(imagenPiedra)));
@@ -1826,7 +1810,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             }
 
             while (!piedraPuesta && i > 6 && i < 16) {
-                //for (i = 7; i < 14; i++) {
+
                 if (!piedrasEnMano[i].isEnabled()) {
                     piedrasEnMano[i].setEnabled(true);
                     piedrasEnMano[i].setIcon(new javax.swing.ImageIcon(getClass().getResource(imagenPiedra)));
@@ -1863,10 +1847,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         String cadena = ConexionJsockets.solicitudServidor4(nickname);
 
         if (cadena.equalsIgnoreCase("TRUE")) {
-            System.out.println("Se guardÃ³ la partida con Ã©xito");
+            System.out.println("Se guardo la partida con exito");
             JOptionPane.showMessageDialog(null, "Saved Game");
         } else {
-            System.out.println("NO se guardÃ³ la partida con Ã©xito");
+            System.out.println("NO se guardo la partida con exito");
             JOptionPane.showMessageDialog(null, "Unsaved Game");
         }
 }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -1907,7 +1891,7 @@ public class VentanaJuego extends javax.swing.JFrame {
                 }
             }
             if (subArg2[1].equalsIgnoreCase("JUEGO TRANCADO")) {
-                System.out.println("JUEGO TRANCADO!!!");
+                System.out.println("BLOCKED GAME");
                 JOptionPane.showMessageDialog(null, "BLOCKED GAME!!!");
                 //REGRESAR A LA VENTANA MENU
                 this.dispose();

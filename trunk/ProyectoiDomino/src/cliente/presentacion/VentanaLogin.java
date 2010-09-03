@@ -186,15 +186,7 @@ public class VentanaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
 }//GEN-LAST:event_txtNicknameActionPerformed
 
-    /**
-     *
-     * @return
-     */
-    /*public String obtenerClave() {
-        return txtPassword.getText();
-    }*/
-   
-
+  
     /**
      * @param args the command line arguments
      */

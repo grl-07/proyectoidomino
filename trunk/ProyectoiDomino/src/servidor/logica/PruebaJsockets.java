@@ -20,7 +20,7 @@ public class PruebaJsockets implements LogicaServidor {
         elUsuario.setID(Integer.parseInt(subArg[0]));
         int opcion = elUsuario.getID();
 
-        System.out.println("cadena = " + arg);
+        //System.out.println("cadena = " + arg);
         switch (opcion) {
             case 1:
                 elUsuario.setNickname(subArg[1]);
@@ -40,7 +40,6 @@ public class PruebaJsockets implements LogicaServidor {
                 break;
             case 4:
                 elUsuario.setNickname(subArg[1]);
-                //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 5:
                 elUsuario.setNickname(subArg[1]);
@@ -56,11 +55,9 @@ public class PruebaJsockets implements LogicaServidor {
                     laPiedra.setNum1(-1);
                     laPiedra.setNum2(-1);
                 }
-                //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 6:
                 elUsuario.setNickname(subArg[1]);
-                //laPartida.setIDPartida(Integer.parseInt(subArg[2]));
                 break;
             case 7:
                 elUsuario.setNickname(subArg[1]);
@@ -76,7 +73,6 @@ public class PruebaJsockets implements LogicaServidor {
                 } else if (subArg[3].equalsIgnoreCase("4")) {
                     elUsuario.setAvatar(subArg[2]);
                 }
-                //elUsuario.setFechaNac(subArg[5]);
                 break;
 
             case 9:
@@ -108,7 +104,6 @@ public class PruebaJsockets implements LogicaServidor {
 
         String piedraStr;
         boolean confirm = false;
-        //Usuario registro = new Usuario("","","","","","",0,0,0,0);;
         Usuario registro = null;
 
 
@@ -119,8 +114,7 @@ public class PruebaJsockets implements LogicaServidor {
                     registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                     int cont = registro.getNumIngresos();
                     Conector.guardarNumIngresos(registro, cont);
-                    resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
-                    //resultado = "TRUE:prueba:prueba:prueba:prueba";
+                    resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar()+ ":" + registro.getFechaNac();
                     System.out.println("EN SERVIDOR Entrar al sistema -->" + resultado);
                 }
                 break;
@@ -130,7 +124,6 @@ public class PruebaJsockets implements LogicaServidor {
                 System.out.println("NICKNAME -->" + registro.getNickname());
                 int cont = registro.getNumPartCreadas();
                 Conector.guardarNumPartidasCreadas(registro, cont);
-                //Datos.inicializarListasJuego();                
 
                 partidaNueva = Datos.obtenerPartidaCreada(elUsuario.getNickname(), laPartida.getFechaIni());
 
@@ -139,11 +132,10 @@ public class PruebaJsockets implements LogicaServidor {
                 Datos.setListaPiedrasJugador(partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano());
                 Datos.setListaPiedrasMaquina(partidaNueva.getElJuego().getJugador2().getLaMaquina().getPiedrasEnMano());
                 Datos.setListaPiedrasPozo(partidaNueva.getElJuego().getLaMesa().getElPozo());
-                //NUEVA LINEA PARA INICIAR LA MATRIZ DE PIEDRAS DEL JUEGO
+
                 Datos.setMatrizPiedrasMesa(partidaNueva.getElJuego().getLaMesa().inicializarMatrizPiedras());
 
                 cadena = partidaNueva.getElJuego().getJugador1().getElJugador().getPiedrasEnMano().obtenerPiedras();
-                //System.out.println("cadenaPiedras =  " + partidaNueva.getElJuego().getLaMesa().);
                 System.out.println("cadenaPiedras =  " + cadena);
                 resultado = cadena;
                 break;
@@ -161,7 +153,7 @@ public class PruebaJsockets implements LogicaServidor {
                 } else {
                     resultado = "FALSE";
                 }
-                System.out.println("Guardar Partida -> " + resultado);
+                System.out.println("EN SERVIDOR Guardar Partida -> " + resultado);
                 break;
             case 5:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
@@ -185,7 +177,6 @@ public class PruebaJsockets implements LogicaServidor {
                     confirm = true;
                     if (Datos.getListaPiedrasJugador().getLaListaPiedras().isEmpty()) {
                         partidaExistente.getElJuego().getJugador1().getElJugador().setEstado(true);
-                        System.out.println("\nGano el jugador");
                     }
 
                     //Jugada de la Maquina
@@ -197,10 +188,8 @@ public class PruebaJsockets implements LogicaServidor {
                         partidaExistente.getElJuego().getJugador2().getLaMaquina().setPass(true);
                     } else if (Datos.getListaPiedrasMaquina().getLaListaPiedras().isEmpty() && !partidaExistente.getElJuego().getJugador1().getElJugador().isEstado()) {
                         partidaExistente.getElJuego().getJugador2().getLaMaquina().setEstado(true);
-                        System.out.println("\nGano la Maquina");
                     }
                     //Jugada de la Maquina FIN.
-                    //}
                 }
 
                 if (confirm) {
@@ -208,6 +197,8 @@ public class PruebaJsockets implements LogicaServidor {
                 } else {
                     resultado = "FALSE";
                 }
+
+                System.out.println("EN SERVIDOR Enviar jugada -->" + resultado);
                 break;
             case 6:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
@@ -222,8 +213,6 @@ public class PruebaJsockets implements LogicaServidor {
                         resultado = "TRUE:USTED HA PERDIDO";
                     } else {
                         if (partidaExistente.getElJuego().getJugador1().getElJugador().isPass() == true && partidaExistente.getElJuego().getJugador2().getLaMaquina().isPass() == true) {
-
-                            System.out.println("JUEGO TRANCADO:::::::::::::::::::::::");
                             resultado = "TRUE:JUEGO TRANCADO";
                         } else {
                             resultado = "FALSE";
@@ -231,7 +220,7 @@ public class PruebaJsockets implements LogicaServidor {
                     }
                 }
 
-                System.out.println("Fin de partida -> " + resultado);
+                System.out.println("EN SERVIDOR Fin de partida -> " + resultado);
                 break;
             case 7:
                 partidaExistente = Datos.obtenerPartidaExistente(elUsuario.getNickname());
@@ -251,14 +240,11 @@ public class PruebaJsockets implements LogicaServidor {
                     }
                 } else resultado = "FALSE";
 
-                System.out.println("Agarrar pieza del Pozo -> " + resultado);
+                System.out.println("EN SERVIDOR Agarrar pieza del Pozo -> " + resultado);
                 break;
             case 8:
                 registro = Conector.obtenerDatosDeUsuario(elUsuario.getNickname());
                 if (op.equalsIgnoreCase("1")) {
-
-                    //Conector.guardarNuevoNombre(registro);
-                    //registro.setNombre(elUsuario.getNombre());
 
                     Conector.guardarNuevoDato(registro, elUsuario, op);
                     resultado = "TRUE:" + elUsuario.getNombre();
@@ -286,11 +272,6 @@ public class PruebaJsockets implements LogicaServidor {
 
                 }
 
-
-                /*elUsuario = Datos.modificarDatosUsuario(elUsuario);
-                Conector.guardarDatos(elUsuario.getNombre(), elUsuario.getApellido(), elUsuario.getNickname(), elUsuario.getClave(), elUsuario.getAvatar(), elUsuario.getFechaNac());
-                resultado = "TRUE:" + registro.getNombre() + ":" + registro.getApellido() + ":" + registro.getAvatar() + ":" + registro.getFechaNac();
-                System.out.println("cadena = " + resultado);*/
                 break;
 
             case 9:
@@ -303,7 +284,6 @@ public class PruebaJsockets implements LogicaServidor {
                     resultado = "0";
                 }
 
-                System.out.println("Numero de piedras del pozo -> " + resultado);
                 break;
         }
         return resultado;
